@@ -19,17 +19,13 @@ export const nationalSchemes = [
     objective: "₹5 lakh per family/year for hospitalisation",
     department: "Ministry of Health & Family Welfare, GoI",
     support: "Cashless treatment in empanelled hospitals",
-    link: "https://nha.gov.in/PM-JAY", // Added link
+    link: "https://nha.gov.in/PM-JAY",
+    description: "The Ayushman Bharat – PM-JAY scheme, launched by the Ministry of Health & Family Welfare, Government of India, provides ₹5 lakh per family/year for hospitalisation to economically vulnerable families.", // Added description
     eligibility: {
-      // All ages means it includes all defined age brackets
       ageGroup: [...filterOptionValues.ageGroup],
-      // "all" gender maps to "All"
       gender: "All",
-      // "BPL" mapped to "Low". This is an interpretation.
       incomeLevel: ["Low"],
-      // Assuming it's for all social categories if not specified, given "vulnerable families"
       category: [...filterOptionValues.category],
-      // Assuming applicable to all professions and locations unless specified
       profession: [...filterOptionValues.profession],
       location: [...filterOptionValues.location],
     },
@@ -42,12 +38,13 @@ export const nationalSchemes = [
     objective: "Financial aid for life-threatening diseases",
     department: "MoHFW, GoI",
     support: "Cost reimbursement for treatment",
-    link: "https://www.india.gov.in/rashtriya-arogya-nidhi-scheme-ministry-health-and-family-welfare", // Added link
+    link: "https://www.india.gov.in/rashtriya-arogya-nidhi-scheme-ministry-health-and-family-welfare",
+    description: "The Rashtriya Arogya Nidhi (RAN) scheme, managed by the Ministry of Health & Family Welfare, Government of India, offers financial aid for life-threatening diseases to patients below the poverty line.", // Added description
     eligibility: {
-      ageGroup: [...filterOptionValues.ageGroup], // All ages
+      ageGroup: [...filterOptionValues.ageGroup],
       gender: "All",
-      incomeLevel: ["Low"], // BPL mapped to "Low"
-      category: [...filterOptionValues.category], // Assuming BPL patients can be from any category
+      incomeLevel: ["Low"],
+      category: [...filterOptionValues.category],
       profession: [...filterOptionValues.profession],
       location: [...filterOptionValues.location],
     },
@@ -60,13 +57,12 @@ export const nationalSchemes = [
     objective: "Aid for cancer treatment",
     department: "MoHFW, GoI",
     support: "Financial support for treatment",
-    link: "https://www.myscheme.gov.in/schemes/hmcpf", // Added link
+    link: "https://www.myscheme.gov.in/schemes/hmcpf",
+    description: "The Health Minister's Cancer Patient Fund, administered by the Ministry of Health & Family Welfare, Government of India, provides aid for cancer treatment to weaker sections.", // Added description
     eligibility: {
-      ageGroup: [...filterOptionValues.ageGroup], // All ages
+      ageGroup: [...filterOptionValues.ageGroup],
       gender: "All",
-      // "low-income" mapped more broadly
       incomeLevel: ["Low", "Lower-middle"],
-      // "Weaker sections" implies broad category applicability. The "cancer" aspect is an additional health criterion.
       category: [...filterOptionValues.category],
       profession: [...filterOptionValues.profession],
       location: [...filterOptionValues.location],
@@ -80,11 +76,12 @@ export const nationalSchemes = [
     objective: "Aid for emergency medical care",
     department: "MoHFW, GoI",
     support: "Financial assistance",
-    link: "https://www.myscheme.gov.in/schemes/hmdg", // Added link
+    link: "https://www.myscheme.gov.in/schemes/hmdg",
+    description: "The Health Minister's Discretionary Grant, from the Ministry of Health & Family Welfare, Government of India, offers financial assistance for emergency medical care to BPL individuals with urgent needs.", // Added description
     eligibility: {
-      ageGroup: [...filterOptionValues.ageGroup], // All ages
+      ageGroup: [...filterOptionValues.ageGroup],
       gender: "All",
-      incomeLevel: ["Low"], // BPL
+      incomeLevel: ["Low"],
       category: [...filterOptionValues.category],
       profession: [...filterOptionValues.profession],
       location: [...filterOptionValues.location],
@@ -98,13 +95,12 @@ export const nationalSchemes = [
     objective: "Support services and rehabilitation",
     department: "Dept. of Empowerment of Persons with Disabilities",
     support: "Aid via NGOs",
-    link: "https://depwd.gov.in/ddrs/", // Added link
+    link: "https://depwd.gov.in/ddrs/",
+    description: "The Deendayal Disabled Rehabilitation Scheme, launched by the Department of Empowerment of Persons with Disabilities, provides support services and rehabilitation for persons with disabilities.", // Added description
     eligibility: {
-      ageGroup: [...filterOptionValues.ageGroup], // All ages
+      ageGroup: [...filterOptionValues.ageGroup],
       gender: "All",
-      // "any" income level
       incomeLevel: [...filterOptionValues.incomeLevel],
-      // Specific to "Disabled" category
       category: ["Disabled"],
       profession: [...filterOptionValues.profession],
       location: [...filterOptionValues.location],
@@ -118,23 +114,33 @@ export const nationalSchemes = [
     objective: "Nutrition, health, preschool education",
     department: "Ministry of Women & Child Development",
     support: "Supplementary nutrition, immunization, health check-ups",
-    link: "https://icds.gov.in/en/schemes", // Added link
+    link: "https://icds.gov.in/en/schemes",
+    description: "The Integrated Child Development Services (ICDS), managed by the Ministry of Women & Child Development, focuses on nutrition, health, and preschool education for children under 6 and mothers.", // Added description
     eligibility: {
-      // Children under 6 fall into "Under 18". Mothers can be in various age groups.
-      // For simplicity, if primary beneficiary is child under 6.
       ageGroup: ["Under 18"],
-      // Applicable to children (all genders) and mothers (Female).
-      // If primarily child-focused, "All" gender. If also mother-specific aspects, might be complex.
-      // Let's assume "All" for the child, and mother's gender is implied "Female".
-      // For filtering based on primary beneficiary:
-      gender: "All", // For children. If filtering for mothers, this might need refinement.
-      // "any" income level
+      gender: "All",
       incomeLevel: [...filterOptionValues.incomeLevel],
-      // Applies across all social categories for children and mothers
       category: [...filterOptionValues.category],
-      // Children are "Students" (preschool) or N/A for profession. Mothers various.
-      // Assuming broad applicability or focusing on child (not a profession).
-      profession: ["Student", ...filterOptionValues.profession.filter(p => p !== "Student")], // Or simply all professions for mothers
+      profession: ["Student", ...filterOptionValues.profession.filter(p => p !== "Student")],
+      location: [...filterOptionValues.location],
+    },
+  },
+  {
+    id: "state-1",
+    name: "Financial Assistance to Disabled Students Pursuing (10th, 11th, 12th Equivalent Exams)",
+    type: "state",
+    forWhom: "Disabled students pursuing 10th, 11th, or 12th equivalent exams",
+    objective: "Provide financial assistance for education to disabled students",
+    department: "Department of Social Justice, Government of Kerala",
+    support: "Financial aid for educational expenses",
+    link: "https://example.com/kerala-disabled-student-scheme",
+    description: "The scheme “Financial Assistance to Disabled Students Pursuing (10th, 11th, 12th Equivalent Exams)” was launched by the Department of Social Justice, Government of Kerala.", // Added description
+    eligibility: {
+      ageGroup: ["Under 18", "18-25"],
+      gender: "All",
+      incomeLevel: [...filterOptionValues.incomeLevel],
+      profession: ["Student"],
+      category: ["Disabled"],
       location: [...filterOptionValues.location],
     },
   },

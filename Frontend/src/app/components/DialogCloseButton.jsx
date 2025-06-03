@@ -9,13 +9,13 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Link from "next/link";
+
 
 export function DialogCloseButton({ scheme }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">View More </Button>
+        <Button variant="outline" className="w-full">View More </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md font-serif">
         <DialogHeader>
@@ -43,21 +43,21 @@ export function DialogCloseButton({ scheme }) {
                 {scheme.eligibility.gender}
               </li>
               <li>
-                <span className="font-bold">Income Level:</span>{" "}
-                {scheme.eligibility.incomeLevel}
+                <span className="font-bold">Income Level:</span>
+                {scheme.eligibility.incomeLevel.join(", ")} 
               </li>
 
               <li>
                 <span className="font-bold">Category:</span>
                 {scheme.eligibility.category.length > 0
                   ? scheme.eligibility.category.map(
-                      (eachCategory) => ` ${eachCategory} `
+                      (eachCategory) => ` ${eachCategory}, `
                     )
                   : ` Not specified`}
               </li>
             </ul>
             <p className="font-bold inline">Link: </p>
-           <a href={scheme.link}>{scheme.link}</a>  
+           <a href={scheme.link} target="_blank">{scheme.link}</a>  
           </DialogDescription>
         </DialogHeader>
 

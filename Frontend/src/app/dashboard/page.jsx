@@ -46,7 +46,10 @@ export default function Page() {
     if (sidebarFilters) {
       currentSchemes = currentSchemes.filter((scheme) => {
         // Check Age Group
-        if (sidebarFilters.ageGroup && !scheme.eligibility.ageGroup.includes(sidebarFilters.ageGroup)) {
+        if (
+          sidebarFilters.ageGroup &&
+          !scheme.eligibility.ageGroup.includes(sidebarFilters.ageGroup)
+        ) {
           return false;
         }
 
@@ -55,28 +58,43 @@ export default function Page() {
           const filterGenderLower = sidebarFilters.gender.toLowerCase();
           const schemeGenderLower = scheme.eligibility.gender.toLowerCase();
           // Scheme matches if its gender is "all" or directly matches the filter
-          if (schemeGenderLower !== "all" && schemeGenderLower !== filterGenderLower) {
+          if (
+            schemeGenderLower !== "all" &&
+            schemeGenderLower !== filterGenderLower
+          ) {
             return false;
           }
         }
 
         // Check Income Level
-        if (sidebarFilters.incomeLevel && !scheme.eligibility.incomeLevel.includes(sidebarFilters.incomeLevel)) {
+        if (
+          sidebarFilters.incomeLevel &&
+          !scheme.eligibility.incomeLevel.includes(sidebarFilters.incomeLevel)
+        ) {
           return false;
         }
 
         // Check Category
-        if (sidebarFilters.category && !scheme.eligibility.category.includes(sidebarFilters.category)) {
+        if (
+          sidebarFilters.category &&
+          !scheme.eligibility.category.includes(sidebarFilters.category)
+        ) {
           return false;
         }
 
         // Check Profession
-        if (sidebarFilters.profession && !scheme.eligibility.profession.includes(sidebarFilters.profession)) {
+        if (
+          sidebarFilters.profession &&
+          !scheme.eligibility.profession.includes(sidebarFilters.profession)
+        ) {
           return false;
         }
 
         // Check Location
-        if (sidebarFilters.location && !scheme.eligibility.location.includes(sidebarFilters.location)) {
+        if (
+          sidebarFilters.location &&
+          !scheme.eligibility.location.includes(sidebarFilters.location)
+        ) {
           return false;
         }
 
@@ -128,13 +146,12 @@ export default function Page() {
           <ul className="grid auto-rows-min gap-4 md:grid-cols-3">
             {schemesToDisplay.map((eachScheme) => (
               <li
-                className="bg-muted/50 aspect-video rounded-xl p-5"
+                className="bg-muted/50 aspect-video rounded-xl p-5 gap-2.5"
                 key={eachScheme.id}
               >
-                <h1 className="text-2xl">{eachScheme.name}</h1>
-                <p className="text-lg">{eachScheme.forWhom}</p>
-                <p className="text-lg">{eachScheme.department}</p>
-                <p className="text-lg">{eachScheme.support}</p>
+                <h1 className="text-xl">{eachScheme.name}</h1>
+                <p className="text-md pt-6 pb-6">{eachScheme.description}</p>
+
                 <DialogCloseButton scheme={eachScheme} />
               </li>
             ))}
