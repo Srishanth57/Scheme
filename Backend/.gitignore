@@ -1,0 +1,13 @@
+# Node.js dependencies
+node_modules/
+
+# Optional: Other common files to ignore in Next.js projects
+.next/             # Next.js build output
+.env.local         # Local environment variables
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log* # npm debug logs
+yarn-debug.log* # yarn debug logs
+yarn-error.log* # yarn error logs
+.DS_Store          # macOS specific files
