@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/sidebar";
 import { ModeToggle } from "app/components/ModeToggle";
 import Link from "next/link";
-import { nationalSchemes } from "../data/schemes"; // Ensure this path is correct
+import { allSchemes } from "../data/schemes"; // Ensure this path is correct
 import { DialogCloseButton } from "app/components/DialogCloseButton";
 
 import { useState, useMemo } from "react";
@@ -39,7 +39,7 @@ export default function Page() {
 
   const schemesToDisplay = useMemo(() => {
     // Start with schemes filtered by search input
-    let currentSchemes = nationalSchemes.filter((scheme) =>
+    let currentSchemes = allSchemes.filter((scheme) =>
       scheme.name.toLowerCase().includes(inputValue.toLowerCase())
     );
 
@@ -119,7 +119,7 @@ export default function Page() {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
-                  <Link href="/home">Home page</Link>
+                  <Link href="/">Home page</Link>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
