@@ -17,16 +17,14 @@ import {
 } from "@/components/ui/sidebar";
 import { ModeToggle } from "app/components/ModeToggle";
 import Link from "next/link";
-import { allSchemes } from "../data/schemes"; // Ensure this path is correct
+import { agricultureScheme } from "app/data/agriculture";
 import { DialogCloseButton } from "app/components/DialogCloseButton";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 
 export default function Page() {
   const [inputValue, setInputValue] = useState("");
-  // sidebarFilters will store the object from FilterSection, e.g.,
-  // { ageGroup: "18-25", gender: "Female", incomeLevel: "Low", ... }
-  // Each value can be a string (the selected option) or null.
+
   const [sidebarFilters, setSidebarFilters] = useState(null);
 
   const handleInputChange = (event) => {
@@ -38,76 +36,93 @@ export default function Page() {
   };
 
   const schemesToDisplay = useMemo(() => {
-    // Start with schemes filtered by search input
-    let currentSchemes = allSchemes.filter((scheme) =>
+    // Start with all schemes filtered by search input
+    let filteredSchemes = agricultureScheme.filter((scheme) =>
       scheme.name.toLowerCase().includes(inputValue.toLowerCase())
     );
 
-    if (sidebarFilters) {
-      currentSchemes = currentSchemes.filter((scheme) => {
-        // Check Age Group
-        if (
-          sidebarFilters.ageGroup &&
-          !scheme.eligibility.ageGroup.includes(sidebarFilters.ageGroup)
-        ) {
-          return false;
-        }
-
-        // Check Gender
-        if (sidebarFilters.gender) {
-          const filterGenderLower = sidebarFilters.gender.toLowerCase();
-          const schemeGenderLower = scheme.eligibility.gender.toLowerCase();
-          // Scheme matches if its gender is "all" or directly matches the filter
-          if (
-            schemeGenderLower !== "all" &&
-            schemeGenderLower !== filterGenderLower
-          ) {
-            return false;
-          }
-        }
-
-        // Check Income Level
-        if (
-          sidebarFilters.incomeLevel &&
-          !scheme.eligibility.incomeLevel.includes(sidebarFilters.incomeLevel)
-        ) {
-          return false;
-        }
-
-        // Check Category
-        if (
-          sidebarFilters.category &&
-          !scheme.eligibility.category.includes(sidebarFilters.category)
-        ) {
-          return false;
-        }
-
-        // Check Profession
-        if (
-          sidebarFilters.profession &&
-          !scheme.eligibility.profession.includes(sidebarFilters.profession)
-        ) {
-          return false;
-        }
-
-        // Check Location
-        if (
-          sidebarFilters.location &&
-          !scheme.eligibility.location.includes(sidebarFilters.location)
-        ) {
-          return false;
-        }
-
-        return true; // Scheme matches all active sidebar filters
-      });
+    if (
+      !sidebarFilters ||
+      Object.values(sidebarFilters).every(
+        (value) =>
+          value === null ||
+          value === undefined ||
+          value === "" ||
+          value === "All" ||
+          (Array.isArray(value) && value.length === 0)
+      )
+    ) {
+      return filteredSchemes;
     }
 
-    return currentSchemes;
+    // Age Group filter
+    if (sidebarFilters.ageGroup && sidebarFilters.ageGroup !== "All") {
+      filteredSchemes = filteredSchemes.filter(
+        (scheme) =>
+          (Array.isArray(scheme.ageGroup)
+            ? scheme.ageGroup.includes(sidebarFilters.ageGroup)
+            : scheme.ageGroup === sidebarFilters.ageGroup) ||
+          scheme.ageGroup === "All"
+      );
+    }
+ console.log(filteredSchemes)
+ // Gender filter
+ if (sidebarFilters.gender && sidebarFilters.gender !== "All") {
+   filteredSchemes = filteredSchemes.filter(
+     (scheme) =>
+      (Array.isArray(scheme.gender)
+     ? scheme.gender.includes(sidebarFilters.gender)
+     : scheme.gender === sidebarFilters.gender) ||
+     scheme.gender === "All"
+    );
+  }
+  console.log(filteredSchemes)
+  
+  // Income Level filter
+  if (sidebarFilters.incomeLevel && sidebarFilters.incomeLevel !== "All") {
+    filteredSchemes = filteredSchemes.filter(
+      (scheme) =>
+        (Array.isArray(scheme.incomeLevel)
+      ? scheme.incomeLevel.includes(sidebarFilters.incomeLevel)
+      : scheme.incomeLevel === sidebarFilters.incomeLevel) ||
+      scheme.incomeLevel === "All"
+    );
+  }
+  console.log(filteredSchemes)
+  
+  // Profession filter
+  if (sidebarFilters.profession && sidebarFilters.profession !== "All") {
+    filteredSchemes = filteredSchemes.filter(
+      (scheme) =>
+        scheme.profession
+      .toLowerCase()
+      .includes(sidebarFilters.profession.toLowerCase()) ||
+      scheme.profession === "All"
+    );
+  }
+  console.log(filteredSchemes)
+      // Category filter
+      if (sidebarFilters.category && sidebarFilters.category.length > 0) {
+        filteredSchemes = filteredSchemes.filter((scheme) => {
+          const value = scheme.socialCategory.some((element) =>
+            sidebarFilters.category.includes(element)
+          );
+          return value;
+        });
+      }
+      console.log(filteredSchemes)
+
+    // Add more filters here as needed...
+
+    return filteredSchemes;
   }, [inputValue, sidebarFilters]);
 
   return (
-    <SidebarProvider>
-      <AppSidebar filterSection={handleSidebarFilterChange} />
+    <SidebarProvider className="md:w-full lg:w-auto">
+      <AppSidebar
+        filters={sidebarFilters}
+        filterSection={handleSidebarFilterChange}
+      />
       <SidebarInset>
         <header className="flex h-16 w-full items-center justify-between gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
           <div className="flex items-center gap-2 px-4">
