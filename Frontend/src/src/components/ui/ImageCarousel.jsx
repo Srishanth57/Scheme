@@ -39,7 +39,7 @@ export function ImageCarousel({ images }) {
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover object-top" // <--- Added object-top here
+                className="object-cover object-top" 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
               />
             </div>
