@@ -37,6 +37,7 @@ export async function GET(request, { params }) {
     if (allowedGovCollections.includes(category)) {
       const model = getSchemeModel(category); // dynamic model from collection name
       schemes = await model.find({});
+      console.log(schemes)
     }
     // Other static categories using modelMap
     else if (modelMap[category]) {

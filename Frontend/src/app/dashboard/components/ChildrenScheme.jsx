@@ -13,7 +13,7 @@ const Page = ({ inputValue, sidebarFilters }) => {
       const url = "/api/dashboard/children";
 
       try {
-        const response = await fetch(url, { cache: "no-store" });
+        const response = await fetch(url);
 
         if (!response.ok) {
           const errorData = await response.json();

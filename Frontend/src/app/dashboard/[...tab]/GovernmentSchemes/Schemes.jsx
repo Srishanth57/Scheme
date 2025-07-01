@@ -8,6 +8,34 @@ const Page = ({ inputValue, sidebarFilters }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  useEffect(() => {
+    async function getAgricultureSchemes() {
+      const url = "/api/dashboard/Government/Schemes";
+
+      try {
+        const response = await fetch(url, { cache: "no-store" });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || `HTTP error! Status: ${response.status}`
+          );
+        }
+
+        const fetchedData = await response.json();
+        setData(fetchedData);
+        console.log("Successfully fetched agriculture schemes:", fetchedData);
+      } catch (err) {
+        console.error("Error fetching agriculture schemes:", err);
+        setError(`Failed to load schemes: ${err.message}`);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    getAgricultureSchemes();
+  }, []);
+
   if (loading) {
     return <div className="text-center p-4">Loading schemes...</div>;
   }
@@ -26,5 +54,3 @@ const Page = ({ inputValue, sidebarFilters }) => {
 };
 
 export default Page;
-
-
