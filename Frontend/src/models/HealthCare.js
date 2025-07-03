@@ -17,6 +17,10 @@ const HealthCareSchemeSchema = new mongoose.Schema(
     profession: { type: String, required: true },
     keywords: { type: [String], required: true }, // Array of strings
     socialCategory: { type: [String], required: true }, // Array of strings
+    ratings: {
+    type: Number,
+    default: 0,
+  },
   },
   {
     collection: "HealthCareSchemes", // Explicitly set the collection name

@@ -21,6 +21,10 @@ const CasteSchemeSchema = new mongoose.Schema(
     keywords: { type: [String], required: true }, // Array of strings
     socialCategory: { type: [String], required: true }, // Array of strings
     profession: { type: String, required: true },
+    ratings: {
+    type: Number,
+    default: 0,
+  },
   },
   {
     collection: "CasteSchemes", // Explicitly set the collection name

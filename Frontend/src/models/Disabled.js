@@ -16,6 +16,10 @@ const DisabledSchemeSchema = new mongoose.Schema(
     link: { type: String, required: false }, // Link is optional as per your data
     keywords: { type: [String], required: true }, // Array of strings
     profession: { type: String, required: true },
+    ratings: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     collection: "DisabledSchemes", // Explicitly set the collection name

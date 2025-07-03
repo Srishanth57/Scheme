@@ -107,7 +107,6 @@ const SchemeDisplay = ({ scheme }) => {
       filteredSchemes = filteredSchemes.filter((scheme) =>
         scheme.implementedBy.includes(sidebarFilters.implementedBy)
       );
- 
     }
 
     // Category filter
@@ -153,12 +152,7 @@ const SchemeDisplay = ({ scheme }) => {
                 {keyword}
               </Badge>
             ))} */}
-              <StarRating
-                schemeId={scheme._id}
-                initialUserRating={scheme.userRating} // if you preload what the user already gave
-                average={scheme.avgRating}
-                count={scheme.ratingCount}
-              />
+              <StarRating count={eachScheme.ratings} />
 
               <DialogCloseButton scheme={eachScheme} />
             </li>
