@@ -17,9 +17,15 @@ const AgricultureSchema = new mongoose.Schema(
     keywords: { type: [String], required: true },
     link: { type: String },
     ratings: {
-    type: Number,
-    default: 0,
-  },
+      avgRating: {
+        type: Number,
+        default: 0,
+      },
+      count: {
+        type: Number,
+        default: 0,
+      },
+    },
 
     //  { type: mongoose.Schema.Types.Mixed }, // Can be Number or String
   },

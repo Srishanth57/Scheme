@@ -13,12 +13,17 @@ const GovernmentSchemeSchema = new mongoose.Schema(
     applicationProcess: { type: String, required: false }, // Can be NaN
     contact: { type: String, required: false }, // Can be NaN, or a multi-line string
     ratings: {
-    type: Number,
-    default: 0,
-  },
+      avgRating: {
+        type: Number,
+        default: 0,
+      },
+      count: {
+        type: Number,
+        default: 0,
+      },
+    },
   },
   {
-    collection: "Government_PoliceDepartment", // Explicitly set the collection name
     timestamps: true, // Adds createdAt and updatedAt fields automatically
   }
 );

@@ -47,8 +47,11 @@ async function insertData() {
     await connectDB(); // This connectDB will now use the loaded MONGODB_URI
 
     // 4. Insert the data using insertMany
-    const Schema = await getSchemeModel("Government_Schemes");
-    const result = await Schema.updateMany({}, { $set: { ratings: 0 } });
+    const Schema = await getSchemeModel("Government_Cooperative");
+    const result = await HealthCareSchemes.updateMany(
+      {},
+      { $set: { ratings: { avgRating: 0, count: 0 } } }
+    );
     console.log("Successfully inserted data:", result);
   } catch (err) {
     if (err.code === 11000) {

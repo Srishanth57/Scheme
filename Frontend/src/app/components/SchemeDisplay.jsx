@@ -1,11 +1,12 @@
 "use client";
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { DialogCloseButton } from "./DialogCloseButton";
 import { useDashboardContext } from "app/dashboard/layout";
-import StarRating from "./StarRating";
+import { Star } from "lucide-react";
 const SchemeDisplay = ({ scheme }) => {
   const { inputValue, sidebarFilters } = useDashboardContext();
+
   const currentScheme = scheme;
 
   const schemesToDisplay = useMemo(() => {
@@ -126,7 +127,7 @@ const SchemeDisplay = ({ scheme }) => {
     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
       {schemesToDisplay.length === 0 ? (
         <div className="flex justify-center items-center h-[70vh]">
-          <h1>No schemems to display</h1>
+          <h1>No schemes to display</h1>
         </div>
       ) : (
         <ul className="grid auto-rows-min gap-4 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -152,7 +153,14 @@ const SchemeDisplay = ({ scheme }) => {
                 {keyword}
               </Badge>
             ))} */}
-              <StarRating count={eachScheme.ratings} />
+
+              <div className="flex text-center gap-3 item-center mb-4">
+                <div className="bg-green-600 w-fit p-2 pt-1 pb-1 rounded-2xl flex gap-2">
+                  <p className="text-white">{(eachScheme.ratings.avgRating).toFixed(1)}</p>
+                  <Star color="#ffffff" strokeWidth={1.75} fill="white" />
+                </div>
+                  <p className="flex items-center">( {eachScheme.ratings.count} )</p>
+              </div>
 
               <DialogCloseButton scheme={eachScheme} />
             </li>

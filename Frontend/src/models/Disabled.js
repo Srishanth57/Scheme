@@ -17,8 +17,14 @@ const DisabledSchemeSchema = new mongoose.Schema(
     keywords: { type: [String], required: true }, // Array of strings
     profession: { type: String, required: true },
     ratings: {
-      type: Number,
-      default: 0,
+      avgRating: {
+        type: Number,
+        default: 0,
+      },
+      count: {
+        type: Number,
+        default: 0,
+      },
     },
   },
   {

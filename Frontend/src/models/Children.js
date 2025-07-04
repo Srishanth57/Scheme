@@ -21,10 +21,16 @@ const ChildrenSchemeSchema = new mongoose.Schema(
     benefits: { type: String, required: true },
     keywords: { type: [String], required: true }, // Array of strings
     profession: { type: String, required: true },
-    ratings: {
-    type: Number,
-    default: 0,
-  },
+   ratings: {
+      avgRating: {
+        type: Number,
+        default: 0,
+      },
+      count: {
+        type: Number,
+        default: 0,
+      },
+    }
     // Note: The provided childrenScheme data does not have a 'socialCategory' field,
     // so it's omitted from this schema to match the provided data structure.
   },

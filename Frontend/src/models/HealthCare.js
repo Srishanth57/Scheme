@@ -18,9 +18,15 @@ const HealthCareSchemeSchema = new mongoose.Schema(
     keywords: { type: [String], required: true }, // Array of strings
     socialCategory: { type: [String], required: true }, // Array of strings
     ratings: {
-    type: Number,
-    default: 0,
-  },
+      avgRating: {
+        type: Number,
+        default: 0,
+      },
+      count: {
+        type: Number,
+        default: 0,
+      },
+    },
   },
   {
     collection: "HealthCareSchemes", // Explicitly set the collection name

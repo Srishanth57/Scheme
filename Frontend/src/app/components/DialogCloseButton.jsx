@@ -10,6 +10,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Link from "next/link";
+import StarRating from "./UserUpdateRating";
 
 export function DialogCloseButton({ scheme }) {
   return (
@@ -192,16 +193,25 @@ export function DialogCloseButton({ scheme }) {
               )}
               {scheme.application_process && (
                 <div className="gap-1 flex">
-                  <p className="font-bold inline">Application Process / Link: </p>
+                  <p className="font-bold inline">
+                    Application Process / Link:{" "}
+                  </p>
                   {scheme.application_process.process_description}
                   {!(scheme.application_process.link === "N/A") && (
                     <Link href={scheme.application_process} target="_blank">
                       / {scheme.application_process.link}
                     </Link>
                   )}
-                  <br />
+                
                 </div>
               )}
+
+              <h1 className="font-bold inline">Ratings: </h1>
+              <StarRating
+                count={scheme.ratings.count}
+                avgRating={scheme.ratings.avgRating}
+                schemeId={scheme._id}
+              />
             </div>
           </DialogDescription>
         </DialogHeader>
