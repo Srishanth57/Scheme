@@ -4,21 +4,25 @@ import { Badge } from "@/components/ui/badge";
 import { DialogCloseButton } from "./DialogCloseButton";
 import { useDashboardContext } from "app/dashboard/layout";
 import { Star } from "lucide-react";
+
+//Type safety check  
+const safeString = (value) =>
+  typeof value === "string" ? value.toLowerCase() : "";
+
 const SchemeDisplay = ({ scheme }) => {
   const { inputValue, sidebarFilters } = useDashboardContext();
-
   const currentScheme = scheme;
 
   const schemesToDisplay = useMemo(() => {
-    console.log(inputValue);
     const filteredInput = inputValue || "";
 
     let filteredSchemes = currentScheme.filter(
       (scheme) =>
         typeof scheme.name === "string" &&
-        scheme.name.toLowerCase().includes(filteredInput.toLowerCase())
+        safeString(scheme.name).includes(safeString(filteredInput))
     );
-    if (
+
+    const isSidebarFiltersEmptyOrDefault =
       !sidebarFilters ||
       Object.values(sidebarFilters).every(
         (value) =>
@@ -27,10 +31,9 @@ const SchemeDisplay = ({ scheme }) => {
           value === "" ||
           value === "All" ||
           (Array.isArray(value) && value.length === 0)
-      )
-    ) {
-      return filteredSchemes;
-    }
+      );
+
+    if (isSidebarFiltersEmptyOrDefault) return filteredSchemes;
 
     // Age Group filter
     if (sidebarFilters.ageGroup && sidebarFilters.ageGroup !== "All") {
@@ -41,12 +44,12 @@ const SchemeDisplay = ({ scheme }) => {
 
       filteredSchemes = filteredSchemes.filter((scheme) => {
         if (scheme.ageGroup === "All") return true;
+        if (!scheme.ageGroup) return false;
 
         if (scheme.ageGroup.includes("-")) {
-          const schemeAgeMin = parseInt(scheme.ageGroup.split("-")[0]);
-          const schemeAgeMax = parseInt(scheme.ageGroup.split("-")[1]);
-
-          // Check if the filter range overlaps with scheme range
+          const [schemeAgeMin, schemeAgeMax] = scheme.ageGroup
+            .split("-")
+            .map(Number);
           return filterAgeMin <= schemeAgeMax && filterAgeMax >= schemeAgeMin;
         }
 
@@ -61,62 +64,71 @@ const SchemeDisplay = ({ scheme }) => {
 
     // Gender filter
     if (sidebarFilters.gender && sidebarFilters.gender !== "All") {
-      filteredSchemes = filteredSchemes.filter(
-        (scheme) =>
-          (Array.isArray(scheme.gender)
-            ? scheme.gender.includes(sidebarFilters.gender)
-            : scheme.gender === sidebarFilters.gender) ||
-          scheme.gender === "All"
-      );
+      filteredSchemes = filteredSchemes.filter((scheme) => {
+        const gender = scheme.gender;
+        return (
+          gender === "All" ||
+          (Array.isArray(gender) &&
+            gender.includes(sidebarFilters.gender)) ||
+          gender === sidebarFilters.gender
+        );
+      });
     }
 
     // Income Level filter
     if (sidebarFilters.incomeLevel && sidebarFilters.incomeLevel !== "All") {
-      filteredSchemes = filteredSchemes.filter(
-        (scheme) =>
-          (Array.isArray(scheme.incomeLevel)
-            ? scheme.incomeLevel.includes(sidebarFilters.incomeLevel)
-            : scheme.incomeLevel === sidebarFilters.incomeLevel) ||
-          scheme.incomeLevel === "All"
-      );
+      filteredSchemes = filteredSchemes.filter((scheme) => {
+        const income = scheme.incomeLevel;
+        return (
+          income === "All" ||
+          (Array.isArray(income) &&
+            income.includes(sidebarFilters.incomeLevel)) ||
+          income === sidebarFilters.incomeLevel
+        );
+      });
     }
 
     // Profession filter
     if (sidebarFilters.profession && sidebarFilters.profession !== "All") {
-      filteredSchemes = filteredSchemes.filter(
-        (scheme) =>
-          scheme.profession
-            .toLowerCase()
-            .includes(sidebarFilters.profession.toLowerCase()) ||
-          scheme.profession === "All"
-      );
+      filteredSchemes = filteredSchemes.filter((scheme) => {
+        const profession = scheme.profession;
+        return (
+          safeString(profession).includes(safeString(sidebarFilters.profession)) ||
+          profession === "All"
+        );
+      });
     }
+
+    // Location filter
     if (sidebarFilters.location && sidebarFilters.location !== "All") {
-      filteredSchemes = filteredSchemes.filter(
-        (scheme) =>
-          scheme.location
-            .toLowerCase()
-            .includes(sidebarFilters.location.toLowerCase()) ||
-          scheme.location === "All"
-      );
+      filteredSchemes = filteredSchemes.filter((scheme) => {
+        const location = scheme.location;
+        return (
+          safeString(location).includes(safeString(sidebarFilters.location)) ||
+          location === "All"
+        );
+      });
     }
-    //Govt. schemes implemented By [GOK , GOI , LSGI]
+
+    // ImplementedBy filter
     if (
       sidebarFilters.implementedBy &&
       sidebarFilters.implementedBy !== "All"
     ) {
-      filteredSchemes = filteredSchemes.filter((scheme) =>
-        scheme.implementedBy.includes(sidebarFilters.implementedBy)
+      filteredSchemes = filteredSchemes.filter(
+        (scheme) =>
+          Array.isArray(scheme.implementedBy) &&
+          scheme.implementedBy.includes(sidebarFilters.implementedBy)
       );
     }
 
     // Category filter
     if (sidebarFilters.category && sidebarFilters.category.length > 0) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
-        const value = scheme.socialCategory.some((element) =>
+        const socialCategory = scheme.socialCategory || [];
+        return socialCategory.some((element) =>
           sidebarFilters.category.includes(element)
         );
-        return value;
       });
     }
 
@@ -133,10 +145,11 @@ const SchemeDisplay = ({ scheme }) => {
         <ul className="grid auto-rows-min gap-4 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {schemesToDisplay.map((eachScheme) => (
             <li
-              className="bg-muted/50 aspect-video rounded-xl p-5 gap-2.5 max-sm-w-[100vw] "
+              className="bg-muted/50 aspect-video rounded-xl p-5 gap-2.5 max-sm-w-[100vw]"
               key={eachScheme.id}
             >
               <h1 className="text-xl mb-3">{eachScheme.name}</h1>
+
               {eachScheme.location && (
                 <Badge
                   variant="secondary"
@@ -145,21 +158,21 @@ const SchemeDisplay = ({ scheme }) => {
                   <span>{eachScheme.location}</span>
                 </Badge>
               )}
+
               {eachScheme.description && (
                 <p className="text-md pt-6 pb-6">{eachScheme.description}</p>
               )}
-              {/* {eachScheme.keywords.map((keyword) => (
-              <Badge key={keyword} className="m-2 mt-0 mb-2">
-                {keyword}
-              </Badge>
-            ))} */}
 
               <div className="flex text-center gap-3 item-center mb-4">
                 <div className="bg-green-600 w-fit p-2 pt-1 pb-1 rounded-2xl flex gap-2">
-                  <p className="text-white">{(eachScheme.ratings.avgRating).toFixed(1)}</p>
+                  <p className="text-white">
+                    {eachScheme.ratings?.avgRating?.toFixed(1) || "0.0"}
+                  </p>
                   <Star color="#ffffff" strokeWidth={1.75} fill="white" />
                 </div>
-                  <p className="flex items-center">( {eachScheme.ratings.count} )</p>
+                <p className="flex items-center">
+                  ( {eachScheme.ratings?.count || 0} )
+                </p>
               </div>
 
               <DialogCloseButton scheme={eachScheme} />
