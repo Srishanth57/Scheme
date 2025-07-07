@@ -3,14 +3,14 @@
 
 import mongoose from "mongoose";
 
-import ChildrenSchemes from "models/Children";
+import ChildrenSchemes from "modals/Children";
 
 import { childrenScheme } from "app/data/children";
-import AgricultureSchemes from "models/Agriculture";
-import CasteSchemes from "models/Caste";
+import AgricultureSchemes from "modals/Agriculture";
+import CasteSchemes from "modals/Caste";
 import { disabled } from "app/data/disabled";
-import DisabledSchemes from "models/Disabled";
-import HealthCareSchemes from "models/HealthCare";
+import DisabledSchemes from "modals/Disabled";
+import HealthCareSchemes from "modals/HealthCare";
 import { healthCare } from "app/data/healthCare";
 
 import { nationalHealthMission } from "app/data/government";
@@ -48,10 +48,7 @@ async function insertData() {
 
     // 4. Insert the data using insertMany
     const Schema = await getSchemeModel("Government_Cooperative");
-    const result = await HealthCareSchemes.updateMany(
-      {},
-      { $set: { ratings: { avgRating: 0, count: 0 } } }
-    );
+    const result = await HealthCareSchemes.insertMany();
     console.log("Successfully inserted data:", result);
   } catch (err) {
     if (err.code === 11000) {

@@ -9,7 +9,8 @@ import {
 } from "@clerk/nextjs";
 import React from "react";
 import { ModeToggle } from "./ModeToggle";
-
+import i18n from "lib/i18next";
+import { DropdownMenuRadioGroupDemo } from "./DropdownLngTrigger";
 const NavBar = () => {
   return (
     <div>
@@ -41,6 +42,7 @@ const NavBar = () => {
               <div className="">
                 <ModeToggle />
               </div>
+             <div><DropdownMenuRadioGroupDemo/></div>
             </header>
           </nav>
         </div>

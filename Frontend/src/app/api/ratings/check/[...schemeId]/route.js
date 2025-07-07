@@ -1,5 +1,5 @@
 import connectDB from "lib/db";
-import UserRating from "models/UserRating";
+import UserRating from "modals/UserRating";
 
 export async function GET(request, { params }) {
   try {
@@ -30,14 +30,17 @@ export async function GET(request, { params }) {
         { status: 200, headers: { "Content-Type": "application/json" } }
       );
     } else {
-      return new Response(
-        JSON.stringify({ hasRated: false }),
-        { status: 200, headers: { "Content-Type": "application/json" } }
-      );
+      return new Response(JSON.stringify({ hasRated: false }), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      });
     }
   } catch (error) {
     return new Response(
-      JSON.stringify({ message: "Error checking rating", error: error.message }),
+      JSON.stringify({
+        message: "Error checking rating",
+        error: error.message,
+      }),
       { status: 500, headers: { "Content-Type": "application/json" } }
     );
   }

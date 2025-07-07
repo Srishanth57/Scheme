@@ -19,10 +19,8 @@ Ensure the response contains no introductory or concluding text, explanations, o
   try {
     parsedResult = JSON.parse(result.response.text());
   } catch (e) {
-    parsedResult = {
-      error: "Gemini did not return valid JSON",
-      raw: result.response.text(),
-    };
+    console.log(e, "Gemini did not return valid JSON");
+    parsedResult = schemes;
   }
 
   return new Response(JSON.stringify(parsedResult), {

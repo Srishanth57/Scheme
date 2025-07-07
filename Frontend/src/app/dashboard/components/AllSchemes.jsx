@@ -41,14 +41,18 @@ const Page = ({ inputValue, sidebarFilters }) => {
     console.log(
       `fetched DAta from the handleGeminiSort funcion: ${fetchedData}`
     );
-    const res = await fetch("/api/gemini-sort", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ schemes: fetchedData }),
-    });
-    const result = await res.json();
-    console.log(result);
-    setData(result)
+    try {
+      const res = await fetch("/api/gemini-sort", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ schemes: fetchedData }),
+      });
+      const result = await res.json();
+      console.log(result);
+      setData(result);
+    } catch (err) {
+      console.log(err)
+    } 
   }
   if (loading) {
     return <div className="text-center p-4">Loading schemes...</div>;

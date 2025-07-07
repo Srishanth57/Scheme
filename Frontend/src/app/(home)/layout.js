@@ -2,11 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 
 import { ThemeProvider } from "../../src/components/theme-provider";
-import {
-  ClerkProvider,
-
-} from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 import NavBar from "app/components/NavBar";
+
+import ClientBody from "./ClientBody";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,8 +34,10 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            <NavBar/>
-            {children}
+            <ClientBody>
+              <NavBar />
+              {children}
+            </ClientBody>
           </ThemeProvider>
         </body>
       </html>

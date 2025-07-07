@@ -4,8 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { DialogCloseButton } from "./DialogCloseButton";
 import { useDashboardContext } from "app/dashboard/layout";
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-//Type safety check  
+//Type safety check
 const safeString = (value) =>
   typeof value === "string" ? value.toLowerCase() : "";
 
@@ -13,14 +14,21 @@ const SchemeDisplay = ({ scheme }) => {
   const { inputValue, sidebarFilters } = useDashboardContext();
   const currentScheme = scheme;
 
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language || "en";
+
+  console.log(currentScheme);
   const schemesToDisplay = useMemo(() => {
     const filteredInput = inputValue || "";
 
-    let filteredSchemes = currentScheme.filter(
-      (scheme) =>
-        typeof scheme.name === "string" &&
-        safeString(scheme.name).includes(safeString(filteredInput))
-    );
+    let filteredSchemes = currentScheme.filter((scheme) => {
+      const name =
+        typeof scheme.name === "string"
+          ? scheme.name
+          : scheme.name?.[currentLang] || scheme.name?.en || "";
+
+      return safeString(name).includes(safeString(filteredInput));
+    });
 
     const isSidebarFiltersEmptyOrDefault =
       !sidebarFilters ||
@@ -43,19 +51,22 @@ const SchemeDisplay = ({ scheme }) => {
         : Infinity;
 
       filteredSchemes = filteredSchemes.filter((scheme) => {
-        if (scheme.ageGroup === "All") return true;
-        if (!scheme.ageGroup) return false;
+        const ageGroup =
+          typeof scheme.ageGroup === "string"
+            ? scheme.ageGroup
+            : scheme.ageGroup?.[currentLang] || scheme.ageGroup?.en || "";
 
-        if (scheme.ageGroup.includes("-")) {
-          const [schemeAgeMin, schemeAgeMax] = scheme.ageGroup
-            .split("-")
-            .map(Number);
-          return filterAgeMin <= schemeAgeMax && filterAgeMax >= schemeAgeMin;
+        if (ageGroup === "All") return true;
+        if (!ageGroup) return false;
+
+        if (ageGroup.includes("-")) {
+          const [min, max] = ageGroup.split("-").map(Number);
+          return filterAgeMin <= max && filterAgeMax >= min;
         }
 
-        if (scheme.ageGroup.includes("+")) {
-          const schemeAgeMin = parseInt(scheme.ageGroup.split("+")[0]);
-          return filterAgeMax >= schemeAgeMin;
+        if (ageGroup.includes("+")) {
+          const min = parseInt(ageGroup.split("+")[0]);
+          return filterAgeMax >= min;
         }
 
         return false;
@@ -65,36 +76,35 @@ const SchemeDisplay = ({ scheme }) => {
     // Gender filter
     if (sidebarFilters.gender && sidebarFilters.gender !== "All") {
       filteredSchemes = filteredSchemes.filter((scheme) => {
-        const gender = scheme.gender;
-        return (
-          gender === "All" ||
-          (Array.isArray(gender) &&
-            gender.includes(sidebarFilters.gender)) ||
-          gender === sidebarFilters.gender
-        );
+        const gender =
+          typeof scheme.gender === "string"
+            ? scheme.gender
+            : scheme.gender?.[currentLang] || scheme.gender?.en || "";
+        return gender === "All" || gender === sidebarFilters.gender;
       });
     }
 
     // Income Level filter
     if (sidebarFilters.incomeLevel && sidebarFilters.incomeLevel !== "All") {
       filteredSchemes = filteredSchemes.filter((scheme) => {
-        const income = scheme.incomeLevel;
-        return (
-          income === "All" ||
-          (Array.isArray(income) &&
-            income.includes(sidebarFilters.incomeLevel)) ||
-          income === sidebarFilters.incomeLevel
-        );
+        const income =
+          typeof scheme.incomeLevel === "string"
+            ? scheme.incomeLevel
+            : scheme.incomeLevel?.[currentLang] || scheme.incomeLevel?.en || "";
+        return income === "All" || income === sidebarFilters.incomeLevel;
       });
     }
 
     // Profession filter
     if (sidebarFilters.profession && sidebarFilters.profession !== "All") {
       filteredSchemes = filteredSchemes.filter((scheme) => {
-        const profession = scheme.profession;
+        const profession =
+          typeof scheme.profession === "string"
+            ? scheme.profession
+            : scheme.profession?.[currentLang] || scheme.profession?.en || "";
         return (
-          safeString(profession).includes(safeString(sidebarFilters.profession)) ||
-          profession === "All"
+          profession === "All" ||
+          safeString(profession).includes(safeString(sidebarFilters.profession))
         );
       });
     }
@@ -102,10 +112,13 @@ const SchemeDisplay = ({ scheme }) => {
     // Location filter
     if (sidebarFilters.location && sidebarFilters.location !== "All") {
       filteredSchemes = filteredSchemes.filter((scheme) => {
-        const location = scheme.location;
+        const location =
+          typeof scheme.location === "string"
+            ? scheme.location
+            : scheme.location?.[currentLang] || scheme.location?.en || "";
         return (
-          safeString(location).includes(safeString(sidebarFilters.location)) ||
-          location === "All"
+          location === "All" ||
+          safeString(location).includes(safeString(sidebarFilters.location))
         );
       });
     }
@@ -115,25 +128,33 @@ const SchemeDisplay = ({ scheme }) => {
       sidebarFilters.implementedBy &&
       sidebarFilters.implementedBy !== "All"
     ) {
-      filteredSchemes = filteredSchemes.filter(
-        (scheme) =>
-          Array.isArray(scheme.implementedBy) &&
-          scheme.implementedBy.includes(sidebarFilters.implementedBy)
-      );
-    }
-
-    // Category filter
-    if (sidebarFilters.category && sidebarFilters.category.length > 0) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
-        const socialCategory = scheme.socialCategory || [];
-        return socialCategory.some((element) =>
-          sidebarFilters.category.includes(element)
+        const agency =
+          typeof scheme.implementingAgency === "string"
+            ? scheme.implementingAgency
+            : scheme.implementingAgency?.[currentLang] ||
+              scheme.implementingAgency?.en ||
+              "";
+        return safeString(agency).includes(
+          safeString(sidebarFilters.implementedBy)
         );
       });
     }
 
+    // Category / Social Category filter
+    if (sidebarFilters.category && sidebarFilters.category.length > 0) {
+      filteredSchemes = filteredSchemes.filter((scheme) => {
+        const categories = Array.isArray(scheme.socialCategory)
+          ? scheme.socialCategory
+          : scheme.socialCategory?.[currentLang] ||
+            scheme.socialCategory?.en ||
+            [];
+        return categories.some((cat) => sidebarFilters.category.includes(cat));
+      });
+    }
+
     return filteredSchemes;
-  }, [inputValue, sidebarFilters, currentScheme]);
+  }, [inputValue, sidebarFilters, currentScheme, currentLang]);
 
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
@@ -148,19 +169,31 @@ const SchemeDisplay = ({ scheme }) => {
               className="bg-muted/50 aspect-video rounded-xl p-5 gap-2.5 max-sm-w-[100vw]"
               key={eachScheme.id}
             >
-              <h1 className="text-xl mb-3">{eachScheme.name}</h1>
+              <h1 className="text-xl mb-3">
+                {typeof eachScheme.name === "string"
+                  ? eachScheme.name
+                  : eachScheme.name?.[currentLang]}
+              </h1>
 
               {eachScheme.location && (
                 <Badge
                   variant="secondary"
                   className="bg-blue-500 text-white dark:bg-blue-600 mt-3.5"
                 >
-                  <span>{eachScheme.location}</span>
+                  <span>
+                    {typeof eachScheme.location === "string"
+                      ? eachScheme.location
+                      : eachScheme.location?.[currentLang]}
+                  </span>
                 </Badge>
               )}
 
               {eachScheme.description && (
-                <p className="text-md pt-6 pb-6">{eachScheme.description}</p>
+                <p className="text-md pt-6 pb-6">
+                  {typeof eachScheme.description === "string"
+                    ? eachScheme.description
+                    : eachScheme.description?.[currentLang]}
+                </p>
               )}
 
               <div className="flex text-center gap-3 item-center mb-4">

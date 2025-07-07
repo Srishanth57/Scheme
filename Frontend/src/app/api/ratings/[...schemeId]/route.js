@@ -1,11 +1,11 @@
-import UserRating from "models/UserRating";
+import UserRating from "modals/UserRating";
 
 import connectDB from "lib/db";
-import CasteSchemes from "models/Caste";
-import ChildrenSchemes from "models/Children";
-import DisabledSchemes from "models/Disabled";
-import AgricultureSchemes from "models/Agriculture";
-import HealthCareSchemes from "models/HealthCare";
+import CasteSchemes from "modals/Caste";
+import ChildrenSchemes from "modals/Children";
+import DisabledSchemes from "modals/Disabled";
+import AgricultureSchemes from "modals/Agriculture";
+import HealthCareSchemes from "modals/HealthCare";
 import { getSchemeModel } from "lib/govtSchemeModel";
 
 const allowedGovCollections = [
