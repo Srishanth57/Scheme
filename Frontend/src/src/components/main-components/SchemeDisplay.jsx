@@ -14,7 +14,7 @@ const SchemeDisplay = ({ scheme }) => {
   const { inputValue, sidebarFilters } = useDashboardContext();
   const currentScheme = scheme;
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const currentLang = i18n.language || "en";
 
   console.log(currentScheme);
@@ -44,7 +44,10 @@ const SchemeDisplay = ({ scheme }) => {
     if (isSidebarFiltersEmptyOrDefault) return filteredSchemes;
 
     // Age Group filter
-    if (sidebarFilters.ageGroup && sidebarFilters.ageGroup !== "All") {
+    if (
+      sidebarFilters.ageGroup &&
+      sidebarFilters.ageGroup !== (currentLang === "en" ? "All" : "എല്ലാവരും")
+    ) {
       const filterAgeMin = parseInt(sidebarFilters.ageGroup.split("-")[0]);
       const filterAgeMax = sidebarFilters.ageGroup.includes("-")
         ? parseInt(sidebarFilters.ageGroup.split("-")[1])
@@ -56,7 +59,8 @@ const SchemeDisplay = ({ scheme }) => {
             ? scheme.ageGroup
             : scheme.ageGroup?.[currentLang] || scheme.ageGroup?.en || "";
 
-        if (ageGroup === "All") return true;
+        if (ageGroup === (currentLang === "en" ? "All" : "എല്ലാവരും"))
+          return true;
         if (!ageGroup) return false;
 
         if (ageGroup.includes("-")) {
@@ -74,51 +78,73 @@ const SchemeDisplay = ({ scheme }) => {
     }
 
     // Gender filter
-    if (sidebarFilters.gender && sidebarFilters.gender !== "All") {
+    if (
+      sidebarFilters.gender &&
+      sidebarFilters.gender !== (currentLang === "en" ? "All" : "എല്ലാവരും")
+    ) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
         const gender =
           typeof scheme.gender === "string"
             ? scheme.gender
             : scheme.gender?.[currentLang] || scheme.gender?.en || "";
-        return gender === "All" || gender === sidebarFilters.gender;
+        return (
+          gender === (currentLang === "en" ? "All" : "എല്ലാവരും") ||
+          gender === sidebarFilters.gender
+        );
       });
     }
 
     // Income Level filter
-    if (sidebarFilters.incomeLevel && sidebarFilters.incomeLevel !== "All") {
+    if (
+      sidebarFilters.incomeLevel &&
+      sidebarFilters.incomeLevel !==
+        (currentLang === "en" ? "All" : "എല്ലാവരും")
+    ) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
         const income =
           typeof scheme.incomeLevel === "string"
             ? scheme.incomeLevel
             : scheme.incomeLevel?.[currentLang] || scheme.incomeLevel?.en || "";
-        return income === "All" || income === sidebarFilters.incomeLevel;
+        return (
+          income === (currentLang === "en" ? "All" : "എല്ലാവരും") ||
+          income === sidebarFilters.incomeLevel
+        );
       });
     }
 
     // Profession filter
-    if (sidebarFilters.profession && sidebarFilters.profession !== "All") {
+    if (
+      sidebarFilters.profession &&
+      sidebarFilters.profession !== (currentLang === "en" ? "All" : "എല്ലാവരും")
+    ) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
         const profession =
           typeof scheme.profession === "string"
             ? scheme.profession
             : scheme.profession?.[currentLang] || scheme.profession?.en || "";
         return (
-          profession === "All" ||
+          profession === (currentLang === "en" ? "All" : "എല്ലാവരും") ||
           safeString(profession).includes(safeString(sidebarFilters.profession))
         );
       });
     }
 
     // Location filter
-    if (sidebarFilters.location && sidebarFilters.location !== "All") {
+    if (
+      sidebarFilters.location &&
+      sidebarFilters.location !== (currentLang === "en" ? "All" : "എല്ലാവരും")
+    ) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
         const location =
           typeof scheme.location === "string"
             ? scheme.location
             : scheme.location?.[currentLang] || scheme.location?.en || "";
+        const sidebarLocation = sidebarFilters.location.includes("/")
+          ? sidebarFilters.location.split("/")
+          : sidebarFilters.location;
         return (
-          location === "All" ||
-          safeString(location).includes(safeString(sidebarFilters.location))
+          location === (currentLang === "en" ? "All" : "എല്ലാവരും") ||
+          safeString(location).includes(safeString(sidebarLocation))
         );
       });
     }
@@ -126,7 +152,8 @@ const SchemeDisplay = ({ scheme }) => {
     // ImplementedBy filter
     if (
       sidebarFilters.implementedBy &&
-      sidebarFilters.implementedBy !== "All"
+      sidebarFilters.implementedBy !==
+        (currentLang === "en" ? "All" : "എല്ലാവരും")
     ) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
         const agency =
@@ -208,7 +235,10 @@ const SchemeDisplay = ({ scheme }) => {
                 </p>
               </div>
 
-              <DialogCloseButton scheme={eachScheme} />
+              <DialogCloseButton
+                scheme={eachScheme}
+                currentLang={currentLang}
+              />
             </li>
           ))}
         </ul>

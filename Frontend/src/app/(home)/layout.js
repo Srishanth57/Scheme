@@ -3,7 +3,7 @@ import "../globals.css";
 
 import { ThemeProvider } from "../../src/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
-import NavBar from "app/components/NavBar";
+import NavBar from "@/components/main-components/NavBar";
 
 import ClientBody from "./ClientBody";
 const geistSans = Geist({

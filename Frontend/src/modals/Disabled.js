@@ -1,21 +1,42 @@
 import mongoose from "mongoose";
 
-// Define the main DisabledScheme Schema
+const MultilingualString = {
+  en: { type: String, required: true },
+  ml: { type: String, required: true },
+};
+
+const MultilingualStringArray = {
+  en: { type: [String], required: true },
+  ml: { type: [String], required: true },
+};
+
 const DisabledSchemeSchema = new mongoose.Schema(
   {
-    id: { type: String, required: true, unique: true },
-    name: { type: String, required: true },
-    description: { type: String, required: true },
-    category: { type: String, required: true },
-    targetAudience: { type: String, required: true },
-    implementingAgency: { type: String, required: true },
-    ageGroup: { type: String, required: true },
-    gender: { type: String, required: true },
-    incomeLevel: { type: String, required: true },
-    location: { type: String, required: true },
-    link: { type: String, required: false }, // Link is optional as per your data
-    keywords: { type: [String], required: true }, // Array of strings
-    profession: { type: String, required: true },
+    id: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    name: MultilingualString,
+    description: MultilingualString,
+    targetAudience: MultilingualString,
+    benefits: MultilingualString,
+    category: MultilingualString,
+    implementingAgency: MultilingualString,
+    eligibility: MultilingualString,
+    applicationProcess: MultilingualString,
+    documentsRequired: MultilingualString,
+    ageGroup: MultilingualString,
+    gender: MultilingualString,
+    incomeLevel: MultilingualString,
+    profession: MultilingualString,
+    location: MultilingualString,
+    socialCategory: MultilingualStringArray,
+    keywords: MultilingualStringArray,
+    link: {
+      type: String,
+      required: true,
+    },
     ratings: {
       avgRating: {
         type: Number,
@@ -27,16 +48,10 @@ const DisabledSchemeSchema = new mongoose.Schema(
       },
     },
   },
-  {
-    collection: "DisabledSchemes", // Explicitly set the collection name
-    timestamps: true, // Adds createdAt and updatedAt fields automatically
-  }
+  { collection: "DisabledSchemesNew", timestamps: true }
 );
 
-// Create a Mongoose Model from the Schema
-// This prevents Mongoose from recompiling the model if it already exists
 const DisabledSchemes =
-  mongoose.models.DisabledSchemes ||
-  mongoose.model("DisabledSchemes", DisabledSchemeSchema);
-
+  mongoose.models.DisabledSchemesNew ||
+  mongoose.model("DisabledSchemesNew", DisabledSchemeSchema);
 export default DisabledSchemes;

@@ -4,11 +4,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import React, { createContext, useContext, useState } from "react";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import { AppSidebar } from "app/components/app-sidebar";
+import { AppSidebar } from "@/components/main-components/app-sidebar";
 
-import Header from "app/components/Header";
+import Header from "@/components/main-components/Header";
 import "../globals.css";
-import NavBar from "app/components/NavBar";
+import NavBar from "@/components/main-components/NavBar";
+import { useTranslation } from "next-i18next";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,7 +30,8 @@ export default function RootLayout({ children }) {
   const [sidebarFilters, setSidebarFilters] = useState(null);
   const [inputValue, setInputValue] = useState("");
   const [selectedTab, setSelectedTab] = useState("agriculture");
-
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language || "en";
   const handleInputValue = (value) => {
     setInputValue(value);
   };
@@ -37,9 +39,9 @@ export default function RootLayout({ children }) {
     setSidebarFilters(newFiltersFromSidebar);
   };
 
-  const handleNavMenuSelection =(value) =>{
-    setSelectedTab(value)
-  }
+  const handleNavMenuSelection = (value) => {
+    setSelectedTab(value);
+  };
   const contextValue = {
     setSelectedTab,
     selectedTab,
@@ -47,6 +49,7 @@ export default function RootLayout({ children }) {
     inputValue,
     handleNavMenuSelection,
     handleSidebarFilterChange,
+    currentLang,
   };
   return (
     <ClerkProvider>

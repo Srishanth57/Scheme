@@ -6,24 +6,36 @@ export const agricultureScheme = [
       ml: "പിഎം-കിസാൻ",
     },
     description: {
-      en: "₹6,000 annual income support",
-      ml: "പ്രതിവർഷം ₹6,000 വരുമാന പിന്തുണ",
+      en: "₹6,000 annual income support for eligible farmer families.",
+      ml: "അർഹരായ കർഷക കുടുംബങ്ങൾക്ക് പ്രതിവർഷം ₹6,000 വരുമാന പിന്തുണ.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "Small and marginal farmers",
-      ml: "ചെറുകിട നാമമാത്ര കർഷകർ",
+      en: "All landholding farmer families",
+      ml: "എല്ലാ ഭൂവുടമ കർഷക കുടുംബങ്ങളും",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Ministry of Agriculture & Farmers Welfare, Government of India",
+      ml: "കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ",
     },
     benefits: {
-      en: "Direct Benefit Transfer (₹2,000 in 3 installments)",
-      ml: "നേരിട്ടുള്ള ആനുകൂല്യ കൈമാറ്റം (₹2,000 മൂന്ന് ഗഡുക്കളായി)",
+      en: "Direct Benefit Transfer of ₹6,000 per year in three equal installments of ₹2,000 each.",
+      ml: "പ്രതിവർഷം ₹6,000 നേരിട്ടുള്ള ആനുകൂല്യ കൈമാറ്റം (ഓരോന്നും ₹2,000 വീതമുള്ള മൂന്ന് ഗഡുക്കളായി).",
+    },
+    eligibility: {
+      en: "All landholding farmer families with cultivable land, subject to certain exclusion criteria.",
+      ml: "കൃഷി ചെയ്യാൻ യോഗ്യമായ ഭൂമിയുള്ള എല്ലാ കർഷക കുടുംബങ്ങൾക്കും, ചില ഒഴിവാക്കലുകൾക്ക് വിധേയമായി.",
+    },
+    documentsRequired: {
+      en: "Aadhaar Card, Bank Account details, Landholding documents, Citizenship Certificate.",
+      ml: "ആധാർ കാർഡ്, ബാങ്ക് അക്കൗണ്ട് വിവരങ്ങൾ, ഭൂമിയുടെ രേഖകൾ, പൗരത്വ സർട്ടിഫിക്കറ്റ്.",
+    },
+    applicationProcess: {
+      en: "Apply online through pmkisan.gov.in or through local Common Service Centres (CSCs).",
+      ml: "pmkisan.gov.in വഴി ഓൺലൈനായി അപേക്ഷിക്കുക അല്ലെങ്കിൽ അടുത്തുള്ള പൊതു സേവന കേന്ദ്രങ്ങൾ (CSC-കൾ) വഴി.",
     },
     ageGroup: {
       en: "All",
@@ -35,7 +47,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -55,8 +67,20 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["income support", "farmers", "financial aid", "central government"],
-      ml: ["വരുമാന പിന്തുണ", "കർഷകർ", "സാമ്പത്തിക സഹായം", "കേന്ദ്ര സർക്കാർ"],
+      en: [
+        "income support",
+        "farmers",
+        "financial aid",
+        "central government",
+        "PM KISAN",
+      ],
+      ml: [
+        "വരുമാന പിന്തുണ",
+        "കർഷകർ",
+        "സാമ്പത്തിക സഹായം",
+        "കേന്ദ്ര സർക്കാർ",
+        "പിഎം കിസാൻ",
+      ],
     },
     link: "https://pmkisan.gov.in/",
     ratings: { avgRating: 0, count: 0 },
@@ -68,24 +92,36 @@ export const agricultureScheme = [
       ml: "പ്രധാനമന്ത്രി ഫസൽ ബീമ യോജന (PMFBY)",
     },
     description: {
-      en: "Crop insurance against natural calamities",
-      ml: "പ്രകൃതി ദുരന്തങ്ങൾക്കെതിരായ വിള ഇൻഷുറൻസ്",
+      en: "Provides comprehensive insurance cover against failure of crops, thereby helping in stabilizing the income of farmers.",
+      ml: "വിളനാശത്തിനെതിരെ സമഗ്രമായ ഇൻഷുറൻസ് പരിരക്ഷ നൽകി കർഷകരുടെ വരുമാനം സ്ഥിരപ്പെടുത്താൻ സഹായിക്കുന്നു.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "All farmers",
-      ml: "എല്ലാ കർഷകരും",
+      en: "Farmers who have taken crop loans, and those who opt voluntarily for the scheme.",
+      ml: "വിളവായ്പ എടുത്ത കർഷകർക്കും സ്വമേധയാ പദ്ധതി തിരഞ്ഞെടുക്കുന്നവർക്കും.",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Ministry of Agriculture & Farmers Welfare, Government of India",
+      ml: "കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ",
     },
     benefits: {
-      en: "Insurance coverage, premium subsidy",
-      ml: "ഇൻഷുറൻസ് പരിരക്ഷ, പ്രീമിയം സബ്സിഡി",
+      en: "Financial support to farmers suffering crop loss/damage arising out of unforeseen events. Covers pre-sowing to post-harvest losses.",
+      ml: "അപ്രതീക്ഷിത സംഭവങ്ങളാൽ വിളനാശമോ കേടുപാടുകളോ സംഭവിക്കുന്ന കർഷകർക്ക് സാമ്പത്തിക സഹായം. വിതയ്ക്കുന്നതിന് മുൻപുള്ള കാലഘട്ടം മുതൽ വിളവെടുപ്പിന് ശേഷമുള്ള നഷ്ടങ്ങൾ വരെ ഉൾപ്പെടുന്നു.",
+    },
+    eligibility: {
+      en: "All farmers growing notified crops in notified areas. Compulsory for loanee farmers; voluntary for others.",
+      ml: "അറിയിപ്പ് നൽകിയ പ്രദേശങ്ങളിൽ വിജ്ഞാപനം ചെയ്ത വിളകൾ കൃഷി ചെയ്യുന്ന എല്ലാ കർഷകർക്കും. വായ്പയെടുത്ത കർഷകർക്ക് നിർബന്ധമാണ്; മറ്റുള്ളവർക്ക് സ്വമേധയാ തിരഞ്ഞെടുക്കാം.",
+    },
+    documentsRequired: {
+      en: "Identity proof, Address proof, Land records, Bank account details, Sowing certificate.",
+      ml: "തിരിച്ചറിയൽ തെളിവ്, വിലാസ തെളിവ്, ഭൂമിയുടെ രേഖകൾ, ബാങ്ക് അക്കൗണ്ട് വിവരങ്ങൾ, വിതച്ചതിന്‍റെ സർട്ടിഫിക്കറ്റ്.",
+    },
+    applicationProcess: {
+      en: "Through banks, Common Service Centres (CSCs), or directly through the PMFBY portal.",
+      ml: "ബാങ്കുകൾ വഴിയോ, പൊതു സേവന കേന്ദ്രങ്ങൾ (CSC-കൾ) വഴിയോ, അല്ലെങ്കിൽ PMFBY പോർട്ടൽ വഴിയോ നേരിട്ട് അപേക്ഷിക്കാം.",
     },
     ageGroup: {
       en: "All",
@@ -97,7 +133,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -122,8 +158,15 @@ export const agricultureScheme = [
         "farmers",
         "natural calamities",
         "central government",
+        "PMFBY",
       ],
-      ml: ["വിള ഇൻഷുറൻസ്", "കർഷകർ", "പ്രകൃതി ദുരന്തങ്ങൾ", "കേന്ദ്ര സർക്കാർ"],
+      ml: [
+        "വിള ഇൻഷുറൻസ്",
+        "കർഷകർ",
+        "പ്രകൃതി ദുരന്തങ്ങൾ",
+        "കേന്ദ്ര സർക്കാർ",
+        "പിഎംഎഫ്ബിവൈ",
+      ],
     },
     link: "https://pmfby.gov.in/",
     ratings: { avgRating: 0, count: 0 },
@@ -135,24 +178,36 @@ export const agricultureScheme = [
       ml: "കിസാൻ ക്രെഡിറ്റ് കാർഡ് (KCC)",
     },
     description: {
-      en: "Access to affordable credit",
-      ml: "കുറഞ്ഞ നിരക്കിൽ വായ്പ ലഭ്യമാക്കുന്നു",
+      en: "Provides farmers with timely and adequate credit for their cultivation needs and other incidental expenses.",
+      ml: "കർഷകർക്ക് അവരുടെ കൃഷി ആവശ്യങ്ങൾക്കും മറ്റ് അനുബന്ധ ചെലവുകൾക്കും സമയബന്ധിതവും മതിയായതുമായ വായ്പ നൽകുന്നു.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "All farmers",
-      ml: "എല്ലാ കർഷകരും",
+      en: "Farmers - individual/joint cultivators who are owner cultivators, tenant farmers, oral lessees & sharecroppers, SHGs/Joint Liability Groups of farmers.",
+      ml: "കർഷകർ - വ്യക്തിഗത/സംയുക്ത കർഷകർ, ഭൂവുടമ കർഷകർ, പാട്ടക്കർഷകർ, വാക്കാൽ പാട്ടത്തിനെടുത്തവർ, അടിയാന്മാർ, കർഷകരുടെ സ്വയം സഹായ സംഘങ്ങൾ/സംയുക്ത ബാധ്യതാ ഗ്രൂപ്പുകൾ.",
     },
     implementingAgency: {
-      en: "NABARD / Commercial Banks",
-      ml: "നബാർഡ് / വാണിജ്യ ബാങ്കുകൾ",
+      en: "NABARD (National Bank for Agriculture and Rural Development)",
+      ml: "നബാർഡ് (നാഷണൽ ബാങ്ക് ഫോർ അഗ്രികൾച്ചർ ആൻഡ് റൂറൽ ഡെവലപ്മെന്റ്)",
     },
     benefits: {
-      en: "Credit limit for crops and allied activities",
-      ml: "വിളകൾക്കും അനുബന്ധ പ്രവർത്തനങ്ങൾക്കും വായ്പാ പരിധി",
+      en: "Access to affordable and flexible credit, cash credit and term loan facilities.",
+      ml: "കുറഞ്ഞ നിരക്കിലുള്ളതും വഴക്കമുള്ളതുമായ വായ്പ, ക്യാഷ് ക്രെഡിറ്റ്, ടേം ലോൺ സൗകര്യങ്ങൾ.",
+    },
+    eligibility: {
+      en: "Farmers - individual/joint cultivators who are owner cultivators, tenant farmers, oral lessees & sharecroppers, SHGs/Joint Liability Groups of farmers.",
+      ml: "കർഷകർ - വ്യക്തിഗത/സംയുക്ത കർഷകർ, ഭൂവുടമ കർഷകർ, പാട്ടക്കർഷകർ, വാക്കാൽ പാട്ടത്തിനെടുത്തവർ, അടിയാന്മാർ, കർഷകരുടെ സ്വയം സഹായ സംഘങ്ങൾ/സംയുക്ത ബാധ്യതാ ഗ്രൂപ്പുകൾ.",
+    },
+    documentsRequired: {
+      en: "Identity proof, Address proof, Land records, Passport size photograph.",
+      ml: "തിരിച്ചറിയൽ തെളിവ്, വിലാസ തെളിവ്, ഭൂമിയുടെ രേഖകൾ, പാസ്പോർട്ട് വലുപ്പത്തിലുള്ള ഫോട്ടോ.",
+    },
+    applicationProcess: {
+      en: "Apply through Commercial Banks, Regional Rural Banks (RRBs), Small Finance Banks (SFBs), and Cooperative Banks.",
+      ml: "വാണിജ്യ ബാങ്കുകൾ, റീജിയണൽ റൂറൽ ബാങ്കുകൾ (RRBs), സ്മോൾ ഫിനാൻസ് ബാങ്കുകൾ (SFBs), സഹകരണ ബാങ്കുകൾ എന്നിവ വഴി അപേക്ഷിക്കുക.",
     },
     ageGroup: {
       en: "All",
@@ -164,7 +219,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -184,8 +239,8 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["credit", "farmers", "financial assistance", "NABARD"],
-      ml: ["വായ്പ", "കർഷകർ", "സാമ്പത്തിക സഹായം", "നബാർഡ്"],
+      en: ["credit", "farmers", "financial assistance", "NABARD", "KCC"],
+      ml: ["വായ്പ", "കർഷകർ", "സാമ്പത്തിക സഹായം", "നബാർഡ്", "കെസിസി"],
     },
     link: "https://www.unionbankofindia.co.in/en/blog/Digital-Kisan-Credit-Card-KCC",
     ratings: { avgRating: 0, count: 0 },
@@ -197,8 +252,8 @@ export const agricultureScheme = [
       ml: "മണ്ണ് ആരോഗ്യ കാർഡ് പദ്ധതി",
     },
     description: {
-      en: "Promote balanced fertilizer use",
-      ml: "സമീകൃത വളപ്രയോഗം പ്രോത്സാഹിപ്പിക്കുന്നു",
+      en: "A scheme to promote balanced fertilization by providing farmers with soil health cards.",
+      ml: "കർഷകർക്ക് മണ്ണ് ആരോഗ്യ കാർഡുകൾ നൽകി സന്തുലിതമായ വളപ്രയോഗം പ്രോത്സാഹിപ്പിക്കുന്നതിനുള്ള ഒരു പദ്ധതി.",
     },
     category: {
       en: "Agriculture",
@@ -209,12 +264,24 @@ export const agricultureScheme = [
       ml: "കർഷകർ",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Ministry of Agriculture & Farmers Welfare, Government of India",
+      ml: "കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ",
     },
     benefits: {
-      en: "Soil testing and recommendations",
-      ml: "മണ്ണ് പരിശോധനയും ശുപാർശകളും",
+      en: "Soil testing, individualized fertilizer recommendations, and improved soil fertility.",
+      ml: "മണ്ണ് പരിശോധന, വ്യക്തിഗത വളം ശുപാർശകൾ, മെച്ചപ്പെട്ട മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത.",
+    },
+    eligibility: {
+      en: "All farmers cultivating land.",
+      ml: "ഭൂമിയിൽ കൃഷി ചെയ്യുന്ന എല്ലാ കർഷകരും.",
+    },
+    documentsRequired: {
+      en: "Land records, Identity proof.",
+      ml: "ഭൂമിയുടെ രേഖകൾ, തിരിച്ചറിയൽ തെളിവ്.",
+    },
+    applicationProcess: {
+      en: "Farmers can approach local Krishi Vigyan Kendras (KVKs), agricultural departments, or common service centers for soil testing.",
+      ml: "കർഷകർക്ക് മണ്ണ് പരിശോധനയ്ക്കായി അടുത്തുള്ള കൃഷി വിജ്ഞാൻ കേന്ദ്രങ്ങളെ (KVKs), കൃഷി വകുപ്പുകളെ, അല്ലെങ്കിൽ പൊതു സേവന കേന്ദ്രങ്ങളെ സമീപിക്കാം.",
     },
     ageGroup: {
       en: "All",
@@ -226,7 +293,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -246,8 +313,14 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["soil health", "fertilizer", "farmers", "central government"],
-      ml: ["മണ്ണ് ആരോഗ്യം", "വളം", "കർഷകർ", "കേന്ദ്ര സർക്കാർ"],
+      en: [
+        "soil health",
+        "fertilizer",
+        "farmers",
+        "central government",
+        "soil testing",
+      ],
+      ml: ["മണ്ണ് ആരോഗ്യം", "വളം", "കർഷകർ", "കേന്ദ്ര സർക്കാർ", "മണ്ണ് പരിശോധന"],
     },
     link: "https://soilhealth.dac.gov.in/",
     ratings: { avgRating: 0, count: 0 },
@@ -259,24 +332,36 @@ export const agricultureScheme = [
       ml: "പരമ്പരാഗത് കൃഷി വികാസ് യോജന (PKVY)",
     },
     description: {
-      en: "Promotion of organic farming practices",
-      ml: "ജൈവകൃഷി രീതികൾ പ്രോത്സാഹിപ്പിക്കുന്നു",
+      en: "Encourages organic farming through a cluster approach and Participatory Guarantee Systems (PGS) of certification.",
+      ml: "ക്ലസ്റ്റർ സമീപനത്തിലൂടെയും പങ്കാളിത്ത ഉറപ്പ് സംവിധാനങ്ങളിലൂടെയും (PGS) ജൈവകൃഷി പ്രോത്സാഹിപ്പിക്കുന്നു.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "Farmers interested in organic farming",
-      ml: "ജൈവകൃഷിയിൽ താൽപ്പര്യമുള്ള കർഷകർ",
+      en: "Farmers interested in organic farming.",
+      ml: "ജൈവകൃഷിയിൽ താൽപ്പര്യമുള്ള കർഷകർ.",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Ministry of Agriculture & Farmers Welfare, Government of India",
+      ml: "കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ",
     },
     benefits: {
-      en: "Cluster-based support, certification assistance",
-      ml: "ക്ലസ്റ്റർ അടിസ്ഥാനമാക്കിയുള്ള പിന്തുണ, സർട്ടിഫിക്കേഷൻ സഹായം",
+      en: "Financial assistance for organic input production, seed procurement, and marketing.",
+      ml: "ജൈവ ഉൽപന്ന ഉൽപാദനം, വിത്ത് സംഭരണം, വിപണനം എന്നിവയ്ക്ക് സാമ്പത്തിക സഹായം.",
+    },
+    eligibility: {
+      en: "Farmers willing to undertake organic farming in clusters.",
+      ml: "ക്ലസ്റ്ററുകളായി ജൈവകൃഷി ചെയ്യാൻ തയ്യാറുള്ള കർഷകർ.",
+    },
+    documentsRequired: {
+      en: "Land records, Group registration details (for clusters), Identity proof.",
+      ml: "ഭൂമിയുടെ രേഖകൾ, ഗ്രൂപ്പ് രജിസ്ട്രേഷൻ വിവരങ്ങൾ (ക്ലസ്റ്ററുകൾക്ക്), തിരിച്ചറിയൽ തെളിവ്.",
+    },
+    applicationProcess: {
+      en: "Through State Agriculture Departments or Farmer Producer Organizations (FPOs).",
+      ml: "സംസ്ഥാന കൃഷി വകുപ്പുകൾ വഴിയോ കർഷക ഉൽപാദക സംഘടനകൾ (FPO-കൾ) വഴിയോ.",
     },
     ageGroup: {
       en: "All",
@@ -288,7 +373,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -313,8 +398,9 @@ export const agricultureScheme = [
         "sustainable agriculture",
         "farmers",
         "central government",
+        "PKVY",
       ],
-      ml: ["ജൈവകൃഷി", "സുസ്ഥിര കൃഷി", "കർഷകർ", "കേന്ദ്ര സർക്കാർ"],
+      ml: ["ജൈവകൃഷി", "സുസ്ഥിര കൃഷി", "കർഷകർ", "കേന്ദ്ര സർക്കാർ", "പികെവിവൈ"],
     },
     link: "https://nconf.dac.gov.in/SchemaGuidelines",
     ratings: { avgRating: 0, count: 0 },
@@ -322,28 +408,40 @@ export const agricultureScheme = [
   {
     id: "agriculture6",
     name: {
-      en: "MIDH (Horticulture Mission)",
-      ml: "MIDH (ഹോർട്ടികൾച്ചർ മിഷൻ)",
+      en: "Mission for Integrated Development of Horticulture (MIDH)",
+      ml: "സംയോജിത ഹോർട്ടികൾച്ചർ വികസനത്തിനുള്ള മിഷൻ (MIDH)",
     },
     description: {
-      en: "Development of fruits, vegetables, spices",
-      ml: "പഴങ്ങൾ, പച്ചക്കറികൾ, സുഗന്ധവ്യഞ്ജനങ്ങൾ എന്നിവയുടെ വികസനം",
+      en: "A centrally sponsored scheme for the holistic growth of the horticulture sector.",
+      ml: "ഹോർട്ടികൾച്ചർ മേഖലയുടെ സമഗ്ര വളർച്ചയ്ക്കായുള്ള കേന്ദ്രാവിഷ്കൃത പദ്ധതി.",
     },
     category: {
       en: "Horticulture",
       ml: "ഹോർട്ടികൾച്ചർ",
     },
     targetAudience: {
-      en: "Horticulture farmers",
-      ml: "ഹോർട്ടികൾച്ചർ കർഷകർ",
+      en: "Farmers, farmer groups, cooperatives, Self Help Groups (SHGs), Farmer Producer Organizations (FPOs).",
+      ml: "കർഷകർ, കർഷക സംഘങ്ങൾ, സഹകരണ സംഘങ്ങൾ, സ്വയം സഹായ സംഘങ്ങൾ (SHGs), കർഷക ഉൽപാദക സംഘടനകൾ (FPOs).",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Ministry of Agriculture & Farmers Welfare, Government of India",
+      ml: "കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ",
     },
     benefits: {
-      en: "Financial assistance, training, market linkages",
-      ml: "സാമ്പത്തിക സഹായം, പരിശീലനം, വിപണി ബന്ധങ്ങൾ",
+      en: "Financial assistance for area expansion, production of quality planting material, protected cultivation, post-harvest management, and marketing.",
+      ml: "വിസ്തൃതി വർദ്ധിപ്പിക്കൽ, ഗുണമേന്മയുള്ള നടീൽ വസ്തുക്കളുടെ ഉൽപാദനം, സംരക്ഷിത കൃഷി, വിളവെടുപ്പിന് ശേഷമുള്ള പരിപാലനം, വിപണനം എന്നിവയ്ക്ക് സാമ്പത്തിക സഹായം.",
+    },
+    eligibility: {
+      en: "Individuals, FPOs, Cooperatives involved in horticulture activities.",
+      ml: "ഹോർട്ടികൾച്ചർ പ്രവർത്തനങ്ങളിൽ ഏർപ്പെട്ടിരിക്കുന്ന വ്യക്തികൾ, FPO-കൾ, സഹകരണ സംഘങ്ങൾ.",
+    },
+    documentsRequired: {
+      en: "Land records, Identity proof, Project proposal (for certain components).",
+      ml: "ഭൂമിയുടെ രേഖകൾ, തിരിച്ചറിയൽ തെളിവ്, പ്രോജക്ട് പ്രൊപ്പോസൽ (ചില ഘടകങ്ങൾക്ക്).",
+    },
+    applicationProcess: {
+      en: "Through State Horticulture Missions/Departments.",
+      ml: "സംസ്ഥാന ഹോർട്ടികൾച്ചർ മിഷനുകൾ/വകുപ്പുകൾ വഴി.",
     },
     ageGroup: {
       en: "All",
@@ -355,11 +453,11 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
-      en: "Horticulture Farmer",
-      ml: "ഹോർട്ടികൾച്ചർ കർഷകൻ",
+      en: "Farmer",
+      ml: "കർഷകൻ",
     },
     location: {
       en: "National",
@@ -381,6 +479,7 @@ export const agricultureScheme = [
         "vegetables",
         "spices",
         "central government",
+        "MIDH",
       ],
       ml: [
         "ഹോർട്ടികൾച്ചർ",
@@ -388,6 +487,7 @@ export const agricultureScheme = [
         "പച്ചക്കറികൾ",
         "സുഗന്ധവ്യഞ്ജനങ്ങൾ",
         "കേന്ദ്ര സർക്കാർ",
+        "എംഐഡിഎച്ച്",
       ],
     },
     link: "https://shm.kerala.gov.in/scheme-details/",
@@ -396,28 +496,40 @@ export const agricultureScheme = [
   {
     id: "agriculture7",
     name: {
-      en: "Subhiksha Keralam",
+      en: "Subhiksha Keralam (സമൃദ്ധ കേരളം)",
       ml: "സുഭിക്ഷ കേരളം",
     },
     description: {
-      en: "Promote food security through local cultivation",
-      ml: "പ്രാദേശിക കൃഷിയിലൂടെ ഭക്ഷ്യസുരക്ഷ പ്രോത്സാഹിപ്പിക്കുന്നു",
+      en: "A state scheme to promote food security and self-sufficiency in agriculture by encouraging local cultivation.",
+      ml: "പ്രാദേശിക കൃഷി പ്രോത്സാഹിപ്പിച്ച് ഭക്ഷ്യസുരക്ഷയും കാർഷിക സ്വയംപര്യാപ്തതയും ലക്ഷ്യമിടുന്ന സംസ്ഥാന പദ്ധതി.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "All farming households",
-      ml: "എല്ലാ കാർഷിക കുടുംബങ്ങളും",
+      en: "All farming households, groups, and local self-governments in Kerala.",
+      ml: "കേരളത്തിലെ എല്ലാ കാർഷിക കുടുംബങ്ങളും, ഗ്രൂപ്പുകളും, തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളും.",
     },
     implementingAgency: {
-      en: "Govt. of Kerala",
-      ml: "കേരള സർക്കാർ",
+      en: "Department of Agriculture Development and Farmers' Welfare, Government of Kerala",
+      ml: "കേരള സർക്കാർ, കൃഷി വികസന കർഷക ക്ഷേമ വകുപ്പ്",
     },
     benefits: {
-      en: "Subsidies for inputs, local food crop promotion",
-      ml: "ഇൻപുട്ടുകൾക്ക് സബ്സിഡി, പ്രാദേശിക ഭക്ഷ്യവിള പ്രോത്സാഹനം",
+      en: "Subsidies for inputs, support for various agricultural activities, and promotion of local food crops.",
+      ml: "അടിസ്ഥാന സൗകര്യങ്ങൾക്ക് സബ്സിഡികൾ, വിവിധ കാർഷിക പ്രവർത്തനങ്ങൾക്കുള്ള പിന്തുണ, പ്രാദേശിക ഭക്ഷ്യവിള പ്രോത്സാഹനം.",
+    },
+    eligibility: {
+      en: "Individuals, groups, and local bodies undertaking agricultural activities in Kerala.",
+      ml: "കേരളത്തിൽ കാർഷിക പ്രവർത്തനങ്ങൾ നടത്തുന്ന വ്യക്തികൾ, ഗ്രൂപ്പുകൾ, തദ്ദേശ സ്ഥാപനങ്ങൾ.",
+    },
+    documentsRequired: {
+      en: "Identity proof, Land details, Application form.",
+      ml: "തിരിച്ചറിയൽ തെളിവ്, ഭൂമിയുടെ വിവരങ്ങൾ, അപേക്ഷാ ഫോം.",
+    },
+    applicationProcess: {
+      en: "Through Krishi Bhavans and local self-government institutions.",
+      ml: "കൃഷി ഭവനുകൾ വഴിയും തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ വഴിയും.",
     },
     ageGroup: {
       en: "All",
@@ -429,7 +541,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -454,8 +566,15 @@ export const agricultureScheme = [
         "local cultivation",
         "Kerala government",
         "subsidies",
+        "self-sufficiency",
       ],
-      ml: ["ഭക്ഷ്യസുരക്ഷ", "പ്രാദേശിക കൃഷി", "കേരള സർക്കാർ", "സബ്സിഡികൾ"],
+      ml: [
+        "ഭക്ഷ്യസുരക്ഷ",
+        "പ്രാദേശിക കൃഷി",
+        "കേരള സർക്കാർ",
+        "സബ്സിഡികൾ",
+        "സ്വയംപര്യാപ്തത",
+      ],
     },
     link: "https://kerala.gov.in/schemes-programmes",
     ratings: { avgRating: 0, count: 0 },
@@ -467,24 +586,36 @@ export const agricultureScheme = [
       ml: "ഫാം മെക്കനൈസേഷൻ പദ്ധതി",
     },
     description: {
-      en: "Promote modern tools and reduce labor dependency",
-      ml: "ആധുനിക ഉപകരണങ്ങൾ പ്രോത്സാഹിപ്പിക്കുകയും തൊഴിലാളി ആശ്രയത്വം കുറയ്ക്കുകയും ചെയ്യുന്നു",
+      en: "Aims to promote the use of modern agricultural tools and machinery to reduce labor dependency and increase efficiency.",
+      ml: "തൊഴിലാളി ആശ്രയത്വം കുറയ്ക്കാനും കാര്യക്ഷമത വർദ്ധിപ്പിക്കാനും ആധുനിക കാർഷിക ഉപകരണങ്ങളുടെയും യന്ത്രങ്ങളുടെയും ഉപയോഗം പ്രോത്സാഹിപ്പിക്കുന്നു.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "Small & medium-scale farmers",
-      ml: "ചെറുകിട, ഇടത്തരം കർഷകർ",
+      en: "Farmers, Self Help Groups (SHGs), Farmer Producer Organizations (FPOs).",
+      ml: "കർഷകർ, സ്വയം സഹായ സംഘങ്ങൾ (SHGs), കർഷക ഉൽപാദക സംഘടനകൾ (FPOs).",
     },
     implementingAgency: {
-      en: "Dept. of Agriculture, Kerala",
-      ml: "കൃഷി വകുപ്പ്, കേരളം",
+      en: "Department of Agriculture Development and Farmers' Welfare, Government of Kerala",
+      ml: "കേരള സർക്കാർ, കൃഷി വികസന കർഷക ക്ഷേമ വകുപ്പ്",
     },
     benefits: {
-      en: "Subsidy on farm equipment and machinery",
-      ml: "കാർഷിക ഉപകരണങ്ങൾക്കും യന്ത്രങ്ങൾക്കും സബ്സിഡി",
+      en: "Subsidy on the purchase of various farm equipment and machinery.",
+      ml: "വിവിധ കാർഷിക ഉപകരണങ്ങൾക്കും യന്ത്രങ്ങൾക്കും സബ്സിഡി.",
+    },
+    eligibility: {
+      en: "Farmers or groups of farmers meeting specific criteria for landholding and machinery type.",
+      ml: "ഭൂമി കൈവശം വെക്കുന്നതിനും യന്ത്രസാമഗ്രികളുടെ തരത്തിനും നിർദ്ദിഷ്ട മാനദണ്ഡങ്ങൾ പാലിക്കുന്ന കർഷകർ അല്ലെങ്കിൽ കർഷകരുടെ ഗ്രൂപ്പുകൾ.",
+    },
+    documentsRequired: {
+      en: "Identity proof, Land records, Quotation for machinery, Bank details.",
+      ml: "തിരിച്ചറിയൽ തെളിവ്, ഭൂമിയുടെ രേഖകൾ, യന്ത്രസാമഗ്രികളുടെ ക്വട്ടേഷൻ, ബാങ്ക് വിവരങ്ങൾ.",
+    },
+    applicationProcess: {
+      en: "Through District Agricultural Offices and Krishi Bhavans.",
+      ml: "ജില്ലാ കൃഷി ഓഫീസുകൾ വഴിയും കൃഷി ഭവനുകൾ വഴിയും.",
     },
     ageGroup: {
       en: "All",
@@ -496,7 +627,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -516,10 +647,22 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["farm equipment", "mechanization", "subsidy", "Kerala government"],
-      ml: ["കാർഷിക ഉപകരണങ്ങൾ", "യന്ത്രവൽക്കരണം", "സബ്സിഡി", "കേരള സർക്കാർ"],
+      en: [
+        "farm equipment",
+        "mechanization",
+        "subsidy",
+        "Kerala government",
+        "agricultural machinery",
+      ],
+      ml: [
+        "കാർഷിക ഉപകരണങ്ങൾ",
+        "യന്ത്രവൽക്കരണം",
+        "സബ്സിഡി",
+        "കേരള സർക്കാർ",
+        "കാർഷിക യന്ത്രങ്ങൾ",
+      ],
     },
-    link: "https://ksheerasree.kerala.gov.in/scheme/details/8",
+    link: "https://ksheerasree.kerala.gov.in/scheme/details/8", // This link seems to be for a dairy scheme. A more relevant link for general farm mechanization might be needed.
     ratings: { avgRating: 0, count: 0 },
   },
   {
@@ -529,36 +672,48 @@ export const agricultureScheme = [
       ml: "കർഷക ക്ഷേമനിധി ബോർഡ്",
     },
     description: {
-      en: "Pension and welfare benefits",
-      ml: "പെൻഷനും ക്ഷേമ ആനുകൂല്യങ്ങളും",
+      en: "Provides social security and welfare benefits, including pension, to farmers in Kerala.",
+      ml: "കേരളത്തിലെ കർഷകർക്ക് പെൻഷൻ ഉൾപ്പെടെയുള്ള സാമൂഹിക സുരക്ഷയും ക്ഷേമ ആനുകൂല്യങ്ങളും നൽകുന്നു.",
     },
     category: {
       en: "Welfare",
       ml: "ക്ഷേമം",
     },
     targetAudience: {
-      en: "Registered farmers",
-      ml: "രജിസ്റ്റർ ചെയ്ത കർഷകർ",
+      en: "Registered farmers in Kerala.",
+      ml: "കേരളത്തിലെ രജിസ്റ്റർ ചെയ്ത കർഷകർ.",
     },
     implementingAgency: {
-      en: "Govt. of Kerala",
-      ml: "കേരള സർക്കാർ",
+      en: "Kerala State Farmers Welfare Fund Board",
+      ml: "കേരള സംസ്ഥാന കർഷക ക്ഷേമനിധി ബോർഡ്",
     },
     benefits: {
-      en: "Monthly pension, accidental death benefits",
-      ml: "പ്രതിമാസ പെൻഷൻ, അപകട മരണാനുകൂല്യങ്ങൾ",
+      en: "Monthly pension, family pension, medical assistance, accidental death benefits, education assistance for children.",
+      ml: "പ്രതിമാസ പെൻഷൻ, കുടുംബ പെൻഷൻ, ചികിത്സാ സഹായം, അപകട മരണാനുകൂല്യങ്ങൾ, കുട്ടികൾക്ക് വിദ്യാഭ്യാസ സഹായം.",
+    },
+    eligibility: {
+      en: "Farmers who are between 18 and 55 years of age and contribute to the fund for a specified period.",
+      ml: "18-നും 55-നും ഇടയിൽ പ്രായമുള്ളവരും നിശ്ചിത കാലയളവിലേക്ക് ഫണ്ടിലേക്ക് സംഭാവന ചെയ്യുന്നവരുമായ കർഷകർ.",
+    },
+    documentsRequired: {
+      en: "Identity proof, Age proof, Land records, Bank account details, Membership application form, Contribution details.",
+      ml: "തിരിച്ചറിയൽ തെളിവ്, പ്രായ തെളിവ്, ഭൂമിയുടെ രേഖകൾ, ബാങ്ക് അക്കൗണ്ട് വിവരങ്ങൾ, അംഗത്വ അപേക്ഷാ ഫോം, സംഭാവന വിവരങ്ങൾ.",
+    },
+    applicationProcess: {
+      en: "Apply through the official website or designated offices of the Karshaka Kshemanidhi Board.",
+      ml: "കർഷക ക്ഷേമനിധി ബോർഡിന്റെ ഔദ്യോഗിക വെബ്സൈറ്റ് വഴിയോ നിശ്ചയിക്കപ്പെട്ട ഓഫീസുകൾ വഴിയോ അപേക്ഷിക്കുക.",
     },
     ageGroup: {
-      en: "60-100",
-      ml: "60-100",
+      en: "All", // Broader age group for eligibility to join, pension applies to older age
+      ml: "എല്ലാവരും",
     },
     gender: {
       en: "All",
       ml: "എല്ലാവരും",
     },
     incomeLevel: {
-      en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      en: "All", // Contribution-based, not income ceiling
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -578,10 +733,16 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["pension", "welfare", "farmers", "Kerala government"],
-      ml: ["പെൻഷൻ", "ക്ഷേമം", "കർഷകർ", "കേരള സർക്കാർ"],
+      en: [
+        "pension",
+        "welfare",
+        "farmers",
+        "Kerala government",
+        "social security",
+      ],
+      ml: ["പെൻഷൻ", "ക്ഷേമം", "കർഷകർ", "കേരള സർക്കാർ", "സാമൂഹിക സുരക്ഷ"],
     },
-    link: "https://cmo.kerala.gov.in/office_level_oi.php?FMfcgzQVxRKfvdfSDbGCkhJQJFnZGGCP=ZGlkPTEmb2ZjX2lkPTljZGZlNjg3LTgyYTMtNDU4MS1hYjFiLTE3MDIwNDcxNTQzMiZsZXZlbF9zdGF0dXM9MyZvZmZpY2U9U2VjcmV0YXJ5K0tlcmFsYStTdGF0ZStGYXJtZXJzK0RlYmQrUmVsaWVmK0NvbW1pc3Npb24mZmQ9Jm9mZmljZV9pZD05Y2RmZTY4Ny04MmEzLTQ1ODEtYWIxYi0xNzAyMDQ3MTU0MzI=",
+    link: "https://cmo.kerala.gov.in/office_level_oi.php?FMfcgzQVxRKfvdfSDbGCkhJQJFnZGGCP=ZGlkPTEmb2ZjX2lkPTljZGZlNjg3LTgyYTMtNDU4MS1hYjFiLTE3MDIwNDcxNTQzMiZsZXZlbF9zdGF0dXM9MyZvZmZpY2U9U2VjcmV0YXJ5K0tlcmFsYStTdGF0ZStGYXJtZXJzK0RlYmMrUmVsaWVmK0NvbW1pc3Npb24mZmQ9Jm9mZmljZV9pZD05Y2RmZTY4Ny04MmEzLTQ1ODEtYWIxYi0xNzAyMDQ3MTU0MzI=",
     ratings: { avgRating: 0, count: 0 },
   },
   {
@@ -591,24 +752,36 @@ export const agricultureScheme = [
       ml: "രാഷ്ട്രീയ കൃഷി വികാസ് യോജന (RKVY)",
     },
     description: {
-      en: "Integrated development of agriculture and allied sectors",
-      ml: "കൃഷിയുടെയും അനുബന്ധ മേഖലകളുടെയും സമഗ്ര വികസനം",
+      en: "A scheme aimed at achieving 4% annual growth in agriculture and allied sectors by providing flexibility and autonomy to States in planning and executing agriculture schemes.",
+      ml: "കൃഷിയിലും അനുബന്ധ മേഖലകളിലും 4% വാർഷിക വളർച്ച കൈവരിക്കുന്നതിനായി സംസ്ഥാനങ്ങൾക്ക് കാർഷിക പദ്ധതികൾ ആസൂത്രണം ചെയ്യാനും നടപ്പിലാക്കാനും വഴക്കവും സ്വയംഭരണാധികാരവും നൽകുന്ന ഒരു പദ്ധതി.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "All farmers, cooperatives",
-      ml: "എല്ലാ കർഷകരും, സഹകരണ സംഘങ്ങൾ",
+      en: "Farmers, State Agriculture Departments, Research Institutions, Public Sector Undertakings, Private Agencies.",
+      ml: "കർഷകർ, സംസ്ഥാന കൃഷി വകുപ്പുകൾ, ഗവേഷണ സ്ഥാപനങ്ങൾ, പൊതുമേഖലാ സ്ഥാപനങ്ങൾ, സ്വകാര്യ ഏജൻസികൾ.",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Ministry of Agriculture & Farmers Welfare, Government of India (Implemented by States)",
+      ml: "കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ (സംസ്ഥാനങ്ങൾ വഴി നടപ്പിലാക്കുന്നു)",
     },
     benefits: {
-      en: "Grants for infrastructure, training, and innovation",
-      ml: "അടിസ്ഥാന സൗകര്യങ്ങൾ, പരിശീലനം, നവീകരണം എന്നിവയ്ക്കുള്ള ഗ്രാന്റുകൾ",
+      en: "Grants for infrastructure development, innovation, research, and various agricultural projects tailored to state-specific needs.",
+      ml: "അടിസ്ഥാന സൗകര്യ വികസനം, നവീകരണം, ഗവേഷണം, സംസ്ഥാന പ്രത്യേക ആവശ്യങ്ങൾക്കനുസരിച്ചുള്ള വിവിധ കാർഷിക പദ്ധതികൾ എന്നിവയ്ക്കുള്ള ഗ്രാന്റുകൾ.",
+    },
+    eligibility: {
+      en: "State Governments formulating and implementing agricultural development strategies.",
+      ml: "കാർഷിക വികസന തന്ത്രങ്ങൾ രൂപീകരിക്കുകയും നടപ്പിലാക്കുകയും ചെയ്യുന്ന സംസ്ഥാന സർക്കാരുകൾ.",
+    },
+    documentsRequired: {
+      en: "Project proposals from State Governments.",
+      ml: "സംസ്ഥാന സർക്കാരുകളിൽ നിന്നുള്ള പ്രോജക്ട് പ്രൊപ്പോസലുകൾ.",
+    },
+    applicationProcess: {
+      en: "State governments submit project proposals to the Central Government for approval and funding.",
+      ml: "സംസ്ഥാന സർക്കാരുകൾ പ്രോജക്ട് പ്രൊപ്പോസലുകൾ അംഗീകാരത്തിനും ഫണ്ടിംഗിനുമായി കേന്ദ്ര സർക്കാരിന് സമർപ്പിക്കുന്നു.",
     },
     ageGroup: {
       en: "All",
@@ -620,7 +793,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -646,6 +819,7 @@ export const agricultureScheme = [
         "training",
         "innovation",
         "central government",
+        "RKVY",
       ],
       ml: [
         "കാർഷിക വികസനം",
@@ -653,6 +827,7 @@ export const agricultureScheme = [
         "പരിശീലനം",
         "നവീകരണം",
         "കേന്ദ്ര സർക്കാർ",
+        "ആർകെവിവൈ",
       ],
     },
     link: "https://rkvy.nic.in/",
@@ -661,28 +836,40 @@ export const agricultureScheme = [
   {
     id: "agriculture11",
     name: {
-      en: "Jaiva Karshika Mission",
+      en: "Jaiva Karshika Mission (Organic Agricultural Mission)",
       ml: "ജൈവ കാർഷിക മിഷൻ",
     },
     description: {
-      en: "Promote organic clusters and GAP",
-      ml: "ജൈവ ക്ലസ്റ്ററുകളും GAP ഉം പ്രോത്സാഹിപ്പിക്കുന്നു",
+      en: "A Kerala state initiative to promote organic farming, establish organic clusters, and facilitate Good Agricultural Practices (GAP).",
+      ml: "ജൈവകൃഷി പ്രോത്സാഹിപ്പിക്കുന്നതിനും ജൈവ ക്ലസ്റ്ററുകൾ സ്ഥാപിക്കുന്നതിനും നല്ല കാർഷിക രീതികൾ (GAP) സുഗമമാക്കുന്നതിനുമുള്ള കേരള സർക്കാർ പദ്ധതി.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "Organic farmers",
-      ml: "ജൈവ കർഷകർ",
+      en: "Organic farmers, farmer groups, Self Help Groups (SHGs), Farmer Producer Organizations (FPOs) in Kerala.",
+      ml: "കേരളത്തിലെ ജൈവകർഷകർ, കർഷക സംഘങ്ങൾ, സ്വയം സഹായ സംഘങ്ങൾ (SHGs), കർഷക ഉൽപാദക സംഘടനകൾ (FPO-കൾ).",
     },
     implementingAgency: {
-      en: "Dept. of Agriculture, Kerala",
-      ml: "കൃഷി വകുപ്പ്, കേരളം",
+      en: "Department of Agriculture Development and Farmers' Welfare, Government of Kerala",
+      ml: "കേരള സർക്കാർ, കൃഷി വികസന കർഷക ക്ഷേമ വകുപ്പ്",
     },
     benefits: {
-      en: "Technical and financial support",
-      ml: "സാങ്കേതികവും സാമ്പത്തികവുമായ പിന്തുണ",
+      en: "Technical guidance, financial support for organic input production, marketing assistance, and certification support.",
+      ml: "സാങ്കേതിക മാർഗ്ഗനിർദ്ദേശം, ജൈവ ഉൽപന്ന ഉൽപാദനത്തിനുള്ള സാമ്പത്തിക സഹായം, വിപണന സഹായം, സർട്ടിഫിക്കേഷൻ പിന്തുണ.",
+    },
+    eligibility: {
+      en: "Farmers or groups committed to organic farming practices in Kerala.",
+      ml: "കേരളത്തിൽ ജൈവകൃഷി രീതികൾക്ക് പ്രതിജ്ഞാബദ്ധരായ കർഷകർ അല്ലെങ്കിൽ ഗ്രൂപ്പുകൾ.",
+    },
+    documentsRequired: {
+      en: "Land records, Application form, Details of organic farming practices.",
+      ml: "ഭൂമിയുടെ രേഖകൾ, അപേക്ഷാ ഫോം, ജൈവകൃഷി രീതികളുടെ വിവരങ്ങൾ.",
+    },
+    applicationProcess: {
+      en: "Through Krishi Bhavans and District Agricultural Offices.",
+      ml: "കൃഷി ഭവനുകൾ വഴിയും ജില്ലാ കൃഷി ഓഫീസുകൾ വഴിയും.",
     },
     ageGroup: {
       en: "All",
@@ -694,11 +881,11 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
-      en: "Organic Farmer",
-      ml: "ജൈവ കർഷകൻ",
+      en: "Farmer",
+      ml: "കർഷകൻ",
     },
     location: {
       en: "Kerala",
@@ -714,37 +901,61 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["organic farming", "GAP", "Kerala government", "financial support"],
-      ml: ["ജൈവകൃഷി", "ജി.എ.പി", "കേരള സർക്കാർ", "സാമ്പത്തിക സഹായം"],
+      en: [
+        "organic farming",
+        "GAP",
+        "Kerala government",
+        "financial support",
+        "Jaiva Karshika Mission",
+      ],
+      ml: [
+        "ജൈവകൃഷി",
+        "ജി.എ.പി",
+        "കേരള സർക്കാർ",
+        "സാമ്പത്തിക സഹായം",
+        "ജൈവ കാർഷിക മിഷൻ",
+      ],
     },
-    link: "https://keralaagriculture.gov.in/wp-content/uploads/2024/07/WI-Organic.pdf",
+    link: "https://keralaagriculture.gov.in/wp-content/uploads/2024/07/WI-Organic.pdf", // This link seems to be a PDF, might not be a direct scheme page.
     ratings: { avgRating: 0, count: 0 },
   },
   {
     id: "agriculture12",
     name: {
-      en: "Nadapu Scheme",
+      en: "Nadapu Scheme (Continuing/Ongoing Scheme)",
       ml: "നടപ്പ് പദ്ധതി",
     },
     description: {
-      en: "Financial support for certified organic practices",
-      ml: "സർട്ടിഫൈഡ് ജൈവരീതികൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "This refers to various ongoing schemes of the Department of Agriculture, Kerala, that provide financial support and technical assistance for agricultural practices, often including support for certified organic practices.",
+      ml: "കൃഷി വകുപ്പ്, കേരളത്തിന്റെ വിവിധ നടന്നുകൊണ്ടിരിക്കുന്ന പദ്ധതികളെ ഇത് സൂചിപ്പിക്കുന്നു, ഇത് കാർഷിക രീതികൾക്ക് സാമ്പത്തിക സഹായവും സാങ്കേതിക സഹായവും നൽകുന്നു, പലപ്പോഴും സർട്ടിഫൈഡ് ജൈവ രീതികൾക്കുള്ള പിന്തുണയും ഉൾപ്പെടുന്നു.",
     },
     category: {
       en: "Agriculture",
       ml: "കൃഷി",
     },
     targetAudience: {
-      en: "Organic farmers",
-      ml: "ജൈവ കർഷകർ",
+      en: "Farmers and farmer groups in Kerala.",
+      ml: "കേരളത്തിലെ കർഷകരും കർഷക സംഘങ്ങളും.",
     },
     implementingAgency: {
-      en: "Govt. of Kerala",
-      ml: "കേരള സർക്കാർ",
+      en: "Department of Agriculture Development and Farmers' Welfare, Government of Kerala",
+      ml: "കേരള സർക്കാർ, കൃഷി വികസന കർഷക ക്ഷേമ വകുപ്പ്",
     },
     benefits: {
-      en: "Subsidies for bio-inputs, training",
-      ml: "ജൈവ ഇൻപുട്ടുകൾക്ക് സബ്സിഡി, പരിശീലനം",
+      en: "Subsidies for bio-inputs, training programs, and other support for sustainable farming practices.",
+      ml: "ജൈവ ഇൻപുട്ടുകൾക്ക് സബ്സിഡി, പരിശീലന പരിപാടികൾ, സുസ്ഥിര കാർഷിക രീതികൾക്കുള്ള മറ്റ് പിന്തുണ.",
+    },
+    eligibility: {
+      en: "Farmers meeting the specific criteria of the individual schemes under Nadapu.",
+      ml: "നടപ്പ് പദ്ധതിക്ക് കീഴിലുള്ള ഓരോ പദ്ധതിയുടെയും നിർദ്ദിഷ്ട മാനദണ്ഡങ്ങൾ പാലിക്കുന്ന കർഷകർ.",
+    },
+    documentsRequired: {
+      en: "Varies depending on the specific sub-scheme. Generally, identity proof, land details, and relevant certifications.",
+      ml: "നിർദ്ദിഷ്ട ഉപപദ്ധതിയെ ആശ്രയിച്ച് വ്യത്യാസപ്പെടുന്നു. സാധാരണയായി, തിരിച്ചറിയൽ തെളിവ്, ഭൂമിയുടെ വിവരങ്ങൾ, പ്രസക്തമായ സർട്ടിഫിക്കേഷനുകൾ.",
+    },
+    applicationProcess: {
+      en: "Through Krishi Bhavans and District Agricultural Offices.",
+      ml: "കൃഷി ഭവനുകൾ വഴിയും ജില്ലാ കൃഷി ഓഫീസുകൾ വഴിയും.",
     },
     ageGroup: {
       en: "All",
@@ -756,11 +967,11 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
-      en: "Organic Farmer",
-      ml: "ജൈവ കർഷകൻ",
+      en: "Farmer",
+      ml: "കർഷകൻ",
     },
     location: {
       en: "Kerala",
@@ -782,6 +993,7 @@ export const agricultureScheme = [
         "bio-inputs",
         "training",
         "Kerala government",
+        "sustainable agriculture",
       ],
       ml: [
         "ജൈവകൃഷി",
@@ -789,9 +1001,10 @@ export const agricultureScheme = [
         "ജൈവ ഇൻപുട്ടുകൾ",
         "പരിശീലനം",
         "കേരള സർക്കാർ",
+        "സുസ്ഥിര കൃഷി",
       ],
     },
-    link: "https://www.jaagrukbharat.com/list-of-top-agriculture-schemes-in-india-2024-with-features-eligibility-1402163",
+    link: "https://www.jaagrukbharat.com/list-of-top-agriculture-schemes-in-india-2024-with-features-eligibility-1402163", // This link is a general article, not specific to Kerala's "Nadapu Scheme".
     ratings: { avgRating: 0, count: 0 },
   },
   {
@@ -801,28 +1014,40 @@ export const agricultureScheme = [
       ml: "അഗ്രി ക്ലിനിക്കുകളും അഗ്രിബിസിനസ് സെന്ററുകളും (ACABC)",
     },
     description: {
-      en: "Promote private agri-advisory and business centres",
-      ml: "സ്വകാര്യ കാർഷിക ഉപദേശക, ബിസിനസ്സ് കേന്ദ്രങ്ങൾ പ്രോത്സാഹിപ്പിക്കുന്നു",
+      en: "A scheme to support agriculture graduates and other professionals to establish Agri-Clinics and Agri-Business Centres to provide expert services and advice to farmers.",
+      ml: "കൃഷി ബിരുദധാരികളെയും മറ്റ് പ്രൊഫഷണലുകളെയും അഗ്രി ക്ലിനിക്കുകളും അഗ്രി ബിസിനസ് സെന്ററുകളും സ്ഥാപിക്കാൻ സഹായിക്കുന്ന ഒരു പദ്ധതി, അതുവഴി കർഷകർക്ക് വിദഗ്ദ്ധ സേവനങ്ങളും ഉപദേശങ്ങളും നൽകുന്നു.",
     },
     category: {
       en: "Entrepreneurship",
       ml: "സംരംഭകത്വം",
     },
     targetAudience: {
-      en: "Agriculture graduates and entrepreneurs",
-      ml: "കൃഷി ബിരുദധാരികളും സംരംഭകരും",
+      en: "Agriculture graduates, graduates in allied subjects, and other agriculture-related professionals.",
+      ml: "കൃഷി ബിരുദധാരികൾ, അനുബന്ധ വിഷയങ്ങളിലെ ബിരുദധാരികൾ, മറ്റ് കൃഷിയുമായി ബന്ധപ്പെട്ട പ്രൊഫഷണലുകൾ.",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI / MANAGE",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം / മാനേജ്",
+      en: "NABARD and Ministry of Agriculture & Farmers Welfare, Government of India",
+      ml: "നബാർഡും കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ",
     },
     benefits: {
-      en: "Credit-linked subsidy for setting up agri-enterprises",
-      ml: "കാർഷിക സംരംഭങ്ങൾ സ്ഥാപിക്കുന്നതിന് വായ്പാധിഷ്ഠിത സബ്സിഡി",
+      en: "Credit-linked back-ended subsidy for setting up agri-enterprises, training, and handholding support.",
+      ml: "കാർഷിക സംരംഭങ്ങൾ സ്ഥാപിക്കുന്നതിനുള്ള ക്രെഡിറ്റ്-ലിങ്ക്ഡ് ബാക്ക്-എൻഡ് സബ്സിഡി, പരിശീലനം, കൈത്താങ്ങ് പിന്തുണ.",
+    },
+    eligibility: {
+      en: "Graduates in Agriculture, Allied subjects, or those with a diploma/post-graduate diploma in Agriculture and allied subjects, or those with a degree in Botany/Zoology/Chemistry/Bio-Technology/Bio-Science with Agriculture at intermediate (10+2) level.",
+      ml: "കൃഷി, അനുബന്ധ വിഷയങ്ങളിൽ ബിരുദധാരികൾ, അല്ലെങ്കിൽ കൃഷിയിലും അനുബന്ധ വിഷയങ്ങളിലും ഡിപ്ലോമ/പോസ്റ്റ് ഗ്രാജ്വേറ്റ് ഡിപ്ലോമയുള്ളവർ, അല്ലെങ്കിൽ ഇന്റർമീഡിയറ്റ് (10+2) തലത്തിൽ കൃഷിയോടുകൂടിയ ബോട്ടണി/സുവോളജി/കെമിസ്ട്രി/ബയോ-ടെക്നോളജി/ബയോ-സയൻസിൽ ബിരുദമുള്ളവർ.",
+    },
+    documentsRequired: {
+      en: "Educational certificates, Identity proof, Project proposal, Bank details.",
+      ml: "വിദ്യാഭ്യാസ സർട്ടിഫിക്കറ്റുകൾ, തിരിച്ചറിയൽ തെളിവ്, പ്രോജക്ട് പ്രൊപ്പോസൽ, ബാങ്ക് വിവരങ്ങൾ.",
+    },
+    applicationProcess: {
+      en: "Through Nodal Training Institutes (NTIs) and commercial banks.",
+      ml: "നോഡൽ ട്രെയിനിംഗ് ഇൻസ്റ്റിറ്റ്യൂട്ടുകൾ (NTIs) വഴിയും വാണിജ്യ ബാങ്കുകൾ വഴിയും.",
     },
     ageGroup: {
-      en: "21-30",
-      ml: "21-30",
+      en: "All", // No specific age limit mentioned in scheme guidelines, generally for professionals.
+      ml: "എല്ലാവരും",
     },
     gender: {
       en: "All",
@@ -830,7 +1055,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Entrepreneur",
@@ -856,6 +1081,7 @@ export const agricultureScheme = [
         "entrepreneurship",
         "subsidy",
         "central government",
+        "ACABC",
       ],
       ml: [
         "കാർഷിക ഉപദേശം",
@@ -863,6 +1089,7 @@ export const agricultureScheme = [
         "സംരംഭകത്വം",
         "സബ്സിഡി",
         "കേന്ദ്ര സർക്കാർ",
+        "എസിഎബിസി",
       ],
     },
     link: "https://www.agriclinics.net/Contacts.aspx",
@@ -871,28 +1098,40 @@ export const agricultureScheme = [
   {
     id: "agriculture14",
     name: {
-      en: "Gramin Bhandaran Yojana",
+      en: "Gramin Bhandaran Yojana (Rural Godown Scheme)",
       ml: "ഗ്രാമീൺ ഭണ്ഡാരൻ യോജന",
     },
     description: {
-      en: "Improve rural storage infrastructure",
-      ml: "ഗ്രാമീണ സംഭരണ ​​അടിസ്ഥാന സൗകര്യങ്ങൾ മെച്ചപ്പെടുത്തുന്നു",
+      en: "Aims to create scientific storage capacity with allied facilities in rural areas to meet the requirements of farmers for storing their agricultural produce.",
+      ml: "ഗ്രാമീണ മേഖലകളിൽ ശാസ്ത്രീയമായ സംഭരണ ശേഷി അനുബന്ധ സൗകര്യങ്ങളോടുകൂടി സൃഷ്ടിച്ച് കർഷകരുടെ കാർഷിക ഉൽപന്നങ്ങൾ സംഭരിക്കുന്നതിനുള്ള ആവശ്യകതകൾ നിറവേറ്റാൻ ലക്ഷ്യമിടുന്നു.",
     },
     category: {
       en: "Infrastructure",
       ml: "അടിസ്ഥാന സൗകര്യങ്ങൾ",
     },
     targetAudience: {
-      en: "Farmers, cooperatives, FPOs",
-      ml: "കർഷകർ, സഹകരണ സംഘങ്ങൾ, FPO-കൾ",
+      en: "Farmers, Agri-entrepreneurs, Cooperatives, Self Help Groups (SHGs), Non-Governmental Organizations (NGOs), Corporations, Companies, Local Bodies.",
+      ml: "കർഷകർ, കാർഷിക സംരംഭകർ, സഹകരണ സംഘങ്ങൾ, സ്വയം സഹായ സംഘങ്ങൾ (SHGs), സർക്കാരിതര സംഘടനകൾ (NGOs), കോർപ്പറേഷനുകൾ, കമ്പനികൾ, തദ്ദേശ സ്ഥാപനങ്ങൾ.",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Ministry of Agriculture & Farmers Welfare, Government of India (Implemented through NABARD and NCDC)",
+      ml: "കേന്ദ്ര കൃഷി, കർഷക ക്ഷേമ മന്ത്രാലയം, ഭാരത സർക്കാർ (നബാർഡ്, എൻസിഡിസി വഴി നടപ്പിലാക്കുന്നു)",
     },
     benefits: {
-      en: "Capital subsidy for warehouse construction",
-      ml: "ഗോഡൗൺ നിർമ്മാണത്തിന് മൂലധന സബ്സിഡി",
+      en: "Capital subsidy for construction/renovation of rural godowns/warehouses.",
+      ml: "ഗ്രാമീണ ഗോഡൗണുകൾ/വെയർഹൗസുകൾ നിർമ്മിക്കുന്നതിനും നവീകരിക്കുന്നതിനും മൂലധന സബ്സിഡി.",
+    },
+    eligibility: {
+      en: "Individuals, farmers, groups of farmers/growers, partnership firms, NGOs, SHGs, companies, corporations, etc., who intend to set up rural godowns.",
+      ml: "ഗ്രാമീണ ഗോഡൗണുകൾ സ്ഥാപിക്കാൻ ഉദ്ദേശിക്കുന്ന വ്യക്തികൾ, കർഷകർ, കർഷകരുടെ/വളർത്തുന്നവരുടെ ഗ്രൂപ്പുകൾ, പങ്കാളിത്ത സ്ഥാപനങ്ങൾ, എൻജിഒകൾ, എസ്എച്ച്ജികൾ, കമ്പനികൾ, കോർപ്പറേഷനുകൾ തുടങ്ങിയവർ.",
+    },
+    documentsRequired: {
+      en: "Project proposal, Land documents, Financial statements, Identity proof.",
+      ml: "പ്രോജക്ട് പ്രൊപ്പോസൽ, ഭൂമിയുടെ രേഖകൾ, സാമ്പത്തിക രേഖകൾ, തിരിച്ചറിയൽ തെളിവ്.",
+    },
+    applicationProcess: {
+      en: "Through Commercial Banks, Cooperative Banks, and Regional Rural Banks.",
+      ml: "വാണിജ്യ ബാങ്കുകൾ, സഹകരണ ബാങ്കുകൾ, റീജിയണൽ റൂറൽ ബാങ്കുകൾ വഴി.",
     },
     ageGroup: {
       en: "All",
@@ -904,7 +1143,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Farmer",
@@ -930,6 +1169,7 @@ export const agricultureScheme = [
         "infrastructure",
         "farmers",
         "central government",
+        "godown",
       ],
       ml: [
         "സംഭരണം",
@@ -937,9 +1177,10 @@ export const agricultureScheme = [
         "അടിസ്ഥാന സൗകര്യങ്ങൾ",
         "കർഷകർ",
         "കേന്ദ്ര സർക്കാർ",
+        "ഗോഡൗൺ",
       ],
     },
-    link: "https://kisandapp.com/gramin-bhandaran-yojana/",
+    link: "https://kisandapp.com/gramin-bhandaran-yojana/", // This is a third-party site. Official NABARD or Ministry link would be better.
     ratings: { avgRating: 0, count: 0 },
   },
   {
@@ -949,28 +1190,40 @@ export const agricultureScheme = [
       ml: "കേരള സംസ്ഥാന കർഷക കടാശ്വാസ കമ്മീഷൻ",
     },
     description: {
-      en: "Provide relief from agricultural debts",
-      ml: "കാർഷിക കടങ്ങളിൽ നിന്ന് ആശ്വാസം നൽകുന്നു",
+      en: "A commission established to provide relief to farmers in Kerala from agricultural debts due to unforeseen circumstances.",
+      ml: "പ്രവചനാതീതമായ സാഹചര്യങ്ങൾ കാരണം കാർഷിക കടങ്ങളിൽ നിന്ന് കേരളത്തിലെ കർഷകർക്ക് ആശ്വാസം നൽകുന്നതിനായി സ്ഥാപിച്ച കമ്മീഷൻ.",
     },
     category: {
       en: "Financial Relief",
       ml: "സാമ്പത്തിക ആശ്വാസം",
     },
     targetAudience: {
-      en: "Indebted farmers",
-      ml: "കടബാധ്യതയുള്ള കർഷകർ",
+      en: "Indebted farmers in Kerala.",
+      ml: "കേരളത്തിലെ കടബാധ്യതയുള്ള കർഷകർ.",
     },
     implementingAgency: {
-      en: "Govt. of Kerala",
+      en: "Government of Kerala",
       ml: "കേരള സർക്കാർ",
     },
     benefits: {
-      en: "One-time settlement / waiver in hardship cases",
-      ml: "പ്രയാസമുള്ള കേസുകളിൽ ഒറ്റത്തവണ തീർപ്പാക്കൽ / എഴുതിത്തള്ളൽ",
+      en: "One-time settlement or waiver of agricultural debts, based on the commission's recommendations and government decisions.",
+      ml: "കമ്മീഷന്റെ ശുപാർശകളും സർക്കാർ തീരുമാനങ്ങളും അനുസരിച്ച് കാർഷിക കടങ്ങളുടെ ഒറ്റത്തവണ തീർപ്പാക്കൽ അല്ലെങ്കിൽ എഴുതിത്തള്ളൽ.",
+    },
+    eligibility: {
+      en: "Farmers who have availed agricultural loans from financial institutions and are facing difficulties in repayment due to crop failure, natural calamities, etc.",
+      ml: "ധനകാര്യ സ്ഥാപനങ്ങളിൽ നിന്ന് കാർഷിക വായ്പയെടുക്കുകയും വിളനാശം, പ്രകൃതി ദുരന്തങ്ങൾ തുടങ്ങിയ കാരണങ്ങളാൽ തിരിച്ചടവ് ബുദ്ധിമുട്ടുകൾ നേരിടുകയും ചെയ്യുന്ന കർഷകർ.",
+    },
+    documentsRequired: {
+      en: "Loan documents, Land records, Income certificate, Proof of crop loss/calamity, Identity proof.",
+      ml: "വായ്പാ രേഖകൾ, ഭൂമിയുടെ രേഖകൾ, വരുമാന സർട്ടിഫിക്കറ്റ്, വിളനാശം/ദുരന്തം എന്നിവയുടെ തെളിവ്, തിരിച്ചറിയൽ തെളിവ്.",
+    },
+    applicationProcess: {
+      en: "Applications are submitted to the Debt Relief Commission, which then reviews cases and makes recommendations to the government.",
+      ml: "കടാശ്വാസ കമ്മീഷന് അപേക്ഷകൾ സമർപ്പിക്കുന്നു, കമ്മീഷൻ കേസുകൾ അവലോകനം ചെയ്യുകയും സർക്കാരിന് ശുപാർശകൾ നൽകുകയും ചെയ്യുന്നു.",
     },
     ageGroup: {
-      en: "41-50",
-      ml: "41-50",
+      en: "All",
+      ml: "എല്ലാവരും",
     },
     gender: {
       en: "All",
@@ -978,7 +1231,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "Indebted",
-      ml: "കടബാധ്യതയുള്ളവർ",
+      ml: "കടത്തിലുള്ളത്",
     },
     profession: {
       en: "Farmer",
@@ -1003,41 +1256,60 @@ export const agricultureScheme = [
         "farmers",
         "financial assistance",
         "Kerala government",
+        "agricultural loan",
       ],
-      ml: ["കടാശ്വാസം", "കർഷകർ", "സാമ്പത്തിക സഹായം", "കേരള സർക്കാർ"],
+      ml: [
+        "കടാശ്വാസം",
+        "കർഷകർ",
+        "സാമ്പത്തിക സഹായം",
+        "കേരള സർക്കാർ",
+        "കാർഷിക വായ്പ",
+      ],
     },
-    link: "https://cmo.kerala.gov.in/office_level_oi.php?FMfcgzQVxRKfvdfSDbGCkhJQJFnZGGCP=ZGlkPTEmb2ZjX2lkPTljZGZlNjg3LTgyYTMtNDU4MS1hYjFiLTE3MDIwNDcxNTQzMiZsZXZlbF9zdGF0dXM9MyZvZmZpY2U9U2VjcmV0YXJ5K0tlcmFsYStTdGF0ZStGYXJtZXJzK0RlYmQrUmVsaWVmK0NvbW1pc3Npb24mZmQ9Jm9mZmljZV9pZD05Y2RmZTY4Ny04MmEzLTQ1ODEtYWIxYi0xNzAy0%3D",
+    link: "https://cmo.kerala.gov.in/office_level_oi.php?FMfcgzQVxRKfvdfSDbGCkhJQJFnZGGCP=ZGlkPTEmb2ZjX2lkPTljZGZlNjg3LTgyYTMtNDU4MS1hYjFiLTE3MDIwNDcxNTQzMiZsZXZlbF9zdGF0dXM9MyZvZmZpY2U9U2VjcmV0YXJ5K0tlcmFsYStTdGF0ZStGYXJtZXJzK0RlYmMrUmVsaWVmK0NvbW1pc3Npb24mZmQ9Jm9mZmljZV9pZD05Y2RmZTY4Ny04MmEzLTQ1ODEtYWIxYi0xNzAy0%3D", // This link also seems generic for the Chief Minister's Office, not directly for the commission's application.
     ratings: { avgRating: 0, count: 0 },
   },
   {
     id: "agriculture16",
     name: {
-      en: "Dairy Entrepreneur Development Scheme (DEDS)",
+      en: "Dairy Entrepreneurship Development Scheme (DEDS)",
       ml: "ക്ഷീര സംരംഭകത്വ വികസന പദ്ധതി (DEDS)",
     },
     description: {
-      en: "Promote dairy farming and entrepreneurship",
-      ml: "ക്ഷീരകൃഷിയും സംരംഭകത്വവും പ്രോത്സാഹിപ്പിക്കുന്നു",
+      en: "A scheme to promote dairy farming, establish modern dairy farms, and support milk processing and value addition activities.",
+      ml: "ക്ഷീരകർഷകരെ പ്രോത്സാഹിപ്പിക്കുന്നതിനും ആധുനിക ക്ഷീര ഫാമുകൾ സ്ഥാപിക്കുന്നതിനും പാൽ സംസ്കരണവും മൂല്യവർദ്ധിത പ്രവർത്തനങ്ങളും പിന്തുണയ്ക്കുന്നതിനുമുള്ള ഒരു പദ്ധതി.",
     },
     category: {
       en: "Dairy",
       ml: "ക്ഷീരം",
     },
     targetAudience: {
-      en: "Dairy farmers, SHGs, FPOs",
-      ml: "ക്ഷീരകർഷകർ, സ്വയം സഹായ സംഘങ്ങൾ, FPO-കൾ",
+      en: "Farmers, individual entrepreneurs, NGOs, companies, dairy cooperative societies, Self Help Groups (SHGs).",
+      ml: "കർഷകർ, വ്യക്തിഗത സംരംഭകർ, എൻജിഒകൾ, കമ്പനികൾ, ക്ഷീര സഹകരണ സംഘങ്ങൾ, സ്വയം സഹായ സംഘങ്ങൾ (SHGs).",
     },
     implementingAgency: {
-      en: "NABARD",
-      ml: "നബാർഡ്",
+      en: "NABARD (National Bank for Agriculture and Rural Development)",
+      ml: "നബാർഡ് (നാഷണൽ ബാങ്ക് ഫോർ അഗ്രികൾച്ചർ ആൻഡ് റൂറൽ ഡെവലപ്മെന്റ്)",
     },
     benefits: {
-      en: "Subsidy for dairy units, chilling units",
-      ml: "ക്ഷീര യൂണിറ്റുകൾക്കും ചില്ലിംഗ് യൂണിറ്റുകൾക്കും സബ്സിഡി",
+      en: "Credit-linked back-ended subsidy for various dairy units, including milch animal units, dairy product processing units, and cold chain infrastructure.",
+      ml: "പാൽ കന്നുകാലി യൂണിറ്റുകൾ, ക്ഷീര ഉൽപന്ന സംസ്കരണ യൂണിറ്റുകൾ, ശീതീകരിച്ച ശൃംഖല അടിസ്ഥാന സൗകര്യങ്ങൾ എന്നിവ ഉൾപ്പെടെയുള്ള വിവിധ ക്ഷീര യൂണിറ്റുകൾക്ക് വായ്പാധിഷ്ഠിത ബാക്ക്-എൻഡ് സബ്സിഡി.",
+    },
+    eligibility: {
+      en: "Individuals, farmers, groups of farmers, NGOs, companies, etc., who intend to take up dairy activities.",
+      ml: "ക്ഷീര പ്രവർത്തനങ്ങൾ ഏറ്റെടുക്കാൻ ഉദ്ദേശിക്കുന്ന വ്യക്തികൾ, കർഷകർ, കർഷകരുടെ ഗ്രൂപ്പുകൾ, എൻജിഒകൾ, കമ്പനികൾ തുടങ്ങിയവർ.",
+    },
+    documentsRequired: {
+      en: "Project proposal, Identity proof, Land documents (if applicable), Bank details.",
+      ml: "പ്രോജക്ട് പ്രൊപ്പോസൽ, തിരിച്ചറിയൽ തെളിവ്, ഭൂമിയുടെ രേഖകൾ (ബാധകമെങ്കിൽ), ബാങ്ക് വിവരങ്ങൾ.",
+    },
+    applicationProcess: {
+      en: "Through Commercial Banks, Regional Rural Banks, State Cooperative Banks, State Co-operative Agriculture & Rural Development Banks, and other financial institutions.",
+      ml: "വാണിജ്യ ബാങ്കുകൾ, റീജിയണൽ റൂറൽ ബാങ്കുകൾ, സംസ്ഥാന സഹകരണ ബാങ്കുകൾ, സംസ്ഥാന സഹകരണ കാർഷിക, ഗ്രാമവികസന ബാങ്കുകൾ, മറ്റ് ധനകാര്യ സ്ഥാപനങ്ങൾ എന്നിവ വഴി.",
     },
     ageGroup: {
-      en: "31-40",
-      ml: "31-40",
+      en: "All",
+      ml: "എല്ലാവരും",
     },
     gender: {
       en: "All",
@@ -1045,11 +1317,11 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
-      en: "Dairy Farmer",
-      ml: "ക്ഷീരകർഷകൻ",
+      en: "Farmer",
+      ml: "കർഷകൻ",
     },
     location: {
       en: "National",
@@ -1065,8 +1337,14 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["dairy farming", "entrepreneurship", "subsidy", "NABARD"],
-      ml: ["ക്ഷീരകൃഷി", "സംരംഭകത്വം", "സബ്സിഡി", "നബാർഡ്"],
+      en: [
+        "dairy farming",
+        "entrepreneurship",
+        "subsidy",
+        "NABARD",
+        "milk production",
+      ],
+      ml: ["ക്ഷീരകൃഷി", "സംരംഭകത്വം", "സബ്സിഡി", "നബാർഡ്", "പാൽ ഉൽപാദനം"],
     },
     link: "https://www.nabard.org/content.aspx?id=591",
     ratings: { avgRating: 0, count: 0 },
@@ -1078,24 +1356,36 @@ export const agricultureScheme = [
       ml: "ദേശീയ കന്നുകാലി മിഷൻ (NLM)",
     },
     description: {
-      en: "Sustainable livestock development",
-      ml: "സുസ്ഥിര കന്നുകാലി വികസനം",
+      en: "Aims for sustainable development of the livestock sector, focusing on improving productivity, promoting entrepreneurship, and creating employment opportunities.",
+      ml: "ഉൽപ്പാദനക്ഷമത വർദ്ധിപ്പിക്കുന്നതിനും സംരംഭകത്വം പ്രോത്സാഹിപ്പിക്കുന്നതിനും തൊഴിലവസരങ്ങൾ സൃഷ്ടിക്കുന്നതിനും ഊന്നൽ നൽകി കന്നുകാലി മേഖലയുടെ സുസ്ഥിര വികസനം ലക്ഷ്യമിടുന്നു.",
     },
     category: {
       en: "Livestock",
       ml: "കന്നുകാലികൾ",
     },
     targetAudience: {
-      en: "Livestock rearers",
-      ml: "കന്നുകാലി വളർത്തുന്നവർ",
+      en: "Farmers, livestock rearers, entrepreneurs, Self Help Groups (SHGs), Joint Liability Groups (JLGs), Farmer Producer Organizations (FPOs).",
+      ml: "കർഷകർ, കന്നുകാലി വളർത്തുന്നവർ, സംരംഭകർ, സ്വയം സഹായ സംഘങ്ങൾ (SHGs), സംയുക്ത ബാധ്യതാ ഗ്രൂപ്പുകൾ (JLGs), കർഷക ഉൽപാദക സംഘടനകൾ (FPOs).",
     },
     implementingAgency: {
-      en: "Ministry of Agriculture, GoI",
-      ml: "കേന്ദ്ര കൃഷി മന്ത്രാലയം",
+      en: "Department of Animal Husbandry & Dairying, Ministry of Fisheries, Animal Husbandry & Dairying, Government of India",
+      ml: "ഫിഷറീസ്, മൃഗസംരക്ഷണം, ക്ഷീരകർഷക മന്ത്രാലയം, മൃഗസംരക്ഷണ, ക്ഷീരകർഷക വകുപ്പ്, ഭാരത സർക്കാർ",
     },
     benefits: {
-      en: "Financial assistance for animal husbandry activities",
-      ml: "കന്നുകാലി വളർത്തൽ പ്രവർത്തനങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance for various activities like breed improvement, fodder development, livestock insurance, and entrepreneurship development.",
+      ml: "ഇന വികസനം, കാലിത്തീറ്റ വികസനം, കന്നുകാലി ഇൻഷുറൻസ്, സംരംഭകത്വ വികസനം എന്നിവ പോലുള്ള വിവിധ പ്രവർത്തനങ്ങൾക്ക് സാമ്പത്തിക സഹായം.",
+    },
+    eligibility: {
+      en: "Individuals, SHGs, JLGs, Farmer Producer Organizations, Farmer Cooperatives, Section 8 companies, Private companies, Start-ups, etc., involved in livestock activities.",
+      ml: "വ്യക്തികൾ, SHGs, JLGs, കർഷക ഉൽപാദക സംഘടനകൾ, കർഷക സഹകരണ സംഘങ്ങൾ, സെക്ഷൻ 8 കമ്പനികൾ, സ്വകാര്യ കമ്പനികൾ, സ്റ്റാർട്ടപ്പുകൾ തുടങ്ങിയ കന്നുകാലി പ്രവർത്തനങ്ങളിൽ ഏർപ്പെട്ടിരിക്കുന്നവർ.",
+    },
+    documentsRequired: {
+      en: "Project proposal, Identity proof, Land/shed documents (if applicable), Bank details.",
+      ml: "പ്രോജക്ട് പ്രൊപ്പോസൽ, തിരിച്ചറിയൽ തെളിവ്, ഭൂമി/ഷെഡ് രേഖകൾ (ബാധകമെങ്കിൽ), ബാങ്ക് വിവരങ്ങൾ.",
+    },
+    applicationProcess: {
+      en: "Through State Animal Husbandry Departments or identified implementing agencies.",
+      ml: "സംസ്ഥാന മൃഗസംരക്ഷണ വകുപ്പുകൾ വഴിയോ തിരിച്ചറിഞ്ഞ നടപ്പാക്കുന്ന ഏജൻസികൾ വഴിയോ.",
     },
     ageGroup: {
       en: "All",
@@ -1107,11 +1397,11 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
-      en: "Livestock Rearer",
-      ml: "കന്നുകാലി വളർത്തുന്നയാൾ",
+      en: "Farmer",
+      ml: "കർഷകൻ",
     },
     location: {
       en: "National",
@@ -1132,8 +1422,17 @@ export const agricultureScheme = [
         "animal husbandry",
         "financial assistance",
         "central government",
+        "NLM",
+        "dairy",
       ],
-      ml: ["കന്നുകാലികൾ", "മൃഗസംരക്ഷണം", "സാമ്പത്തിക സഹായം", "കേന്ദ്ര സർക്കാർ"],
+      ml: [
+        "കന്നുകാലികൾ",
+        "മൃഗസംരക്ഷണം",
+        "സാമ്പത്തിക സഹായം",
+        "കേന്ദ്ര സർക്കാർ",
+        "എൻഎൽഎം",
+        "ക്ഷീരം",
+      ],
     },
     link: "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2099684",
     ratings: { avgRating: 0, count: 0 },
@@ -1145,24 +1444,36 @@ export const agricultureScheme = [
       ml: "കന്നുകാലി തീറ്റ വികസന പരിപാടി",
     },
     description: {
-      en: "Promote fodder cultivation and preservation",
-      ml: "കന്നുകാലി തീറ്റ കൃഷിയും സംരക്ഷണവും പ്രോത്സാഹിപ്പിക്കുന്നു",
+      en: "A state-level scheme in Kerala to promote fodder cultivation, production, and preservation to ensure adequate and nutritious feed for livestock.",
+      ml: "കന്നുകാലികൾക്ക് മതിയായതും പോഷകസമൃദ്ധവുമായ തീറ്റ ഉറപ്പാക്കാൻ കാലിത്തീറ്റ കൃഷി, ഉൽപാദനം, സംരക്ഷണം എന്നിവ പ്രോത്സാഹിപ്പിക്കുന്നതിനുള്ള കേരളത്തിലെ ഒരു സംസ്ഥാനതല പദ്ധതി.",
     },
     category: {
       en: "Dairy",
       ml: "ക്ഷീരം",
     },
     targetAudience: {
-      en: "Dairy farmers, cooperative societies",
-      ml: "ക്ഷീരകർഷകർ, സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy farmers, livestock owners, cooperative societies in Kerala.",
+      ml: "കേരളത്തിലെ ക്ഷീരകർഷകർ, കന്നുകാലി ഉടമകൾ, സഹകരണ സംഘങ്ങൾ.",
     },
     implementingAgency: {
-      en: "Dept. of Dairy Development, Kerala",
-      ml: "ക്ഷീരവികസന വകുപ്പ്, കേരളം",
+      en: "Department of Animal Husbandry, Government of Kerala",
+      ml: "കേരള സർക്കാർ, മൃഗസംരക്ഷണ വകുപ്പ്",
     },
     benefits: {
-      en: "Support for seeds, silage pits, and mechanization",
-      ml: "വിത്തുകൾ, സൈലേജ് കുഴികൾ, യന്ത്രവൽക്കരണം എന്നിവയ്ക്കുള്ള പിന്തുണ",
+      en: "Subsidies for fodder seeds, silage-making units, fodder choppers, and technical guidance for fodder cultivation.",
+      ml: "കാലിത്തീറ്റ വിത്തുകൾക്ക് സബ്സിഡികൾ, സൈലേജ് നിർമ്മാണ യൂണിറ്റുകൾ, കാലിത്തീറ്റ ചീകുന്ന യന്ത്രങ്ങൾ, കാലിത്തീറ്റ കൃഷിക്കുള്ള സാങ്കേതിക മാർഗ്ഗനിർദ്ദേശം.",
+    },
+    eligibility: {
+      en: "Farmers and livestock owners with land suitable for fodder cultivation.",
+      ml: "കാലിത്തീറ്റ കൃഷിക്ക് അനുയോജ്യമായ ഭൂമിയുള്ള കർഷകരും കന്നുകാലി ഉടമകളും.",
+    },
+    documentsRequired: {
+      en: "Land records, Identity proof, Application form.",
+      ml: "ഭൂമിയുടെ രേഖകൾ, തിരിച്ചറിയൽ തെളിവ്, അപേക്ഷാ ഫോം.",
+    },
+    applicationProcess: {
+      en: "Through local Veterinary Hospitals/Dispensaries and District Animal Husbandry Offices.",
+      ml: "അടുത്തുള്ള വെറ്ററിനറി ആശുപത്രികൾ/ഡിസ്പെൻസറികൾ വഴിയും ജില്ലാ മൃഗസംരക്ഷണ ഓഫീസുകൾ വഴിയും.",
     },
     ageGroup: {
       en: "All",
@@ -1174,11 +1485,11 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
-      en: "Dairy Farmer",
-      ml: "ക്ഷീരകർഷകൻ",
+      en: "Farmer",
+      ml: "കർഷകൻ",
     },
     location: {
       en: "Kerala",
@@ -1194,8 +1505,14 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["fodder", "dairy", "cultivation", "Kerala government"],
-      ml: ["കന്നുകാലി തീറ്റ", "ക്ഷീരം", "കൃഷി", "കേരള സർക്കാർ"],
+      en: [
+        "fodder",
+        "dairy",
+        "cultivation",
+        "Kerala government",
+        "livestock feed",
+      ],
+      ml: ["കാലിത്തീറ്റ", "ക്ഷീരം", "കൃഷി", "കേരള സർക്കാർ", "കന്നുകാലി തീറ്റ"],
     },
     link: "https://livestock.kerala.gov.in/",
     ratings: { avgRating: 0, count: 0 },
@@ -1207,24 +1524,36 @@ export const agricultureScheme = [
       ml: "നാളികേര വികസന പദ്ധതി",
     },
     description: {
-      en: "Enhance productivity and health of coconut trees",
-      ml: "തെങ്ങുകളുടെ ഉൽപ്പാദനക്ഷമതയും ആരോഗ്യവും വർദ്ധിപ്പിക്കുന്നു",
+      en: "A scheme focused on enhancing the productivity and health of coconut trees in Kerala.",
+      ml: "കേരളത്തിലെ തെങ്ങുകളുടെ ഉൽപാദനക്ഷമതയും ആരോഗ്യവും വർദ്ധിപ്പിക്കുന്നതിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്ന ഒരു പദ്ധതി.",
     },
     category: {
       en: "Horticulture",
       ml: "ഹോർട്ടികൾച്ചർ",
     },
     targetAudience: {
-      en: "Coconut growers",
-      ml: "നാളികേര കർഷകർ",
+      en: "Coconut growers, farmers' cooperatives, and other stakeholders in coconut cultivation in Kerala.",
+      ml: "കേരളത്തിലെ തെങ്ങ് കർഷകർ, കർഷക സഹകരണ സംഘങ്ങൾ, തെങ്ങ് കൃഷിയിലെ മറ്റ് പങ്കാളികൾ.",
     },
     implementingAgency: {
-      en: "Dept. of Agriculture, Kerala",
-      ml: "കൃഷി വകുപ്പ്, കേരളം",
+      en: "Department of Agriculture Development and Farmers' Welfare, Government of Kerala (Coconut Development Board also involved)",
+      ml: "കേരള സർക്കാർ, കൃഷി വികസന കർഷക ക്ഷേമ വകുപ്പ് (നാളികേര വികസന ബോർഡും ഉൾപ്പെടുന്നു)",
     },
     benefits: {
-      en: "Support for bio-inputs, pest management, and replanting",
-      ml: "ജൈവ ഇൻപുട്ടുകൾ, കീടനിയന്ത്രണം, പുനർ നടീൽ എന്നിവയ്ക്കുള്ള പിന്തുണ",
+      en: "Support for planting new coconut trees, replanting old/diseased trees, integrated pest and disease management, promotion of value-added coconut products, and financial assistance for related activities.",
+      ml: "പുതിയ തെങ്ങുകൾ നടുന്നതിനും, പഴയതും രോഗബാധയേറ്റതുമായ തെങ്ങുകൾ മാറ്റി നടുന്നതിനും, സംയോജിത കീടരോഗ നിയന്ത്രണത്തിനും, മൂല്യവർദ്ധിത നാളികേര ഉൽപന്നങ്ങൾ പ്രോത്സാഹിപ്പിക്കുന്നതിനും, അനുബന്ധ പ്രവർത്തനങ്ങൾക്കും സാമ്പത്തിക സഹായം.",
+    },
+    eligibility: {
+      en: "Coconut growers with land suitable for cultivation, groups of farmers, and cooperatives.",
+      ml: "കൃഷിക്ക് അനുയോജ്യമായ ഭൂമിയുള്ള തെങ്ങ് കർഷകർ, കർഷകരുടെ ഗ്രൂപ്പുകൾ, സഹകരണ സംഘങ്ങൾ.",
+    },
+    documentsRequired: {
+      en: "Land records, Identity proof, Application form, details of proposed activities.",
+      ml: "ഭൂമിയുടെ രേഖകൾ, തിരിച്ചറിയൽ തെളിവ്, അപേക്ഷാ ഫോം, നിർദ്ദിഷ്ട പ്രവർത്തനങ്ങളുടെ വിവരങ്ങൾ.",
+    },
+    applicationProcess: {
+      en: "Through Krishi Bhavans and District Agricultural Offices.",
+      ml: "കൃഷി ഭവനുകൾ വഴിയും ജില്ലാ കൃഷി ഓഫീസുകൾ വഴിയും.",
     },
     ageGroup: {
       en: "All",
@@ -1236,11 +1565,11 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
-      en: "Coconut Grower",
-      ml: "നാളികേര കർഷകൻ",
+      en: "Farmer",
+      ml: "കർഷകൻ",
     },
     location: {
       en: "Kerala",
@@ -1256,10 +1585,24 @@ export const agricultureScheme = [
       ],
     },
     keywords: {
-      en: ["coconut", "productivity", "pest management", "Kerala government"],
-      ml: ["നാളികേരം", "ഉൽപ്പാദനക്ഷമത", "കീടനിയന്ത്രണം", "കേരള സർക്കാർ"],
+      en: [
+        "coconut",
+        "productivity",
+        "pest management",
+        "Kerala government",
+        "horticulture",
+        "coconut development board",
+      ],
+      ml: [
+        "നാളികേരം",
+        "ഉൽപാദനക്ഷമത",
+        "കീടനിയന്ത്രണം",
+        "കേരള സർക്കാർ",
+        "ഹോർട്ടികൾച്ചർ",
+        "നാളികേര വികസന ബോർഡ്",
+      ],
     },
-    link: "https://keralaagriculture.gov.in/schemes/coconut-development/",
+    link: "https://keralaagriculture.gov.in/schemes/coconut-development/", // This is a relevant link.
     ratings: { avgRating: 0, count: 0 },
   },
   {
@@ -1270,7 +1613,7 @@ export const agricultureScheme = [
     },
     description: {
       en: "Support value chain in horticultural crops",
-      ml: "ഹോർട്ടികൾച്ചർ വിളകളിലെ മൂല്യ ശൃംഖലയെ പിന്തുണയ്ക്കുന്നു",
+      ml: "ഹോർട്ടികൾച്ചർ വിളകളിൽ മൂല്യ ശൃംഖലയെ പിന്തുണയ്ക്കുക",
     },
     category: {
       en: "Horticulture",
@@ -1288,6 +1631,18 @@ export const agricultureScheme = [
       en: "Nursery development, post-harvest tech, export promotion",
       ml: "നഴ്സറി വികസനം, വിളവെടുപ്പിന് ശേഷമുള്ള സാങ്കേതികവിദ്യ, കയറ്റുമതി പ്രോത്സാഹനം",
     },
+    eligibility: {
+      en: "Horticulture farmers in Kerala",
+      ml: "കേരളത്തിലെ ഹോർട്ടികൾച്ചർ കർഷകർ",
+    },
+    documentsRequired: {
+      en: "Not specified, likely proof of farming and identity",
+      ml: "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, കാർഷിക പ്രവർത്തനങ്ങളുടെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം",
+    },
+    applicationProcess: {
+      en: "Contact Kerala State Horticulture Mission or relevant agricultural offices",
+      ml: "കേരള സംസ്ഥാന ഹോർട്ടികൾച്ചർ മിഷനുമായോ ബന്ധപ്പെട്ട കാർഷിക ഓഫീസുകളുമായോ ബന്ധപ്പെടുക",
+    },
     ageGroup: {
       en: "All",
       ml: "എല്ലാവരും",
@@ -1298,7 +1653,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Horticulture Farmer",
@@ -1334,7 +1689,10 @@ export const agricultureScheme = [
       ],
     },
     link: "http://shm.kerala.gov.in/",
-    ratings: { avgRating: 0, count: 0 },
+    ratings: {
+      avgRating: 0,
+      count: 0,
+    },
   },
   {
     id: "agriculture21",
@@ -1344,7 +1702,7 @@ export const agricultureScheme = [
     },
     description: {
       en: "Promote integrated, sustainable agriculture",
-      ml: "സമഗ്രവും സുസ്ഥിരവുമായ കൃഷി പ്രോത്സാഹിപ്പിക്കുന്നു",
+      ml: "സമഗ്രവും സുസ്ഥിരവുമായ കൃഷി പ്രോത്സാഹിപ്പിക്കുക",
     },
     category: {
       en: "Agriculture",
@@ -1362,6 +1720,18 @@ export const agricultureScheme = [
       en: "Model farm houses, soil & water conservation, local market access",
       ml: "മാതൃകാ ഫാം ഹൗസുകൾ, മണ്ണ്, ജല സംരക്ഷണം, പ്രാദേശിക വിപണി പ്രവേശനം",
     },
+    eligibility: {
+      en: "Marginal farmers in Idukki district",
+      ml: "ഇടുക്കി ജില്ലയിലെ ചെറുകിട കർഷകർ",
+    },
+    documentsRequired: {
+      en: "Not specified, likely proof of land ownership/farming status and identity",
+      ml: "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, ഭൂമി ഉടമസ്ഥത/കൃഷി നിലയുടെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം",
+    },
+    applicationProcess: {
+      en: "Contact Department of Agriculture, Kerala or NABARD offices in Idukki",
+      ml: "ഇടുക്കിയിലെ കൃഷി വകുപ്പ്, കേരളം അല്ലെങ്കിൽ നബാർഡ് ഓഫീസുകളുമായി ബന്ധപ്പെടുക",
+    },
     ageGroup: {
       en: "All",
       ml: "എല്ലാവരും",
@@ -1372,7 +1742,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "Marginal",
-      ml: "നാമമാത്ര വരുമാനം",
+      ml: "ചെറുകിട",
     },
     profession: {
       en: "Farmer",
@@ -1402,7 +1772,10 @@ export const agricultureScheme = [
       ml: ["സമഗ്ര കൃഷി", "സുസ്ഥിര കൃഷി", "ഇടുക്കി", "കേരള സർക്കാർ", "നബാർഡ്"],
     },
     link: "https://meserumelycollege.ac.in/wp-content/uploads/2020/08/ANNUAL-REPORT-MSW-2020-2021.pdf",
-    ratings: { avgRating: 0, count: 0 },
+    ratings: {
+      avgRating: 0,
+      count: 0,
+    },
   },
   {
     id: "agriculture22",
@@ -1412,7 +1785,7 @@ export const agricultureScheme = [
     },
     description: {
       en: "Promote organic farming, waste, and water management",
-      ml: "ജൈവകൃഷി, മാലിന്യം, ജല പരിപാലനം എന്നിവ പ്രോത്സാഹിപ്പിക്കുന്നു",
+      ml: "ജൈവകൃഷി, മാലിന്യ സംസ്കരണം, ജലസംരക്ഷണം എന്നിവ പ്രോത്സാഹിപ്പിക്കുക",
     },
     category: {
       en: "Environment",
@@ -1420,7 +1793,7 @@ export const agricultureScheme = [
     },
     targetAudience: {
       en: "Entire rural community",
-      ml: "മുഴുവൻ ഗ്രാമീണ സമൂഹം",
+      ml: "മുഴുവൻ ഗ്രാമീണ സമൂഹവും",
     },
     implementingAgency: {
       en: "Govt. of Kerala",
@@ -1428,7 +1801,19 @@ export const agricultureScheme = [
     },
     benefits: {
       en: "Awareness, convergence of water/agriculture projects",
-      ml: "ബോധവൽക്കരണം, ജലം/കൃഷി പദ്ധതികളുടെ സംയോജനം",
+      ml: "അവബോധം, ജല/കാർഷിക പദ്ധതികളുടെ ഏകീകരണം",
+    },
+    eligibility: {
+      en: "Residents and communities in rural Kerala interested in organic farming and environmental conservation",
+      ml: "ജൈവകൃഷിയിലും പരിസ്ഥിതി സംരക്ഷണത്തിലും താൽപ്പര്യമുള്ള കേരളത്തിലെ ഗ്രാമീണ നിവാസികളും കമ്മ്യൂണിറ്റികളും",
+    },
+    documentsRequired: {
+      en: "Not explicitly stated, often community-based participation",
+      ml: "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, സാധാരണയായി കമ്മ്യൂണിറ്റി അധിഷ്ഠിത പങ്കാളിത്തം",
+    },
+    applicationProcess: {
+      en: "Participate through local self-government bodies or community initiatives",
+      ml: "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളിലൂടെയോ കമ്മ്യൂണിറ്റി സംരംഭങ്ങളിലൂടെയോ പങ്കെടുക്കുക",
     },
     ageGroup: {
       en: "All",
@@ -1440,7 +1825,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Organic Farmer",
@@ -1466,10 +1851,13 @@ export const agricultureScheme = [
         "water management",
         "Kerala government",
       ],
-      ml: ["ജൈവകൃഷി", "മാലിന്യ സംസ്കരണം", "ജല പരിപാലനം", "കേരള സർക്കാർ"],
+      ml: ["ജൈവകൃഷി", "മാലിന്യ സംസ്കരണം", "ജലസംരക്ഷണം", "കേരള സർക്കാർ"],
     },
     link: "http://haritham.kerala.gov.in/",
-    ratings: { avgRating: 0, count: 0 },
+    ratings: {
+      avgRating: 0,
+      count: 0,
+    },
   },
   {
     id: "agriculture23",
@@ -1479,7 +1867,7 @@ export const agricultureScheme = [
     },
     description: {
       en: "Enhance dairy productivity and income",
-      ml: "ക്ഷീര ഉൽപ്പാദനക്ഷമതയും വരുമാനവും വർദ്ധിപ്പിക്കുന്നു",
+      ml: "ക്ഷീര ഉത്പാദനക്ഷമതയും വരുമാനവും വർദ്ധിപ്പിക്കുക",
     },
     category: {
       en: "Dairy",
@@ -1497,6 +1885,18 @@ export const agricultureScheme = [
       en: "Financial and infrastructural support",
       ml: "സാമ്പത്തികവും അടിസ്ഥാന സൗകര്യപരവുമായ പിന്തുണ",
     },
+    eligibility: {
+      en: "Dairy farmers in Idukki district",
+      ml: "ഇടുക്കി ജില്ലയിലെ ക്ഷീരകർഷകർ",
+    },
+    documentsRequired: {
+      en: "Not specified, likely proof of dairy farming and identity",
+      ml: "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, ക്ഷീരകർഷകന്റെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം",
+    },
+    applicationProcess: {
+      en: "Contact Department of Dairy Development, Kerala offices in Idukki",
+      ml: "ഇടുക്കിയിലെ ക്ഷീരവികസന വകുപ്പ്, കേരളം ഓഫീസുകളുമായി ബന്ധപ്പെടുക",
+    },
     ageGroup: {
       en: "All",
       ml: "എല്ലാവരും",
@@ -1507,7 +1907,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Dairy Farmer",
@@ -1528,20 +1928,23 @@ export const agricultureScheme = [
     },
     keywords: {
       en: ["dairy", "productivity", "income", "Idukki", "Kerala government"],
-      ml: ["ക്ഷീരം", "ഉൽപ്പാദനക്ഷമത", "വരുമാനം", "ഇടുക്കി", "കേരള സർക്കാർ"],
+      ml: ["ക്ഷീരം", "ഉത്പാദനക്ഷമത", "വരുമാനം", "ഇടുക്കി", "കേരള സർക്കാർ"],
     },
     link: "https://dairydevelopment.kerala.gov.in/Eng/index.php/institutions/district-wise-offices?id=534",
-    ratings: { avgRating: 0, count: 0 },
+    ratings: {
+      avgRating: 0,
+      count: 0,
+    },
   },
   {
     id: "agriculture24",
     name: {
       en: "Ksheera Theeram",
-      ml: "ക്ഷീരതീരം",
+      ml: "ക്ഷീര തീരം",
     },
     description: {
       en: "Improve milk quality and farmer welfare",
-      ml: "പാൽ ഗുണമേന്മയും കർഷക ക്ഷേമവും മെച്ചപ്പെടുത്തുന്നു",
+      ml: "പാൽ ഗുണനിലവാരം മെച്ചപ്പെടുത്തുകയും കർഷക ക്ഷേമം ഉറപ്പാക്കുകയും ചെയ്യുക",
     },
     category: {
       en: "Dairy",
@@ -1559,6 +1962,18 @@ export const agricultureScheme = [
       en: "Cattle feed, veterinary aid, milk chilling support",
       ml: "കന്നുകാലി തീറ്റ, വെറ്ററിനറി സഹായം, പാൽ ശീതീകരണ പിന്തുണ",
     },
+    eligibility: {
+      en: "Dairy farmers in Kerala",
+      ml: "കേരളത്തിലെ ക്ഷീരകർഷകർ",
+    },
+    documentsRequired: {
+      en: "Not specified, likely proof of dairy farming and identity",
+      ml: "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, ക്ഷീരകർഷകന്റെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം",
+    },
+    applicationProcess: {
+      en: "Contact Department of Dairy Development, Kerala",
+      ml: "ക്ഷീരവികസന വകുപ്പ്, കേരളവുമായി ബന്ധപ്പെടുക",
+    },
     ageGroup: {
       en: "All",
       ml: "എല്ലാവരും",
@@ -1569,7 +1984,7 @@ export const agricultureScheme = [
     },
     incomeLevel: {
       en: "All",
-      ml: "എല്ലാ വരുമാനക്കാരും",
+      ml: "എല്ലാവരും",
     },
     profession: {
       en: "Dairy Farmer",
@@ -1597,7 +2012,7 @@ export const agricultureScheme = [
         "Kerala government",
       ],
       ml: [
-        "പാൽ ഗുണമേന്മ",
+        "പാൽ ഗുണനിലവാരം",
         "ക്ഷീര ക്ഷേമം",
         "കന്നുകാലി തീറ്റ",
         "വെറ്ററിനറി സഹായം",
@@ -1605,6 +2020,9 @@ export const agricultureScheme = [
       ],
     },
     link: "https://keralabank.co.in/p_l_agri_014.php",
-    ratings: { avgRating: 0, count: 0 },
+    ratings: {
+      avgRating: 0,
+      count: 0,
+    },
   },
 ];

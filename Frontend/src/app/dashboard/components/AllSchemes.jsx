@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import SchemeDisplay from "app/components/SchemeDisplay";
+import SchemeDisplay from "@/components/main-components/SchemeDisplay";
 
 const Page = ({ inputValue, sidebarFilters }) => {
   const [data, setData] = useState([]);
@@ -51,8 +51,8 @@ const Page = ({ inputValue, sidebarFilters }) => {
       console.log(result);
       setData(result);
     } catch (err) {
-      console.log(err)
-    } 
+      console.log(err);
+    }
   }
   if (loading) {
     return <div className="text-center p-4">Loading schemes...</div>;

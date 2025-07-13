@@ -19,9 +19,17 @@ const AgricultureSchemeSchema = new mongoose.Schema(
     },
     name: MultilingualString,
     description: MultilingualString,
+    // Added targetAudience field
+    targetAudience: MultilingualString,
     benefits: MultilingualString,
     category: MultilingualString,
     implementingAgency: MultilingualString,
+    // Added eligibility field
+    eligibility: MultilingualString,
+    // Added documentsRequired field
+    documentsRequired: MultilingualString,
+    // Added applicationProcess field
+    applicationProcess: MultilingualString,
     ageGroup: MultilingualString,
     gender: MultilingualString,
     incomeLevel: MultilingualString,

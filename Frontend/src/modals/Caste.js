@@ -1,26 +1,42 @@
 import mongoose from "mongoose";
 
-// Define the schema for the application_process sub-document
-const ApplicationProcessSchema = new mongoose.Schema(
-  {
-    link: { type: String, required: false }, // Link might be "N/A" so not strictly required at schema level
-    process_description: { type: String, required: false }, // Can be "N/A"
-  },
-  { _id: false } // Do not create a default _id for subdocuments
-);
+const MultilingualString = {
+  en: { type: String, required: true },
+  ml: { type: String, required: true },
+};
 
-// Define the main CasteScheme Schema
+const MultilingualStringArray = {
+  en: { type: [String], required: true },
+  ml: { type: [String], required: true },
+};
+
 const CasteSchemeSchema = new mongoose.Schema(
   {
-    id: { type: String, required: true, unique: true },
-    name: { type: String, required: true },
-    eligibility: { type: String, required: true },
-    application_process: { type: ApplicationProcessSchema, required: true }, // Embed the sub-schema
-    documents_required: { type: String, required: true },
-    benefits: { type: String, required: true },
-    keywords: { type: [String], required: true }, // Array of strings
-    socialCategory: { type: [String], required: true }, // Array of strings
-    profession: { type: String, required: true },
+    id: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    name: MultilingualString,
+    description: MultilingualString,
+    targetAudience: MultilingualString,
+    benefits: MultilingualString,
+    category: MultilingualString,
+    implementingAgency: MultilingualString,
+    eligibility: MultilingualString,
+    documentsRequired: MultilingualString,
+    applicationProcess: MultilingualString,
+    ageGroup: MultilingualString,
+    gender: MultilingualString,
+    incomeLevel: MultilingualString,
+    profession: MultilingualString,
+    location: MultilingualString,
+    socialCategory: MultilingualStringArray,
+    keywords: MultilingualStringArray,
+    link: {
+      type: String,
+      required: true,
+    },
     ratings: {
       avgRating: {
         type: Number,
@@ -32,16 +48,10 @@ const CasteSchemeSchema = new mongoose.Schema(
       },
     },
   },
-  {
-    collection: "CasteSchemes", // Explicitly set the collection name
-    timestamps: true, // Adds createdAt and updatedAt fields automatically
-  }
+  { collection: "CasteSchemesNew", timestamps: true }
 );
 
-// Create a Mongoose Model from the Schema
-// This prevents Mongoose from recompiling the model if it already exists
 const CasteSchemes =
-  mongoose.models.CasteSchemes ||
-  mongoose.model("CasteSchemes", CasteSchemeSchema);
-
+  mongoose.models.CasteSchemesNew ||
+  mongoose.model("CasteSchemesNew", CasteSchemeSchema);
 export default CasteSchemes;

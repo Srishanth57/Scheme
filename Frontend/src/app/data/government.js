@@ -3552,7 +3552,8 @@ export const cooperative = [
       "The cooperator's annual income should not exceed Rs. 36,000/-. An application in the prescribed format, along with an income certificate from the Village Officer, a doctor's certificate regarding medical expenses, and sufficient documents, should be submitted to the Registrar of Cooperative Societies through the Secretary of the Circle Cooperative Union/Assistant Registrar (General) of the taluk where they permanently reside.",
     benefitsProvided:
       "Cooperator - Rs. 50,000, if deceased, family members/dependents will receive up to Rs. 25,000/-.",
-    applicationProcess: "Registrar of Cooperative Societies, Thiruvananthapuram",
+    applicationProcess:
+      "Registrar of Cooperative Societies, Thiruvananthapuram",
     contact: "Assistant Registrar (General) Offices at Taluk level",
     id: "cooperative_1",
   },

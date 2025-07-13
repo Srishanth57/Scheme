@@ -512,4 +512,364 @@ export const agricultureScheme = [
     ],
     link: "https://keralabank.co.in/p_l_agri_014.php",
   },
+   {
+    "id": "agriculture20",
+    "name": {
+      "en": "Kerala State Horticulture Mission",
+      "ml": "കേരള സംസ്ഥാന ഹോർട്ടികൾച്ചർ മിഷൻ"
+    },
+    "description": {
+      "en": "Support value chain in horticultural crops",
+      "ml": "ഹോർട്ടികൾച്ചർ വിളകളിൽ മൂല്യ ശൃംഖലയെ പിന്തുണയ്ക്കുക"
+    },
+    "category": {
+      "en": "Horticulture",
+      "ml": "ഹോർട്ടികൾച്ചർ"
+    },
+    "targetAudience": {
+      "en": "Horticulture farmers",
+      "ml": "ഹോർട്ടികൾച്ചർ കർഷകർ"
+    },
+    "implementingAgency": {
+      "en": "Govt. of Kerala",
+      "ml": "കേരള സർക്കാർ"
+    },
+    "benefits": {
+      "en": "Nursery development, post-harvest tech, export promotion",
+      "ml": "നഴ്സറി വികസനം, വിളവെടുപ്പിന് ശേഷമുള്ള സാങ്കേതികവിദ്യ, കയറ്റുമതി പ്രോത്സാഹനം"
+    },
+    "eligibility": {
+      "en": "Horticulture farmers in Kerala",
+      "ml": "കേരളത്തിലെ ഹോർട്ടികൾച്ചർ കർഷകർ"
+    },
+    "documentsRequired": {
+      "en": "Not specified, likely proof of farming and identity",
+      "ml": "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, കാർഷിക പ്രവർത്തനങ്ങളുടെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം"
+    },
+    "applicationProcess": {
+      "en": "Contact Kerala State Horticulture Mission or relevant agricultural offices",
+      "ml": "കേരള സംസ്ഥാന ഹോർട്ടികൾച്ചർ മിഷനുമായോ ബന്ധപ്പെട്ട കാർഷിക ഓഫീസുകളുമായോ ബന്ധപ്പെടുക"
+    },
+    "ageGroup": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "gender": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "incomeLevel": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "profession": {
+      "en": "Horticulture Farmer",
+      "ml": "ഹോർട്ടികൾച്ചർ കർഷകൻ"
+    },
+    "location": {
+      "en": "Kerala",
+      "ml": "കേരളം"
+    },
+    "socialCategory": {
+      "en": ["General", "SC", "ST", "OBC"],
+      "ml": ["പൊതുവിഭാഗം", "പട്ടികജാതി", "പട്ടികവർഗ്ഗം", "മറ്റ് പിന്നോക്ക വിഭാഗങ്ങൾ"]
+    },
+    "keywords": {
+      "en": ["horticulture", "value chain", "post-harvest", "export", "Kerala government"],
+      "ml": ["ഹോർട്ടികൾച്ചർ", "മൂല്യ ശൃംഖല", "വിളവെടുപ്പിന് ശേഷം", "കയറ്റുമതി", "കേരള സർക്കാർ"]
+    },
+    "link": "http://shm.kerala.gov.in/",
+    "ratings": {
+      "avgRating": 0,
+      "count": 0
+    }
+  },
+  {
+    "id": "agriculture21",
+    "name": {
+      "en": "Jaiva Griham (Idukki Special)",
+      "ml": "ജൈവ ഗൃഹം (ഇടുക്കി സ്പെഷ്യൽ)"
+    },
+    "description": {
+      "en": "Promote integrated, sustainable agriculture",
+      "ml": "സമഗ്രവും സുസ്ഥിരവുമായ കൃഷി പ്രോത്സാഹിപ്പിക്കുക"
+    },
+    "category": {
+      "en": "Agriculture",
+      "ml": "കൃഷി"
+    },
+    "targetAudience": {
+      "en": "Marginal farmers in Idukki",
+      "ml": "ഇടുക്കിയിലെ ചെറുകിട കർഷകർ"
+    },
+    "implementingAgency": {
+      "en": "Dept. of Agriculture, Kerala / NABARD",
+      "ml": "കൃഷി വകുപ്പ്, കേരളം / നബാർഡ്"
+    },
+    "benefits": {
+      "en": "Model farm houses, soil & water conservation, local market access",
+      "ml": "മാതൃകാ ഫാം ഹൗസുകൾ, മണ്ണ്, ജല സംരക്ഷണം, പ്രാദേശിക വിപണി പ്രവേശനം"
+    },
+    "eligibility": {
+      "en": "Marginal farmers in Idukki district",
+      "ml": "ഇടുക്കി ജില്ലയിലെ ചെറുകിട കർഷകർ"
+    },
+    "documentsRequired": {
+      "en": "Not specified, likely proof of land ownership/farming status and identity",
+      "ml": "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, ഭൂമി ഉടമസ്ഥത/കൃഷി നിലയുടെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം"
+    },
+    "applicationProcess": {
+      "en": "Contact Department of Agriculture, Kerala or NABARD offices in Idukki",
+      "ml": "ഇടുക്കിയിലെ കൃഷി വകുപ്പ്, കേരളം അല്ലെങ്കിൽ നബാർഡ് ഓഫീസുകളുമായി ബന്ധപ്പെടുക"
+    },
+    "ageGroup": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "gender": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "incomeLevel": {
+      "en": "Marginal",
+      "ml": "ചെറുകിട"
+    },
+    "profession": {
+      "en": "Farmer",
+      "ml": "കർഷകൻ"
+    },
+    "location": {
+      "en": "Idukki, Kerala",
+      "ml": "ഇടുക്കി, കേരളം"
+    },
+    "socialCategory": {
+      "en": ["General", "SC", "ST", "OBC"],
+      "ml": ["പൊതുവിഭാഗം", "പട്ടികജാതി", "പട്ടികവർഗ്ഗം", "മറ്റ് പിന്നോക്ക വിഭാഗങ്ങൾ"]
+    },
+    "keywords": {
+      "en": ["integrated agriculture", "sustainable agriculture", "Idukki", "Kerala government", "NABARD"],
+      "ml": ["സമഗ്ര കൃഷി", "സുസ്ഥിര കൃഷി", "ഇടുക്കി", "കേരള സർക്കാർ", "നബാർഡ്"]
+    },
+    "link": "https://meserumelycollege.ac.in/wp-content/uploads/2020/08/ANNUAL-REPORT-MSW-2020-2021.pdf",
+    "ratings": {
+      "avgRating": 0,
+      "count": 0
+    }
+  },
+  {
+    "id": "agriculture22",
+    "name": {
+      "en": "Haritha Keralam Mission",
+      "ml": "ഹരിത കേരളം മിഷൻ"
+    },
+    "description": {
+      "en": "Promote organic farming, waste, and water management",
+      "ml": "ജൈവകൃഷി, മാലിന്യ സംസ്കരണം, ജലസംരക്ഷണം എന്നിവ പ്രോത്സാഹിപ്പിക്കുക"
+    },
+    "category": {
+      "en": "Environment",
+      "ml": "പരിസ്ഥിതി"
+    },
+    "targetAudience": {
+      "en": "Entire rural community",
+      "ml": "മുഴുവൻ ഗ്രാമീണ സമൂഹവും"
+    },
+    "implementingAgency": {
+      "en": "Govt. of Kerala",
+      "ml": "കേരള സർക്കാർ"
+    },
+    "benefits": {
+      "en": "Awareness, convergence of water/agriculture projects",
+      "ml": "അവബോധം, ജല/കാർഷിക പദ്ധതികളുടെ ഏകീകരണം"
+    },
+    "eligibility": {
+      "en": "Residents and communities in rural Kerala interested in organic farming and environmental conservation",
+      "ml": "ജൈവകൃഷിയിലും പരിസ്ഥിതി സംരക്ഷണത്തിലും താൽപ്പര്യമുള്ള കേരളത്തിലെ ഗ്രാമീണ നിവാസികളും കമ്മ്യൂണിറ്റികളും"
+    },
+    "documentsRequired": {
+      "en": "Not explicitly stated, often community-based participation",
+      "ml": "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, സാധാരണയായി കമ്മ്യൂണിറ്റി അധിഷ്ഠിത പങ്കാളിത്തം"
+    },
+    "applicationProcess": {
+      "en": "Participate through local self-government bodies or community initiatives",
+      "ml": "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളിലൂടെയോ കമ്മ്യൂണിറ്റി സംരംഭങ്ങളിലൂടെയോ പങ്കെടുക്കുക"
+    },
+    "ageGroup": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "gender": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "incomeLevel": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "profession": {
+      "en": "Organic Farmer",
+      "ml": "ജൈവ കർഷകൻ"
+    },
+    "location": {
+      "en": "Kerala",
+      "ml": "കേരളം"
+    },
+    "socialCategory": {
+      "en": ["General", "SC", "ST", "OBC"],
+      "ml": ["പൊതുവിഭാഗം", "പട്ടികജാതി", "പട്ടികവർഗ്ഗം", "മറ്റ് പിന്നോക്ക വിഭാഗങ്ങൾ"]
+    },
+    "keywords": {
+      "en": ["organic farming", "waste management", "water management", "Kerala government"],
+      "ml": ["ജൈവകൃഷി", "മാലിന്യ സംസ്കരണം", "ജലസംരക്ഷണം", "കേരള സർക്കാർ"]
+    },
+    "link": "http://haritham.kerala.gov.in/",
+    "ratings": {
+      "avgRating": 0,
+      "count": 0
+    }
+  },
+  {
+    "id": "agriculture23",
+    "name": {
+      "en": "Idukki Special Dairy Package",
+      "ml": "ഇടുക്കി സ്പെഷ്യൽ ക്ഷീര പാക്കേജ്"
+    },
+    "description": {
+      "en": "Enhance dairy productivity and income",
+      "ml": "ക്ഷീര ഉത്പാദനക്ഷമതയും വരുമാനവും വർദ്ധിപ്പിക്കുക"
+    },
+    "category": {
+      "en": "Dairy",
+      "ml": "ക്ഷീരം"
+    },
+    "targetAudience": {
+      "en": "Dairy farmers in Idukki",
+      "ml": "ഇടുക്കിയിലെ ക്ഷീരകർഷകർ"
+    },
+    "implementingAgency": {
+      "en": "Dept. of Dairy Development, Kerala",
+      "ml": "ക്ഷീരവികസന വകുപ്പ്, കേരളം"
+    },
+    "benefits": {
+      "en": "Financial and infrastructural support",
+      "ml": "സാമ്പത്തികവും അടിസ്ഥാന സൗകര്യപരവുമായ പിന്തുണ"
+    },
+    "eligibility": {
+      "en": "Dairy farmers in Idukki district",
+      "ml": "ഇടുക്കി ജില്ലയിലെ ക്ഷീരകർഷകർ"
+    },
+    "documentsRequired": {
+      "en": "Not specified, likely proof of dairy farming and identity",
+      "ml": "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, ക്ഷീരകർഷകന്റെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം"
+    },
+    "applicationProcess": {
+      "en": "Contact Department of Dairy Development, Kerala offices in Idukki",
+      "ml": "ഇടുക്കിയിലെ ക്ഷീരവികസന വകുപ്പ്, കേരളം ഓഫീസുകളുമായി ബന്ധപ്പെടുക"
+    },
+    "ageGroup": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "gender": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "incomeLevel": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "profession": {
+      "en": "Dairy Farmer",
+      "ml": "ക്ഷീരകർഷകൻ"
+    },
+    "location": {
+      "en": "Idukki, Kerala",
+      "ml": "ഇടുക്കി, കേരളം"
+    },
+    "socialCategory": {
+      "en": ["General", "SC", "ST", "OBC"],
+      "ml": ["പൊതുവിഭാഗം", "പട്ടികജാതി", "പട്ടികവർഗ്ഗം", "മറ്റ് പിന്നോക്ക വിഭാഗങ്ങൾ"]
+    },
+    "keywords": {
+      "en": ["dairy", "productivity", "income", "Idukki", "Kerala government"],
+      "ml": ["ക്ഷീരം", "ഉത്പാദനക്ഷമത", "വരുമാനം", "ഇടുക്കി", "കേരള സർക്കാർ"]
+    },
+    "link": "https://dairydevelopment.kerala.gov.in/Eng/index.php/institutions/district-wise-offices?id=534",
+    "ratings": {
+      "avgRating": 0,
+      "count": 0
+    }
+  },
+  {
+    "id": "agriculture24",
+    "name": {
+      "en": "Ksheera Theeram",
+      "ml": "ക്ഷീര തീരം"
+    },
+    "description": {
+      "en": "Improve milk quality and farmer welfare",
+      "ml": "പാൽ ഗുണനിലവാരം മെച്ചപ്പെടുത്തുകയും കർഷക ക്ഷേമം ഉറപ്പാക്കുകയും ചെയ്യുക"
+    },
+    "category": {
+      "en": "Dairy",
+      "ml": "ക്ഷീരം"
+    },
+    "targetAudience": {
+      "en": "Dairy farmers",
+      "ml": "ക്ഷീരകർഷകർ"
+    },
+    "implementingAgency": {
+      "en": "Dept. of Dairy Development, Kerala",
+      "ml": "ക്ഷീരവികസന വകുപ്പ്, കേരളം"
+    },
+    "benefits": {
+      "en": "Cattle feed, veterinary aid, milk chilling support",
+      "ml": "കന്നുകാലി തീറ്റ, വെറ്ററിനറി സഹായം, പാൽ ശീതീകരണ പിന്തുണ"
+    },
+    "eligibility": {
+      "en": "Dairy farmers in Kerala",
+      "ml": "കേരളത്തിലെ ക്ഷീരകർഷകർ"
+    },
+    "documentsRequired": {
+      "en": "Not specified, likely proof of dairy farming and identity",
+      "ml": "പ്രത്യേകം പറഞ്ഞിട്ടില്ല, ക്ഷീരകർഷകന്റെയും തിരിച്ചറിയലിന്റെയും തെളിവുകൾ ആവശ്യമായി വരാം"
+    },
+    "applicationProcess": {
+      "en": "Contact Department of Dairy Development, Kerala",
+      "ml": "ക്ഷീരവികസന വകുപ്പ്, കേരളവുമായി ബന്ധപ്പെടുക"
+    },
+    "ageGroup": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "gender": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "incomeLevel": {
+      "en": "All",
+      "ml": "എല്ലാവരും"
+    },
+    "profession": {
+      "en": "Dairy Farmer",
+      "ml": "ക്ഷീരകർഷകൻ"
+    },
+    "location": {
+      "en": "Kerala",
+      "ml": "കേരളം"
+    },
+    "socialCategory": {
+      "en": ["General", "SC", "ST", "OBC"],
+      "ml": ["പൊതുവിഭാഗം", "പട്ടികജാതി", "പട്ടികവർഗ്ഗം", "മറ്റ് പിന്നോക്ക വിഭാഗങ്ങൾ"]
+    },
+    "keywords": {
+      "en": ["milk quality", "dairy welfare", "cattle feed", "veterinary aid", "Kerala government"],
+      "ml": ["പാൽ ഗുണനിലവാരം", "ക്ഷീര ക്ഷേമം", "കന്നുകാലി തീറ്റ", "വെറ്ററിനറി സഹായം", "കേരള സർക്കാർ"]
+    },
+    "link": "https://keralabank.co.in/p_l_agri_014.php",
+    "ratings": {
+      "avgRating": 0,
+      "count": 0
+    }
+  }
 ];

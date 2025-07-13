@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
-import "../(home)/MyScheme.css";
+import "../../../app/(home)/MyScheme.css";
+
+
+
 import {
   SignInButton,
   SignUpButton,
@@ -42,7 +45,9 @@ const NavBar = () => {
               <div className="">
                 <ModeToggle />
               </div>
-             <div><DropdownMenuRadioGroupDemo/></div>
+              <div>
+                <DropdownMenuRadioGroupDemo />
+              </div>
             </header>
           </nav>
         </div>

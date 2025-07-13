@@ -1,8 +1,7 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
-import SchemeDisplay from "app/components/SchemeDisplay";
+import SchemeDisplay from "@/components/main-components/SchemeDisplay";
 
 const Page = ({ inputValue, sidebarFilters }) => {
   const [data, setData] = useState([]);
