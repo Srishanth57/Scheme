@@ -53,6 +53,20 @@ const components = [
     description:
       "Initiatives focused on child welfare, education, nutrition, mental health, and protection from abuse or neglect.",
   },
+  {
+    title: "Women",
+    key: "women",
+    href: "/dashboard/women",
+    description:
+      "Schemes and initiatives supporting women's welfare, empowerment, education, health, safety, financial aid, and social protection.",
+  },
+  {
+    title: "Elderly",
+    key: "elderly",
+    href: "/dashboard/elderly",
+    description:
+      "Schemes and benefits for senior citizens, including pensions, healthcare, social security, legal rights, travel concessions, and welfare support.",
+  },
 ];
 const GovernmentSchemeComponents = [
   {
@@ -96,7 +110,6 @@ const GovernmentSchemeComponents = [
 export function NavigationMenuDemo() {
   const { setSelectedTab } = useDashboardContext();
   const handleNavMenu = (value) => {
-    console.log(value);
     setSelectedTab(value);
   };
   return (

@@ -3,8 +3,11 @@ import AgricultureScheme from "modals/Agriculture";
 import CasteSchemes from "modals/Caste";
 import ChildrenSchemes from "modals/Children";
 import DisabledSchemes from "modals/Disabled";
+import WomenSchemes from "modals/Women";
 import HealthCareSchemes from "modals/HealthCare";
 import { getSchemeModel } from "lib/govtSchemeModel";
+
+import ElderlySchemes from "modals/Elderly";
 
 // Separate the lists
 const allowedGovCollections = [
@@ -19,9 +22,11 @@ const allowedGovCollections = [
 const modelMap = {
   caste: CasteSchemes,
   children: ChildrenSchemes,
+  women: WomenSchemes,
   disabled: DisabledSchemes,
   agriculture: AgricultureScheme,
   healthcare: HealthCareSchemes,
+  elderly: ElderlySchemes,
 };
 
 export async function GET(request, { params }) {
@@ -36,6 +41,7 @@ export async function GET(request, { params }) {
     // Government collections (use shared schema)
     if (allowedGovCollections.includes(category)) {
       const model = getSchemeModel(category); // dynamic model from collection name
+
       schemes = await model.find({});
     }
     // Other static categories using modelMap

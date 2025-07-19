@@ -86,14 +86,14 @@ const filterOptions = {
     { en: "Disabled", ml: "ഭിന്നശേഷിക്കാർ" },
     {
       en: "Economically Weaker Section (EWS)",
-      ml: "സാമ്പത്തികമായി പിന്നാക്കം (EWS)",
+      ml: "സാമ്പത്തികമായി ദുർബലരായ വിഭാഗം (EWS)",
     },
-    { en: "Migrant Workers", ml: "പ്രവാസി തൊഴിലാളികൾ" },
+    { en: "Migrant Workers", ml: "അതിഥി തൊഴിലാളികൾ" },
     { en: "Children", ml: "കുട്ടികൾ" },
     { en: "Senior Citizen", ml: "മുതിർന്ന പൗരൻ" },
     {
       en: "Government Employees/Pensioners",
-      ml: "സർക്കാർ ജീവനക്കാർ/പിൻഷൻ കൈപ്പറ്റുന്നവർ",
+      ml: "സർക്കാർ ജീവനക്കാർ/പെൻഷൻകാർ",
     },
   ],
   implementedBy: [
@@ -816,6 +816,185 @@ export function FilterSection() {
             </Label>
             {filterOptions.category.map((eachCategory) => {
               const category = eachCategory?.[currentLang] || eachCategory;
+              return (
+                <div key={category} className="flex items-center gap-3">
+                  <Checkbox
+                    id={category}
+                    checked={selectedFilters.category.includes(category)}
+                    onCheckedChange={(checked) => {
+                      handleCheckboxChange("category", category, checked);
+                    }}
+                  />
+                  <Label htmlFor={category}>{category}</Label>
+                </div>
+              );
+            })}
+            {/* Action buttons visible only on mobile (max-md) */}
+            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+              <div className="flex justify-between gap-2 mt-4">
+                <Button
+                  variant="ghost"
+                  onClick={clearFilters}
+                  className="text-sm px-2 flex-1 bg-[#FD151B]"
+                >
+                  <XIcon className="h-4 w-4 mr-1" />
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                </Button>
+                <Button
+                  variant="ghost"
+                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  className="text-sm px-2 flex-1 bg-[#688E26]"
+                >
+                  {currentLang === "en"
+                    ? "Apply filters"
+                    : "ഫിൽട്ടറുകൾ പ്രയോഗിക്കുക"}
+                </Button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+      {selectedTab === "women" && (
+        <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
+          <div className="flex flex-row justify-between items-center">
+            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+              {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
+            </h2>
+            {/* Show Clear all button on desktop, hide on mobile */}
+            {areFiltersApplied() && (
+              <Button
+                variant="ghost"
+                onClick={clearFilters}
+                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+              >
+                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
+                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+              </Button>
+            )}
+          </div>
+          <div className="flex flex-col gap-y-5">
+            <FilterDropdown
+              filterType="ageGroup"
+              label={filterDisplayNames.ageGroup?.[currentLang]}
+              options={filterOptions.ageGroup}
+            />
+
+            <FilterDropdown
+              filterType="gender"
+              label={filterDisplayNames.gender?.[currentLang]}
+              options={filterOptions.gender}
+            />
+
+            <FilterDropdown
+              filterType="incomeLevel"
+              label={filterDisplayNames.incomeLevel?.[currentLang]}
+              options={filterOptions.incomeLevel}
+            />
+
+        
+
+            <FilterDropdown
+              filterType="location"
+              label={filterDisplayNames.location?.[currentLang]}
+              options={filterOptions.location}
+            />
+            <Label
+              htmlFor="category"
+              className="text-sm font-medium text-muted-foreground"
+            >
+              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+            </Label>
+            {filterOptions.category.map((eachCategory) => {
+              const category = eachCategory?.[currentLang];
+              return (
+                <div key={category} className="flex items-center gap-3">
+                  <Checkbox
+                    id={category}
+                    checked={selectedFilters.category.includes(category)}
+                    onCheckedChange={(checked) => {
+                      handleCheckboxChange("category", category, checked);
+                    }}
+                  />
+                  <Label htmlFor={category}>{category}</Label>
+                </div>
+              );
+            })}
+            {/* Action buttons visible only on mobile (max-md) */}
+            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+              <div className="flex justify-between gap-2 mt-4">
+                <Button
+                  variant="ghost"
+                  onClick={clearFilters}
+                  className="text-sm px-2 flex-1 bg-[#FD151B]"
+                >
+                  <XIcon className="h-4 w-4 mr-1" />
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                </Button>
+                <Button
+                  variant="ghost"
+                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  className="text-sm px-2 flex-1 bg-[#688E26]"
+                >
+                  {currentLang === "en"
+                    ? "Apply filters"
+                    : "ഫിൽട്ടറുകൾ പ്രയോഗിക്കുക"}
+                </Button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+      {selectedTab === "elderly" && (
+        <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
+          <div className="flex flex-row justify-between items-center">
+            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+              {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
+            </h2>
+            {/* Show Clear all button on desktop, hide on mobile */}
+            {areFiltersApplied() && (
+              <Button
+                variant="ghost"
+                onClick={clearFilters}
+                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+              >
+                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
+                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+              </Button>
+            )}
+          </div>
+          <div className="flex flex-col gap-y-5">
+            <FilterDropdown
+              filterType="ageGroup"
+              label={filterDisplayNames.ageGroup?.[currentLang]}
+              options={filterOptions.ageGroup}
+            />
+
+            <FilterDropdown
+              filterType="gender"
+              label={filterDisplayNames.gender?.[currentLang]}
+              options={filterOptions.gender}
+            />
+
+            <FilterDropdown
+              filterType="incomeLevel"
+              label={filterDisplayNames.incomeLevel?.[currentLang]}
+              options={filterOptions.incomeLevel}
+            />
+
+
+            <FilterDropdown
+              filterType="location"
+              label={filterDisplayNames.location?.[currentLang]}
+              options={filterOptions.location}
+            />
+            <Label
+              htmlFor="category"
+              className="text-sm font-medium text-muted-foreground"
+            >
+              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+            </Label>
+            {filterOptions.category.map((eachCategory) => {
+              const category = eachCategory?.[currentLang];
               return (
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox

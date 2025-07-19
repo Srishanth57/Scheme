@@ -15,15 +15,17 @@
 
 import { useState } from "react";
 import { Star } from "lucide-react";
-import { useUser } from "@clerk/nextjs";
+import { SignUpButton, useUser } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
-import { scheme } from "app/data/government";
+
 import { useEffect } from "react";
+import { Button } from "../ui/button";
 
 export default function StarRating({ schemeId, avgRating = 0, count = 0 }) {
   const [userRating, setUserRating] = useState(0);
   const [hovered, setHovered] = useState(0);
   const [activePath, setActivePath] = useState("");
+  const [errorMsg, setErrorMsg] = useState(false);
 
   const { isSignedIn, user } = useUser(); // get user object
 
@@ -32,9 +34,13 @@ export default function StarRating({ schemeId, avgRating = 0, count = 0 }) {
     const path = pathname.split("/");
     setActivePath(path[path.length - 1]);
   }, [pathname]);
+
   useEffect(() => {
     const checkRating = async () => {
-      if (!isSignedIn) return;
+      if (!isSignedIn) {
+        setErrorMsg(true);
+        return;
+      }
       try {
         const res = await fetch(
           `/api/ratings/check/${activePath}/${schemeId}?userId=${user.id}`
@@ -89,6 +95,12 @@ export default function StarRating({ schemeId, avgRating = 0, count = 0 }) {
       <span className="ml-2">
         {avgRating.toFixed(1)} ({count} rating{count !== 1 && "s"})
       </span>
+
+     { errorMsg && <SignUpButton>
+        <Button className="text-white font-bold font-sans bg-red-500 p-2 rounded-b-sm">
+          {errorMsg && "Login/SignUp to Rate"}
+        </Button>
+      </SignUpButton>}
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import UserRating from "modals/UserRating";
-
 import connectDB from "lib/db";
 import CasteSchemes from "modals/Caste";
 import ChildrenSchemes from "modals/Children";
@@ -7,6 +6,8 @@ import DisabledSchemes from "modals/Disabled";
 import AgricultureSchemes from "modals/Agriculture";
 import HealthCareSchemes from "modals/HealthCare";
 import { getSchemeModel } from "lib/govtSchemeModel";
+import WomenSchemes from "modals/Women";
+import ElderlySchemes from "modals/Elderly";
 
 const allowedGovCollections = [
   { modelName: "Government_Cooperative", pathname: "Cooperative" },
@@ -26,6 +27,8 @@ const modelMap = {
   disabled: DisabledSchemes,
   agriculture: AgricultureSchemes,
   healthcare: HealthCareSchemes,
+  women: WomenSchemes,
+  elderly: ElderlySchemes,
 };
 
 export async function POST(request, { params }) {
@@ -41,8 +44,6 @@ export async function POST(request, { params }) {
     console.log(model);
 
     if (!model) {
-      console.log("entered model");
-      console.log(category);
       const updatedCategory = allowedGovCollections.find(
         (each) => category === each.pathname
       );

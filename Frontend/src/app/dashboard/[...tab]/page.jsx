@@ -4,6 +4,10 @@ import DisabledScheme from "../components/DisabledScheme";
 import HealthCareScheme from "../components/HealthCareScheme";
 import ChildrenScheme from "../components/ChildrenScheme";
 import CasteScheme from "../components/CasteScheme";
+import WomenSchemes from "../components/WomenSchemes";
+import Elderly from "../components/Elderly";
+
+
 import GovernmentSheetSchemes from "./GovernmentSchemes/Schemes";
 import NationalHealthMission from "./GovernmentSchemes/NationalHealthMission";
 import KeralaWaterAuthority from "./GovernmentSchemes/KeralaWaterAuthority";
@@ -17,6 +21,8 @@ const tabComponents = {
   allScheme: AllSchemes,
   disabled: DisabledScheme,
   healthCare: HealthCareScheme,
+  women: WomenSchemes,
+  elderly: Elderly,
   "governmentSchemes/scheme": GovernmentSheetSchemes,
   "governmentSchemes/nationHealth": NationalHealthMission,
   "governmentSchemes/keralaWaterAuthority": KeralaWaterAuthority,

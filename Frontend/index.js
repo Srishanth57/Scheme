@@ -12,6 +12,21 @@ import HealthCareSchemes from "./src/modals/HealthCare.js";
 import { healthCare } from "./src/app/data/translatedData/healthcare.js";
 import DisabledSchemes from "./src/modals/Disabled.js";
 import { disabled } from "./src/app/data/translatedData/disabled.js";
+
+import GovernmentSchemeSchemas from "./src/modals/Government.js";
+import { scheme } from "./src/app/data/translatedData/government.js";
+import { cooperative } from "./src/app/data/translatedData/government.js";
+import { policeDepartment } from "./src/app/data/translatedData/government.js";
+import { keralaWaterAuthority } from "./src/app/data/translatedData/government.js";
+import { lifeMission } from "./src/app/data/translatedData/government.js";
+import { nationalHealthMission } from "./src/app/data/translatedData/government.js";
+import WomenSchemes from "./src/modals/Women.js";
+import { womenScheme } from "./src/app/data/translatedData/women.js";
+import { elderly } from "./src/app/data/translatedData/elderly.js";
+import ElderlySchemes from "./src/modals/Elderly.js";
+import CategorySchemes from "./src/modals/Category.js";
+import { category } from "./src/app/data/translatedData/category.js";
+
 dotenv.config();
 
 async function insertData() {
@@ -31,10 +46,12 @@ async function insertData() {
       console.error("❌ MongoDB connection error:", err);
       process.exit(1); // Stop the app
     } // ✅ connectDB should use MONGODB_URI internally
-
-    // Insert health care schemes
-    const result = await DisabledSchemes.insertMany(disabled);
-    console.log("✅ Successfully inserted health care data:", result.length);
+    // await mongoose.connection.db
+    //   .collection("Government_lifeMission_New")
+    //   .rename("Government_LifeMission");
+    // console.log("success"); // Used for renaming the scheme names
+    // Insert schemes
+    const result = await CategorySchemes.insertMany(category);
   } catch (err) {
     if (err.code === 11000) {
       console.error("⚠️ Duplicate key error: Data might already exist.");
