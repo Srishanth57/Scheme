@@ -4,6 +4,7 @@ import CasteSchemes from "modals/Caste";
 import ChildrenSchemes from "modals/Children";
 import DisabledSchemes from "modals/Disabled";
 import HealthCareSchemes from "modals/HealthCare";
+import ElderlySchemes from "modals/Elderly";
 import { getSchemeModel } from "lib/govtSchemeModel";
 
 // Separate the lists
@@ -22,6 +23,7 @@ const generalSchemeModelMap = {
   DisabledSchemes: DisabledSchemes,
   AgricultureScheme: AgricultureScheme,
   HealthCareSchemes: HealthCareSchemes,
+  ElderlySchemes: ElderlySchemes,
 };
 
 const GeneralSchemes = [
@@ -30,6 +32,7 @@ const GeneralSchemes = [
   "DisabledSchemes",
   "AgricultureScheme",
   "HealthCareSchemes",
+  "ElderlySchemes",
 ];
 
 export async function GET() {
@@ -59,7 +62,7 @@ export async function GET() {
     const allSchemes = results.flat();
 
     console.log(`Fetched ${allSchemes.length} schemes in total.`);
-
+    console.log(allSchemes);
     return new Response(JSON.stringify(allSchemes), {
       status: 200,
       headers: { "Content-Type": "application/json" },

@@ -2,13 +2,12 @@ export const scheme = [
   {
     name: {
       en: "Rural Dairy Extension Services",
-      ml: "ഗ്രാമീണ കറവ വിപുലീകരണ സേവനങ്ങൾ",
+      ml: "ഗ്രാമീണ ക്ഷീര വിജ്ഞാന വ്യാപന സേവനങ്ങൾ",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
       en: "Effective Extension Work",
-      ml: "ഫലപ്രദമായ വിപുലീകരണ പ്രവർത്തനം",
+      ml: "ഫലപ്രദമായ വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ",
     },
     targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
@@ -20,359 +19,273 @@ export const scheme = [
       count: 0,
     },
     id: "sheet1_1",
+    keywords: {
+      en: ["dairy extension", "rural services"],
+      ml: ["ക്ഷീര വിജ്ഞാന വ്യാപനം", "ഗ്രാമീണ സേവനങ്ങൾ"],
+    },
   },
-
   {
     name: {
       en: "Farmers Contact Programme",
       ml: "കർഷക സമ്പർക്ക പരിപാടി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
       en: "Effective Extension Work",
-      ml: "ഫലപ്രദമായ വിപുലീകരണ പ്രവർത്തനം",
+      ml: "ഫലപ്രദമായ വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies & Farmers",
-      ml: "കറവ സഹകരണ സംഘങ്ങളും കർഷകരും",
-    },
-    eligibilityCriterias: {
-      en: "Dairy Co-operative Societies",
-      ml: "കറവ സഹകരണ സംഘങ്ങൾ",
-    },
-    benefitsProvided: {
-      en: "3000/- per programme",
-      ml: "ഓരോ പരിപാടിക്കും 3000/-",
-    },
-    applicationProcess: {
-      en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
-    ratings: {
-      avgRating: 0,
-      count: 0,
-    },
-    id: "sheet1_2",
-  },
-
-  {
-    name: {
-      en: "World Milk Day",
-      ml: "ലോക പാൽ ദിനം",
-    },
-    implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
-    objective: {
-      en: "Awareness among public about Milk and Milk Products",
-      ml: "പാലിനെയും പാൽ ഉൽപ്പന്നങ്ങളെയും കുറിച്ച് പൊതുജനങ്ങളിൽ അവബോധം",
-    },
-    targetBeneficiaries: {
-      en: "Common Public",
-      ml: "സാധാരണ പൊതുജനം",
-    },
-    eligibilityCriterias: {
-      en: "Dairy Co-operative Societies",
-      ml: "കറവ സഹകരണ സംഘങ്ങൾ",
-    },
-    benefitsProvided: {
-      en: "10000/- per District",
-      ml: "ഓരോ ജില്ലയ്ക്കും 10000/-",
-    },
-    applicationProcess: {
-      en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
-    ratings: {
-      avgRating: 0,
-      count: 0,
-    },
-    id: "sheet1_3",
-  },
-
-  {
-    name: {
-      en: "Contingency Fund",
-      ml: "അടിയന്തര ഫണ്ട്",
-    },
-    implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
-    objective: {
-      en: "Cow Death due to unforeseen reasons",
-      ml: "അപ്രതീക്ഷിത കാരണങ്ങളാൽ പശു മരണം",
-    },
-    targetBeneficiaries: {
-      en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
-    },
-    eligibilityCriterias: {
-      en: "Veterinary Surgeon's Certificate and Dairy Co-operative Society Recommendations",
-      ml: "വെറ്ററിനറി സർജന്റെ സർട്ടിഫിക്കറ്റും കറവ സഹകരണ സംഘത്തിന്റെ ശുപാർശയും",
-    },
-    benefitsProvided: {
-      en: "15000/- per Person",
-      ml: "ഓരോ വ്യക്തിക്കും 15000/-",
-    },
-    applicationProcess: {
-      en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
-    ratings: {
-      avgRating: 0,
-      count: 0,
-    },
-    id: "sheet1_4",
-  },
-  {
-    name: {
-      en: "Block Ksheerasangamam",
-      ml: "ബ്ലോക്ക് ക്ഷീരസങ്ഗമം",
-    },
-    implementedBy: {
-      en: ["Government of Kerala"],
-      ml: ["കേരള സർക്കാർ"],
-    },
-    objective: {
-      en: "Effective Extension Work, Awareness among Public and farmers about Department activities",
-      ml: "വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ച് പൊതുജനങ്ങളിലും കർഷകരിലും ഫലപ്രദമായ വിപുലീകരണ പ്രവർത്തനങ്ങളും അവബോധവും",
-    },
-    targetBeneficiaries: {
-      en: "Common Public & Dairy Farmers",
-      ml: "സാധാരണ പൊതുജനങ്ങളും ക്ഷീരകർഷകരും",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളും കർഷകരും",
     },
     eligibilityCriterias: {
       en: "Dairy Co-operative Societies",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     benefitsProvided: {
-      en: "₹50,000/- Per Block",
-      ml: "ഓരോ ബ്ലോക്കിനും ₹50,000/-",
+      en: "₹3,000/- per programme",
+      ml: "ഓരോ പരിപാടിക്കും ₹3000/-",
     },
     applicationProcess: {
-      en: "Dairy Co-operative Societies through Dairy Extension service Unit",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് വഴി ക്ഷീര സഹകരണ സംഘങ്ങൾ",
+      en: "Request through Dairy Extension Service Units",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    ratings: {
+      avgRating: 0,
+      count: 0,
     },
     contact: {
       en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
+Dairy Extension Service Unit Adimali
 Email - dairyofficeadimali@gmail.com;
-
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-
-Dairy Extension Service Unit Elamdesam  
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
 Email - deoelamdesam@gmail.com;
-
-Dairy Extension Service Unit Idukki  
+Dairy Extension Service Unit Idukki
 Email - deoidukki@gmail.com;
-
-Dairy Extension Service Unit Kattappana  
+Dairy Extension Service Unit Kattappana
 Email - desukattappana1988@gmail.com;
-
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-
-Dairy Extension Service Unit, Peermade  
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
 Email - deopeermade@gmail.com;
-
-Dairy Extension Service Unit, Thodupuzha  
+Dairy Extension Service Unit, Thodupuzha
 Email - deotdpa@gmail.com;
-
-Dairy Extension Service Unit, Vathikudy  
+Dairy Extension Service Unit, Vathikudy
 Email - deovtk-idk.dairy@kerala.gov.in;
-
-Quality Control Office  
+Quality Control Office
 Email - qcodairyidk@gmail.com;
-
-Deputy Director Office  
+Deputy Director Office
 Email - dd-idk.dairy@kerala.gov.in`,
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
 ഇമെയിൽ - dairyofficeadimali@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവീകുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഏലംദേശം  
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
 ഇമെയിൽ - deoelamdesam@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
 ഇമെയിൽ - deoidukki@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കട്ടപ്പന  
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
 ഇമെയിൽ - desukattappana1988@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
 ഇമെയിൽ - deopeermade@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
 ഇമെയിൽ - deotdpa@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
 ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
 ഇമെയിൽ - qcodairyidk@gmail.com;
-
-ഉപ ഡയറക്ടർ ഓഫീസ്  
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
 ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
     },
-    id: "sheet1_5",
+
+    id: "sheet1_2",
+    keywords: {
+      en: ["farmers contact", "dairy", "co-operative society"],
+      ml: ["കർഷക സമ്പർക്കം", "ക്ഷീരം", "സഹകരണ സംഘം"],
+    },
   },
   {
     name: {
-      en: "District Ksheerasangamam",
-      ml: "ജില്ലാ ക്ഷീരസങ്ഗമം",
+      en: "World Milk Day",
+      ml: "ലോക ക്ഷീര ദിനം",
+    },
+    implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
+    objective: {
+      en: "Awareness among public about Milk and Milk Products",
+      ml: "പാലിനെയും പാൽ ഉത്പന്നങ്ങളെയും കുറിച്ച് പൊതുജനങ്ങളിൽ അവബോധം സൃഷ്ടിക്കുക.",
+    },
+    targetBeneficiaries: {
+      en: "General Public",
+      ml: "പൊതുജനങ്ങൾ",
+    },
+    eligibilityCriterias: {
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
+    },
+    benefitsProvided: {
+      en: "₹10,000/- per District",
+      ml: "ഓരോ ജില്ലയ്ക്കും ₹10,000/-",
+    },
+    applicationProcess: {
+      en: "Request through Dairy Extension Service Units",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    ratings: {
+      avgRating: 0,
+      count: 0,
+    },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_3",
+    keywords: {
+      en: ["world milk day", "dairy", "awareness"],
+      ml: ["ലോക ക്ഷീര ദിനം", "ക്ഷീരം", "ബോധവൽക്കരണം"],
+    },
+  },
+  {
+    name: {
+      en: "Contingency Fund",
+      ml: "അടിയന്തര സഹായ നിധി",
+    },
+    implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
+    objective: {
+      en: "Support in case of cow death due to unforeseen reasons",
+      ml: "അപ്രതീക്ഷിത കാരണങ്ങളാൽ പശുക്കൾ ചത്തുപോകുന്ന സാഹചര്യത്തിൽ സഹായം നൽകുക.",
+    },
+    targetBeneficiaries: {
+      en: "Dairy Farmers",
+      ml: "ക്ഷീരകർഷകർ",
+    },
+    eligibilityCriterias: {
+      en: "Veterinary Surgeon's Certificate and Dairy Co-operative Society Recommendations",
+      ml: "വെറ്ററിനറി സർജന്റെ സർട്ടിഫിക്കറ്റും ക്ഷീര സഹകരണ സംഘത്തിന്റെ ശുപാർശയും.",
+    },
+    benefitsProvided: {
+      en: "₹15,000/- per Person",
+      ml: "ഒരാൾക്ക് ₹15,000/-",
+    },
+    applicationProcess: {
+      en: "Request through Dairy Extension Service Units",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    ratings: {
+      avgRating: 0,
+      count: 0,
+    },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_4",
+    keywords: {
+      en: ["contingency fund", "cow death", "dairy farmers"],
+      ml: ["അടിയന്തര സഹായം", "പശു മരണം", "ക്ഷീരകർഷകർ"],
+    },
+  },
+  {
+    name: {
+      en: "Block Ksheerasangamam",
+      ml: "ബ്ലോക്ക് ക്ഷീരസംഗമം",
     },
     implementedBy: {
       en: ["Government of Kerala"],
@@ -380,34 +293,173 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     objective: {
       en: "Effective Extension Work, Awareness among Public and farmers about Department activities",
-      ml: "വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ച് പൊതുജനങ്ങളിലും കർഷകരിലും ഫലപ്രദമായ വിപുലീകരണ പ്രവർത്തനങ്ങളും അവബോധവും",
+      ml: "വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ച് പൊതുജനങ്ങളിലും കർഷകരിലും അവബോധം സൃഷ്ടിക്കുകയും വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ നടത്തുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
-      en: "Common Public & Dairy Farmers",
-      ml: "സാധാരണ പൊതുജനങ്ങളും ക്ഷീരകർഷകരും",
+      en: "General Public & Dairy Farmers",
+      ml: "പൊതുജനങ്ങളും ക്ഷീരകർഷകരും",
+    },
+    eligibilityCriterias: {
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
+    },
+    benefitsProvided: {
+      en: "₹50,000/- per Block",
+      ml: "ഓരോ ബ്ലോക്കിനും ₹50,000/-",
+    },
+    applicationProcess: {
+      en: "Dairy Co-operative Societies through Dairy Extension service Unit",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റ് വഴി ക്ഷീര സഹകരണ സംഘങ്ങൾ അപേക്ഷിക്കണം.",
+    },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_5",
+    keywords: {
+      en: ["ksheerasangamam", "block level", "dairy meet"],
+      ml: ["ക്ഷീരസംഗമം", "ബ്ലോക്ക് തലം", "ക്ഷീര സംഗമം"],
+    },
+  },
+  {
+    name: {
+      en: "District Ksheerasangamam",
+      ml: "ജില്ലാ ക്ഷീരസംഗമം",
+    },
+    implementedBy: {
+      en: ["Government of Kerala"],
+      ml: ["കേരള സർക്കാർ"],
+    },
+    objective: {
+      en: "Effective Extension Work, Awareness among Public and farmers about Department activities",
+      ml: "വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ച് പൊതുജനങ്ങളിലും കർഷകരിലും അവബോധം സൃഷ്ടിക്കുകയും വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ നടത്തുകയും ചെയ്യുക.",
+    },
+    targetBeneficiaries: {
+      en: "General Public & Dairy Farmers",
+      ml: "പൊതുജനങ്ങളും ക്ഷീരകർഷകരും",
     },
     eligibilityCriterias: {
       en: "Best Dairy Co-operative Society of the District",
-      ml: "ജില്ലയിലെ മികച്ച ക്ഷീര സഹകരണ സംഘം",
+      ml: "ജില്ലയിലെ മികച്ച ക്ഷീര സഹകരണ സംഘം.",
     },
     benefitsProvided: {
-      en: "₹100,000/- Per Block",
-      ml: "ഓരോ ബ്ലോക്കിനും ₹100,000/-",
+      en: "₹100,000/- per Block",
+      ml: "ഓരോ ബ്ലോക്കിനും ₹1,00,000/-",
     },
     applicationProcess: {
-      en: "Eligible Dairy Co-operative Societies are through Review Meeting of the Society Representatives and all District Officers",
-      ml: "യോഗ്യരായ ക്ഷീര സഹകരണ സംഘങ്ങൾ സംഘ പ്രതിനിധികളുടെയും എല്ലാ ജില്ലാ ഉദ്യോഗസ്ഥരുടെയും അവലോകന യോഗത്തിലൂടെ",
+      en: "Eligible Dairy Co-operative Societies are selected through a review meeting of Society Representatives and District Officers.",
+      ml: "സംഘം പ്രതിനിധികളുടെയും ജില്ലാ ഉദ്യോഗസ്ഥരുടെയും അവലോകന യോഗം വഴി യോഗ്യരായ ക്ഷീര സഹകരണ സംഘങ്ങളെ തിരഞ്ഞെടുക്കുന്നു.",
     },
     contact: {
       en: "Deputy Director of the District",
-      ml: "ജില്ലയിലെ ഉപ ഡയറക്ടർ",
+      ml: "ജില്ലാ ഡെപ്യൂട്ടി ഡയറക്ടർ",
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_6",
+    keywords: {
+      en: ["ksheerasangamam", "district level", "dairy meet"],
+      ml: ["ക്ഷീരസംഗമം", "ജില്ലാ തലം", "ക്ഷീര സംഗമം"],
+    },
   },
   {
     name: {
       en: "Students Dairy Club",
-      ml: "സ്റ്റുഡന്റ്സ് ഡയറി ക്ലബ്",
+      ml: "വിദ്യാർത്ഥി ക്ഷീര ക്ലബ്ബ്",
     },
     implementedBy: {
       en: ["Government of Kerala"],
@@ -415,128 +467,150 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     objective: {
       en: "Awareness among Students about Dairy Sector and Department activities.",
-      ml: "ക്ഷീര മേഖലയെക്കുറിച്ചും വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ചും വിദ്യാർത്ഥികളിൽ അവബോധം.",
+      ml: "ക്ഷീര മേഖലയെക്കുറിച്ചും വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ചും വിദ്യാർത്ഥികളിൽ അവബോധം സൃഷ്ടിക്കുക.",
     },
     targetBeneficiaries: {
-      en: "Govt. Schools in District",
+      en: "Government Schools in the District",
       ml: "ജില്ലയിലെ സർക്കാർ സ്കൂളുകൾ",
     },
     eligibilityCriterias: {
       en: "Best performing schools of the Districts",
-      ml: "ജില്ലയിലെ മികച്ച പ്രകടനം കാഴ്ചവെക്കുന്ന സ്കൂളുകൾ",
+      ml: "ജില്ലയിലെ മികച്ച പ്രകടനം കാഴ്ചവെക്കുന്ന സ്കൂളുകൾ.",
     },
     benefitsProvided: {
-      en: "₹25,000/- Per Club",
+      en: "₹25,000/- per Club",
       ml: "ഓരോ ക്ലബ്ബിനും ₹25,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷ",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     contact: {
       en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
+Dairy Extension Service Unit Adimali
 Email - dairyofficeadimali@gmail.com;
-
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-
-Dairy Extension Service Unit Elamdesam  
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
 Email - deoelamdesam@gmail.com;
-
-Dairy Extension Service Unit Idukki  
+Dairy Extension Service Unit Idukki
 Email - deoidukki@gmail.com;
-
-Dairy Extension Service Unit Kattappana  
+Dairy Extension Service Unit Kattappana
 Email - desukattappana1988@gmail.com;
-
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-
-Dairy Extension Service Unit, Peermade  
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
 Email - deopeermade@gmail.com;
-
-Dairy Extension Service Unit, Thodupuzha  
+Dairy Extension Service Unit, Thodupuzha
 Email - deotdpa@gmail.com;
-
-Dairy Extension Service Unit, Vathikudy  
+Dairy Extension Service Unit, Vathikudy
 Email - deovtk-idk.dairy@kerala.gov.in;
-
-Quality Control Office  
+Quality Control Office
 Email - qcodairyidk@gmail.com;
-
-Deputy Director Office  
+Deputy Director Office
 Email - dd-idk.dairy@kerala.gov.in`,
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
 ഇമെയിൽ - dairyofficeadimali@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവീകുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഏലംദേശം  
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
 ഇമെയിൽ - deoelamdesam@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
 ഇമെയിൽ - deoidukki@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കട്ടപ്പന  
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
 ഇമെയിൽ - desukattappana1988@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
 ഇമെയിൽ - deopeermade@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
 ഇമെയിൽ - deotdpa@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
 ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
 ഇമെയിൽ - qcodairyidk@gmail.com;
-
-ഉപ ഡയറക്ടർ ഓഫീസ്  
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
 ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
     },
+
     id: "sheet1_7",
+    keywords: {
+      en: ["dairy club", "students", "school"],
+      ml: ["ഡയറി ക്ലബ്ബ്", "വിദ്യാർത്ഥികൾ", "സ്കൂൾ"],
+    },
   },
   {
     name: {
       en: "Milk Shed Development Programme",
-      ml: "മിൽക്ക് ഷെഡ് ഡെവലപ്മെന്റ് പ്രോഗ്രാം",
+      ml: "ക്ഷീര ഗ്രാമം പദ്ധതി",
     },
     implementedBy: {
       en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
-    objective: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    targetBeneficiaries: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    eligibilityCriterias: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    benefitsProvided: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    applicationProcess: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
+    objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    applicationProcess: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    contact: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     contact: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
     },
+
     id: "sheet1_8",
+    keywords: {
+      en: ["milk shed", "ksheera gramam", "dairy development"],
+      ml: ["ക്ഷീര ഗ്രാമം", "ക്ഷീര വികസനം"],
+    },
   },
   {
     name: {
@@ -548,16 +622,16 @@ Email - dd-idk.dairy@kerala.gov.in`,
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Extreme Poverty eradication",
-      ml: "അതിദാരിദ്ര്യ നിർമ്മാർജ്ജനം",
+      en: "Eradication of Extreme Poverty",
+      ml: "അതിദാരിദ്ര്യം ഇല്ലാതാക്കുക",
     },
     targetBeneficiaries: {
       en: "All members included in the extreme poverty list can apply",
-      ml: "അതിദാരിദ്ര്യ പട്ടികയിൽ ഉൾപ്പെട്ട എല്ലാ അംഗങ്ങൾക്കും അപേക്ഷിക്കാം",
+      ml: "അതിദാരിദ്ര്യ പട്ടികയിൽ ഉൾപ്പെട്ട എല്ലാ അംഗങ്ങൾക്കും അപേക്ഷിക്കാം.",
     },
     eligibilityCriterias: {
       en: "All members included in the extreme poverty list can apply",
-      ml: "അതിദാരിദ്ര്യ പട്ടികയിൽ ഉൾപ്പെട്ട എല്ലാ അംഗങ്ങൾക്കും അപേക്ഷിക്കാം",
+      ml: "അതിദാരിദ്ര്യ പട്ടികയിൽ ഉൾപ്പെട്ട എല്ലാ അംഗങ്ങൾക്കും അപേക്ഷിക്കാം.",
     },
     benefitsProvided: {
       en: "₹95,400/-",
@@ -565,1465 +639,1502 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷ",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     contact: {
       en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
+Dairy Extension Service Unit Adimali
 Email - dairyofficeadimali@gmail.com;
-
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-
-Dairy Extension Service Unit Elamdesam  
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
 Email - deoelamdesam@gmail.com;
-
-Dairy Extension Service Unit Idukki  
+Dairy Extension Service Unit Idukki
 Email - deoidukki@gmail.com;
-
-Dairy Extension Service Unit Kattappana  
+Dairy Extension Service Unit Kattappana
 Email - desukattappana1988@gmail.com;
-
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-
-Dairy Extension Service Unit, Peermade  
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
 Email - deopeermade@gmail.com;
-
-Dairy Extension Service Unit, Thodupuzha  
+Dairy Extension Service Unit, Thodupuzha
 Email - deotdpa@gmail.com;
-
-Dairy Extension Service Unit, Vathikudy  
+Dairy Extension Service Unit, Vathikudy
 Email - deovtk-idk.dairy@kerala.gov.in;
-
-Quality Control Office  
+Quality Control Office
 Email - qcodairyidk@gmail.com;
-
-Deputy Director Office  
+Deputy Director Office
 Email - dd-idk.dairy@kerala.gov.in`,
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
 ഇമെയിൽ - dairyofficeadimali@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവീകുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഏലംദേശം  
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
 ഇമെയിൽ - deoelamdesam@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
 ഇമെയിൽ - deoidukki@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കട്ടപ്പന  
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
 ഇമെയിൽ - desukattappana1988@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
 ഇമെയിൽ - deopeermade@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
 ഇമെയിൽ - deotdpa@gmail.com;
-
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
 ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
 ഇമെയിൽ - qcodairyidk@gmail.com;
-
-ഉപ ഡയറക്ടർ ഓഫീസ്  
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
 ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
     },
+
     id: "sheet1_9",
+    keywords: {
+      en: ["poverty eradication", "dairy", "livelihood"],
+      ml: ["ദാരിദ്ര്യ നിർമ്മാർജ്ജനം", "ക്ഷീരം", "ഉപജീവനം"],
+    },
   },
-
   {
     name: {
-      en: "1 cow Unit",
-      ml: "1 പശു യൂണിറ്റ്",
+      en: "Single Cow Unit",
+      ml: "ഒരു പശു യൂണിറ്റ്",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide assistance to dairy farmers",
+      ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to farmers those who have more than 3 Cows",
-      ml: "3-ൽ കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് മുൻഗണന നൽകും",
+      en: "Preference will be given to farmers who have more than 3 cows.",
+      ml: "3-ൽ കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "32000/-",
-      ml: "32000/-",
+      en: "₹32,000/-",
+      ml: "₹32,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_10",
+    keywords: {
+      en: ["cow unit", "ksheerasree"],
+      ml: ["പശു യൂണിറ്റ്", "ക്ഷീരശ്രീ"],
+    },
   },
-
   {
     name: {
-      en: "2 Cow Unit",
-      ml: "2 പശു യൂണിറ്റ്",
+      en: "Two Cow Unit",
+      ml: "രണ്ട് പശു യൂണിറ്റ്",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide assistance to dairy farmers",
+      ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to farmers those who have more than 3 Cows",
-      ml: "3-ൽ കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് മുൻഗണന നൽകും",
+      en: "Preference will be given to farmers who have more than 3 cows.",
+      ml: "3-ൽ കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "64000/-",
-      ml: "64000/-",
+      en: "₹64,000/-",
+      ml: "₹64,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_11",
+    keywords: {
+      en: ["2 cow unit", "ksheerasree"],
+      ml: ["2 പശു യൂണിറ്റ്", "ക്ഷീരശ്രീ"],
+    },
   },
-
   {
     name: {
-      en: "5 Cow Unit",
-      ml: "5 പശു യൂണിറ്റ്",
+      en: "Five Cow Unit",
+      ml: "അഞ്ച് പശു യൂണിറ്റ്",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide assistance to dairy farmers",
+      ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     benefitsProvided: {
-      en: "150000/-",
-      ml: "150000/-",
+      en: "₹150,000/-",
+      ml: "₹1,50,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_12",
+    keywords: {
+      en: ["5 cow unit", "ksheerasree"],
+      ml: ["5 പശു യൂണിറ്റ്", "ക്ഷീരശ്രീ"],
+    },
   },
-
   {
     name: {
-      en: "5 Cow Unit JLG",
-      ml: "5 പശു യൂണിറ്റ് JLG",
+      en: "Five Cow Unit (JLG)",
+      ml: "അഞ്ച് പശു യൂണിറ്റ് (JLG)",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide assistance to dairy farmers",
+      ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
     targetBeneficiaries: {
-      en: "Ksheerasree/SHG/JLG/Kudumbasree",
-      ml: "ക്ഷീരശ്രീ/SHG/JLG/കുടുംബശ്രീ",
+      en: "Ksheerasree/SHG/JLG/Kudumbasree groups",
+      ml: "ക്ഷീരശ്രീ/സ്വയം സഹായ സംഘങ്ങൾ/JLG/കുടുംബശ്രീ യൂണിറ്റുകൾ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to JLG Groups wish to start dairy farming.",
-      ml: "കറവ കൃഷി ആരംഭിക്കാൻ ആഗ്രഹിക്കുന്ന JLG ഗ്രൂപ്പുകൾക്ക് മുൻഗണന നൽകും.",
+      en: "Preference will be given to JLG Groups wishing to start dairy farming.",
+      ml: "ക്ഷീരകൃഷി ആരംഭിക്കാൻ ആഗ്രഹിക്കുന്ന JLG ഗ്രൂപ്പുകൾക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "183000/-",
-      ml: "183000/-",
+      en: "₹183,000/-",
+      ml: "₹1,83,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_13",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_13",
+    keywords: {
+      en: ["5 cow unit", "jlg", "shg", "kudumbasree"],
+      ml: ["5 പശു യൂണിറ്റ്", "ജെഎൽജി", "എസ്എച്ച്ജി", "കുടുംബശ്രീ"],
+    },
+  },
   {
     name: {
-      en: "10 Cow Unit",
-      ml: "10 പശു യൂണിറ്റ്",
+      en: "Ten Cow Unit",
+      ml: "പത്ത് പശു യൂണിറ്റ്",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide assistance to dairy farmers",
+      ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     benefitsProvided: {
-      en: "380000/-",
-      ml: "380000/-",
+      en: "₹380,000/-",
+      ml: "₹3,80,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_14",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_14",
+    keywords: {
+      en: ["10 cow unit", "ksheerasree"],
+      ml: ["10 പശു യൂണിറ്റ്", "ക്ഷീരശ്രീ"],
+    },
+  },
   {
     name: {
-      en: "10 Cow Unit",
-      ml: "10 പശു യൂണിറ്റ്",
+      en: "Ten Cow Unit (JLG)",
+      ml: "പത്ത് പശു യൂണിറ്റ് (JLG)",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide assistance to dairy farmers",
+      ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
     targetBeneficiaries: {
-      en: "Ksheerasree/SHG/JLG/Kudumbasree",
-      ml: "ക്ഷീരശ്രീ/SHG/JLG/കുടുംബശ്രീ",
+      en: "Ksheerasree/SHG/JLG/Kudumbasree groups",
+      ml: "ക്ഷീരശ്രീ/സ്വയം സഹായ സംഘങ്ങൾ/JLG/കുടുംബശ്രീ യൂണിറ്റുകൾ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to JLG Groups wish to start dairy farming.",
-      ml: "കറവ കൃഷി ആരംഭിക്കാൻ ആഗ്രഹിക്കുന്ന JLG ഗ്രൂപ്പുകൾക്ക് മുൻഗണന നൽകും.",
+      en: "Preference will be given to JLG Groups wishing to start dairy farming.",
+      ml: "ക്ഷീരകൃഷി ആരംഭിക്കാൻ ആഗ്രഹിക്കുന്ന JLG ഗ്രൂപ്പുകൾക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "380000/-",
-      ml: "380000/-",
+      en: "₹380,000/-",
+      ml: "₹3,80,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_15",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_15",
+    keywords: {
+      en: ["10 cow unit", "jlg", "shg"],
+      ml: ["10 പശു യൂണിറ്റ്", "ജെഎൽജി", "എസ്എച്ച്ജി"],
+    },
+  },
   {
     name: {
       en: "Ksheerayuva Smart Dairy Farm",
       ml: "ക്ഷീരയുവ സ്മാർട്ട് ഡയറി ഫാം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide special financial assistance for commercial and smart dairy farms for youth.",
+      ml: "യുവാക്കൾക്കായി വാണിജ്യാടിസ്ഥാനത്തിലുള്ള സ്മാർട്ട് ഡയറി ഫാമുകൾക്ക് പ്രത്യേക സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Special financial assistance for commercial dairy farmers and smart dairy farms for youth",
-      ml: "വാണിജ്യ കറവ കർഷകർക്കും യുവാക്കൾക്കുള്ള സ്മാർട്ട് ഡയറി ഫാമുകൾക്കും പ്രത്യേക സാമ്പത്തിക സഹായം",
+      en: "Young entrepreneurs in the dairy sector.",
+      ml: "ക്ഷീരമേഖലയിലെ യുവ സംരംഭകർ.",
     },
     eligibilityCriterias: {
-      en: "Priority given to young dairy farmers entering the dairy sector",
-      ml: "കറവ മേഖലയിൽ പ്രവേശിക്കുന്ന യുവ കറവ കർഷകർക്ക് മുൻഗണന",
+      en: "Priority given to young dairy farmers entering the dairy sector.",
+      ml: "ക്ഷീരമേഖലയിലേക്ക് കടന്നുവരുന്ന യുവ കർഷകർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "464000/-",
-      ml: "464000/-",
+      en: "₹464,000/-",
+      ml: "₹4,64,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_16",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_16",
+    keywords: {
+      en: ["ksheerayuva", "smart dairy farm", "youth"],
+      ml: ["ക്ഷീരയുവ", "സ്മാർട്ട് ഡയറി ഫാം", "യുവജനങ്ങൾ"],
+    },
+  },
   {
     name: {
       en: "Ksheeralayam",
       ml: "ക്ഷീരാലയം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "For the development of Working families in the plantations",
-      ml: "തോട്ടങ്ങളിലെ തൊഴിലാളി കുടുംബങ്ങളുടെ വികസനത്തിനായി",
+      en: "For the development of working families in plantation areas.",
+      ml: "തോട്ടം മേഖലയിലെ തൊഴിലാളി കുടുംബങ്ങളുടെ ഉന്നമനത്തിനായി.",
     },
     targetBeneficiaries: {
       en: "Plantation workers",
       ml: "തോട്ടം തൊഴിലാളികൾ",
     },
     eligibilityCriterias: {
-      en: "Priority will be given to economically and socially backward families in the plantation sector",
-      ml: "തോട്ടം മേഖലയിലെ സാമ്പത്തികമായും സാമൂഹികമായും പിന്നാക്ക കുടുംബങ്ങൾക്ക് മുൻഗണന",
+      en: "Priority will be given to economically and socially backward families in the plantation sector.",
+      ml: "തോട്ടം മേഖലയിലെ സാമ്പത്തികമായും സാമൂഹികമായും പിന്നോക്കം നിൽക്കുന്ന കുടുംബങ്ങൾക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "1100000/-",
-      ml: "1100000/-",
+      en: "₹1,100,000/-",
+      ml: "₹11,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_17",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_17",
+    keywords: {
+      en: ["ksheeralayam", "plantation workers", "dairy"],
+      ml: ["ക്ഷീരാലയം", "തോട്ടം തൊഴിലാളികൾ", "ക്ഷീരം"],
+    },
+  },
   {
     name: {
       en: "Heifer Park",
-      ml: "പെൺകിടാവ് പാർക്ക്",
+      ml: "ഹെഫർ പാർക്ക് (കിടാരി പാർക്ക്)",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To assist dairy farmers in rearing high-quality heifers.",
+      ml: "ഉയർന്ന ഗുണമേന്മയുള്ള കിടാരികളെ വളർത്തുന്നതിന് കർഷകരെ സഹായിക്കുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Farmers/SHG/JLG/Kudumbasree",
-      ml: "കറവ കർഷകർ/SHG/JLG/കുടുംബശ്രീ",
+      en: "Dairy Farmers/SHG/JLG/Kudumbasree groups",
+      ml: "ക്ഷീരകർഷകർ/സ്വയം സഹായ സംഘങ്ങൾ/JLG/കുടുംബശ്രീ യൂണിറ്റുകൾ",
     },
     eligibilityCriterias: {
-      en: "Dairy Farmers/SHG/JLG/Kudumbasree",
-      ml: "കറവ കർഷകർ/SHG/JLG/കുടുംബശ്രീ",
+      en: "Dairy Farmers/SHG/JLG/Kudumbasree groups",
+      ml: "ക്ഷീരകർഷകർ/സ്വയം സഹായ സംഘങ്ങൾ/JLG/കുടുംബശ്രീ യൂണിറ്റുകൾ",
     },
     benefitsProvided: {
-      en: "900000/-",
-      ml: "900000/-",
+      en: "₹900,000/-",
+      ml: "₹9,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_18",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_18",
+    keywords: {
+      en: ["heifer park", "calf rearing"],
+      ml: ["ഹെഫർ പാർക്ക്", "കിടാരി വളർത്തൽ"],
+    },
+  },
   {
     name: {
       en: "Quarantine cum Trading Centre",
       ml: "ക്വാറന്റൈൻ കം ട്രേഡിംഗ് സെന്റർ",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide quality cattle to dairy farmers.",
+      ml: "ക്ഷീരകർഷകർക്ക് ഗുണമേന്മയുള്ള കന്നുകാലികളെ ലഭ്യമാക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
-      ml: "കറവ സഹകരണ സംഘങ്ങൾ",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Priority will be given to financially stable Societies to build a shed to ties 50 cows at a time",
-      ml: "50 പശുക്കളെ ഒരേസമയം കെട്ടാൻ ശേഡ് നിർമ്മിക്കുന്നതിന് സാമ്പത്തികമായി സ്ഥിരതയുള്ള സംഘങ്ങൾക്ക് മുൻഗണന",
+      en: "Priority will be given to financially stable societies to build a shed to house 50 cows at a time.",
+      ml: "ഒരേസമയം 50 പശുക്കളെ പാർപ്പിക്കാൻ ഷെഡ് നിർമ്മിക്കുന്നതിന്, സാമ്പത്തികമായി സുസ്ഥിരമായ സംഘങ്ങൾക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "750000/-",
-      ml: "750000/-",
+      en: "₹750,000/-",
+      ml: "₹7,50,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_19",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_19",
+    keywords: {
+      en: ["quarantine", "cattle trading", "co-operative society"],
+      ml: ["ക്വാറന്റൈൻ", "കന്നുകാലി വ്യാപാരം", "സഹകരണ സംഘം"],
+    },
+  },
   {
     name: {
-      en: "Interest subvention scheme",
-      ml: "പലിശ സബ്വൻഷൻ പദ്ധതി",
+      en: "Interest Subvention Scheme",
+      ml: "പലിശയിളവ് പദ്ധതി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance to dairy farmers by reducing the interest burden on loans.",
+      ml: "വായ്പകളുടെ പലിശ ഭാരം കുറച്ച് ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Priority given to dairy farmers who have taken loans for dairy farming",
-      ml: "കറവ കൃഷിക്കായി വായ്പയെടുത്ത കറവ കർഷകർക്ക് മുൻഗണന",
+      en: "Priority given to dairy farmers who have taken loans for dairy farming.",
+      ml: "ക്ഷീരകൃഷിക്കായി വായ്പയെടുത്ത കർഷകർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "300000/-",
-      ml: "300000/-",
+      en: "₹300,000/-",
+      ml: "₹3,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_20",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_20",
+    keywords: {
+      en: ["interest subvention", "loan", "dairy"],
+      ml: ["പലിശയിളവ്", "വായ്പ", "ക്ഷീരം"],
+    },
+  },
   {
     name: {
       en: "Cattle Shed Construction",
-      ml: "കന്നുകാലി ഷെഡ് നിർമ്മാണം",
+      ml: "തൊഴുത്ത് നിർമ്മാണം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "Provide assistance to dairy farmers for constructing cattle sheds.",
+      ml: "ക്ഷീരകർഷകർക്ക് തൊഴുത്ത് നിർമ്മിക്കാൻ സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to those who build a cattle shed of not less than 325 square feet",
-      ml: "325 ചതുരശ്ര അടിയിൽ കുറയാത്ത കന്നുകാലി ഷെഡ് നിർമ്മിക്കുന്നവർക്ക് മുൻഗണന",
+      en: "Preference will be given to those who build a cattle shed of not less than 325 square feet.",
+      ml: "കുറഞ്ഞത് 325 ചതുരശ്ര അടി വിസ്തീർണ്ണമുള്ള തൊഴുത്ത് നിർമ്മിക്കുന്നവർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "50000/-",
-      ml: "50000/-",
+      en: "₹50,000/-",
+      ml: "₹50,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_21",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_21",
+    keywords: {
+      en: ["cattle shed", "construction", "ksheerasree"],
+      ml: ["തൊഴുത്ത്", "നിർമ്മാണം", "ക്ഷീരശ്രീ"],
+    },
+  },
   {
     name: {
       en: "Milking Machine",
-      ml: "കറവ യന്ത്രം",
+      ml: "പാൽ കറവ യന്ത്രം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance to dairy farmers for purchasing milking machines.",
+      ml: "ക്ഷീരകർഷകർക്ക് പാൽ കറവ യന്ത്രങ്ങൾ വാങ്ങാൻ സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to farmers those who have more than 5 Cows",
-      ml: "5-ൽ കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് മുൻഗണന",
+      en: "Preference will be given to farmers who have more than 5 cows.",
+      ml: "5-ൽ കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "30000/-",
-      ml: "30000/-",
+      en: "₹30,000/-",
+      ml: "₹30,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_22",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_22",
+    keywords: {
+      en: ["milking machine", "ksheerasree"],
+      ml: ["പാൽ കറവ യന്ത്രം", "ക്ഷീരശ്രീ"],
+    },
+  },
   {
     name: {
-      en: "Need Based Assistance to Dairy Farmers",
-      ml: "കറവ കർഷകർക്ക് ആവശ്യത്തിനനുസരിച്ചുള്ള സഹായം",
+      en: "Need-Based Assistance to Dairy Farmers",
+      ml: "ക്ഷീരകർഷകർക്ക് ആവശ്യാനുസരണമുള്ള സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "കറവ കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide flexible assistance to dairy farmers based on their specific needs.",
+      ml: "ക്ഷീരകർഷകരുടെ പ്രത്യേക ആവശ്യങ്ങൾക്കനുസരിച്ച് സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given who modernize and mechanize their dairy farm",
-      ml: "അവരുടെ കറവ ഫാം ആധുനികരിക്കുകയും യന്ത്രവൽക്കരിക്കുകയും ചെയ്യുന്നവർക്ക് മുൻഗണന",
+      en: "Preference will be given to those who modernize and mechanize their dairy farm.",
+      ml: "ഡയറി ഫാം ആധുനികവൽക്കരിക്കുകയും യന്ത്രവൽക്കരിക്കുകയും ചെയ്യുന്നവർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "50000/-",
-      ml: "50000/-",
+      en: "₹50,000/-",
+      ml: "₹50,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_23",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_23",
+    keywords: {
+      en: ["need-based assistance", "modernization", "mechanization"],
+      ml: ["ആവശ്യാനുസരണ സഹായം", "ആധുനികവൽക്കരണം", "യന്ത്രവൽക്കരണം"],
+    },
+  },
   {
     name: {
       en: "Fodder Development Programme",
-      ml: "തീറ്റ വികസന പരിപാടി",
+      ml: "തീറ്റപ്പുൽ കൃഷി വികസന പരിപാടി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     applicationProcess: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     contact: { en: "Not Available", ml: "ലഭ്യമല്ല" },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_24",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_24",
+    keywords: {
+      en: ["fodder", "development", "feed"],
+      ml: ["തീറ്റപ്പുൽ", "വികസനം", "കാലിത്തീറ്റ"],
+    },
+  },
   {
     name: {
-      en: "Fodder above 20 cents",
-      ml: "20 സെന്റിന് മുകളിൽ തീറ്റ",
+      en: "Fodder Cultivation (Above 20 cents)",
+      ml: "തീറ്റപ്പുൽ കൃഷി (20 സെന്റിന് മുകളിൽ)",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Reduce Feed Cost",
-      ml: "തീറ്റ ചെലവ് കുറയ്ക്കുക",
+      en: "To reduce feed cost for dairy farmers.",
+      ml: "ക്ഷീരകർഷകരുടെ തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to dairy farmers who have the facility to cultivate fodder above 20 cents",
-      ml: "20 സെന്റിന് മുകളിൽ തീറ്റ കൃഷി ചെയ്യാൻ സൗകര്യമുള്ള കറവ കർഷകർക്ക് മുൻഗണന",
+      en: "Preference will be given to dairy farmers who have the facility to cultivate fodder above 20 cents.",
+      ml: "20 സെന്റിൽ കൂടുതൽ സ്ഥലത്ത് തീറ്റപ്പുൽ കൃഷി ചെയ്യാൻ സൗകര്യമുള്ള ക്ഷീരകർഷകർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "24250/- Hectare",
-      ml: "24250/- ഹെക്ടർ",
+      en: "₹24,250/- per Hectare",
+      ml: "ഒരു ഹെക്ടറിന് ₹24,250/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
-    id: "sheet1_25",
-  },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
 
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
+    id: "sheet1_25",
+    keywords: {
+      en: ["fodder cultivation", "feed cost"],
+      ml: ["തീറ്റപ്പുൽ കൃഷി", "തീറ്റച്ചെലവ്"],
+    },
+  },
   {
     name: {
-      en: "Fodder below 20 cents",
-      ml: "20 സെന്റിന് താഴെ തീറ്റ",
+      en: "Fodder Cultivation (Below 20 cents)",
+      ml: "തീറ്റപ്പുൽ കൃഷി (20 സെന്റിന് താഴെ)",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Reduce Feed Cost",
-      ml: "തീറ്റ ചെലവ് കുറയ്ക്കുക",
+      en: "To reduce feed cost for dairy farmers.",
+      ml: "ക്ഷീരകർഷകരുടെ തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "കറവ കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Free Slips is distributed to farmers who poured milk in Dairy Co-operative Societies",
-      ml: "കറവ സഹകരണ സംഘങ്ങളിൽ പാൽ ഒഴിച്ച കർഷകർക്ക് സൗജന്യ സ്ലിപ്പുകൾ വിതരണം ചെയ്യുന്നു",
+      en: "Free slips for seeds/slips are distributed to farmers who supply milk to Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ നൽകുന്ന കർഷകർക്ക് വിത്തുകൾ/നടീൽ വസ്തുക്കൾക്കായി സൗജന്യ സ്ലിപ്പുകൾ വിതരണം ചെയ്യുന്നു.",
     },
     benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "കറവ വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_26",
+    keywords: {
+      en: ["fodder cultivation", "seeds", "slips", "dairy society"],
+      ml: ["തീറ്റപ്പുൽ കൃഷി", "വിത്തുകൾ", "നടീൽ വസ്തുക്കൾ", "ക്ഷീര സംഘം"],
+    },
   },
   {
     name: {
@@ -2031,409 +2142,429 @@ Email - dd-idk.dairy@kerala.gov.in`,
       ml: "ജലസേചന സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "ക്ഷീര കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance to dairy farmers for irrigation.",
+      ml: "ക്ഷീരകർഷകർക്ക് ജലസേചനത്തിനായി സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Financial Assistane to farmers cultivating fodder on 1 hector or less",
-      ml: "ഒരു ഹെക്ടർ അല്ലെങ്കിൽ അതിൽ കുറഞ്ഞ തീറ്റ കൃഷി ചെയ്യുന്ന കർഷകർക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance for farmers cultivating fodder on one hectare or less.",
+      ml: "ഒരു ഹെക്ടറോ അതിൽ കുറവോ സ്ഥലത്ത് തീറ്റപ്പുൽ കൃഷി ചെയ്യുന്ന കർഷകർക്ക് സാമ്പത്തിക സഹായം.",
     },
     benefitsProvided: {
-      en: "10000/-",
-      ml: "10000/-",
+      en: "₹10,000/-",
+      ml: "₹10,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടലിലൂടെ https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_27",
+    keywords: {
+      en: ["irrigation", "fodder"],
+      ml: ["ജലസേചനം", "തീറ്റപ്പുൽ"],
+    },
   },
   {
     name: {
-      en: "Irrigation Assistance",
-      ml: "ജലസേചന സഹായം",
+      en: "Irrigation Assistance (Above 1 Hectare)",
+      ml: "ജലസേചന സഹായം (1 ഹെക്ടറിന് മുകളിൽ)",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "ക്ഷീര കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance to dairy farmers for irrigation.",
+      ml: "ക്ഷീരകർഷകർക്ക് ജലസേചനത്തിനായി സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Financial Assistane to farmers cultivating fodder on 1 hector above",
-      ml: "ഒരു ഹെക്ടറിനു മുകളിൽ തീറ്റ കൃഷി ചെയ്യുന്ന കർഷകർക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance for farmers cultivating fodder on more than one hectare.",
+      ml: "ഒരു ഹെക്ടറിൽ കൂടുതൽ സ്ഥലത്ത് തീറ്റപ്പുൽ കൃഷി ചെയ്യുന്ന കർഷകർക്ക് സാമ്പത്തിക സഹായം.",
     },
     benefitsProvided: {
-      en: "25000/-",
-      ml: "25000/-",
+      en: "₹25,000/-",
+      ml: "₹25,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടലിലൂടെ https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_28",
+    keywords: {
+      en: ["irrigation", "fodder", "hectare"],
+      ml: ["ജലസേചനം", "തീറ്റപ്പുൽ", "ഹെക്ടർ"],
+    },
   },
   {
     name: {
-      en: "Mechanisation",
-      ml: "യന്ത്രവൽക്കരണം",
+      en: "Mechanisation in Fodder Cultivation",
+      ml: "തീറ്റപ്പുൽ കൃഷിയിലെ യന്ത്രവൽക്കരണം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "ക്ഷീര കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance to dairy farmers for mechanization.",
+      ml: "ക്ഷീരകർഷകർക്ക് യന്ത്രവൽക്കരണത്തിന് സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to those who have more 2 cows and culitivted fodder land more than 50 cents",
-      ml: "രണ്ടിലധികം പശുക്കളുള്ളവർക്കും 50 സെന്റിനു മുകളിൽ തീറ്റ കൃഷി ചെയ്യുന്നവർക്കും മുൻഗണന നൽകും",
+      en: "Preference will be given to those who have more than 2 cows and cultivate fodder on more than 50 cents.",
+      ml: "രണ്ടിലധികം പശുക്കളുള്ളവർക്കും 50 സെന്റിൽ കൂടുതൽ സ്ഥലത്ത് തീറ്റപ്പുൽ കൃഷി ചെയ്യുന്നവർക്കും മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "10000/-",
-      ml: "10000/-",
+      en: "₹10,000/-",
+      ml: "₹10,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടലിലൂടെ https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_29",
+    keywords: {
+      en: ["mechanisation", "fodder"],
+      ml: ["യന്ത്രവൽക്കരണം", "തീറ്റപ്പുൽ"],
+    },
   },
   {
     name: {
-      en: "Barren Land",
-      ml: "തരിശു ഭൂമി",
+      en: "Fodder Cultivation in Barren Land",
+      ml: "തരിശുഭൂമിയിലെ തീറ്റപ്പുൽ കൃഷി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Reduce Feed Cost",
-      ml: "തീറ്റ ചെലവ് കുറയ്ക്കുക",
+      en: "To reduce feed cost by promoting fodder cultivation in barren lands.",
+      ml: "തരിശുഭൂമിയിൽ തീറ്റപ്പുൽ കൃഷി പ്രോത്സാഹിപ്പിച്ച് തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to those who have culitivted fodder more than 1 Hector",
-      ml: "ഒരു ഹെക്ടറിനു മുകളിൽ തീറ്റ കൃഷി ചെയ്യുന്നവർക്ക് മുൻഗണന നൽകും",
+      en: "Preference will be given to those who cultivate fodder on more than 1 Hectare.",
+      ml: "ഒരു ഹെക്ടറിൽ കൂടുതൽ സ്ഥലത്ത് തീറ്റപ്പുൽ കൃഷി ചെയ്യുന്നവർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "94272/-",
-      ml: "94272/-",
+      en: "₹94,272/-",
+      ml: "₹94,272/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടലിലൂടെ https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_30",
+    keywords: {
+      en: ["barren land", "fodder cultivation"],
+      ml: ["തരിശുഭൂമി", "തീറ്റപ്പുൽ കൃഷി"],
+    },
   },
   {
     name: {
       en: "Fodder Cultivation and Marketing by SHG/Groups",
-      ml: "സ്വയം സഹായ സംഘങ്ങൾ/ഗ്രൂപ്പുകൾ വഴി തീറ്റ കൃഷിയും വിപണനവും",
+      ml: "സ്വയം സഹായ സംഘങ്ങൾ വഴിയുള്ള തീറ്റപ്പുൽ കൃഷിയും വിപണനവും",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Reduce Feed Cost",
-      ml: "തീറ്റ ചെലവ് കുറയ്ക്കുക",
+      en: "To reduce feed cost and promote group-based fodder enterprises.",
+      ml: "തീറ്റച്ചെലവ് കുറയ്ക്കുകയും സംഘാധിഷ്ഠിത തീറ്റപ്പുൽ സംരംഭങ്ങൾ പ്രോത്സാഹിപ്പിക്കുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      en: "Dairy Farmers in SHGs/Groups",
+      ml: "സ്വയം സഹായ സംഘങ്ങളിലെ ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to members of groups formed in connection with Dairy Co-operative Socities",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളുമായി ബന്ധപ്പെട്ട് രൂപീകരിച്ച ഗ്രൂപ്പുകളിലെ അംഗങ്ങൾക്ക് മുൻഗണന നൽകും",
+      en: "Preference will be given to members of groups associated with Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളുമായി ബന്ധപ്പെട്ട് രൂപീകരിച്ച ഗ്രൂപ്പുകളിലെ അംഗങ്ങൾക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "75000/-",
-      ml: "75000/-",
+      en: "₹75,000/-",
+      ml: "₹75,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടലിലൂടെ https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_31",
+    keywords: {
+      en: ["fodder", "marketing", "shg"],
+      ml: ["തീറ്റപ്പുൽ", "വിപണനം", "സ്വയം സഹായ സംഘം"],
+    },
   },
   {
     name: {
@@ -2441,659 +2572,670 @@ Email - dd-idk.dairy@kerala.gov.in`,
       ml: "ചോളം കൃഷി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Reduce Feed Cost",
-      ml: "തീറ്റ ചെലവ് കുറയ്ക്കുക",
+      en: "To reduce feed cost by promoting maize cultivation for fodder.",
+      ml: "കാലിത്തീറ്റയ്ക്കായി ചോളം കൃഷി പ്രോത്സാഹിപ്പിച്ച് തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Preference will be given to those who have culitivted maize more than 30 cents",
-      ml: "30 സെന്റിനു മുകളിൽ ചോളം കൃഷി ചെയ്യുന്നവർക്ക് മുൻഗണന നൽകും",
+      en: "Preference will be given to those who cultivate maize on more than 30 cents.",
+      ml: "30 സെന്റിൽ കൂടുതൽ സ്ഥലത്ത് ചോളം കൃഷി ചെയ്യുന്നവർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "12625/- Hector",
-      ml: "12625/- ഹെക്ടർ",
+      en: "₹12,625/- per Hectare",
+      ml: "ഒരു ഹെക്ടറിന് ₹12,625/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടലിലൂടെ https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_32",
+    keywords: {
+      en: ["maize", "fodder", "feed"],
+      ml: ["ചോളം", "തീറ്റപ്പുൽ", "കാലിത്തീറ്റ"],
+    },
   },
   {
     name: {
-      en: "Kolar Model",
-      ml: "കോലാർ മോഡൽ",
+      en: "Kolar Model Fodder Cultivation",
+      ml: "കോലാർ മാതൃക തീറ്റപ്പുൽ കൃഷി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Reduce Feed Cost",
-      ml: "തീറ്റ ചെലവ് കുറയ്ക്കുക",
+      en: "To reduce feed cost using an intensive fodder cultivation model.",
+      ml: "ശാസ്ത്രീയ തീറ്റപ്പുൽ കൃഷി രീതിയിലൂടെ തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
       en: "Preference will be given to those who have more cows.",
-      ml: "കൂടുതൽ പശുക്കളുള്ളവർക്ക് മുൻഗണന നൽകും.",
+      ml: "കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "17500/- 50 Cents",
-      ml: "17500/- 50 സെന്റ്",
+      en: "₹17,500/- per 50 Cents",
+      ml: "50 സെന്റിന് ₹17,500/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടലിലൂടെ https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_33",
+    keywords: {
+      en: ["kolar model", "fodder"],
+      ml: ["കോലാർ മാതൃക", "തീറ്റപ്പുൽ"],
+    },
   },
   {
     name: {
-      en: "Assistance to DCS",
-      ml: "DCS സഹായം",
+      en: "Assistance to Dairy Co-operative Societies (DCS)",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്കുള്ള (DCS) സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
-    objective: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    targetBeneficiaries: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    eligibilityCriterias: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    benefitsProvided: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    applicationProcess: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    contact: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
+    objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    applicationProcess: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    contact: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_34",
+    keywords: {
+      en: ["assistance", "dcs", "dairy co-operative society"],
+      ml: ["സഹായം", "ഡിസിഎസ്", "ക്ഷീര സഹകരണ സംഘം"],
+    },
   },
   {
     name: {
-      en: "FSSA",
-      ml: "FSSA",
+      en: "FSSA Registration/License Assistance",
+      ml: "FSSAI രജിസ്ട്രേഷൻ/ലൈസൻസ് സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "To provide financial assistance to Dairy Co-operative Societies for obtaining FSSAI registration/license.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് FSSAI രജിസ്ട്രേഷൻ/ലൈസൻസ് നേടുന്നതിന് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financially assistance to Dairy Co-operaitves that are financially secured and need to improve quality",
-      ml: "സാമ്പത്തികമായി സുരക്ഷിതവും ഗുണനിലവാരം മെച്ചപ്പെടുത്തേണ്ട ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to financially secure Dairy Co-operatives that need to improve quality standards.",
+      ml: "ഗുണനിലവാരം മെച്ചപ്പെടുത്തേണ്ട, സാമ്പത്തികമായി സുസ്ഥിരമായ ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം.",
     },
     benefitsProvided: {
-      en: "45000/-",
-      ml: "45000/-",
+      en: "₹45,000/-",
+      ml: "₹45,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_35",
+    keywords: {
+      en: ["fssai", "license", "quality"],
+      ml: ["FSSAI", "ലൈസൻസ്", "ഗുണനിലവാരം"],
+    },
   },
   {
     name: {
-      en: "NBA To DCS",
-      ml: "DCS-ലേക്ക് NBA",
+      en: "Need-Based Assistance to DCS",
+      ml: "ക്ഷീര സംഘങ്ങൾക്കുള്ള ആവശ്യാനുസരണ സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial Assistance to Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financially assistance to Dairy Co-operaitves that are financially secured",
-      ml: "സാമ്പത്തികമായി സുരക്ഷിതമായ ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to financially secure Dairy Co-operatives.",
+      ml: "സാമ്പത്തികമായി സുസ്ഥിരമായ ക്ഷീര സഹകരണ സംഘങ്ങൾക്കുള്ള സാമ്പത്തിക സഹായം.",
     },
     benefitsProvided: {
-      en: "120000/-",
-      ml: "120000/-",
+      en: "₹120,000/-",
+      ml: "₹1,20,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_36",
+    keywords: {
+      en: ["need-based assistance", "dcs"],
+      ml: ["ആവശ്യാനുസരണ സഹായം", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
-      en: "Registration of new DCS",
-      ml: "പുതിയ DCS രജിസ്ട്രേഷൻ",
+      en: "Registration of New DCS",
+      ml: "പുതിയ ക്ഷീര സഹകരണ സംഘങ്ങളുടെ രജിസ്ട്രേഷൻ",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to newly registered Dairy Co-operative Societies.",
+      ml: "പുതുതായി രജിസ്റ്റർ ചെയ്ത ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Newly Registered Dairy Co-operative Societies",
+      ml: "പുതുതായി രജിസ്റ്റർ ചെയ്ത ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Dairy Co-opertive Socities that have completed the Registratin Process",
-      ml: "രജിസ്ട്രേഷൻ പ്രക്രിയ പൂർത്തിയാക്കിയ ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies that have completed the registration process.",
+      ml: "രജിസ്ട്രേഷൻ നടപടികൾ പൂർത്തിയാക്കിയ ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "61500/-",
-      ml: "61500/-",
+      en: "₹61,500/-",
+      ml: "₹61,500/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_37",
+    keywords: {
+      en: ["new dcs", "registration"],
+      ml: ["പുതിയ ഡിസിഎസ്", "രജിസ്ട്രേഷൻ"],
+    },
   },
   {
     name: {
-      en: "Purchase own Land",
-      ml: "സ്വന്തം ഭൂമി വാങ്ങൽ",
+      en: "Assistance to Purchase Own Land for DCS",
+      ml: "ക്ഷീര സംഘങ്ങൾക്ക് സ്വന്തമായി ഭൂമി വാങ്ങാൻ സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance for Dairy Co-operative Societies to purchase their own land.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സ്വന്തമായി ഭൂമി വാങ്ങുന്നതിന് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to provide Dairy Co-operative Societies to purchase their own land",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സ്വന്തം ഭൂമി വാങ്ങുന്നതിന് സാമ്പത്തിക സഹായം",
+      en: "Dairy Co-operative Societies planning to purchase their own land.",
+      ml: "സ്വന്തമായി ഭൂമി വാങ്ങാൻ ഉദ്ദേശിക്കുന്ന ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "300000/-",
-      ml: "300000/-",
+      en: "₹300,000/-",
+      ml: "₹3,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_38",
+    keywords: {
+      en: ["land purchase", "dcs"],
+      ml: ["ഭൂമി വാങ്ങൽ", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
-      en: "Missing link for automation",
-      ml: "ഓട്ടോമേഷനായി കുറവായ കണ്ണി",
+      en: "Assistance for Automation of DCS",
+      ml: "ക്ഷീര സംഘങ്ങളുടെ ഓട്ടോമേഷനുള്ള സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to Dairy Co-operative Societies for automation.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് ഓട്ടോമേഷനായി സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to provide Dairy Co-operative Societies to automation",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് ഓട്ടോമേഷനായി സാമ്പത്തിക സഹായം",
+      en: "Dairy Co-operative Societies planning for automation.",
+      ml: "ഓട്ടോമേഷൻ നടപ്പിലാക്കാൻ ഉദ്ദേശിക്കുന്ന ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "150000/-",
-      ml: "150000/-",
+      en: "₹150,000/-",
+      ml: "₹1,50,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_39",
+    keywords: { en: ["automation", "dcs"], ml: ["ഓട്ടോമേഷൻ", "ഡിസിഎസ്"] },
   },
   {
     name: {
@@ -3101,835 +3243,833 @@ Email - dd-idk.dairy@kerala.gov.in`,
       ml: "ഗതാഗത സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to Dairy Co-operative Societies without milk route access.",
+      ml: "പാൽ സംഭരണ റൂട്ട് ഇല്ലാത്ത ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to provide Dairy Co-operative Societies to without milk route",
-      ml: "പാൽ വഴി ഇല്ലാത്ത ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Dairy Co-operative Societies without an established milk route.",
+      ml: "പാൽ സംഭരണ റൂട്ട് ഇല്ലാത്ത ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "35000/-",
-      ml: "35000/-",
+      en: "₹35,000/-",
+      ml: "₹35,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_40",
+    keywords: {
+      en: ["transportation", "milk route", "dcs"],
+      ml: ["ഗതാഗതം", "പാൽ റൂട്ട്", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
       en: "Milk Incentive Programme",
-      ml: "പാൽ പ്രോത്സാഹന പരിപാടി",
+      ml: "പാൽ പ്രോത്സാഹന പദ്ധതി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർക്ക് സാമ്പത്തിക സഹായം",
+      en: "To provide financial incentives to dairy farmers.",
+      ml: "ക്ഷീരകർഷകർക്ക് സാമ്പത്തിക പ്രോത്സാഹനം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളിൽ പാൽ പകരുന്ന കർഷകർ",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്ന കർഷകർ.",
     },
     benefitsProvided: {
-      en: "Incentive for dairy farmers @ of Rs.1/- Litter measured in Dairy Co-operative Society",
-      ml: "ഡയറി സഹകരണ സംഘത്തിൽ അളക്കുന്ന ലിറ്ററിന് 1 രൂപ നിരക്കിൽ ക്ഷീര കർഷകർക്ക് പ്രോത്സാഹനം",
+      en: "Incentive for dairy farmers @ ₹1/- per litre measured at the Dairy Co-operative Society.",
+      ml: "ക്ഷീര സഹകരണ സംഘത്തിൽ അളക്കുന്ന പാലിന് ലിറ്ററിന് ₹1/- രൂപ നിരക്കിൽ പ്രോത്സാഹനം.",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_41",
+    keywords: {
+      en: ["milk incentive", "dairy farmers"],
+      ml: ["പാൽ പ്രോത്സാഹനം", "ക്ഷീരകർഷകർ"],
+    },
   },
   {
     name: {
       en: "Investment in DCS",
-      ml: "DCS-ൽ നിക്ഷേപം",
+      ml: "ക്ഷീര സംഘങ്ങളിലെ നിക്ഷേപം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
-    objective: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    targetBeneficiaries: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    eligibilityCriterias: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    benefitsProvided: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    applicationProcess: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    contact: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
+    objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    applicationProcess: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    contact: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_42",
+    keywords: { en: ["investment", "dcs"], ml: ["നിക്ഷേപം", "ഡിസിഎസ്"] },
   },
   {
     name: {
-      en: "Hygeinic Milk Collection Room",
+      en: "Hygienic Milk Collection Room",
       ml: "ശുചിത്വമുള്ള പാൽ ശേഖരണ മുറി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to Dairy Co-operative Societies for building construction.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് കെട്ടിട നിർമ്മാണത്തിന് സാമ്പത്തിക സഹായം.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to provide Dairy Co-operative Societies to building construction.",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് കെട്ടിട നിർമ്മാണത്തിന് സാമ്പത്തിക സഹായം.",
+      en: "Dairy Co-operative Societies needing building construction assistance.",
+      ml: "കെട്ടിട നിർമ്മാണത്തിന് സഹായം ആവശ്യമുള്ള ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "375000/-",
-      ml: "375000/-",
+      en: "₹375,000/-",
+      ml: "₹3,75,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_43",
+    keywords: {
+      en: ["hygienic", "milk collection", "dcs"],
+      ml: ["ശുചിത്വം", "പാൽ ശേഖരണം", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
-      en: "Farmers CFacilitation centre",
-      ml: "കർഷക സുവിധാ കേന്ദ്രം",
+      en: "Farmers Facilitation Centre",
+      ml: "കർഷക സഹായ കേന്ദ്രം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to Dairy Co-operative Societies for establishing a farmers' facilitation centre.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് കർഷക സഹായ കേന്ദ്രം സ്ഥാപിക്കുന്നതിന് സാമ്പത്തിക സഹായം.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to Dairy Co-operative Societies to farmers facilitation centre",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് കർഷക സുവിധാ കേന്ദ്രത്തിന് സാമ്പത്തിക സഹായം",
+      en: "Dairy Co-operative Societies planning to establish a farmers' facilitation centre.",
+      ml: "കർഷക സഹായ കേന്ദ്രം സ്ഥാപിക്കാൻ ഉദ്ദേശിക്കുന്ന ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "525000/-",
-      ml: "525000/-",
+      en: "₹525,000/-",
+      ml: "₹5,25,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_44",
+    keywords: {
+      en: ["farmers facilitation centre", "dcs"],
+      ml: ["കർഷക സഹായ കേന്ദ്രം", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
-      en: "Solar Panel",
-      ml: "സോളാർ പാനൽ",
+      en: "Solar Panel Assistance",
+      ml: "സോളാർ പാനൽ സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to Dairy Co-operative Societies for installing solar panels.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സോളാർ പാനൽ സ്ഥാപിക്കുന്നതിന് സാമ്പത്തിക സഹായം.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to Dairy Co-operative Societies Provide to Solar Panel",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സോളാർ പാനൽ നൽകുന്നതിന് സാമ്പത്തിക സഹായം",
+      en: "Dairy Co-operative Societies planning to install solar panels.",
+      ml: "സോളാർ പാനൽ സ്ഥാപിക്കാൻ ഉദ്ദേശിക്കുന്ന ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "800000/-",
-      ml: "800000/-",
+      en: "₹800,000/-",
+      ml: "₹8,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_45",
+    keywords: {
+      en: ["solar panel", "dcs"],
+      ml: ["സോളാർ പാനൽ", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
-      en: "ETP",
-      ml: "ഇടിപി",
+      en: "Effluent Treatment Plant (ETP) Assistance",
+      ml: "മാലിന്യ സംസ്കരണ പ്ലാന്റ് (ETP) സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to Dairy Co-operative Societies for establishing an ETP.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് മാലിന്യ സംസ്കരണ പ്ലാന്റ് സ്ഥാപിക്കാൻ സാമ്പത്തിക സഹായം.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to Dairy Co-operative Societies Provide to ETPl",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾക്ക് ഇടിപി വഴി സാമ്പത്തിക സഹായം",
+      en: "Dairy Co-operative Societies needing to establish an ETP.",
+      ml: "മാലിന്യ സംസ്കരണ പ്ലാന്റ് സ്ഥാപിക്കേണ്ട ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "300000/-",
-      ml: "300000/-",
+      en: "₹300,000/-",
+      ml: "₹3,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_46",
+    keywords: {
+      en: ["etp", "effluent treatment", "dcs"],
+      ml: ["ഇടിപി", "മാലിന്യ സംസ്കരണം", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
-      en: "Cattle Feeding Subsidy",
-      ml: "കന്നുകാലി തീറ്റ സബ്സിഡി",
+      en: "Cattle Feed Subsidy",
+      ml: "കാലിത്തീറ്റ സബ്സിഡി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
-    objective: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    targetBeneficiaries: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    eligibilityCriterias: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    benefitsProvided: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    applicationProcess: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    contact: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
+    objective: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    targetBeneficiaries: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    eligibilityCriterias: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    benefitsProvided: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    applicationProcess: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    contact: { en: "Not specified", ml: "ലഭ്യമല്ല" },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_47",
+    keywords: {
+      en: ["cattle feed", "subsidy"],
+      ml: ["കാലിത്തീറ്റ", "സബ്സിഡി"],
+    },
   },
   {
     name: {
-      en: "Feed Component",
-      ml: "ഫീഡ് ഘടകം",
+      en: "Feed Component Assistance",
+      ml: "കാലിത്തീറ്റ ഘടകങ്ങൾക്കുള്ള സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "ഡയറി കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance to dairy farmers for feed components.",
+      ml: "ക്ഷീരകർഷകർക്ക് കാലിത്തീറ്റ ഘടകങ്ങൾക്കായി സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Distribution to Fodder/Straw to farmers through Dairy co-operative Socities",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ വഴി കർഷകർക്ക് തീറ്റ/വൈക്കോൽ വിതരണം",
+      en: "Distribution of fodder/straw to farmers through Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ വഴി കർഷകർക്ക് തീറ്റപ്പുൽ/വൈക്കോൽ വിതരണം.",
     },
     benefitsProvided: {
-      en: "100000/-",
-      ml: "100000/-",
+      en: "₹100,000/-",
+      ml: "₹1,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     contact: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_48",
+    keywords: {
+      en: ["feed component", "fodder", "straw"],
+      ml: ["കാലിത്തീറ്റ ഘടകം", "തീറ്റപ്പുൽ", "വൈക്കോൽ"],
+    },
   },
   {
     name: {
-      en: "Cattle Feed Suppliment/Mineral Mixture",
-      ml: "കന്നുകാലി തീറ്റ സപ്ലിമെന്റ്/മിനറൽ മിശ്രിതം",
+      en: "Cattle Feed Supplement/Mineral Mixture",
+      ml: "കാലിത്തീറ്റ സപ്ലിമെന്റ്/ധാതുലവണ മിശ്രിതം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "ഡയറി കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance to dairy farmers for cattle feed supplements.",
+      ml: "ക്ഷീരകർഷകർക്ക് കാലിത്തീറ്റ സപ്ലിമെന്റുകൾക്ക് സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Distribution to Suppliment/Minerals to farmers through Dairy co-operative Socities",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ വഴി കർഷകർക്ക് സപ്ലിമെന്റ്/മിനറലുകളുടെ വിതരണം",
+      en: "Distribution of supplements/minerals to farmers through Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ വഴി കർഷകർക്ക് സപ്ലിമെന്റുകൾ/ധാതുലവണങ്ങൾ വിതരണം ചെയ്യുന്നു.",
     },
-    benefitsProvided: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
+    benefitsProvided: { en: "Not specified", ml: "ലഭ്യമല്ല" },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     contact: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_49",
+    keywords: {
+      en: ["feed supplement", "mineral mixture"],
+      ml: ["ഫീഡ് സപ്ലിമെന്റ്", "ധാതുലവണ മിശ്രിതം"],
+    },
   },
   {
     name: {
@@ -3937,1474 +4077,1541 @@ Email - dd-idk.dairy@kerala.gov.in`,
       ml: "ഗുണനിലവാര നിയന്ത്രണ ലാബുകളും പ്രവർത്തനങ്ങളും ശക്തിപ്പെടുത്തൽ",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
-    objective: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    targetBeneficiaries: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    eligibilityCriterias: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    benefitsProvided: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    applicationProcess: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    contact: {
-      en: "Not specified",
-      ml: "വ്യക്തമാക്കിയിട്ടില്ല",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
+    objective: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    targetBeneficiaries: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    eligibilityCriterias: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    benefitsProvided: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    applicationProcess: { en: "Not specified", ml: "ലഭ്യമല്ല" },
+    contact: { en: "Not specified", ml: "ലഭ്യമല്ല" },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_50",
+    keywords: {
+      en: ["quality control", "labs"],
+      ml: ["ഗുണനിലവാര നിയന്ത്രണം", "ലാബുകൾ"],
+    },
   },
   {
     name: {
-      en: "Quality Awarnes Programme",
+      en: "Quality Awareness Programme",
       ml: "ഗുണനിലവാര ബോധവൽക്കരണ പരിപാടി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Effective Extesnion Work",
-      ml: "ഫലപ്രദമായ എക്സ്റ്റൻഷൻ പ്രവർത്തനം",
+      en: "To conduct effective extension work on quality.",
+      ml: "ഗുണനിലവാരത്തെക്കുറിച്ച് ഫലപ്രദമായ ബോധവൽക്കരണം നടത്തുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies & Farmers",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളും കർഷകരും",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളും കർഷകരും",
     },
     eligibilityCriterias: {
       en: "Dairy Co-operative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     benefitsProvided: {
-      en: "7500/- per programme",
-      ml: "ഓരോ പരിപാടിക്കും 7500/-",
+      en: "₹7,500/- per programme",
+      ml: "ഓരോ പരിപാടിക്കും ₹7,500/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_51",
+    keywords: {
+      en: ["quality awareness", "dairy"],
+      ml: ["ഗുണനിലവാര ബോധവൽക്കരണം", "ക്ഷീരം"],
+    },
   },
   {
     name: {
       en: "Consumer Interface Programme",
-      ml: "ഉപഭോക്താവ് ഇന്റർഫേസ് പ്രോഗ്രാം",
+      ml: "ഉപഭോക്തൃ സംവാദ പരിപാടി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Effective Extesnion Work",
-      ml: "ഫലപ്രദമായ എക്സ്റ്റൻഷൻ പ്രവർത്തനം",
+      en: "To create a platform for interaction between consumers and producers.",
+      ml: "ഉപഭോക്താക്കളും ഉത്പാദകരും തമ്മിൽ സംവദിക്കാൻ ഒരു വേദി ഒരുക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies & Farmers",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളും കർഷകരും",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളും കർഷകരും",
     },
     eligibilityCriterias: {
       en: "Dairy Co-operative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     benefitsProvided: {
-      en: "10000/- per programme",
-      ml: "ഓരോ പരിപാടിക്കും 10000/-",
+      en: "₹10,000/- per programme",
+      ml: "ഓരോ പരിപാടിക്കും ₹10,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_52",
+    keywords: {
+      en: ["consumer interface", "dairy"],
+      ml: ["ഉപഭോക്തൃ സംവാദം", "ക്ഷീരം"],
+    },
   },
   {
     name: {
-      en: "NBA To DCS",
-      ml: "എൻബിഎ മുതൽ ഡിസിഎസ് വരെ",
+      en: "Need-Based Assistance to DCS for Quality Control",
+      ml: "ഗുണനിലവാര നിയന്ത്രണത്തിന് ക്ഷീര സംഘങ്ങൾക്കുള്ള സഹായം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies for improving the quality control activities",
-      ml: "ഗുണനിലവാര നിയന്ത്രണ പ്രവർത്തനങ്ങൾ മെച്ചപ്പെടുത്തുന്നതിന് ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance to Dairy Co-operative Societies for improving quality control activities.",
+      ml: "ഗുണനിലവാര നിയന്ത്രണ പ്രവർത്തനങ്ങൾ മെച്ചപ്പെടുത്തുന്നതിന് ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financially assistance to Dairy Co-operaitves that are financially secured",
-      ml: "സാമ്പത്തികമായി സുരക്ഷിതമായ ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financially secure Dairy Co-operatives.",
+      ml: "സാമ്പത്തികമായി സുസ്ഥിരമായ ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "37500/-",
-      ml: "37500/-",
+      en: "₹37,500/-",
+      ml: "₹37,500/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_53",
+    keywords: {
+      en: ["quality control assistance", "dcs"],
+      ml: ["ഗുണനിലവാര നിയന്ത്രണ സഹായം", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
       en: "Advanced Milk Testing Facility",
-      ml: "വിപുലമായ പാൽ പരിശോധന സൗകര്യം",
+      ml: "അത്യാധുനിക പാൽ പരിശോധനാ സൗകര്യം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Financial Assistance to Dairy Co-oerative Societies for setting up of advanced milk teesting facility and completion of missing link of DCS",
-      ml: "വിപുലമായ പാൽ പരിശോധന സൗകര്യം സ്ഥാപിക്കുന്നതിനും ഡിസിഎസിന്റെ കാണാത്ത കണ്ണി പൂർത്തിയാക്കുന്നതിനും ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financial assistance for setting up advanced milk testing facilities in Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ അത്യാധുനിക പാൽ പരിശോധനാ സൗകര്യം സ്ഥാപിക്കുന്നതിന് സാമ്പത്തിക സഹായം.",
     },
     targetBeneficiaries: {
-      en: "Dairy Co-oerative Societies",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങൾ",
+      en: "Dairy Co-operative Societies",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Financially assistance to Dairy Co-operaitves that are financially secured",
-      ml: "സാമ്പത്തികമായി സുരക്ഷിതമായ ഡയറി സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം",
+      en: "Financially secure Dairy Co-operatives.",
+      ml: "സാമ്പത്തികമായി സുസ്ഥിരമായ ക്ഷീര സഹകരണ സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "75000/-",
-      ml: "75000/-",
+      en: "₹75,000/-",
+      ml: "₹75,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_54",
+    keywords: {
+      en: ["milk testing", "advanced facility", "dcs"],
+      ml: ["പാൽ പരിശോധന", "അത്യാധുനിക സൗകര്യം", "ഡിസിഎസ്"],
+    },
   },
   {
     name: {
-      en: "Farm Level Hygien",
-      ml: "ഫാം ലെവൽ ശുചിത്വം",
+      en: "Farm Level Hygiene",
+      ml: "ഫാം തലത്തിലെ ശുചിത്വം",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "ഡയറി കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide financial assistance to ensure hygiene at the farm level for clean milk production.",
+      ml: "ശുദ്ധമായ പാൽ ഉത്പാദനത്തിനായി ഫാം തലത്തിൽ ശുചിത്വം ഉറപ്പാക്കുന്നതിന് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Financial assistance to ensure hygien at farm level for clean milk production",
-      ml: "ശുദ്ധമായ പാൽ ഉൽപ്പാദനത്തിനായി ഫാം തലത്തിൽ ശുചിത്വം ഉറപ്പാക്കുന്നതിന് സാമ്പത്തിക സഹായം",
+      en: "All dairy farmers.",
+      ml: "എല്ലാ ക്ഷീരകർഷകരും.",
     },
     benefitsProvided: {
-      en: "75000/-",
-      ml: "75000/-",
+      en: "₹75,000/-",
+      ml: "₹75,000/-",
     },
     applicationProcess: {
-      en: "Through Ksheerasree Portal https://ksheerasree.kerala.gov.in/",
-      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി https://ksheerasree.kerala.gov.in/",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      en: "Through Ksheerasree Portal: https://ksheerasree.kerala.gov.in/",
+      ml: "ക്ഷീരശ്രീ പോർട്ടൽ വഴി: https://ksheerasree.kerala.gov.in/",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_55",
+    keywords: {
+      en: ["farm hygiene", "clean milk", "ksheerasree"],
+      ml: ["ഫാം ശുചിത്വം", "ശുദ്ധമായ പാൽ", "ക്ഷീരശ്രീ"],
+    },
   },
   {
     name: {
-      en: "Milk Incetive Project, General, SC, ST",
-      ml: "പാൽ പ്രോത്സാഹന പദ്ധതി, ജനറൽ, എസ്സി, എസ്ടി",
+      en: "Milk Incentive Project (General, SC, ST)",
+      ml: "പാൽ പ്രോത്സാഹന പദ്ധതി (ജനറൽ, SC, ST)",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Increase the milk Production",
-      ml: "പാൽ ഉൽപ്പാദനം വർദ്ധിപ്പിക്കുക",
+      en: "To increase milk production.",
+      ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളിൽ പാൽ വിതരണം ചെയ്യുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "Incentive for dairy farmers @ of Rs.3/- Litter pouring in Dairy Co-operative Society. Maximum limit is 40000/- per person",
-      ml: "ഡയറി സഹകരണ സംഘത്തിൽ വിതരണം ചെയ്യുന്ന ഓരോ ലിറ്ററിനും 3/- രൂപ നിരക്കിൽ ഡയറി കർഷകർക്ക് പ്രോത്സാഹനം. ഓരോ വ്യക്തിക്കും പരമാവധി പരിധി 40000/-",
+      en: "Incentive for dairy farmers @ ₹3/- per litre supplied to the Dairy Co-operative Society. Maximum limit is ₹40,000/- per person.",
+      ml: "ക്ഷീര സഹകരണ സംഘത്തിൽ അളക്കുന്ന ഓരോ ലിറ്റർ പാലിനും ₹3/- രൂപ നിരക്കിൽ പ്രോത്സാഹനം. ഒരാൾക്ക് പരമാവധി ₹40,000/-.",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_56",
+    keywords: {
+      en: ["milk incentive", "lsgi", "grama sabha"],
+      ml: ["പാൽ പ്രോത്സാഹനം", "തദ്ദേശ സ്ഥാപനം", "ഗ്രാമസഭ"],
+    },
   },
   {
     name: {
-      en: "Cattle Feed Incentive - General, SC, ST",
-      ml: "കന്നുകാലി തീറ്റ പ്രോത്സാഹനം - ജനറൽ, എസ്സി, എസ്ടി",
+      en: "Cattle Feed Incentive (General, SC, ST)",
+      ml: "കാലിത്തീറ്റ പ്രോത്സാഹനം (ജനറൽ, SC, ST)",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Increase the milk Production",
-      ml: "പാൽ ഉൽപ്പാദനം വർദ്ധിപ്പിക്കുക",
+      en: "To increase milk production.",
+      ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളിൽ പാൽ വിതരണം ചെയ്യുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "100 kg (2 bags) per month limited to 10000/- per person",
-      ml: "പ്രതിമാസം 100 കിലോ (2 ബാഗ്) ഓരോ വ്യക്തിക്കും 10000/- പരിധി",
+      en: "100 kg (2 bags) per month, limited to ₹10,000/- per person.",
+      ml: "പ്രതിമാസം 100 കിലോ (2 ബാഗ്), ഒരാൾക്ക് ₹10,000/- വരെ പരിധി.",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_57",
+    keywords: {
+      en: ["cattle feed", "incentive", "lsgi"],
+      ml: ["കാലിത്തീറ്റ", "പ്രോത്സാഹനം", "തദ്ദേശ സ്ഥാപനം"],
+    },
   },
   {
     name: {
       en: "Herd Induction",
-      ml: "കന്നുകാലി കൂട്ടത്തിലേക്ക് ചേർക്കൽ",
+      ml: "പുതിയ കന്നുകാലികളെ വാങ്ങൽ",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Increase the milk Production",
-      ml: "പാൽ ഉൽപ്പാദനം വർദ്ധിപ്പിക്കുക",
+      en: "To increase milk production.",
+      ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളിൽ പാൽ വിതരണം ചെയ്യുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "30000/- for General, 45000/- for SC, 60000/- for ST",
-      ml: "ജനറലിന് 30000/-, എസ്സിക്ക് 45000/-, എസ്ടിക്ക് 60000/-",
+      en: "₹30,000/- for General, ₹45,000/- for SC, ₹60,000/- for ST",
+      ml: "ജനറൽ: ₹30,000/-, SC: ₹45,000/-, ST: ₹60,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_58",
+    keywords: {
+      en: ["herd induction", "new cattle", "lsgi"],
+      ml: ["പുതിയ കന്നുകാലി", "കന്നുകാലി വാങ്ങൽ", "തദ്ദേശ സ്ഥാപനം"],
+    },
   },
   {
     name: {
       en: "Milking Machine",
-      ml: "പാൽ കറക്കൽ മെഷീൻ",
+      ml: "പാൽ കറവ യന്ത്രം",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Increase the milk Production",
-      ml: "പാൽ ഉൽപ്പാദനം വർദ്ധിപ്പിക്കുക",
+      en: "To increase milk production through mechanization.",
+      ml: "യന്ത്രവൽക്കരണത്തിലൂടെ പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളിൽ പാൽ വിതരണം ചെയ്യുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "30000/- for General, 45000/- for SC, 60000/- for ST",
-      ml: "ജനറലിന് 30000/-, എസ്സിക്ക് 45000/-, എസ്ടിക്ക് 60000/-",
+      en: "₹30,000/- for General, ₹45,000/- for SC, ₹60,000/- for ST",
+      ml: "ജനറൽ: ₹30,000/-, SC: ₹45,000/-, ST: ₹60,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_59",
+    keywords: {
+      en: ["milking machine", "lsgi"],
+      ml: ["പാൽ കറവ യന്ത്രം", "തദ്ദേശ സ്ഥാപനം"],
+    },
   },
   {
     name: {
       en: "Veterinary Medicines",
-      ml: "വെറ്റിനറി മരുന്നുകൾ",
+      ml: "മൃഗചികിത്സാ മരുന്നുകൾ",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To Prevent Diseases",
-      ml: "രോഗങ്ങൾ തടയുന്നതിന്",
+      en: "To prevent diseases in cattle.",
+      ml: "കന്നുകാലികളിലെ രോഗങ്ങൾ തടയുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളിൽ പാൽ വിതരണം ചെയ്യുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "1200/- per cow per year",
-      ml: "ഓരോ പശുവിനും പ്രതിവർഷം 1200/-",
+      en: "₹1,200/- per cow per year",
+      ml: "ഒരു പശുവിന് പ്രതിവർഷം ₹1,200/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_60",
+    keywords: {
+      en: ["veterinary medicines", "disease prevention", "lsgi"],
+      ml: ["മൃഗചികിത്സാ മരുന്ന്", "രോഗപ്രതിരോധം", "തദ്ദേശ സ്ഥാപനം"],
+    },
   },
   {
     name: {
       en: "Fodder Cultivation",
-      ml: "തീറ്റ കൃഷി",
+      ml: "തീറ്റപ്പുൽ കൃഷി",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Reduce Feed Cost, increase the health of cows",
-      ml: "തീറ്റ ചിലവ് കുറയ്ക്കുക, പശുക്കളുടെ ആരോഗ്യം വർദ്ധിപ്പിക്കുക",
+      en: "To reduce feed cost and improve the health of cows.",
+      ml: "തീറ്റച്ചെലവ് കുറയ്ക്കുകയും പശുക്കളുടെ ആരോഗ്യം മെച്ചപ്പെടുത്തുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ഡയറി കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ഡയറി സഹകരണ സംഘങ്ങളിൽ പാൽ വിതരണം ചെയ്യുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "18000/- per hector(maximum Rs.36000/-)",
-      ml: "ഓരോ ഹെക്ടറിനും 18000/- (പരമാവധി 36000/-)",
+      en: "₹18,000/- per hectare (maximum ₹36,000/-)",
+      ml: "ഒരു ഹെക്ടറിന് ₹18,000/- (പരമാവധി ₹36,000/-)",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ഡയറി എക്സ്റ്റൻഷൻ സർവീസ് യൂണിറ്റുകൾ വഴി അപേക്ഷ",
-    },
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_61",
+    keywords: {
+      en: ["fodder", "cultivation", "lsgi"],
+      ml: ["തീറ്റപ്പുൽ", "കൃഷി", "തദ്ദേശ സ്ഥാപനം"],
+    },
   },
   {
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_62",
     name: {
-      en: "Min Dairy farm Modernisation",
-      ml: "മിനി ഡയറി ഫാം ആധുനികവത്കരണം",
+      en: "Mini Dairy Farm Modernisation",
+      ml: "മിനി ഡയറി ഫാം ആധുനികവൽക്കരണം",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Provide more assistance to dairy farmers",
-      ml: "ക്ഷീര കർഷകർക്ക് കൂടുതൽ സഹായം നൽകുക",
+      en: "To provide assistance for modernizing mini dairy farms.",
+      ml: "മിനി ഡയറി ഫാമുകൾ ആധുനികവൽക്കരിക്കാൻ സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ക്ഷീര സഹകരണ സൊസൈറ്റികളിൽ പാൽ ഒഴിക്കുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും.",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "50000/- for General, 75000/- for SC, 100000/- for ST",
-      ml: "പൊതുവിഭാഗത്തിന് 50000/-, പട്ടികജാതിക്ക് 75000/-, പട്ടികവർഗ്ഗത്തിന് 100000/-",
+      en: "₹50,000/- for General, ₹75,000/- for SC, ₹100,000/- for ST",
+      ml: "ജനറൽ: ₹50,000/-, SC: ₹75,000/-, ST: ₹1,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    keywords: {
+      en: ["modernisation", "mini dairy farm", "lsgi"],
+      ml: ["ആധുനികവൽക്കരണം", "മിനി ഡയറി ഫാം", "തദ്ദേശ സ്ഥാപനം"],
     },
   },
   {
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_63",
     name: {
       en: "Cow Dung Dryer Unit",
-      ml: "പശുവിൻ ചാണകം ഉണക്കൽ യൂണിറ്റ്",
+      ml: "ചാണകം ഉണക്കുന്നതിനുള്ള യൂണിറ്റ്",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Avoid polution in dairy farms and increase fertility of soil",
-      ml: "ക്ഷീര ഫാമുകളിലെ മലിനീകരണം ഒഴിവാക്കുകയും മണ്ണിന്റെ ഫലപ്രാപ്തി വർദ്ധിപ്പിക്കുകയും ചെയ്യുക",
+      en: "To avoid pollution in dairy farms and increase fertility of the soil.",
+      ml: "ഡയറി ഫാമുകളിലെ മലിനീകരണം ഒഴിവാക്കുകയും മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത വർദ്ധിപ്പിക്കുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ക്ഷീര സഹകരണ സൊസൈറ്റികളിൽ പാൽ ഒഴിക്കുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും.",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "15000/- for General, 22500/- for SC, 30000/- for ST",
-      ml: "പൊതുവിഭാഗത്തിന് 15000/-, പട്ടികജാതിക്ക് 22500/-, പട്ടികവർഗ്ഗത്തിന് 30000/-",
+      en: "₹15,000/- for General, ₹22,500/- for SC, ₹30,000/- for ST",
+      ml: "ജനറൽ: ₹15,000/-, SC: ₹22,500/-, ST: ₹30,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    keywords: {
+      en: ["cow dung dryer", "pollution control", "lsgi"],
+      ml: ["ചാണകം ഡ്രയർ", "മലിനീകരണ നിയന്ത്രണം", "തദ്ദേശ സ്ഥാപനം"],
     },
   },
   {
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_64",
     name: {
-      en: "Cow Dung Pit and Urine pit construction for cattle shed",
-      ml: "കന്നുകാലി ഷെഡിനായി പശുവിൻ ചാണകം കുഴിയും മൂത്രക്കുഴിയും നിർമ്മാണം",
+      en: "Cow Dung Pit and Urine Pit Construction",
+      ml: "ചാണകക്കുഴി, മൂത്രക്കുഴി നിർമ്മാണം",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Avoid polution in dairy farms and increase fertility of soil",
-      ml: "ക്ഷീര ഫാമുകളിലെ മലിനീകരണം ഒഴിവാക്കുകയും മണ്ണിന്റെ ഫലപ്രാപ്തി വർദ്ധിപ്പിക്കുകയും ചെയ്യുക",
+      en: "To avoid pollution in dairy farms and increase fertility of the soil.",
+      ml: "ഡയറി ഫാമുകളിലെ മലിനീകരണം ഒഴിവാക്കുകയും മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത വർദ്ധിപ്പിക്കുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha.",
-      ml: "ക്ഷീര സഹകരണ സൊസൈറ്റികളിൽ പാൽ ഒഴിക്കുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും.",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ.",
     },
     benefitsProvided: {
-      en: "25000/- for General, 37500/- for SC, 50000/- for ST",
-      ml: "പൊതുവിഭാഗത്തിന് 25000/-, പട്ടികജാതിക്ക് 37500/-, പട്ടികവർഗ്ഗത്തിന് 50000/-",
+      en: "₹25,000/- for General, ₹37,500/- for SC, ₹50,000/- for ST",
+      ml: "ജനറൽ: ₹25,000/-, SC: ₹37,500/-, ST: ₹50,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    keywords: {
+      en: ["cow dung pit", "urine pit", "pollution control", "lsgi"],
+      ml: [
+        "ചാണകക്കുഴി",
+        "മൂത്രക്കുഴി",
+        "മലിനീകരണ നിയന്ത്രണം",
+        "തദ്ദേശ സ്ഥാപനം",
+      ],
     },
   },
   {
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_65",
     name: {
-      en: "Community Cattleshed enterprises cum mini dairy farm",
-      ml: "കമ്മ്യൂണിറ്റി കന്നുകാലി ഷെഡ് എന്റർപ്രൈസസ് കം മിനി ഡയറി ഫാം",
+      en: "Community Cattle Shed Enterprises cum Mini Dairy Farm",
+      ml: "കമ്മ്യൂണിറ്റി തൊഴുത്ത് സംരംഭവും മിനി ഡയറി ഫാമും",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Increase the milk Production",
-      ml: "പാൽ ഉൽപ്പാദനം വർദ്ധിപ്പിക്കുക",
+      en: "To increase milk production through community enterprises.",
+      ml: "സാമൂഹിക സംരംഭങ്ങളിലൂടെ പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      en: "Dairy Farmers, NRIs",
+      ml: "ക്ഷീരകർഷകർ, പ്രവാസികൾ",
     },
     eligibilityCriterias: {
-      en: "Farmers who are pouring milk at dairy Co-operative Socities and whose name is therein the approved list of Gramasabha. Preference for NRIS",
-      ml: "ക്ഷീര സഹകരണ സൊസൈറ്റികളിൽ പാൽ ഒഴിക്കുന്ന കർഷകരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും. എൻആർഐകൾക്ക് മുൻഗണന",
+      en: "Farmers who are supplying milk to Dairy Co-operative Societies and are on the approved list of the Grama Sabha. Preference for NRIs.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ അളക്കുന്നവരും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരുമായ കർഷകർ. പ്രവാസികൾക്ക് മുൻഗണന.",
     },
     benefitsProvided: {
-      en: "500000/- per Unit",
-      ml: "യൂണിറ്റിന് 500000/-",
+      en: "₹500,000/- per Unit",
+      ml: "ഒരു യൂണിറ്റിന് ₹5,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    keywords: {
+      en: ["community cattle shed", "mini dairy farm", "nri"],
+      ml: ["കമ്മ്യൂണിറ്റി തൊഴുത്ത്", "മിനി ഡയറി ഫാം", "പ്രവാസി"],
     },
   },
   {
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_66",
     name: {
-      en: "Milk Collection and marketing at door steps",
-      ml: "വീട്ടുവാതിൽക്കൽ പാൽ ശേഖരണവും വിപണനവും",
+      en: "Milk Collection and Marketing at Doorsteps",
+      ml: "വീട്ടുപടിക്കൽ പാൽ ശേഖരണവും വിപണനവും",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Increase the milk Production",
-      ml: "പാൽ ഉൽപ്പാദനം വർദ്ധിപ്പിക്കുക",
+      en: "To streamline milk collection and create employment.",
+      ml: "പാൽ സംഭരണം കാര്യക്ഷമമാക്കുകയും തൊഴിലവസരങ്ങൾ സൃഷ്ടിക്കുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
-      en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      en: "Women",
+      ml: "വനിതകൾ",
     },
     eligibilityCriterias: {
-      en: "Women who have own two wheeler and driving license and whose name is therein the approved list of Gramasabha.",
-      ml: "സ്വന്തം ഇരുചക്ര വാഹനവും ഡ്രൈവിംഗ് ലൈസൻസും ഉള്ള സ്ത്രീകളും ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ളവരും.",
+      en: "Women who own a two-wheeler and driving license and are on the approved list of the Grama Sabha.",
+      ml: "സ്വന്തമായി ഇരുചക്രവാഹനവും ഡ്രൈവിംഗ് ലൈസൻസുമുള്ള, ഗ്രാമസഭയുടെ അംഗീകൃത പട്ടികയിൽ പേരുള്ള വനിതകൾ.",
     },
     benefitsProvided: {
-      en: "15000/- for General, 22500/- for SC, 30000/- for ST",
-      ml: "പൊതുവിഭാഗത്തിന് 15000/-, പട്ടികജാതിക്ക് 22500/-, പട്ടികവർഗ്ഗത്തിന് 30000/-",
+      en: "₹15,000/- for General, ₹22,500/- for SC, ₹30,000/- for ST",
+      ml: "ജനറൽ: ₹15,000/-, SC: ₹22,500/-, ST: ₹30,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    keywords: {
+      en: ["milk collection", "doorstep marketing", "women"],
+      ml: ["പാൽ ശേഖരണം", "വീട്ടുപടിക്കൽ വിപണനം", "വനിതകൾ"],
     },
   },
   {
-    contact: {
-      en: `Dairy Extension Service Units of Block:
-Dairy Extension Service Unit Adimali  
-Email - dairyofficeadimali@gmail.com;
-Dairy Extension Service Unit, Devikulam  
-Email - dairyofficemunnar@gamil.com;
-Dairy Extension Service Unit Elamdesam  
-Email - deoelamdesam@gmail.com;
-Dairy Extension Service Unit Idukki  
-Email - deoidukki@gmail.com;
-Dairy Extension Service Unit Kattappana  
-Email - desukattappana1988@gmail.com;
-Dairy Extension Service Unit Nedumkandam  
-Email - deonedumkandom@gmail.com;
-Dairy Extension Service Unit, Peermade  
-Email - deopeermade@gmail.com;
-Dairy Extension Service Unit, Thodupuzha  
-Email - deotdpa@gmail.com;
-Dairy Extension Service Unit, Vathikudy  
-Email - deovtk-idk.dairy@kerala.gov.in;
-Quality Control Office  
-Email - qcodairyidk@gmail.com;
-Deputy Director Office  
-Email - dd-idk.dairy@kerala.gov.in`,
-
-      ml: `ബ്ലോക്കിലെ ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ:
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് അടിമാലി  
-ഇമെയിൽ - dairyofficeadimali@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, ദേവികുളം  
-ഇമെയിൽ - dairyofficemunnar@gamil.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇലംദേശം  
-ഇമെയിൽ - deoelamdesam@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് ഇടുക്കി  
-ഇമെയിൽ - deoidukki@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് കാട്ടപ്പന  
-ഇമെയിൽ - desukattappana1988@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ് നെടുങ്കണ്ടം  
-ഇമെയിൽ - deonedumkandom@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, പീരുമേട്  
-ഇമെയിൽ - deopeermade@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, തൊടുപുഴ  
-ഇമെയിൽ - deotdpa@gmail.com;
-ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റ്, വാതിക്കുടി  
-ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
-ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്  
-ഇമെയിൽ - qcodairyidk@gmail.com;
-ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്  
-ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
-    },
     ratings: {
       avgRating: 0,
       count: 0,
     },
+    contact: {
+      en: `Dairy Extension Service Units of Block:
+Dairy Extension Service Unit Adimali
+Email - dairyofficeadimali@gmail.com;
+Dairy Extension Service Unit, Devikulam
+Email - dairyofficemunnar@gmail.com;
+Dairy Extension Service Unit Elamdesam
+Email - deoelamdesam@gmail.com;
+Dairy Extension Service Unit Idukki
+Email - deoidukki@gmail.com;
+Dairy Extension Service Unit Kattappana
+Email - desukattappana1988@gmail.com;
+Dairy Extension Service Unit Nedumkandam
+Email - deonedumkandam@gmail.com;
+Dairy Extension Service Unit, Peermade
+Email - deopeermade@gmail.com;
+Dairy Extension Service Unit, Thodupuzha
+Email - deotdpa@gmail.com;
+Dairy Extension Service Unit, Vathikudy
+Email - deovtk-idk.dairy@kerala.gov.in;
+Quality Control Office
+Email - qcodairyidk@gmail.com;
+Deputy Director Office
+Email - dd-idk.dairy@kerala.gov.in`,
+
+      ml: `ബ്ലോക്കുകളിലെ ക്ഷീരവികസന യൂണിറ്റുകൾ:
+ക്ഷീരവികസന യൂണിറ്റ്, അടിമാലി
+ഇമെയിൽ - dairyofficeadimali@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ദേവികുളം
+ഇമെയിൽ - dairyofficemunnar@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഏലാംദേശം
+ഇമെയിൽ - deoelamdesam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, ഇടുക്കി
+ഇമെയിൽ - deoidukki@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, കാട്ടപ്പന
+ഇമെയിൽ - desukattappana1988@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, നെടുങ്കണ്ടം
+ഇമെയിൽ - deonedumkandam@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, പീരുമേട്
+ഇമെയിൽ - deopeermade@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, തൊടുപുഴ
+ഇമെയിൽ - deotdpa@gmail.com;
+ക്ഷീരവികസന യൂണിറ്റ്, വാത്തിക്കുടി
+ഇമെയിൽ - deovtk-idk.dairy@kerala.gov.in;
+ഗുണനിലവാര നിയന്ത്രണ ഓഫീസ്
+ഇമെയിൽ - qcodairyidk@gmail.com;
+ഡെപ്യൂട്ടി ഡയറക്ടർ ഓഫീസ്
+ഇമെയിൽ - dd-idk.dairy@kerala.gov.in`,
+    },
+
     id: "sheet1_67",
     name: {
       en: "Revolving Fund",
@@ -5412,106 +5619,118 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "Increase the milk Production in Milk Socities",
-      ml: "പാൽ സൊസൈറ്റികളിൽ പാൽ ഉൽപ്പാദനം വർദ്ധിപ്പിക്കുക",
+      en: "To increase milk procurement in Milk Societies.",
+      ml: "ക്ഷീര സംഘങ്ങളിലെ പാൽ സംഭരണം വർദ്ധിപ്പിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
-      ml: "ക്ഷീര കർഷകർ",
+      ml: "ക്ഷീരകർഷകർ",
     },
     eligibilityCriterias: {
-      en: "Socities who have more than 200 litters procurement per day with no audit objections",
-      ml: "ദിവസം 200 ലിറ്ററിലധികം സംഭരണമുള്ള സൊസൈറ്റികൾ, ഓഡിറ്റ് എതിർപ്പുകൾ ഇല്ലാത്തവ",
+      en: "Societies with more than 200 litres of procurement per day with no audit objections.",
+      ml: "പ്രതിദിനം 200 ലിറ്ററിൽ കൂടുതൽ പാൽ സംഭരിക്കുന്ന, ഓഡിറ്റ് റിപ്പോർട്ടിൽ ക്രമക്കേടുകളില്ലാത്ത സംഘങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "200000/- per socities",
-      ml: "സൊസൈറ്റിക്ക് 200000/-",
+      en: "₹200,000/- per society",
+      ml: "ഓരോ സംഘത്തിനും ₹2,00,000/-",
     },
     applicationProcess: {
       en: "Request through Dairy Extension Service Units",
-      ml: "ക്ഷീര വിപുലീകരണ സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കുക",
+      ml: "ക്ഷീര വിജ്ഞാന വ്യാപന സേവന യൂണിറ്റുകൾ വഴി അപേക്ഷിക്കാം.",
+    },
+    keywords: {
+      en: ["revolving fund", "milk procurement", "dairy society"],
+      ml: ["റിവോൾവിംഗ് ഫണ്ട്", "പാൽ സംഭരണം", "ക്ഷീര സംഘം"],
     },
   },
   {
     name: {
-      en: "Swachh Bharath Mission 2.0 (Gramin & Urban)",
-      ml: "സ്വച്ഛ് ഭാരത് മിഷൻ 2.0 (ഗ്രാമീണ് & നഗര)",
+      en: "Swachh Bharat Mission 2.0 (Gramin & Urban)",
+      ml: "സ്വച്ഛ് ഭാരത് മിഷൻ 2.0 (ഗ്രാമീണം & നഗരം)",
     },
     implementedBy: {
       en: ["Local Self-Government Institutions"],
-      ml: ["പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "70%(as per unit rate) Fundings for LSGIs projects- Community Sanitary Complexes, Solid waste management, Liquid Waste management, FSM, PWMU etc",
-      ml: "എൽഎസ്ജിഐ പദ്ധതികൾക്ക് 70% (യൂണിറ്റ് നിരക്ക് പ്രകാരം) ധനസഹായം - കമ്മ്യൂണിറ്റി സാനിറ്ററി കോംപ്ലക്സുകൾ, ഖരമാലിന്യ നിർവ്വഹണം, ദ്രാവക മാലിന്യ നിർവ്വഹണം, FSM, PWMU മുതലായവ",
+      en: "70% funding for LSGI projects - Community Sanitary Complexes, Solid/Liquid Waste Management, etc.",
+      ml: "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളുടെ പദ്ധതികൾക്ക് (കമ്മ്യൂണിറ്റി ടോയ്‌ലറ്റുകൾ, ഖര/ദ്രവ മാലിന്യ സംസ്കരണം മുതലായവ) 70% ധനസഹായം.",
     },
     targetBeneficiaries: {
       en: "All LSGIs (community level)",
-      ml: "എല്ലാ എൽഎസ്ജിഐകളും (കമ്മ്യൂണിറ്റി തലം)",
+      ml: "എല്ലാ തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളും (കമ്മ്യൂണിറ്റി തലം)",
     },
     eligibilityCriterias: {
       en: "As per SBM 2.0 Guidelines",
-      ml: "SBM 2.0 മാർഗ്ഗനിർദ്ദേശങ്ങൾ പ്രകാരം",
+      ml: "SBM 2.0 മാർഗ്ഗനിർദ്ദേശങ്ങൾ അനുസരിച്ച്",
     },
     benefitsProvided: {
       en: "70% (unit rates and per capita costs applicable)",
-      ml: "70% (യൂണിറ്റ് നിരക്കുകളും പ്രതിവ്യക്തി ചെലവുകളും ബാധകം)",
+      ml: "70% (യൂണിറ്റ് നിരക്കുകളും ആളോഹരി ചെലവും അടിസ്ഥാനമാക്കി)",
     },
     applicationProcess: {
-      en: "Projects taken by LSGIs through DPC",
-      ml: "DPC വഴി എൽഎസ്ജിഐകൾ ഏറ്റെടുക്കുന്ന പദ്ധതികൾ",
+      en: "Projects undertaken by LSGIs through DPC.",
+      ml: "DPC വഴി തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ ഏറ്റെടുക്കുന്ന പദ്ധതികൾ.",
     },
     contact: {
       en: "LSGI Secretaries",
-      ml: "എൽഎസ്ജിഐ സെക്രട്ടറിമാർ",
+      ml: "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളിലെ സെക്രട്ടറിമാർ",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_68",
+    keywords: {
+      en: ["swachh bharat", "sbm", "sanitation", "waste management"],
+      ml: ["സ്വച്ഛ് ഭാരത്", "എസ്ബിഎം", "ശുചിത്വം", "മാലിന്യ സംസ്കരണം"],
+    },
   },
   {
     name: {
       en: "Individual Household Latrines",
-      ml: "വ്യക്തിഗത ഗൃഹ ശൗചാലയങ്ങൾ",
+      ml: "വ്യക്തിഗത ഗാർഹിക ശൗചാലയങ്ങൾ",
     },
     implementedBy: {
       en: ["Beneficiaries"],
       ml: ["ഗുണഭോക്താക്കൾ"],
     },
     objective: {
-      en: "Individual House hold latrines",
-      ml: "വ്യക്തിഗത ഗൃഹ ശൗചാലയങ്ങൾ",
+      en: "To provide individual household latrines.",
+      ml: "വ്യക്തിഗത വീടുകളിൽ ശൗചാലയങ്ങൾ നിർമ്മിക്കുക.",
     },
     targetBeneficiaries: {
-      en: "HH without Latrine provisions",
-      ml: "ശൗചാലയ സൗകര്യങ്ങളില്ലാത്ത കുടുംബങ്ങൾ",
+      en: "Households without latrine provisions",
+      ml: "ശൗചാലയ സൗകര്യമില്ലാത്ത കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Applicable to all HH without toilet provisions",
-      ml: "ടോയ്‌ലറ്റ് സൗകര്യങ്ങളില്ലാത്ത എല്ലാ കുടുംബങ്ങൾക്കും ബാധകം",
+      en: "Applicable to all households without toilet provisions",
+      ml: "ശൗചാലയ സൗകര്യമില്ലാത്ത എല്ലാ കുടുംബങ്ങൾക്കും അർഹതയുണ്ട്.",
     },
     benefitsProvided: {
-      en: "12000/- in rural and 6667/- in Urban",
-      ml: "ഗ്രാമീണ മേഖലയിൽ 12000/- നഗര മേഖലയിൽ 6667/-",
+      en: "₹12,000/- in rural and ₹6,667/- in urban areas",
+      ml: "ഗ്രാമീണ മേഖലയിൽ ₹12,000/-, നഗര മേഖലയിൽ ₹6,667/-",
     },
     applicationProcess: {
       en: "Through LSGIs",
-      ml: "എൽഎസ്ജിഐകൾ വഴി",
+      ml: "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ വഴി",
     },
     contact: {
-      en: "In Rural - Implementing officer VEO, In Urban - Health Inspector",
-      ml: "ഗ്രാമീണ മേഖലയിൽ - നടപ്പാക്കൽ ഓഫീസർ VEO, നഗര മേഖലയിൽ - ആരോഗ്യ ഇൻസ്പെക്ടർ",
+      en: "In Rural areas - VEO; In Urban areas - Health Inspector",
+      ml: "ഗ്രാമീണ മേഖലയിൽ - VEO; നഗര മേഖലയിൽ - ഹെൽത്ത് ഇൻസ്പെക്ടർ",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_69",
+    keywords: {
+      en: ["latrine", "toilet", "household", "sanitation"],
+      ml: ["ശൗചാലയം", "ടോയ്ലറ്റ്", "വീട്", "ശുചിത്വം"],
+    },
   },
   {
     name: {
@@ -5527,12 +5746,12 @@ Email - dd-idk.dairy@kerala.gov.in`,
       ml: "മണ്ണ് സംരക്ഷണ പ്രവർത്തനങ്ങൾ",
     },
     targetBeneficiaries: {
-      en: "Beneficiaries holding under scheme area",
-      ml: "സ്കീം പ്രദേശത്ത് ഉൾപ്പെടുന്ന ഗുണഭോക്താക്കൾ",
+      en: "Beneficiaries holding land under the scheme area",
+      ml: "പദ്ധതി പ്രദേശത്ത് ഭൂമിയുള്ള ഗുണഭോക്താക്കൾ",
     },
     eligibilityCriterias: {
-      en: "Beneficiaries - Possessing land within the scheme",
-      ml: "ഗുണഭോക്താക്കൾ - സ്കീമിനുള്ളിൽ ഭൂമി ഉടമസ്ഥത",
+      en: "Beneficiaries possessing land within the scheme area.",
+      ml: "പദ്ധതി പ്രദേശത്തിനുള്ളിൽ ഭൂമിയുള്ള ഗുണഭോക്താക്കൾ.",
     },
     benefitsProvided: {
       en: "Land Development",
@@ -5551,86 +5770,96 @@ Email - dd-idk.dairy@kerala.gov.in`,
       count: 0,
     },
     id: "sheet1_70",
+    keywords: {
+      en: ["ridf", "lss", "soil conservation"],
+      ml: ["RIDF", "LSS", "മണ്ണ് സംരക്ഷണം"],
+    },
   },
   {
     name: {
-      en: "Entrepreneur Support Scheme(ESS)",
-      ml: "സംരംഭക പിന്തുണ പദ്ധതി (ESS)",
+      en: "Entrepreneur Support Scheme (ESS)",
+      ml: "സംരംഭകത്വ സഹായ പദ്ധതി (ESS)",
     },
     implementedBy: {
-      en: ["Dept Of Industries", "Commerce"],
-      ml: ["വ്യവസായ വകുപ്പ്", "വാണിജ്യ വകുപ്പ്"],
+      en: ["Department of Industries & Commerce"],
+      ml: ["വ്യവസായ വാണിജ്യ വകുപ്പ്"],
     },
     objective: {
-      en: "provide financial assistance to Micro, Small and Medium Enterprises engaged in manufacturing activities in the State",
-      ml: "സംസ്ഥാനത്തെ ഉൽപ്പാദന പ്രവർത്തനങ്ങളിൽ ഏർപ്പെട്ടിരിക്കുന്ന സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക",
+      en: "To provide financial assistance to Micro, Small, and Medium Enterprises engaged in manufacturing activities in the State.",
+      ml: "സംസ്ഥാനത്ത് ഉത്പാദന മേഖലയിൽ പ്രവർത്തിക്കുന്ന സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Entrepreneurs in Manufacturing Sector",
-      ml: "ഉൽപ്പാദന മേഖലയിലെ സംരംഭകർ",
+      en: "Entrepreneurs in the Manufacturing Sector",
+      ml: "ഉത്പാദന മേഖലയിലെ സംരംഭകർ",
     },
     eligibilityCriterias: {
-      en: "Entrepreneurs in Manufacturing Sector except negative list",
-      ml: "നെഗറ്റീവ് ലിസ്റ്റ് ഒഴികെയുള്ള ഉൽപ്പാദന മേഖലയിലെ സംരംഭകർ",
+      en: "Entrepreneurs in the Manufacturing Sector, excluding a negative list.",
+      ml: "ഒഴിവാക്കപ്പെട്ട വിഭാഗങ്ങൾ ഒഴികെയുള്ള ഉത്പാദന മേഖലയിലെ സംരംഭകർ.",
     },
     benefitsProvided: {
-      en: "unit can avail subsidy from 15% to 45% of the fixed capital investment upto 40 Lakhs",
-      ml: "യൂണിറ്റുകൾക്ക് 40 ലക്ഷം വരെ സ്ഥിര മൂലധന നിക്ഷേപത്തിന്റെ 15% മുതൽ 45% വരെ സബ്സിഡി ലഭിക്കും",
+      en: "A unit can avail a subsidy from 15% to 45% of the fixed capital investment, up to ₹40 Lakhs.",
+      ml: "സ്ഥിര മൂലധന നിക്ഷേപത്തിന്റെ 15% മുതൽ 45% വരെ (പരമാവധി 40 ലക്ഷം രൂപ) സബ്സിഡി ലഭിക്കും.",
     },
     applicationProcess: {
-      en: "online - https://ess.industry.kerala.gov.in/login",
-      ml: "ഓൺലൈൻ - https://ess.industry.kerala.gov.in/login",
+      en: "Online: https://ess.industry.kerala.gov.in/login",
+      ml: "ഓൺലൈനായി: https://ess.industry.kerala.gov.in/login",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_71",
+    keywords: {
+      en: ["ess", "entrepreneur", "msme", "subsidy"],
+      ml: ["ESS", "സംരംഭകൻ", "എംഎസ്എംഇ", "സബ്സിഡി"],
+    },
   },
   {
     name: {
-      en: "Prime Ministers Employment Generation Programme (PMEGP)",
-      ml: "പ്രധാനമന്ത്രി തൊഴിലവസര സൃഷ്ടി പദ്ധതി (PMEGP)",
+      en: "Prime Minister's Employment Generation Programme (PMEGP)",
+      ml: "പ്രധാനമന്ത്രിയുടെ തൊഴിൽ സൃഷ്ടി പരിപാടി (PMEGP)",
     },
     implementedBy: {
-      en: ["Kvic / Kvib / Dic"],
-      ml: [
-        "ഖാദി വിൽക്കാസ് വ്യവസായ കമ്മീഷൻ / ഖാദി വിൽക്കാസ് വ്യവസായ ബോർഡ് / ജില്ലാ വ്യവസായ കേന്ദ്രം",
-      ],
+      en: ["KVIC / KVIB / DIC"],
+      ml: ["KVIC / KVIB / DIC"],
     },
     objective: {
-      en: "Generate employment opportunities in rural as well as urban areas of the country through setting up of new self-employment ventures/projects/micro enterprises",
-      ml: "പുതിയ സ്വയംതൊഴിൽ സംരംഭങ്ങൾ/പദ്ധതികൾ/സൂക്ഷ്മ സംരംഭങ്ങൾ സ്ഥാപിക്കുന്നതിലൂടെ രാജ്യത്തിന്റെ ഗ്രാമീണ, നഗര മേഖലകളിൽ തൊഴിലവസരങ്ങൾ സൃഷ്ടിക്കുക",
+      en: "To generate employment opportunities in rural as well as urban areas by setting up new self-employment ventures.",
+      ml: "പുതിയ സ്വയംതൊഴിൽ സംരംഭങ്ങൾ സ്ഥാപിച്ച് രാജ്യത്തെ ഗ്രാമ-നഗര പ്രദേശങ്ങളിൽ തൊഴിലവസരങ്ങൾ സൃഷ്ടിക്കുക.",
     },
     targetBeneficiaries: {
-      en: "All new viable micro enterprises, including Village Industries projects except activities indicated in the negative list of Village Industries",
-      ml: "ഗ്രാമ വ്യവസായങ്ങളുടെ നെഗറ്റീവ് ലിസ്റ്റിൽ സൂചിപ്പിച്ച പ്രവർത്തനങ്ങൾ ഒഴികെ ഗ്രാമ വ്യവസായ പദ്ധതികൾ ഉൾപ്പെടെ എല്ലാ പുതിയ ലാഭകരമായ സൂക്ഷ്മ സംരംഭങ്ങൾ",
+      en: "All new viable micro-enterprises, including Village Industries projects, except those in the negative list.",
+      ml: "ഒഴിവാക്കപ്പെട്ടവ ഒഴികെയുള്ള എല്ലാ പുതിയ മൈക്രോ സംരംഭങ്ങളും ഗ്രാമ വ്യവസായ പദ്ധതികളും.",
     },
     eligibilityCriterias: {
-      en: "Any individual, above 18 years of age\navailable only for new projects sanctioned",
-      ml: "18 വയസ്സിന് മേലുള്ള ഏതൊരു വ്യക്തിക്കും\nഅനുവദിച്ച പുതിയ പദ്ധതികൾക്ക് മാത്രം ലഭ്യം",
+      en: "Any individual above 18 years of age. Available only for new sanctioned projects.",
+      ml: "18 വയസ്സിന് മുകളിലുള്ള ഏതൊരു വ്യക്തിക്കും. പുതുതായി അനുവദിച്ച പദ്ധതികൾക്ക് മാത്രം.",
     },
     benefitsProvided: {
-      en: "The maximum cost of the project/unit admissible for Margin Money subsidy under Manufacturing sector is Rs. 50 lakhs\nThe maximum cost of the project/unit admissible for Margin Money subsidy under Business/Service sector is Rs. 20 lakhs",
-      ml: "ഉൽപ്പാദന മേഖലയിൽ മാർജിൻ മണി സബ്സിഡിക്ക് അനുവദനീയമായ പദ്ധതി/യൂണിറ്റിന്റെ പരമാവധി ചെലവ് 50 ലക്ഷം രൂപ\nബിസിനസ്/സേവന മേഖലയിൽ മാർജിൻ മണി സബ്സിഡിക്ക് അനുവദനീയമായ പദ്ധതി/യൂണിറ്റിന്റെ പരമാവധി ചെലവ് 20 ലക്ഷം രൂപ",
+      en: "Maximum project cost for Margin Money subsidy is ₹50 lakhs for the Manufacturing sector and ₹20 lakhs for the Business/Service sector.",
+      ml: "ഉത്പാദന മേഖലയിൽ മാർജിൻ മണി സബ്സിഡിക്കുള്ള പരമാവധി പദ്ധതിച്ചെലവ് ₹50 ലക്ഷം. ബിസിനസ്/സേവന മേഖലയിൽ ഇത് ₹20 ലക്ഷം ആണ്.",
     },
     applicationProcess: {
-      en: "Online - https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
-      ml: "ഓൺലൈൻ - https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
+      en: "Online: https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
+      ml: "ഓൺലൈനായി: https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_72",
+    keywords: {
+      en: ["pmegp", "self-employment", "loan", "subsidy"],
+      ml: ["PMEGP", "സ്വയംതൊഴിൽ", "വായ്പ", "സബ്സിഡി"],
+    },
   },
   {
     name: {
@@ -5638,77 +5867,85 @@ Email - dd-idk.dairy@kerala.gov.in`,
       ml: "നാനോ യൂണിറ്റുകൾക്കുള്ള മാർജിൻ മണി ഗ്രാന്റ് (MMG)",
     },
     implementedBy: {
-      en: ["Dept Of Industries", "Commerce"],
-      ml: ["വ്യവസായ വകുപ്പ്", "വാണിജ്യ വകുപ്പ്"],
+      en: ["Department of Industries & Commerce"],
+      ml: ["വ്യവസായ വാണിജ്യ വകുപ്പ്"],
     },
     objective: {
-      en: "provide financial assistance to Nano units in the State, engaged in manufacturing, job work and service activity having any type of value addition.",
-      ml: "സംസ്ഥാനത്തെ ഉൽപ്പാദനം, ജോലി, സേവന പ്രവർത്തനങ്ങളിൽ ഏർപ്പെട്ടിരിക്കുന്ന മൂല്യവർദ്ധനയുള്ള നാനോ യൂണിറ്റുകൾക്ക് സാമ്പത്തിക സഹായം നൽകുക",
+      en: "To provide financial assistance to Nano units in the State, engaged in manufacturing, job work, and service activities with any type of value addition.",
+      ml: "ഉത്പാദനം, ജോബ് വർക്ക്, മൂല്യവർദ്ധിത സേവനങ്ങൾ എന്നിവയിൽ ഏർപ്പെട്ടിരിക്കുന്ന സംസ്ഥാനത്തെ നാനോ യൂണിറ്റുകൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Nano units in the State, engaged in manufacturing, job work and service activity having any type of value addition.",
-      ml: "സംസ്ഥാനത്തെ ഉൽപ്പാദനം, ജോലി, സേവന പ്രവർത്തനങ്ങളിൽ ഏർപ്പെട്ടിരിക്കുന്ന മൂല്യവർദ്ധനയുള്ള നാനോ യൂണിറ്റുകൾ",
+      en: "Nano units in the State engaged in manufacturing, job work, and service activities with any type of value addition.",
+      ml: "ഉത്പാദനം, ജോബ് വർക്ക്, മൂല്യവർദ്ധിത സേവനങ്ങൾ എന്നിവയിൽ ഏർപ്പെട്ടിരിക്കുന്ന സംസ്ഥാനത്തെ നാനോ യൂണിറ്റുകൾ.",
     },
     eligibilityCriterias: {
-      en: "Units with project cost up to 10 Lakh will be covered in the scheme",
-      ml: "10 ലക്ഷം വരെ പദ്ധതി ചെലവുള്ള യൂണിറ്റുകൾ ഈ പദ്ധതിയിൽ ഉൾപ്പെടുത്തും",
+      en: "Units with a project cost up to ₹10 Lakh will be covered in the scheme.",
+      ml: "₹10 ലക്ഷം വരെ പദ്ധതിച്ചെലവുള്ള യൂണിറ്റുകൾക്ക് ഈ പദ്ധതിയിൽ അപേക്ഷിക്കാം.",
     },
     benefitsProvided: {
-      en: "Maximum assistance under this scheme shall be Rs 4 Lakh per unit",
-      ml: "ഈ പദ്ധതിയിൽ ഒരു യൂണിറ്റിന് പരമാവധി 4 ലക്ഷം രൂപ സഹായം ലഭിക്കും",
+      en: "Maximum assistance under this scheme shall be ₹4 Lakh per unit.",
+      ml: "ഈ പദ്ധതി പ്രകാരം ഒരു യൂണിറ്റിന് പരമാവധി ₹4 ലക്ഷം രൂപ വരെ സഹായം ലഭിക്കും.",
     },
     applicationProcess: {
-      en: "Application shall be submitted to the Assistant District industries officer,Taluk Industries Office concerned with all supporting documents including the sanction letter with recommendation from the bank.\nCopy of pass book showing the details of beneficiary contribution remitted to be submitted along with application.",
-      ml: "ബാങ്കിന്റെ ശുപാർശയോടെയുള്ള സാങ്ക്ഷൻ ലെറ്റർ ഉൾപ്പെടെയുള്ള എല്ലാ സപ്പോർട്ടിംഗ് രേഖകളും സഹിതം സംബന്ധിച്ച താലൂക്ക് വ്യവസായ ഓഫീസിലെ അസിസ്റ്റന്റ് ഡിസ്ട്രിക്ട് ഇൻഡസ്ട്രീസ് ഓഫീസറിന് അപേക്ഷ സമർപ്പിക്കണം.\nഗുണഭോക്താവിന്റെ സംഭാവന അടച്ചതിന്റെ വിശദാംശങ്ങൾ കാണിക്കുന്ന പാസ്ബുക്കിന്റെ പകർപ്പ് അപേക്ഷയോടൊപ്പം സമർപ്പിക്കണം.",
+      en: "The application shall be submitted to the Assistant District Industries Officer at the concerned Taluk Industries Office with all supporting documents, including the sanction letter from the bank.",
+      ml: "ബാങ്കിൽ നിന്നുള്ള അനുമതി പത്രം ഉൾപ്പെടെ എല്ലാ രേഖകളും സഹിതം ബന്ധപ്പെട്ട താലൂക്ക് വ്യവസായ ഓഫീസിലെ അസിസ്റ്റന്റ് ജില്ലാ വ്യവസായ ഓഫീസർക്ക് അപേക്ഷ സമർപ്പിക്കണം.",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_73",
+    keywords: {
+      en: ["mmg", "nano unit", "margin money"],
+      ml: ["MMG", "നാനോ യൂണിറ്റ്", "മാർജിൻ മണി"],
+    },
   },
   {
     name: {
       en: "One Family One Enterprise (OFOE)",
-      ml: "ഒരു കുടുംബം ഒരു സംരംഭം (OFOE)",
+      ml: "ഒരു കുടുംബം, ഒരു സംരംഭം (OFOE)",
     },
     implementedBy: {
-      en: ["Dept Of Industries", "Commerce"],
-      ml: ["വ്യവസായ വകുപ്പ്", "വാണിജ്യ വകുപ്പ്"],
+      en: ["Department of Industries & Commerce"],
+      ml: ["വ്യവസായ വാണിജ്യ വകുപ്പ്"],
     },
     objective: {
-      en: "To encourage entrepreneurial activity in every household and to provide interest subvention for loan amount up to Rupees 10 lakh (for fixed capital loan and/ or working capital loan) of the project cost.",
-      ml: "ഓരോ വീട്ടിലും സംരംഭക പ്രവർത്തനങ്ങൾ പ്രോത്സാഹിപ്പിക്കുന്നതിനും പദ്ധതി ചെലവിന്റെ 10 ലക്ഷം രൂപ വരെ (സ്ഥിര മൂലധന വായ്പ കൂടാതെ/അല്ലെങ്കിൽ പ്രവർത്തന മൂലധന വായ്പ) പലിശ സബ്‌വെൻഷൻ നൽകുന്നതിനും",
+      en: "To encourage entrepreneurial activity in every household and to provide interest subvention for loans up to ₹10 lakh.",
+      ml: "ഓരോ കുടുംബത്തിലും സംരംഭകത്വം പ്രോത്സാഹിപ്പിക്കുക, ₹10 ലക്ഷം രൂപ വരെയുള്ള വായ്പകൾക്ക് പലിശയിളവ് നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "All new micro, small and medium enterprises in manufacturing,service and trading activities, which availed Term Loan and/or Working Capital Loan",
-      ml: "ടേം ലോൺ കൂടാതെ/അല്ലെങ്കിൽ വർക്കിംഗ് ക്യാപിറ്റൽ ലോൺ ലഭിച്ച ഉൽപ്പാദനം, സേവനം, വ്യാപാര പ്രവർത്തനങ്ങളിലെ എല്ലാ പുതിയ സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾ",
+      en: "All new micro, small, and medium enterprises in manufacturing, service, and trading activities which have availed a term loan and/or working capital loan.",
+      ml: "ടേം ലോൺ അല്ലെങ്കിൽ പ്രവർത്തന മൂലധന വായ്പ എടുത്തിട്ടുള്ള ഉത്പാദന, സേവന, വ്യാപാര മേഖലയിലെ എല്ലാ പുതിയ സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങളും.",
     },
     eligibilityCriterias: {
-      en: "All new micro, small and medium enterprises in manufacturing,service and trading activities, which availed Term Loan and/or Working Capital Loan commenced operation/production on or after 1/4/2022",
-      ml: "2022 ഏപ്രിൽ 1 ന് അല്ലെങ്കിൽ അതിന് ശേഷം പ്രവർത്തനം/ഉൽപ്പാദനം ആരംഭിച്ച ടേം ലോൺ കൂടാതെ/അല്ലെങ്കിൽ വർക്കിംഗ് ക്യാപിറ്റൽ ലോൺ ലഭിച്ച ഉൽപ്പാദനം, സേവനം, വ്യാപാര പ്രവർത്തനങ്ങളിലെ എല്ലാ പുതിയ സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾ",
+      en: "All new micro, small, and medium enterprises which commenced operation on or after 1/4/2022.",
+      ml: "1/4/2022-നോ അതിനു ശേഷമോ പ്രവർത്തനം ആരംഭിച്ച എല്ലാ പുതിയ സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങളും.",
     },
     benefitsProvided: {
-      en: "The assistance provided under this scheme shall be in the form of an interest subvention on reimbursement basis. The rate of subvention will be up to a maximum of 6%. The subvention will be the difference in the rate of interest charged by the financial institution and 4%.",
-      ml: "ഈ പദ്ധതിയിൽ നൽകുന്ന സഹായം റീഇംബേഴ്സ്മെന്റ് അടിസ്ഥാനത്തിൽ പലിശ സബ്‌വെൻഷൻ രൂപത്തിലായിരിക്കും. സബ്‌വെൻഷൻ നിരക്ക് പരമാവധി 6% വരെ ആയിരിക്കും. സാമ്പത്തിക സ്ഥാപനം ഈടാക്കുന്ന പലിശ നിരക്കും 4% നും തമ്മിലുള്ള വ്യത്യാസമാണ് സബ്‌വെൻഷൻ.",
+      en: "The assistance is an interest subvention on a reimbursement basis. The rate of subvention will be the difference between the interest rate charged and 4%, up to a maximum of 6%.",
+      ml: "പലിശയിളവ് രൂപത്തിലാണ് സഹായം. ധനകാര്യ സ്ഥാപനം ഈടാക്കുന്ന പലിശ നിരക്കും 4%-ഉം തമ്മിലുള്ള വ്യത്യാസമാണ് പലിശയിളവായി ലഭിക്കുക (പരമാവധി 6% വരെ).",
     },
     applicationProcess: {
-      en: "Online - https://ofoe.industry.kerala.gov.in/index.php/public",
-      ml: "ഓൺലൈൻ - https://ofoe.industry.kerala.gov.in/index.php/public",
+      en: "Online: https://ofoe.industry.kerala.gov.in/index.php/public",
+      ml: "ഓൺലൈനായി: https://ofoe.industry.kerala.gov.in/index.php/public",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_74",
+    keywords: {
+      en: ["ofoe", "one family one enterprise", "interest subvention"],
+      ml: ["OFOE", "ഒരു കുടുംബം ഒരു സംരംഭം", "പലിശയിളവ്"],
+    },
   },
   {
     ratings: {
@@ -5717,36 +5954,40 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     id: "sheet1_75",
     name: {
-      en: "PM Formalisation of micro food processing Enterprises Scheme (PM FME Scheme)",
-      ml: "പിഎം മൈക്രോ ഫുഡ് പ്രോസസ്സിങ് എന്റർപ്രൈസസ് ഔപചാരികവൽക്കരണ പദ്ധതി (പിഎം എഫ്എംഇ സ്കീം)",
+      en: "PM Formalisation of Micro Food Processing Enterprises Scheme (PMFME Scheme)",
+      ml: "സൂക്ഷ്മ ഭക്ഷ്യ സംസ്കരണ സംരംഭങ്ങൾക്കുള്ള പ്രധാനമന്ത്രിയുടെ പദ്ധതി (PMFME)",
     },
     implementedBy: {
-      en: ["Dept Of Industries", "Commerce"],
-      ml: ["വ്യവസായ വകുപ്പ്", "വാണിജ്യം"],
+      en: ["Department of Industries & Commerce"],
+      ml: ["വ്യവസായ വാണിജ്യ വകുപ്പ്"],
     },
     objective: {
-      en: "Enhance the competitiveness of existing individual micro-enterprises in the unorganized segment of the food processing industry and promote formalization of the sector; and\nSupport Farmer Producer Organizations (FPOs), Self Help Groups (SHGs) and Producers Cooperatives along their entire value chain.",
-      ml: "ഭക്ഷ്യ പ്രോസസ്സിങ് വ്യവസായത്തിന്റെ അസംഘടിത മേഖലയിലെ നിലവിലുള്ള വ്യക്തിഗത മൈക്രോ എന്റർപ്രൈസസുകളുടെ മത്സരക്ഷമത വർദ്ധിപ്പിക്കുകയും മേഖലയുടെ ഔപചാരികവൽക്കരണം പ്രോത്സാഹിപ്പിക്കുകയും; കൂടാതെ കർഷക പ്രൊഡ്യൂസർ ഓർഗനൈസേഷനുകൾ (എഫ്പിഒകൾ), സ്വയം സഹായ ഗ്രൂപ്പുകൾ (എസ്എച്ച്ജികൾ), പ്രൊഡ്യൂസേഴ്സ് കോഓപ്പറേറ്റീവുകൾ എന്നിവയെ അവരുടെ മുഴുവൻ മൂല്യ ശൃംഖലയിലുടനീളം പിന്തുണയ്ക്കുകയും.",
+      en: "Enhance the competitiveness of existing individual micro-enterprises in the unorganized food processing industry and promote formalization of the sector.",
+      ml: "അസംഘടിത ഭക്ഷ്യ സംസ്കരണ മേഖലയിലെ നിലവിലുള്ള മൈക്രോ സംരംഭങ്ങളുടെ മത്സരക്ഷമത വർദ്ധിപ്പിക്കുകയും ഈ മേഖലയെ ഔപചാരികമാക്കുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
-      en: "Individual micro food processing units",
-      ml: "വ്യക്തിഗത മൈക്രോ ഫുഡ് പ്രോസസ്സിങ് യൂണിറ്റുകൾ",
+      en: "Individual micro food processing units, FPOs, SHGs, and Producers Cooperatives.",
+      ml: "വ്യക്തിഗത മൈക്രോ ഭക്ഷ്യ സംസ്കരണ യൂണിറ്റുകൾ, FPO-കൾ, സ്വയം സഹായ സംഘങ്ങൾ, ഉത്പാദക സഹകരണ സംഘങ്ങൾ.",
     },
     eligibilityCriterias: {
-      en: "Individual micro food processing units",
-      ml: "വ്യക്തിഗത മൈക്രോ ഫുഡ് പ്രോസസ്സിങ് യൂണിറ്റുകൾ",
+      en: "Individual micro food processing units.",
+      ml: "വ്യക്തിഗത മൈക്രോ ഭക്ഷ്യ സംസ്കരണ യൂണിറ്റുകൾ.",
     },
     benefitsProvided: {
-      en: "Individual micro food processing units would be provided credit-linked capital subsidy @35% of the eligible project cost with a maximum ceiling of Rs.10.0 lakh per unit. Beneficiary contribution should be minimum of 10% of the project cost with balance being loan from Bank.",
-      ml: "വ്യക്തിഗത മൈക്രോ ഫുഡ് പ്രോസസ്സിങ് യൂണിറ്റുകൾക്ക് യോഗ്യമായ പദ്ധതി ചെലവിന്റെ 35% ക്രെഡിറ്റ് ലിങ്ക്ഡ് മൂലധന സബ്സിഡി നൽകും, ഒരു യൂണിറ്റിന് പരമാവധി 10.0 ലക്ഷം രൂപ പരിധിയോടെ. ഗുണഭോക്താക്കളുടെ സംഭാവന പദ്ധതി ചെലവിന്റെ കുറഞ്ഞത് 10% ആയിരിക്കണം, ബാക്കി ബാങ്കിൽ നിന്നുള്ള വായ്പയായിരിക്കണം.",
+      en: "Credit-linked capital subsidy @35% of the eligible project cost with a maximum ceiling of ₹10.0 lakh per unit. Beneficiary contribution should be a minimum of 10% of the project cost.",
+      ml: "പദ്ധതിച്ചെലവിന്റെ 35% ക്രെഡിറ്റ്-ലിങ്ക്ഡ് ക്യാപിറ്റൽ സബ്‌സിഡി (പരമാവധി ₹10 ലക്ഷം വരെ). ഗുണഭോക്താവ് പദ്ധതിച്ചെലവിന്റെ കുറഞ്ഞത് 10% വഹിക്കണം.",
     },
     applicationProcess: {
-      en: "Online - https://pmfme.mofpi.gov.in/pmfme/#/Home-Page",
-      ml: "ഓൺലൈൻ - https://pmfme.mofpi.gov.in/pmfme/#/Home-Page",
+      en: "Online: https://pmfme.mofpi.gov.in/pmfme/#/Home-Page",
+      ml: "ഓൺലൈനായി: https://pmfme.mofpi.gov.in/pmfme/#/Home-Page",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+    },
+    keywords: {
+      en: ["pmfme", "food processing", "micro enterprise"],
+      ml: ["PMFME", "ഭക്ഷ്യ സംസ്കരണം", "മൈക്രോ സംരംഭം"],
     },
   },
   {
@@ -5756,36 +5997,40 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     id: "sheet1_76",
     name: {
-      en: "MSME INSURANCE SCHEME",
-      ml: "എംഎസ്എംഇ ഇൻഷുറൻസ് സ്കീം",
+      en: "MSME Insurance Scheme",
+      ml: "എം.എസ്.എം.ഇ. ഇൻഷുറൻസ് പദ്ധതി",
     },
     implementedBy: {
-      en: ["Dept Of Industries", "Commerce"],
-      ml: ["വ്യവസായ വകുപ്പ്", "വാണിജ്യം"],
+      en: ["Department of Industries & Commerce"],
+      ml: ["വ്യവസായ വാണിജ്യ വകുപ്പ്"],
     },
     objective: {
-      en: "providing financial protection to MSMEs against unforeseen risks, which can have a detrimental impact on their businesses.",
-      ml: "അവരുടെ ബിസിനസ്സുകളിൽ ദോഷകരമായ സ്വാധീനം ചെലുത്താൻ കഴിയുന്ന അപ്രതീക്ഷിത അപകടസാധ്യതകൾക്കെതിരെ എംഎസ്എംഇകൾക്ക് സാമ്പത്തിക സംരക്ഷണം നൽകുന്നു.",
+      en: "Providing financial protection to MSMEs against unforeseen risks that can have a detrimental impact on their businesses.",
+      ml: "അപ്രതീക്ഷിത നഷ്ടങ്ങളിൽ നിന്ന് സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾക്ക് (MSME) സാമ്പത്തിക സംരക്ഷണം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "MSMEs",
-      ml: "എംഎസ്എംഇകൾ",
+      ml: "എം.എസ്.എം.ഇകൾ",
     },
     eligibilityCriterias: {
-      en: "having valid UDYAM registration",
-      ml: "സാധുവായ ഉദ്യം രജിസ്ട്രേഷൻ ഉണ്ടായിരിക്കുക",
+      en: "Must have valid UDYAM registration.",
+      ml: "സാധുവായ ഉദ്യം രജിസ്ട്രേഷൻ ഉണ്ടായിരിക്കണം.",
     },
     benefitsProvided: {
-      en: "reimbursement of up to 50 percent of the annual insurance premium paid by MSMEs upto 2500",
-      ml: "എംഎസ്എംഇകൾ അടയ്ക്കുന്ന വാർഷിക ഇൻഷുറൻസ് പ്രീമിയത്തിന്റെ 50 ശതമാനം വരെ തിരികെ നൽകൽ, പരമാവധി 2500 വരെ",
+      en: "Reimbursement of up to 50% of the annual insurance premium paid by MSMEs, up to ₹2,500.",
+      ml: "വാർഷിക ഇൻഷുറൻസ് പ്രീമിയത്തിന്റെ 50% വരെ (പരമാവധി ₹2,500) തിരികെ നൽകുന്നു.",
     },
     applicationProcess: {
-      en: "Online - https://msmeinsurance.industry.kerala.gov.in/index.php/public",
-      ml: "ഓൺലൈൻ - https://msmeinsurance.industry.kerala.gov.in/index.php/public",
+      en: "Online: https://msmeinsurance.industry.kerala.gov.in/index.php/public",
+      ml: "ഓൺലൈനായി: https://msmeinsurance.industry.kerala.gov.in/index.php/public",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+    },
+    keywords: {
+      en: ["msme", "insurance", "udyam"],
+      ml: ["എംഎസ്എംഇ", "ഇൻഷുറൻസ്", "ഉദ്യം"],
     },
   },
   {
@@ -5795,36 +6040,40 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     id: "sheet1_77",
     name: {
-      en: "MSME Scale Up Mission (Mission 1000)",
-      ml: "എംഎസ്എംഇ സ്കെയിൽ അപ്പ് മിഷൻ (മിഷൻ 1000)",
+      en: "MSME Scale-Up Mission (Mission 1000)",
+      ml: "എം.എസ്.എം.ഇ. സ്കെയിൽ-അപ്പ് മിഷൻ (മിഷൻ 1000)",
     },
     implementedBy: {
-      en: ["Dept Of Industries", "Commerce"],
-      ml: ["വ്യവസായ വകുപ്പ്", "വാണിജ്യം"],
+      en: ["Department of Industries & Commerce"],
+      ml: ["വ്യവസായ വാണിജ്യ വകുപ്പ്"],
     },
     objective: {
-      en: "aimed at uplifting 1000 Micro, Small and Medium Enterprises (MSMEs) in the State into businesses with Rs. 100 crore turnover within four years",
-      ml: "സംസ്ഥാനത്തെ 1000 മൈക്രോ, സ്മാൾ ആന്റ് മീഡിയം എന്റർപ്രൈസസുകളെ (എംഎസ്എംഇകൾ) നാല് വർഷത്തിനുള്ളിൽ 100 കോടി രൂപ വിറ്റുവരവുള്ള ബിസിനസ്സുകളാക്കി ഉയർത്തുന്നത് ലക്ഷ്യമിടുന്നു",
+      en: "To uplift 1000 Micro, Small and Medium Enterprises (MSMEs) in the State into businesses with a ₹100 crore turnover within four years.",
+      ml: "സംസ്ഥാനത്തെ 1000 സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങളെ (MSME) നാല് വർഷത്തിനുള്ളിൽ ₹100 കോടി വിറ്റുവരവുള്ള ബിസിനസ്സുകളാക്കി ഉയർത്തുക.",
     },
     targetBeneficiaries: {
-      en: "Potential Micro, Small and Medium Enterprises (MSMEs) in the State into businesses with Rs. 100 crore turnover within four years",
-      ml: "നാല് വർഷത്തിനുള്ളിൽ 100 കോടി രൂപ വിറ്റുവരവുള്ള ബിസിനസ്സുകളാകാൻ സാധ്യതയുള്ള സംസ്ഥാനത്തെ മൈക്രോ, സ്മാൾ ആന്റ് മീഡിയം എന്റർപ്രൈസസുകൾ (എംഎസ്എംഇകൾ)",
+      en: "Potential Micro, Small and Medium Enterprises (MSMEs) in the State.",
+      ml: "സംസ്ഥാനത്തെ വളർച്ചാ സാധ്യതയുള്ള സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾ.",
     },
     eligibilityCriterias: {
-      en: "being registered in Kerala with UDYAM registration\nbeing in operation for at least three years as of March 31, 2023, and\nbeing engaged in manufacturing or service activities",
-      ml: "ഉദ്യം രജിസ്ട്രേഷൻ സഹിതം കേരളത്തിൽ രജിസ്റ്റർ ചെയ്തിരിക്കുക\n2023 മാർച്ച് 31 വരെ കുറഞ്ഞത് മൂന്ന് വർഷമായി പ്രവർത്തിക്കുന്നുണ്ടായിരിക്കുക\nനിർമ്മാണ അല്ലെങ്കിൽ സേവന പ്രവർത്തനങ്ങളിൽ ഏർപ്പെട്ടിരിക്കുക",
+      en: "Must be registered in Kerala with UDYAM registration, be in operation for at least three years as of March 31, 2023, and be engaged in manufacturing or service activities.",
+      ml: "ഉദ്യം രജിസ്ട്രേഷനോടെ കേരളത്തിൽ രജിസ്റ്റർ ചെയ്തതും, 31 മാർച്ച് 2023-ന് മുൻപ് കുറഞ്ഞത് മൂന്ന് വർഷം പ്രവർത്തന പരിചയമുള്ളതും, ഉത്പാദന-സേവന മേഖലയിൽ പ്രവർത്തിക്കുന്നതുമായ സംരംഭങ്ങൾ.",
     },
     benefitsProvided: {
-      en: "Capital Investment Subsidy up to 40% (maximum Rs. 2 Cr)\nInterest subvention for working capital loans up to 50% of the interest rate (limited to Rs. 50 Lakhs)\nFinancial assistance for preparation of DPR for scale (up to Rs. 1 lakh per Enterprise),",
-      ml: "മൂലധന നിക്ഷേപ സബ്സിഡി 40% വരെ (പരമാവധി 2 കോടി രൂപ)\nവർക്കിംഗ് ക്യാപിറ്റൽ ലോണുകൾക്ക് പലിശ നിരക്കിന്റെ 50% വരെ പലിശ സബ്വെൻഷൻ (50 ലക്ഷം രൂപ പരിധിയിൽ)\nസ്കെയിൽ അപ്പിനായുള്ള ഡിപിആർ തയ്യാറാക്കുന്നതിന് സാമ്പത്തിക സഹായം (ഒരു എന്റർപ്രൈസിന് 1 ലക്ഷം രൂപ വരെ)",
+      en: "Capital Investment Subsidy up to 40% (max ₹2 Cr), Interest subvention for working capital loans up to 50% (limited to ₹50 Lakhs), and financial assistance for DPR preparation (up to ₹1 lakh).",
+      ml: "മൂലധന നിക്ഷേപത്തിന് 40% വരെ സബ്സിഡി (പരമാവധി ₹2 കോടി), പ്രവർത്തന മൂലധന വായ്പയ്ക്ക് 50% വരെ പലിശയിളവ് (പരമാവധി ₹50 ലക്ഷം), DPR തയ്യാറാക്കാൻ ₹1 ലക്ഷം വരെ സഹായം.",
     },
     applicationProcess: {
-      en: "Online - https://mission1000.industry.kerala.gov.in/public/index.php/public",
-      ml: "ഓൺലൈൻ - https://mission1000.industry.kerala.gov.in/public/index.php/public",
+      en: "Online: https://mission1000.industry.kerala.gov.in/public/index.php/public",
+      ml: "ഓൺലൈനായി: https://mission1000.industry.kerala.gov.in/public/index.php/public",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+    },
+    keywords: {
+      en: ["mission 1000", "msme", "scale-up"],
+      ml: ["മിഷൻ 1000", "എംഎസ്എംഇ", "സ്കെയിൽ-അപ്പ്"],
     },
   },
   {
@@ -5835,35 +6084,39 @@ Email - dd-idk.dairy@kerala.gov.in`,
     id: "sheet1_78",
     name: {
       en: "Assistance Scheme for Handicrafts Artisans (ASHA)",
-      ml: "കരകൗശല കലാകാരന്മാർക്കുള്ള സഹായ പദ്ധതി (ആശാ)",
+      ml: "കരകൗശല തൊഴിലാളികൾക്കുള്ള സഹായ പദ്ധതി (ആശ)",
     },
     implementedBy: {
-      en: ["Dept Of Industries", "Commerce"],
-      ml: ["വ്യവസായ വകുപ്പ്", "വാണിജ്യം"],
+      en: ["Department of Industries & Commerce"],
+      ml: ["വ്യവസായ വാണിജ്യ വകുപ്പ്"],
     },
     objective: {
-      en: "onetime support intended to provide, handicraft artisans who invested in plant and machinery for a running handicraft unit",
-      ml: "പ്രവർത്തിക്കുന്ന കരകൗശല യൂണിറ്റിനായി പ്ലാന്റ്, മെഷിനറി എന്നിവയിൽ നിക്ഷേപിച്ച കരകൗശല കലാകാരന്മാർക്ക് ഒരു തവണ സഹായം നൽകുന്നതിനാണ് ഉദ്ദേശിക്കുന്നത്",
+      en: "One-time support for handicraft artisans who have invested in plant and machinery for a running handicraft unit.",
+      ml: "പ്രവർത്തിക്കുന്ന കരകൗശല യൂണിറ്റിനായി യന്ത്രസാമഗ്രികളിൽ നിക്ഷേപം നടത്തിയ കരകൗശല തൊഴിലാളികൾക്ക് ഒറ്റത്തവണ സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "handicraft artisans",
-      ml: "കരകൗശല കലാകാരന്മാർ",
+      en: "Handicraft artisans",
+      ml: "കരകൗശല തൊഴിലാളികൾ",
     },
     eligibilityCriterias: {
-      en: "Should have artisan Card",
-      ml: "കരകൗശല കലാകാരൻ കാർഡ് ഉണ്ടായിരിക്കണം",
+      en: "Must have an Artisan Card.",
+      ml: "കരകൗശല തൊഴിലാളികൾക്കുള്ള തിരിച്ചറിയൽ കാർഡ് ഉണ്ടായിരിക്കണം.",
     },
     benefitsProvided: {
-      en: "Maximum of 50% limited to Rs. 7.5 Lakhs",
-      ml: "പരമാവധി 50% 7.5 ലക്ഷം രൂപ പരിധിയിൽ",
+      en: "Maximum of 50%, limited to ₹7.5 Lakhs.",
+      ml: "പരമാവധി 50% (₹7.5 ലക്ഷം രൂപ വരെ).",
     },
     applicationProcess: {
-      en: "online - https://schemes.industry.kerala.gov.in/public/index.php/schemes",
-      ml: "ഓൺലൈൻ - https://schemes.industry.kerala.gov.in/public/index.php/schemes",
+      en: "Online: https://schemes.industry.kerala.gov.in/public/index.php/schemes",
+      ml: "ഓൺലൈനായി: https://schemes.industry.kerala.gov.in/public/index.php/schemes",
     },
     contact: {
-      en: "General Manager \ngmdicidk@gmail.com\n+91 91881 27006 \n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
-      ml: "ജനറൽ മാനേജർ \ngmdicidk@gmail.com\n+91 91881 27006 \n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      en: "General Manager\ngmdicidk@gmail.com\n+91 91881 27006\n\nDistrict Resource Person\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+      ml: "ജനറൽ മാനേജർ\ngmdicidk@gmail.com\n+91 91881 27006\n\nജില്ലാ റിസോഴ്സ് പേഴ്സൺ\ndistrictresourcesperson@gmail.com\n+91 91884 01706",
+    },
+    keywords: {
+      en: ["asha", "handicrafts", "artisan"],
+      ml: ["ആശ", "കരകൗശലം", "തൊഴിലാളി"],
     },
   },
   {
@@ -5873,36 +6126,40 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     id: "sheet1_79",
     name: {
-      en: "Compensation",
-      ml: "നഷ്ടപരിഹാരം",
+      en: "Compensation for Wildlife Attack",
+      ml: "വന്യജീവി ആക്രമണത്തിനുള്ള നഷ്ടപരിഹാരം",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      en: ["Government of Kerala"],
+      ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Compensation to victims affected by wildlife attack",
-      ml: "വന്യമൃഗ ആക്രമണത്തിൽ പറ്റിയവർക്ക് നഷ്ടപരിഹാരം",
+      en: "Compensation for victims affected by wildlife attacks.",
+      ml: "വന്യജീവി ആക്രമണത്തിന് ഇരയായവർക്ക് നഷ്ടപരിഹാരം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Victims affected by wildlife attack",
-      ml: "വന്യമൃഗ ആക്രമണത്തിൽ പറ്റിയവർ",
+      en: "Victims affected by wildlife attacks",
+      ml: "വന്യജീവി ആക്രമണത്തിന് ഇരയായവർ",
     },
     eligibilityCriterias: {
-      en: "Death - legal heirship certificate from Tahasildar;\nInjury - original treatment bills, certificate from the Doctor;\nCattle loss - postmortem report from Veterinary Surgeon, photograph of the cattle;\nCrop damage - certificate from Agriculture Office, photograph of the loss.",
-      ml: "മരണം - തഹസിൽദാരിൽ നിന്നുള്ള നിയമപരമായ അനന്തരാവകാശ സർട്ടിഫിക്കറ്റ്;\nപരിക്ക് - യഥാർത്ഥ ചികിത്സാ ബില്ലുകൾ, ഡോക്ടറിൽ നിന്നുള്ള സർട്ടിഫിക്കറ്റ്;\nകന്നുകാലി നഷ്ടം - വെറ്റിനറി സർജന്റെ പോസ്റ്റ്മോർട്ടം റിപ്പോർട്ട്, കന്നുകാലിയുടെ ഫോട്ടോ;\nവിള നാശം - കൃഷി ഓഫീസിൽ നിന്നുള്ള സർട്ടിഫിക്കറ്റ്, നഷ്ടത്തിന്റെ ഫോട്ടോ.",
+      en: "Death: Legal heirship certificate from Tahsildar; Injury: Original treatment bills and doctor's certificate; Cattle loss: Postmortem report from Veterinary Surgeon; Crop damage: Certificate from Agriculture Office.",
+      ml: "മരണം: തഹസിൽദാരിൽ നിന്നുള്ള അനന്തരാവകാശ സർട്ടിഫിക്കറ്റ്; പരിക്ക്: ചികിത്സാ ബില്ലുകളും ഡോക്ടറുടെ സർട്ടിഫിക്കറ്റും; കന്നുകാലി നഷ്ടം: വെറ്ററിനറി സർജന്റെ പോസ്റ്റ്മോർട്ടം റിപ്പോർട്ട്; വിളനാശം: കൃഷി ഓഫീസിൽ നിന്നുള്ള സർട്ടിഫിക്കറ്റ്.",
     },
     benefitsProvided: {
-      en: "Death: Rs.10 lakh, Rs.4.00 lakh;\nInjury (40%–60% disability): Rs.2.00 lakh;\nAbove 60% disability: Rs.2.5 lakh;\nHospitalised for 1 week: Rs.1 lakh,\nCattle loss: Rs.37,500 (cow),\nGoat: Rs.4,000",
-      ml: "മരണം: 10 ലക്ഷം രൂപ, 4.00 ലക്ഷം രൂപ;\nപരിക്ക് (40%-60% വൈകല്യം): 2.00 ലക്ഷം രൂപ;\n60% ത്തിൽ കൂടുതൽ വൈകല്യം: 2.5 ലക്ഷം രൂപ;\n1 ആഴ്ച ആശുപത്രിയിൽ: 1 ലക്ഷം രൂപ;\nകന്നുകാലി നഷ്ടം: 37,500 രൂപ (പശു);\nകോഴി: 4,000 രൂപ",
+      en: "Death: Up to ₹10 lakh; Permanent Disability: Up to ₹2 lakh; Injury: Up to ₹1 lakh; Cattle loss (Cow/Buffalo): Up to ₹1 lakh; Crop Damage: As per assessment.",
+      ml: "മരണം: ₹10 ലക്ഷം വരെ; സ്ഥിരമായ അംഗവൈകല്യം: ₹2 ലക്ഷം വരെ; പരിക്ക്: ₹1 ലക്ഷം വരെ; കന്നുകാലി നഷ്ടം (പശു/എരുമ): ₹1 ലക്ഷം വരെ; വിളനാശം: വിലയിരുത്തൽ അനുസരിച്ച്.",
     },
     applicationProcess: {
-      en: "By e-district",
-      ml: "ഇ-ഡിസ്ട്രിക്റ്റ് വഴി",
+      en: "Through e-District portal.",
+      ml: "ഇ-ഡിസ്ട്രിക്റ്റ് പോർട്ടൽ വഴി.",
     },
     contact: {
-      en: "Range Forest Officer, Erumely - 8547601112;\nRFO, Kumily - 8547601146;\nRFO, Nagarampara - 8547601238;\nRFO, Ayyappancoil - 8547601115",
-      ml: "റേഞ്ച് വന ഓഫീസർ, ഇരുമേലി - 8547601112;\nആർഎഫ്ഒ, കുമിളി - 8547601146;\nആർഎഫ്ഒ, നാഗരമ്പാറ - 8547601238;\nആർഎഫ്ഒ, അയ്യപ്പൻകോയിൽ - 8547601115",
+      en: "Range Forest Officer, Erumely: 8547601112; RFO, Kumily: 8547601146; RFO, Nagarampara: 8547601238; RFO, Ayyappancoil: 8547601115",
+      ml: "റേഞ്ച് ഫോറസ്റ്റ് ഓഫീസർ, എരുമേലി: 8547601112; RFO, കുമളി: 8547601146; RFO, നഗരമ്പാറ: 8547601238; RFO, അയ്യപ്പൻകോവിൽ: 8547601115",
+    },
+    keywords: {
+      en: ["compensation", "wildlife attack", "forest department"],
+      ml: ["നഷ്ടപരിഹാരം", "വന്യജീവി ആക്രമണം", "വനം വകുപ്പ്"],
     },
   },
   {
@@ -5912,37 +6169,40 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     id: "sheet1_80",
     name: {
-      en: "SARANYA",
-      ml: "സരണ്യ",
+      en: "Saranya Self-Employment Scheme",
+      ml: "ശരണ്യ സ്വയംതൊഴിൽ പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government Of Kerala"],
-
+      en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "SELF EMPLOYMENT SCHEME",
-      ml: "സ്വയം തൊഴിൽ പദ്ധതി",
+      en: "To provide assistance for self-employment to vulnerable women.",
+      ml: "പിന്നാക്കം നിൽക്കുന്ന വനിതകൾക്ക് സ്വയംതൊഴിലിന് സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "UNEMPLOYED WIDOWS,DESERTED WOMENS,UNMARRIED MOTHERS OF SCHDULED CASTE,DISABLED WOMENS E.T.C AGE FROM 18-55",
-      ml: "18-55 വയസ് പ്രായമുള്ള തൊഴിലില്ലാത്ത വിധവകൾ, ഉപേക്ഷിക്കപ്പെട്ട സ്ത്രീകൾ, പട്ടികജാതിയിലെ അവിവാഹിതരായ അമ്മമാർ, വൈകല്യമുള്ള സ്ത്രീകൾ തുടങ്ങിയവർ",
+      en: "Unemployed widows, deserted women, unmarried mothers, and disabled women aged 18-55.",
+      ml: "18-നും 55-നും ഇടയിൽ പ്രായമുള്ള തൊഴിൽരഹിതരായ വിധവകൾ, ഉപേക്ഷിക്കപ്പെട്ട സ്ത്രീകൾ, അവിവാഹിതരായ അമ്മമാർ, ഭിന്നശേഷിക്കാരായ വനിതകൾ.",
     },
     eligibilityCriterias: {
-      en: "SHOULD BE REGISTRED THEIR NAMES IN EMPLOYMENT EXCHANGE",
-      ml: "തൊഴിൽ എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം",
+      en: "Must have their names registered in an Employment Exchange.",
+      ml: "എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം.",
     },
     benefitsProvided: {
-      en: "50,000/-",
-      ml: "50,000/-",
+      en: "₹50,000/- (Subsidy and Interest-free loan)",
+      ml: "₹50,000/- (സബ്സിഡിയും പലിശരഹിത വായ്പയും)",
     },
     applicationProcess: {
-      en: "APPLICATION SHALL BE SUBMITTED IN CONCERNEDEMPLOYMENT EXCHANGE",
-      ml: "ബന്ധപ്പെട്ട തൊഴിൽ എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം",
+      en: "Application shall be submitted at the concerned Employment Exchange.",
+      ml: "ബന്ധപ്പെട്ട എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം.",
     },
     contact: {
-      en: "DISTRICT EMPLOYMENT OFFICER ,IDUKKI04868272262 EMAIL-deeidk.emp.lbr@kerala.gov.in",
-      ml: "ജില്ലാ തൊഴിൽ ഓഫീസർ, ഇടുക്കി 04868272262 ഇമെയിൽ-deeidk.emp.lbr@kerala.gov.in",
+      en: "District Employment Officer, Idukki: 04868272262, Email: deeidk.emp.lbr@kerala.gov.in",
+      ml: "ജില്ലാ എംപ്ലോയ്‌മെന്റ് ഓഫീസർ, ഇടുക്കി: 04868272262, ഇമെയിൽ: deeidk.emp.lbr@kerala.gov.in",
+    },
+    keywords: {
+      en: ["saranya", "self-employment", "women", "widow"],
+      ml: ["ശരണ്യ", "സ്വയംതൊഴിൽ", "വനിത", "വിധവ"],
     },
   },
   {
@@ -5952,36 +6212,40 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     id: "sheet1_81",
     name: {
-      en: "KAIVALYA",
-      ml: "കൈവല്യ",
+      en: "Kaivalya Self-Employment Scheme",
+      ml: "കൈവല്യ സ്വയംതൊഴിൽ പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government Of Kerala"],
+      en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "SELF EMPLOYMENT SCHEME",
-      ml: "സ്വയം തൊഴിൽ പദ്ധതി",
+      en: "To provide assistance for self-employment to persons with disabilities.",
+      ml: "ഭിന്നശേഷിക്കാർക്ക് സ്വയംതൊഴിലിന് സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "PERSONS WITH DISABILITIES WHO REGISTERED THEIR NAMES IN EMPLOYMENT EXCHANGE AGE FROM 21-55",
-      ml: "21-55 വയസ് പ്രായമുള്ള, തൊഴിൽ എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്ത വൈകല്യമുള്ളവർ",
+      en: "Persons with disabilities aged 21-55 registered in an Employment Exchange.",
+      ml: "21-നും 55-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്ത ഭിന്നശേഷിക്കാർ.",
     },
     eligibilityCriterias: {
-      en: "SHOULD BE REGISTRED THEIR NAMES IN EMPLOYMENT EXCHANGE",
-      ml: "തൊഴിൽ എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം",
+      en: "Must have their names registered in an Employment Exchange.",
+      ml: "എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം.",
     },
     benefitsProvided: {
-      en: "50,000/-",
-      ml: "50,000/-",
+      en: "₹50,000/-",
+      ml: "₹50,000/-",
     },
     applicationProcess: {
-      en: "APPLICATION SHALL BE SUBMITTED IN CONCERNEDEMPLOYMENT EXCHANGE",
-      ml: "ബന്ധപ്പെട്ട തൊഴിൽ എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം",
+      en: "Application shall be submitted at the concerned Employment Exchange.",
+      ml: "ബന്ധപ്പെട്ട എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം.",
     },
     contact: {
-      en: "DISTRICT EMPLOYMENT OFFICER ,IDUKKI04868272262 EMAIL-deeidk.emp.lbr@kerala.gov.in",
-      ml: "ജില്ലാ തൊഴിൽ ഓഫീസർ, ഇടുക്കി 04868272262 ഇമെയിൽ-deeidk.emp.lbr@kerala.gov.in",
+      en: "District Employment Officer, Idukki: 04868272262, Email: deeidk.emp.lbr@kerala.gov.in",
+      ml: "ജില്ലാ എംപ്ലോയ്‌മെന്റ് ഓഫീസർ, ഇടുക്കി: 04868272262, ഇമെയിൽ: deeidk.emp.lbr@kerala.gov.in",
+    },
+    keywords: {
+      en: ["kaivalya", "self-employment", "disabled"],
+      ml: ["കൈവല്യ", "സ്വയംതൊഴിൽ", "ഭിന്നശേഷി"],
     },
   },
   {
@@ -5991,149 +6255,161 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     id: "sheet1_82",
     name: {
-      en: "KESRU",
-      ml: "കെസ്രു",
+      en: "KESRU Self-Employment Scheme",
+      ml: "കെസ്റു സ്വയംതൊഴിൽ പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government Of Kerala"],
+      en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "SELF EMPLOYMENT SCHEME",
-      ml: "സ്വയം തൊഴിൽ പദ്ധതി",
+      en: "To provide loans for self-employment.",
+      ml: "സ്വയംതൊഴിലിനായി വായ്പ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "EMPLOYMENT REGISTRATION,AGEFROM 21-50,",
-      ml: "21-50 വയസ് പ്രായമുള്ള തൊഴിൽ രജിസ്ട്രേഷൻ ഉള്ളവർ",
+      en: "Individuals aged 21-50 with employment registration.",
+      ml: "21-നും 50-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് രജിസ്ട്രേഷനുള്ള വ്യക്തികൾ.",
     },
     eligibilityCriterias: {
-      en: "SHOULD BE REGISTRED THEIR NAMES IN EMPLOYMENT EXCHANGE",
-      ml: "തൊഴിൽ എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം",
+      en: "Must have their names registered in an Employment Exchange.",
+      ml: "എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം.",
     },
     benefitsProvided: {
-      en: "1,000,00/-",
-      ml: "1,00,000/-",
+      en: "Loan up to ₹100,000/-",
+      ml: "₹1,00,000/- വരെ വായ്പ",
     },
     applicationProcess: {
-      en: "APPLICATION SHALL BE SUBMITTED IN CONCERNEDEMPLOYMENT EXCHANGE",
-      ml: "ബന്ധപ്പെട്ട തൊഴിൽ എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം",
+      en: "Application shall be submitted at the concerned Employment Exchange.",
+      ml: "ബന്ധപ്പെട്ട എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം.",
     },
     contact: {
-      en: "DISTRICT EMPLOYMENT OFFICER ,IDUKKI04868272262 EMAIL-deeidk.emp.lbr@kerala.gov.in",
-      ml: "ജില്ലാ തൊഴിൽ ഓഫീസർ, ഇടുക്കി 04868272262 ഇമെയിൽ-deeidk.emp.lbr@kerala.gov.in",
+      en: "District Employment Officer, Idukki: 04868272262, Email: deeidk.emp.lbr@kerala.gov.in",
+      ml: "ജില്ലാ എംപ്ലോയ്‌മെന്റ് ഓഫീസർ, ഇടുക്കി: 04868272262, ഇമെയിൽ: deeidk.emp.lbr@kerala.gov.in",
+    },
+    keywords: {
+      en: ["kesru", "self-employment", "loan"],
+      ml: ["കെസ്റു", "സ്വയംതൊഴിൽ", "വായ്പ"],
     },
   },
   {
     name: {
-      en: "MULTIPURPOSE",
-      ml: "ബഹുമുഖം",
+      en: "Multipurpose Service Centres for Job-Seekers (MPS)",
+      ml: "തൊഴിലന്വേഷകർക്കായുള്ള മൾട്ടിപർപ്പസ് സേവന കേന്ദ്രങ്ങൾ",
     },
     implementedBy: {
-      en: ["Government Of Kerala"],
+      en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "SELF EMPLOYMENT SCHEME",
-      ml: "സ്വയം തൊഴിൽ പദ്ധതി",
+      en: "Self-employment scheme for groups.",
+      ml: "സംഘങ്ങൾക്കായുള്ള സ്വയംതൊഴിൽ പദ്ധതി.",
     },
     targetBeneficiaries: {
-      en: "EMPLOYMENT REGISTRATION,AGEFROM 21-45",
-      ml: "തൊഴിൽ രജിസ്ട്രേഷൻ, 21-45 വയസ്സ്",
+      en: "Groups of 2 or more individuals aged 21-45 with employment registration.",
+      ml: "21-നും 45-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് രജിസ്ട്രേഷനുള്ള രണ്ടോ അതിലധികമോ അംഗങ്ങളുള്ള സംഘങ്ങൾ.",
     },
     eligibilityCriterias: {
-      en: "SHOULD BE REGISTRED THEIR NAMES IN EMPLOYMENT EXCHANGE",
-      ml: "തൊഴിൽ കേന്ദ്രത്തിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം",
+      en: "Members must have their names registered in an Employment Exchange.",
+      ml: "അംഗങ്ങൾ എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം.",
     },
     benefitsProvided: {
-      en: "10,0000/-",
-      ml: "10,0000/-",
+      en: "Loan up to ₹1,000,000/- for groups.",
+      ml: "സംഘങ്ങൾക്ക് ₹10,00,000/- വരെ വായ്പ.",
     },
     applicationProcess: {
-      en: "APPLICATION SHALL BE SUBMITTED IN CONCERNEDEMPLOYMENT EXCHANGE",
-      ml: "ബന്ധപ്പെട്ട തൊഴിൽ കേന്ദ്രത്തിൽ അപേക്ഷ സമർപ്പിക്കണം",
+      en: "Application shall be submitted at the concerned Employment Exchange.",
+      ml: "ബന്ധപ്പെട്ട എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം.",
     },
     contact: {
-      en: "DISTRICT EMPLOYMENT OFFICER ,IDUKKI04868272262 EMAIL-deeidk.emp.lbr@kerala.gov.in",
-      ml: "ജില്ലാ തൊഴിൽ ഉദ്യോഗസ്ഥൻ, ഇടുക്കി 04868272262 ഇമെയിൽ-deeidk.emp.lbr@kerala.gov.in",
+      en: "District Employment Officer, Idukki: 04868272262, Email: deeidk.emp.lbr@kerala.gov.in",
+      ml: "ജില്ലാ എംപ്ലോയ്‌മെന്റ് ഓഫീസർ, ഇടുക്കി: 04868272262, ഇമെയിൽ: deeidk.emp.lbr@kerala.gov.in",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_83",
+    keywords: {
+      en: ["multipurpose", "self-employment", "group loan"],
+      ml: ["മൾട്ടിപർപ്പസ്", "സ്വയംതൊഴിൽ", "സംഘ വായ്പ"],
+    },
   },
   {
     name: {
-      en: "NAVAJEEVAN",
+      en: "Navajeevan",
       ml: "നവജീവൻ",
     },
     implementedBy: {
-      en: ["Government Of Kerala"],
+      en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "SELF EMPLOYMENT SCHEME",
-      ml: "സ്വയം തൊഴിൽ പദ്ധതി",
+      en: "Self-employment scheme for senior citizens.",
+      ml: "മുതിർന്ന പൗരന്മാർക്കായുള്ള സ്വയംതൊഴിൽ പദ്ധതി.",
     },
     targetBeneficiaries: {
-      en: "EMPLOYMENT REGISTRATION,AGEFROM 50-65",
-      ml: "തൊഴിൽ രജിസ്ട്രേഷൻ, 50-65 വയസ്സ്",
+      en: "Individuals aged 50-65 with employment registration.",
+      ml: "50-നും 65-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് രജിസ്ട്രേഷനുള്ള വ്യക്തികൾ.",
     },
     eligibilityCriterias: {
-      en: "SHOULD BE REGISTRED THEIR NAMES IN EMPLOYMENT EXCHANGE",
-      ml: "തൊഴിൽ കേന്ദ്രത്തിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം",
+      en: "Must have their names registered in an Employment Exchange.",
+      ml: "എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്തിരിക്കണം.",
     },
     benefitsProvided: {
-      en: "50,000/-",
-      ml: "50,000/-",
+      en: "Loan up to ₹50,000/-",
+      ml: "₹50,000/- വരെ വായ്പ",
     },
     applicationProcess: {
-      en: "APPLICATION SHALL BE SUBMITTED IN CONCERNEDEMPLOYMENT EXCHANGE",
-      ml: "ബന്ധപ്പെട്ട തൊഴിൽ കേന്ദ്രത്തിൽ അപേക്ഷ സമർപ്പിക്കണം",
+      en: "Application shall be submitted at the concerned Employment Exchange.",
+      ml: "ബന്ധപ്പെട്ട എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ അപേക്ഷ സമർപ്പിക്കണം.",
     },
     contact: {
-      en: "DISTRICT EMPLOYMENT OFFICER ,IDUKKI04868272262 EMAIL-deeidk.emp.lbr@kerala.gov.in",
-      ml: "ജില്ലാ തൊഴിൽ ഉദ്യോഗസ്ഥൻ, ഇടുക്കി 04868272262 ഇമെയിൽ-deeidk.emp.lbr@kerala.gov.in",
+      en: "District Employment Officer, Idukki: 04868272262, Email: deeidk.emp.lbr@kerala.gov.in",
+      ml: "ജില്ലാ എംപ്ലോയ്‌മെന്റ് ഓഫീസർ, ഇടുക്കി: 04868272262, ഇമെയിൽ: deeidk.emp.lbr@kerala.gov.in",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "sheet1_84",
+    keywords: {
+      en: ["navajeevan", "self-employment", "senior citizen"],
+      ml: ["നവജീവൻ", "സ്വയംതൊഴിൽ", "മുതിർന്ന പൗരൻ"],
+    },
   },
 ];
 export const nationalHealthMission = [
   {
     name: {
       en: "Janani Suraksha Yojana (JSY)",
-      ml: "ജനനി സുരക്ഷാ യോജന (ജെഎസ്‌വൈ)",
+      ml: "ജനനി സുരക്ഷാ യോജന (JSY)",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Reduce Maternal Mortality rate",
-      ml: "മാതൃമരണ നിരക്ക് കുറയ്ക്കുക",
+      en: "To reduce Maternal and Infant Mortality rates.",
+      ml: "മാതൃ-ശിശു മരണനിരക്ക് കുറയ്ക്കുക.",
     },
     targetBeneficiaries: {
-      en: "Pregnant Ladies",
+      en: "Pregnant Women",
       ml: "ഗർഭിണികൾ",
     },
     eligibilityCriterias: {
-      en: "Government Hospital Delivery",
-      ml: "സർക്കാർ ആശുപത്രിയിൽ പ്രസവം",
+      en: "For delivery in a government hospital.",
+      ml: "സർക്കാർ ആശുപത്രിയിലെ പ്രസവത്തിന്.",
     },
     benefitsProvided: {
-      en: "Rs.700/-",
-      ml: "രൂപ 700/-",
+      en: "₹700/-",
+      ml: "₹700/-",
     },
     applicationProcess: {
-      en: "Hospital Office",
-      ml: "ആശുപത്രി ഓഫീസ്",
+      en: "Through the Hospital Office.",
+      ml: "ആശുപത്രി ഓഫീസ് വഴി.",
     },
     contact: {
-      en: "Supt/PRO",
+      en: "Superintendent/PRO",
       ml: "സൂപ്രണ്ട്/പി.ആർ.ഒ",
     },
     ratings: {
@@ -6141,6 +6417,10 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_1",
+    keywords: {
+      en: ["jsy", "maternal health", "delivery"],
+      ml: ["ജെഎസ്വൈ", "മാതൃ ആരോഗ്യം", "പ്രസവം"],
+    },
   },
   {
     name: {
@@ -6149,30 +6429,30 @@ export const nationalHealthMission = [
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Accessibility",
-      ml: "പ്രവേശനക്ഷമത",
+      en: "To provide transport facilities for pregnant women.",
+      ml: "ഗർഭിണികൾക്ക് യാത്രാസൗകര്യം ഒരുക്കുക.",
     },
     targetBeneficiaries: {
-      en: "Pregnant Ladies",
+      en: "Pregnant Women",
       ml: "ഗർഭിണികൾ",
     },
     eligibilityCriterias: {
-      en: "Government Hospital Delivery",
-      ml: "സർക്കാർ ആശുപത്രിയിൽ പ്രസവം",
+      en: "For delivery in a government hospital.",
+      ml: "സർക്കാർ ആശുപത്രിയിലെ പ്രസവത്തിന്.",
     },
     benefitsProvided: {
-      en: "Vehicle Support",
-      ml: "വാഹന സഹായം",
+      en: "Vehicle Support to and from the hospital.",
+      ml: "ആശുപത്രിയിലേക്കും തിരിച്ചുമുള്ള വാഹന സൗകര്യം.",
     },
     applicationProcess: {
-      en: "Hospital Office",
-      ml: "ആശുപത്രി ഓഫീസ്",
+      en: "Through the Hospital Office.",
+      ml: "ആശുപത്രി ഓഫീസ് വഴി.",
     },
     contact: {
-      en: "Supt/PRO",
+      en: "Superintendent/PRO",
       ml: "സൂപ്രണ്ട്/പി.ആർ.ഒ",
     },
     ratings: {
@@ -6180,38 +6460,42 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_2",
+    keywords: {
+      en: ["mathruyaanam", "maternal health", "transport"],
+      ml: ["മാതൃയാനം", "മാതൃ ആരോഗ്യം", "ഗതാഗതം"],
+    },
   },
   {
     name: {
-      en: "JSSK",
-      ml: "ജെഎസ്എസ്കെ",
+      en: "Janani Shishu Suraksha Karyakram (JSSK)",
+      ml: "ജനനി ശിശു സുരക്ഷാ കാര്യക്രം (JSSK)",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Reduce Maternal Mortality rate",
-      ml: "മാതൃമരണ നിരക്ക് കുറയ്ക്കുക",
+      en: "To reduce Maternal and Infant Mortality rates by providing free services.",
+      ml: "സൗജന്യ സേവനങ്ങൾ നൽകി മാതൃ-ശിശു മരണനിരക്ക് കുറയ്ക്കുക.",
     },
     targetBeneficiaries: {
-      en: "Pregnant Ladies",
-      ml: "ഗർഭിണികൾ",
+      en: "Pregnant Women and Newborns",
+      ml: "ഗർഭിണികളും നവജാതശിശുക്കളും",
     },
     eligibilityCriterias: {
-      en: "Government Hospital Delivery",
-      ml: "സർക്കാർ ആശുപത്രിയിൽ പ്രസവം",
+      en: "For delivery in a government hospital.",
+      ml: "സർക്കാർ ആശുപത്രിയിലെ പ്രസവത്തിന്.",
     },
     benefitsProvided: {
-      en: "Free Delivery",
-      ml: "സൗജന്യ പ്രസവം",
+      en: "Free delivery, including C-section, and free treatment for newborns up to one year.",
+      ml: "സിസേറിയൻ ഉൾപ്പെടെയുള്ള സൗജന്യ പ്രസവം, നവജാതശിശുക്കൾക്ക് ഒരു വയസ്സുവരെ സൗജന്യ ചികിത്സ.",
     },
     applicationProcess: {
-      en: "Hospital Office",
-      ml: "ആശുപത്രി ഓഫീസ്",
+      en: "Automatically available at the hospital.",
+      ml: "ആശുപത്രിയിൽ ഈ സേവനം നേരിട്ട് ലഭ്യമാണ്.",
     },
     contact: {
-      en: "Supt/PRO",
+      en: "Superintendent/PRO",
       ml: "സൂപ്രണ്ട്/പി.ആർ.ഒ",
     },
     ratings: {
@@ -6219,38 +6503,42 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_3",
+    keywords: {
+      en: ["jssk", "maternal health", "infant health", "free delivery"],
+      ml: ["ജെഎസ്എസ്കെ", "മാതൃ ആരോഗ്യം", "ശിശു ആരോഗ്യം", "സൗജന്യ പ്രസവം"],
+    },
   },
   {
     name: {
-      en: "RBSK",
-      ml: "ആർബിഎസ്കെ",
+      en: "Rashtriya Bal Swasthya Karyakram (RBSK)",
+      ml: "രാഷ്ട്രീയ ബാൽ സ്വാസ്ഥ്യ കാര്യക്രം (RBSK)",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Free Medical Assistance for Children",
-      ml: "കുട്ടികൾക്ക് സൗജന്യ വൈദ്യ സഹായം",
+      en: "To provide free medical assistance and early intervention for children.",
+      ml: "കുട്ടികൾക്ക് സൗജന്യ ചികിത്സയും രോഗങ്ങൾ നേരത്തെ കണ്ടെത്താനുള്ള സഹായവും നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "under 18 Children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ",
+      en: "Children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ.",
     },
     eligibilityCriterias: {
-      en: "under 18 all children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും",
+      en: "All children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും.",
     },
     benefitsProvided: {
-      en: "Free Treatment",
-      ml: "സൗജന്യ ചികിത്സ",
+      en: "Free Treatment for identified health conditions.",
+      ml: "തിരിച്ചറിഞ്ഞ ആരോഗ്യപ്രശ്നങ്ങൾക്ക് സൗജന്യ ചികിത്സ.",
     },
     applicationProcess: {
-      en: "Hospital Office",
-      ml: "ആശുപത്രി ഓഫീസ്",
+      en: "Through Hospital Office or school health check-ups.",
+      ml: "ആശുപത്രി വഴിയോ സ്കൂൾതല ആരോഗ്യ പരിശോധനകൾ വഴിയോ.",
     },
     contact: {
-      en: "Supt/PRO",
+      en: "Superintendent/PRO",
       ml: "സൂപ്രണ്ട്/പി.ആർ.ഒ",
     },
     ratings: {
@@ -6258,155 +6546,171 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_4",
+    keywords: {
+      en: ["rbsk", "child health", "screening"],
+      ml: ["ആർബിഎസ്കെ", "ശിശു ആരോഗ്യം", "സ്ക്രീനിംഗ്"],
+    },
   },
   {
     name: {
-      en: "DEIC",
-      ml: "ഡിഇഐസി",
+      en: "District Early Intervention Center (DEIC)",
+      ml: "ജില്ലാ ഏർളി ഇന്റർവെൻഷൻ സെന്റർ (DEIC)",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Special service for differently abled children",
-      ml: "വ്യത്യസ്തമായ കഴിവുള്ള കുട്ടികൾക്ക് പ്രത്യേക സേവനം",
+      en: "To provide special services for children with developmental delays and disabilities.",
+      ml: "വളർച്ചാപരമായ കാലതാമസങ്ങളും വെല്ലുവിളികളും നേരിടുന്ന കുട്ടികൾക്ക് പ്രത്യേക സേവനങ്ങൾ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Under 18 Children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ",
+      en: "Children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ.",
     },
     eligibilityCriterias: {
-      en: "under 18 all children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും",
+      en: "All children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും.",
     },
     benefitsProvided: {
-      en: "Free Treatment",
-      ml: "സൗജന്യ ചികിത്സ",
+      en: "Free therapy and treatment.",
+      ml: "സൗജന്യ തെറാപ്പിയും ചികിത്സയും.",
     },
     applicationProcess: {
-      en: "Direct registration at DH Idukki",
-      ml: "ഡിഎച്ച് ഇടുക്കിയിൽ നേരിട്ട് രജിസ്റ്റർ ചെയ്യുക",
+      en: "Direct registration at DH Idukki.",
+      ml: "ജില്ലാ ആശുപത്രി, ഇടുക്കിയിൽ നേരിട്ട് രജിസ്റ്റർ ചെയ്യാം.",
     },
     contact: {
       en: "DEIC Manager",
-      ml: "ഡിഇഐസി മാനേജർ",
+      ml: "DEIC മാനേജർ",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "national_health_mission_5",
+    keywords: {
+      en: ["deic", "child health", "disability", "early intervention"],
+      ml: ["ഡിഇഐസി", "ശിശു ആരോഗ്യം", "ഭിന്നശേഷി", "ഏർളി ഇന്റർവെൻഷൻ"],
+    },
   },
   {
     name: {
       en: "Hridyam",
-      ml: "ഹൃദയം",
+      ml: "ഹൃദ്യം",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      en: ["Government of Kerala"],
+      ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Treatment for Heart related problems",
-      ml: "ഹൃദയ സംബന്ധിയായ പ്രശ്നങ്ങൾക്കുള്ള ചികിത്സ",
+      en: "To provide free treatment for congenital heart diseases in children.",
+      ml: "കുട്ടികളിലെ ജന്മനായുള്ള ഹൃദ്രോഗങ്ങൾക്ക് സൗജന്യ ചികിത്സ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Under 18 Children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ",
+      en: "Children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ.",
     },
     eligibilityCriterias: {
-      en: "under 18 all children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും",
+      en: "All children under 18 with congenital heart diseases.",
+      ml: "ജന്മനായുള്ള ഹൃദ്രോഗമുള്ള 18 വയസ്സിൽ താഴെയുള്ള എല്ലാ കുട്ടികളും.",
     },
     benefitsProvided: {
-      en: "Free Treatment including surgery",
-      ml: "ശസ്ത്രക്രിയ ഉൾപ്പെടെ സൗജന്യ ചികിത്സ",
+      en: "Free treatment including surgery.",
+      ml: "ശസ്ത്രക്രിയ ഉൾപ്പെടെ സൗജന്യ ചികിത്സ.",
     },
     applicationProcess: {
-      en: "DEIC Registration",
-      ml: "ഡിഇഐസി രജിസ്ട്രേഷൻ",
+      en: "Through DEIC Registration or the Hridyam website.",
+      ml: "DEIC വഴിയോ ഹൃദ്യം വെബ്സൈറ്റ് വഴിയോ രജിസ്റ്റർ ചെയ്യാം.",
     },
     contact: {
       en: "DEIC Manager",
-      ml: "ഡിഇഐസി മാനേജർ",
+      ml: "DEIC മാനേജർ",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "national_health_mission_6",
+    keywords: {
+      en: ["hridyam", "child health", "heart disease", "surgery"],
+      ml: ["ഹൃദ്യം", "ശിശു ആരോഗ്യം", "ഹൃദ്രോഗം", "ശസ്ത്രക്രിയ"],
+    },
   },
   {
     name: {
       en: "Mobile Intervention Unit",
-      ml: "മൊബൈൽ ഇടപെടൽ യൂണിറ്റ്",
+      ml: "മൊബൈൽ ഇന്റർവെൻഷൻ യൂണിറ്റ്",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Special service for differently abled children",
-      ml: "വ്യത്യസ്തമായ കഴിവുള്ള കുട്ടികൾക്ക് പ്രത്യേക സേവനം",
+      en: "To provide special services for differently-abled children in their locality.",
+      ml: "ഭിന്നശേഷിക്കാരായ കുട്ടികൾക്ക് അവരുടെ താമസസ്ഥലത്ത് പ്രത്യേക സേവനങ്ങൾ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Under 18 Children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ",
+      en: "Children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ.",
     },
     eligibilityCriterias: {
-      en: "under 18 all children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും",
+      en: "All children under 18 with disabilities.",
+      ml: "ഭിന്നശേഷിക്കാരായ 18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും.",
     },
     benefitsProvided: {
-      en: "Free Treatment",
-      ml: "സൗജന്യ ചികിത്സ",
+      en: "Free therapy and support services.",
+      ml: "സൗജന്യ തെറാപ്പിയും മറ്റു സേവനങ്ങളും.",
     },
     applicationProcess: {
-      en: "All DH & THQH",
-      ml: "എല്ലാ ഡിഎച്ച്, ടിഎച്ച്ക്യുഎച്ച്",
+      en: "Services are provided through all District Hospitals and Taluk Headquarters Hospitals.",
+      ml: "എല്ലാ ജില്ലാ, താലൂക്ക് ആശുപത്രികൾ വഴിയും സേവനം ലഭ്യമാണ്.",
     },
     contact: {
       en: "DEIC Manager",
-      ml: "ഡിഇഐസി മാനേജർ",
+      ml: "DEIC മാനേജർ",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "national_health_mission_7",
+    keywords: {
+      en: ["mobile unit", "disability", "child health"],
+      ml: ["മൊബൈൽ യൂണിറ്റ്", "ഭിന്നശേഷി", "ശിശു ആരോഗ്യം"],
+    },
   },
   {
     name: {
-      en: "Salabham Screening",
-      ml: "സലഭം സ്ക്രീനിംഗ്",
+      en: "Shalabhavam Screening",
+      ml: "ശലഭം സ്ക്രീനിംഗ്",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Free Medical screening for new born babies",
-      ml: "നവജാതശിശുക്കൾക്ക് സൗജന്യ വൈദ്യ പരിശോധന",
+      en: "To provide free medical screening for newborn babies.",
+      ml: "നവജാതശിശുക്കൾക്ക് സൗജന്യ ആരോഗ്യ പരിശോധന നടത്തുക.",
     },
     targetBeneficiaries: {
-      en: "new born babies",
+      en: "Newborn babies",
       ml: "നവജാതശിശുക്കൾ",
     },
     eligibilityCriterias: {
-      en: "Government Hospital Delivery",
-      ml: "സർക്കാർ ആശുപത്രിയിൽ പ്രസവം",
+      en: "For delivery in a government hospital.",
+      ml: "സർക്കാർ ആശുപത്രിയിലെ പ്രസവത്തിന്.",
     },
     benefitsProvided: {
       en: "Free Screening",
       ml: "സൗജന്യ പരിശോധന",
     },
     applicationProcess: {
-      en: "ALL Delivery Points",
-      ml: "എല്ലാ പ്രസവ കേന്ദ്രങ്ങളും",
+      en: "Available at all government delivery points.",
+      ml: "എല്ലാ സർക്കാർ ആശുപത്രികളിലെയും പ്രസവ വാർഡുകളിൽ ലഭ്യമാണ്.",
     },
     contact: {
-      en: "Supt/PRO",
+      en: "Superintendent/PRO",
       ml: "സൂപ്രണ്ട്/പി.ആർ.ഒ",
     },
     ratings: {
@@ -6414,97 +6718,109 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_8",
+    keywords: {
+      en: ["shalabham", "newborn", "screening"],
+      ml: ["ശലഭം", "നവജാതശിശു", "സ്ക്രീനിംഗ്"],
+    },
   },
   {
     name: {
-      en: "Asshadhara",
+      en: "Aashadhara",
       ml: "ആശാധാര",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Free Treatment for Hemophilia Patients",
-      ml: "ഹീമോഫീലിയ രോഗികൾക്ക് സൗജന്യ ചികിത്സ",
+      en: "To provide free treatment for Hemophilia patients.",
+      ml: "ഹീമോഫീലിയ രോഗികൾക്ക് സൗജന്യ ചികിത്സ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "All Hemophilia Patients",
-      ml: "എല്ലാ ഹീമോഫീലിയ രോഗികളും",
+      en: "All Hemophilia patients.",
+      ml: "എല്ലാ ഹീമോഫീലിയ രോഗികളും.",
     },
     eligibilityCriterias: {
-      en: "All Hemophilia Patients",
-      ml: "എല്ലാ ഹീമോഫീലിയ രോഗികളും",
+      en: "All Hemophilia patients.",
+      ml: "എല്ലാ ഹീമോഫീലിയ രോഗികളും.",
     },
     benefitsProvided: {
       en: "Free Treatment",
       ml: "സൗജന്യ ചികിത്സ",
     },
     applicationProcess: {
-      en: "Registration at DDC at DH Idukki",
-      ml: "ഡിഎച്ച് ഇടുക്കിയിലെ ഡിഡിസിയിൽ രജിസ്ട്രേഷൻ",
+      en: "Registration at DDC at DH Idukki.",
+      ml: "ജില്ലാ ആശുപത്രി, ഇടുക്കിയിലെ ഡിഡിസിയിൽ രജിസ്റ്റർ ചെയ്യണം.",
     },
     contact: {
       en: "Nodal Officer - DH Idukki",
-      ml: "നോഡൽ ഓഫീസർ - ഡിഎച്ച് ഇടുക്കി",
+      ml: "നോഡൽ ഓഫീസർ - ജില്ലാ ആശുപത്രി, ഇടുക്കി",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "national_health_mission_9",
+    keywords: {
+      en: ["aashadhara", "hemophilia", "free treatment"],
+      ml: ["ആശാധാര", "ഹീമോഫീലിയ", "സൗജന്യ ചികിത്സ"],
+    },
   },
   {
     name: {
-      en: "Club Foot & Cleft lip Treatment",
-      ml: "ക്ലബ് ഫുട്ട് & ചുണ്ടിളക്കൽ ചികിത്സ",
+      en: "Clubfoot & Cleft Lip Treatment",
+      ml: "ക്ലബ്ബ്ഫൂട്ട്, മുറിച്ചുണ്ട് എന്നിവയുടെ ചികിത്സ",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Free Treatment",
-      ml: "സൗജന്യ ചികിത്സ",
+      en: "To provide free treatment for clubfoot and cleft lip.",
+      ml: "ക്ലബ്ബ്ഫൂട്ട്, മുറിച്ചുണ്ട് എന്നിവയ്ക്ക് സൗജന്യ ചികിത്സ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Under 18 Children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ",
+      en: "Children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ.",
     },
     eligibilityCriterias: {
-      en: "Under 18 all children",
-      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും",
+      en: "All children under 18 years.",
+      ml: "18 വയസ്സിന് താഴെയുള്ള എല്ലാ കുട്ടികളും.",
     },
     benefitsProvided: {
-      en: "Free Treatment & Surgery",
-      ml: "സൗജന്യ ചികിത്സയും ശസ്ത്രക്രിയയും",
+      en: "Free treatment and surgery.",
+      ml: "സൗജന്യ ചികിത്സയും ശസ്ത്രക്രിയയും.",
     },
     applicationProcess: {
-      en: "DEIC Registration",
-      ml: "ഡിഇഐസി രജിസ്ട്രേഷൻ",
+      en: "Through DEIC Registration.",
+      ml: "DEIC രജിസ്ട്രേഷൻ വഴി.",
     },
     contact: {
       en: "DEIC Manager",
-      ml: "ഡിഇഐസി മാനേജർ",
+      ml: "DEIC മാനേജർ",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "national_health_mission_10",
+    keywords: {
+      en: ["clubfoot", "cleft lip", "child health", "surgery"],
+      ml: ["ക്ലബ്ബ്ഫൂട്ട്", "മുറിച്ചുണ്ട്", "ശിശു ആരോഗ്യം", "ശസ്ത്രക്രിയ"],
+    },
   },
   {
     name: {
-      en: "Aardram Clinics at FHCs",
-      ml: "എഫ്എച്ച്സികളിലെ ആർദ്രം ക്ലിനിക്കുകൾ",
+      en: "Aardram Mission Clinics at FHCs",
+      ml: "കുടുംബാരോഗ്യ കേന്ദ്രങ്ങളിലെ (FHC) ആർദ്രം ക്ലിനിക്കുകൾ",
     },
     implementedBy: {
       en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Better Medical Service",
-      ml: "മികച്ച വൈദ്യ സേവനം",
+      en: "To provide better medical services at the primary level.",
+      ml: "പ്രാഥമിക തലത്തിൽ മികച്ച വൈദ്യസേവനം ലഭ്യമാക്കുക.",
     },
     targetBeneficiaries: {
       en: "Public",
@@ -6515,15 +6831,15 @@ export const nationalHealthMission = [
       ml: "പൊതുജനങ്ങൾ",
     },
     benefitsProvided: {
-      en: "Free Medical Assistance",
-      ml: "സൗജന്യ വൈദ്യ സഹായം",
+      en: "Free medical assistance and diagnostics.",
+      ml: "സൗജന്യ ചികിത്സയും രോഗനിർണ്ണയവും.",
     },
     applicationProcess: {
-      en: "MO",
-      ml: "മെഡിക്കൽ ഓഫീസർ",
+      en: "Directly visit the Family Health Centre (FHC).",
+      ml: "കുടുംബാരോഗ്യ കേന്ദ്രത്തിൽ നേരിട്ട് സമീപിക്കുക.",
     },
     contact: {
-      en: "MO",
+      en: "Medical Officer (MO)",
       ml: "മെഡിക്കൽ ഓഫീസർ",
     },
     ratings: {
@@ -6531,38 +6847,42 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_11",
+    keywords: {
+      en: ["aardram", "fhc", "primary health"],
+      ml: ["ആർദ്രം", "കുടുംബാരോഗ്യ കേന്ദ്രം", "പ്രാഥമിക ആരോഗ്യം"],
+    },
   },
   {
     name: {
-      en: "NUHM",
-      ml: "എൻയുഎച്ച്എം",
+      en: "National Urban Health Mission (NUHM)",
+      ml: "ദേശീയ നഗരാരോഗ്യ ദൗത്യം (NUHM)",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Better Medical Service at urban Population",
-      ml: "നഗര ജനസംഖ്യയ്ക്ക് മികച്ച വൈദ്യ സേവനം",
+      en: "To provide better medical services to the urban population.",
+      ml: "നഗരപ്രദേശങ്ങളിലെ ജനങ്ങൾക്ക് മികച്ച ആരോഗ്യ സേവനങ്ങൾ നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Urban Area Population",
-      ml: "നഗര പ്രദേശത്തെ ജനസംഖ്യ",
+      ml: "നഗരവാസികൾ",
     },
     eligibilityCriterias: {
       en: "Public",
       ml: "പൊതുജനങ്ങൾ",
     },
     benefitsProvided: {
-      en: "Free Medical Assistance",
-      ml: "സൗജന്യ വൈദ്യ സഹായം",
+      en: "Free medical assistance.",
+      ml: "സൗജന്യ ചികിത്സാ സഹായം.",
     },
     applicationProcess: {
-      en: "Urban FHC",
-      ml: "നഗര എഫ്എച്ച്സി",
+      en: "Through Urban Family Health Centres (FHC).",
+      ml: "നഗര കുടുംബാരോഗ്യ കേന്ദ്രങ്ങൾ വഴി.",
     },
     contact: {
-      en: "MO",
+      en: "Medical Officer (MO)",
       ml: "മെഡിക്കൽ ഓഫീസർ",
     },
     ratings: {
@@ -6570,6 +6890,10 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_12",
+    keywords: {
+      en: ["nuhm", "urban health"],
+      ml: ["എൻയുഎച്ച്എം", "നഗരാരോഗ്യം"],
+    },
   },
   {
     name: {
@@ -6578,69 +6902,73 @@ export const nationalHealthMission = [
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "Support for victims of Gender Based Violence",
-      ml: "ലിംഗാധിഷ്ഠിത അതിക്രമത്തിന് ഇരയായവർക്ക് പിന്തുണ",
+      en: "To provide support for victims of Gender-Based Violence.",
+      ml: "ലിംഗപരമായ അതിക്രമങ്ങൾക്ക് ഇരയായവർക്ക് പിന്തുണ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "General Public",
-      ml: "സാധാരണ ജനങ്ങൾ",
+      en: "Victims of Gender-Based Violence",
+      ml: "ലിംഗപരമായ അതിക്രമങ്ങൾക്ക് ഇരയായവർ",
     },
     eligibilityCriterias: {
       en: "Public",
       ml: "പൊതുജനങ്ങൾ",
     },
     benefitsProvided: {
-      en: "Free Assistance",
-      ml: "സൗജന്യ സഹായം",
+      en: "Free assistance, counseling, and support.",
+      ml: "സൗജന്യ സഹായം, കൗൺസിലിംഗ്, പിന്തുണ.",
     },
     applicationProcess: {
-      en: "DH Idukki & DH Thodupuzha",
-      ml: "ഡിഎച്ച് ഇടുക്കി & ഡിഎച്ച് തൊടുപുഴ",
+      en: "Available at DH Idukki & DH Thodupuzha.",
+      ml: "ജില്ലാ ആശുപത്രി ഇടുക്കിയിലും, തൊടുപുഴയിലും ലഭ്യമാണ്.",
     },
     contact: {
-      en: "GBVM Counselor",
-      ml: "ജിബിവിഎം കൗൺസിലർ",
+      en: "GBV Counselor",
+      ml: "ജിബിവി കൗൺസിലർ",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "national_health_mission_13",
+    keywords: {
+      en: ["bhoomika", "gender violence", "women support"],
+      ml: ["ഭൂമിക", "ലിംഗപരമായ അതിക്രമം", "വനിതാ പിന്തുണ"],
+    },
   },
   {
     name: {
-      en: "Non Communicable Disease Control Programme",
-      ml: "സംക്രമണേതര രോഗ നിയന്ത്രണ പരിപാടി",
+      en: "Non-Communicable Disease Control Programme",
+      ml: "ജീവിതശൈലീ രോഗ നിയന്ത്രണ പരിപാടി",
     },
     implementedBy: {
       en: ["Government of India", "Government of Kerala"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "NCD Service for all",
-      ml: "എല്ലാവർക്കും എൻസിഡി സേവനം",
+      en: "To provide screening and control services for non-communicable diseases.",
+      ml: "ജീവിതശൈലീ രോഗങ്ങൾക്കുള്ള പരിശോധനയും നിയന്ത്രണവും ഉറപ്പാക്കുക.",
     },
     targetBeneficiaries: {
       en: "General Public",
-      ml: "സാധാരണ ജനങ്ങൾ",
+      ml: "പൊതുജനങ്ങൾ",
     },
     eligibilityCriterias: {
       en: "Public",
       ml: "പൊതുജനങ്ങൾ",
     },
     benefitsProvided: {
-      en: "Free Diagnostic service and Treatment",
-      ml: "സൗജന്യ രോഗനിർണ്ണയ സേവനവും ചികിത്സയും",
+      en: "Free diagnostic services and treatment.",
+      ml: "സൗജന്യ രോഗനിർണ്ണയവും ചികിത്സയും.",
     },
     applicationProcess: {
-      en: "All Government Hospitals",
-      ml: "എല്ലാ സർക്കാർ ആശുപത്രികളും",
+      en: "Available at all Government Hospitals.",
+      ml: "എല്ലാ സർക്കാർ ആശുപത്രികളിലും ലഭ്യമാണ്.",
     },
     contact: {
-      en: "MO",
+      en: "Medical Officer (MO)",
       ml: "മെഡിക്കൽ ഓഫീസർ",
     },
     ratings: {
@@ -6648,14 +6976,17 @@ export const nationalHealthMission = [
       count: 0,
     },
     id: "national_health_mission_14",
+    keywords: {
+      en: ["ncd", "lifestyle disease", "screening"],
+      ml: ["ജീവിതശൈലീ രോഗം", "എൻസിഡി", "സ്ക്രീനിംഗ്"],
+    },
   },
 ];
-
 export const keralaWaterAuthority = [
   {
     name: {
-      en: "JJM - WSS TO NEDUMKANDAM, PAMPADUMPARA, UPPUTHARA ELAPPARA (PART) AND ARAKULAM (PART) PANCHAYATHS IN IDUKKI DISTRICT",
-      ml: "ജജെഎം - ഇടുക്കി ജില്ലയിലെ നെടുമ്കണ്ടം, പമ്പാടുമ്പാറ, ഉപ്പുതറ എലപ്പാറ (ഭാഗം), അരക്കുളം (ഭാഗം) പഞ്ചായത്തുകൾക്ക് ജലവിതരണ സംവിധാനം",
+      en: "JJM - WSS to Nedumkandam, Pampadumpara, Upputhara, Elappara (Part) and Arakulam (Part) Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - നെടുങ്കണ്ടം, പാമ്പാടുംപാറ, ഉപ്പുതറ, ഏലപ്പാറ (ഭാഗികം), അറക്കുളം (ഭാഗികം) പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -6663,42 +6994,58 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household in India with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-1                                                        Sandeep S Pillai                                                         Ph. No.  9188955514",
-      ml: "എഇ-1                                                        സന്ദീപ് എസ് പിള്ള                                                         ഫോൺ നമ്പർ.  9188955514",
+      en: "AE-1, Sandeep S Pillai, Ph: 9188955514",
+      ml: "എ.ഇ-1, സന്ദീപ് എസ് പിള്ള, ഫോൺ: 9188955514",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_1",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     name: {
-      en: " JJM : WSS TO CHAKKUPALLAM, VANDANMEDU, KARUNAPURAM AND VANDIPERIYAR PANCHAYATS IN IDUKKI DISTRICT",
-      ml: "ജജെഎം : ഇടുക്കി ജില്ലയിലെ ചക്കുപല്ലം, വണ്ടൻമേട്, കരുണാപുരം, വണ്ടിപെരിയാർ പഞ്ചായത്തുകൾക്ക് ജലവിതരണ സംവിധാനം",
+      en: "JJM - WSS to Chakkupallam, Vandanmedu, Karunapuram and Vandiperiyar Panchayats",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ചക്കുപള്ളം, വണ്ടൻമേട്, കരുണാപുരം, വണ്ടിപ്പെരിയാർ പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -6706,42 +7053,58 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-2                                                        Vishnu Vijayan                                        Ph. No. 8547638464",
-      ml: "എഇ-2                                                        വിഷ്ണു വിജയൻ                                        ഫോൺ നമ്പർ. 8547638464",
+      en: "AE-2, Vishnu Vijayan, Ph: 8547638464",
+      ml: "എ.ഇ-2, വിഷ്ണു വിജയൻ, ഫോൺ: 8547638464",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_2",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     name: {
-      en: " Jal Jeevan Mission (JJM)-JJM-CWSS to Idukki- Kanjikuzhi, Vazhathope, Mariyapuram, Kamakshi, Vathikudy and Vannapuram (Part) Panchayaths in Idukki District",
-      ml: "ജൽ ജീവൻ മിഷൻ (ജജെഎം)-ജജെഎം-സിഡബ്ലുഎസ്എസ് ഇടുക്കി- കാഞ്ഞിക്കുഴി, വഴത്തോപ്പ്, മരിയാപുരം, കാമാക്ഷി, വാതിക്കുടി, വണ്ണപുരം (ഭാഗം) പഞ്ചായത്തുകൾ ഇടുക്കി ജില്ലയിൽ",
+      en: "Jal Jeevan Mission (JJM) - WSS to Idukki-Kanjikuzhi, Vazhathope, Mariyapuram, Kamakshi, Vathikudy and Vannapuram (Part) Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഇടുക്കി-കാഞ്ഞിക്കുഴി, വഴത്തോപ്പ്, മരിയാപുരം, കാമാക്ഷി, വാത്തിക്കുടി, വണ്ണപ്പുറം (ഭാഗികം) പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -6749,42 +7112,58 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-2                                                        Vishnu Vijayan                                        Ph. No. 8547638465",
-      ml: "എഇ-2                                                        വിഷ്ണു വിജയൻ                                        ഫോൺ നമ്പർ. 8547638465",
+      en: "AE-2, Vishnu Vijayan, Ph: 8547638465",
+      ml: "എ.ഇ-2, വിഷ്ണു വിജയൻ, ഫോൺ: 8547638465",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_3",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     name: {
-      en: "JJM- PROVIDING FHTCS TO ALL HOUSEHOLD IN ERATTAYAR AND KAMAKSHI (PART) PANCHAYATHS IN IDUKKI DISTRICTS -",
-      ml: "ജജെഎം- ഇടുക്കി ജില്ലയിലെ എരട്ടയാർ, കാമാക്ഷി (ഭാഗം) പഞ്ചായത്തുകളിലെ എല്ലാ കുടുംബങ്ങൾക്കും എഫ്എച്ച്ടിസി നൽകൽ -",
+      en: "JJM - Providing FHTCs to all households in Erattayar and Kamakshi (Part) Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഇരട്ടയാർ, കാമാക്ഷി (ഭാഗികം) പഞ്ചായത്തുകളിലെ എല്ലാ വീടുകൾക്കും FHTC നൽകൽ",
     },
     implementedBy: {
       en: [
@@ -6792,42 +7171,58 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-2                                                        Vishnu Vijayan                                        Ph. No. 8547638466",
-      ml: "എഇ-2                                                        വിഷ്ണു വിജയൻ                                        ഫോൺ നമ്പർ. 8547638466",
+      en: "AE-2, Vishnu Vijayan, Ph: 8547638466",
+      ml: "എ.ഇ-2, വിഷ്ണു വിജയൻ, ഫോൺ: 8547638466",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_4",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     name: {
-      en: "JJM- Providing FHTC to households in Ayyappancovil and Kanchiyar Panchayaths.",
-      ml: "ജജെഎം- അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾക്ക് എഫ്എച്ച്ടിസി നൽകൽ.",
+      en: "JJM - Providing FHTCs to households in Ayyappancovil and Kanchiyar Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ പഞ്ചായത്തുകളിലെ വീടുകൾക്ക് FHTC നൽകൽ",
     },
     implementedBy: {
       en: [
@@ -6835,42 +7230,58 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-1                                                        Sandeep S Pillai                                                         Ph. No.  9188955514",
-      ml: "എഇ-1                                                        സന്ദീപ് എസ് പിള്ള                                                         ഫോൺ നമ്പർ.  9188955514",
+      en: "AE-1, Sandeep S Pillai, Ph: 9188955514",
+      ml: "എ.ഇ-1, സന്ദീപ് എസ് പിള്ള, ഫോൺ: 9188955514",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_5",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     name: {
-      en: "Jal Jeevan Mission (JJM)- WSS to Konnathady, Udumbanchola, and Rajakkad, Bisonvally, Rajakumary (part), Senapathy (part) Panchayath in Idukki District",
-      ml: "ജൽ ജീവൻ മിഷൻ (ജജെഎം)- ഇടുക്കി ജില്ലയിലെ കൊന്നത്തടി, ഉടുമ്പൻചോല, രാജക്കാട്, ബൈസൺവാലി, രാജകുമാരി (ഭാഗം), സേനാപതി (ഭാഗം) പഞ്ചായത്തുകൾക്ക് ജലവിതരണ സംവിധാനം",
+      en: "Jal Jeevan Mission (JJM) - WSS to Konnathady, Udumbanchola, Rajakkad, Bisonvally, Rajakumary (Part), Senapathy (Part) Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - കൊന്നത്തടി, ഉടുമ്പൻചോല, രാജാക്കാട്, ബൈസൺവാലി, രാജകുമാരി (ഭാഗികം), സേനാപതി (ഭാഗികം) പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -6878,42 +7289,58 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE- IV                                                      Siya M Basheer                                        Ph. No. 9188954498",
-      ml: "എഇ- IV                                                      സിയാ എം ബഷീർ                                        ഫോൺ നമ്പർ. 9188954498",
+      en: "AE-IV, Siya M Basheer, Ph: 9188954498",
+      ml: "എ.ഇ-IV, സിയ എം ബഷീർ, ഫോൺ: 9188954498",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_6",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     name: {
-      en: "JJM-WSS - to Santhanpara, Rajakumary (Part) and Senapathy (Part) Panchayaths in Idukki District ",
-      ml: "ജജെഎം-ജലവിതരണ സംവിധാനം - ഇടുക്കി ജില്ലയിലെ സന്താനപാറ, രാജകുമാരി (ഭാഗം), സേനാപതി (ഭാഗം) പഞ്ചായത്തുകൾക്ക് ",
+      en: "JJM - WSS to Santhanpara, Rajakumary (Part) and Senapathy (Part) Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ശാന്തൻപാറ, രാജകുമാരി (ഭാഗികം), സേനാപതി (ഭാഗികം) പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -6921,42 +7348,58 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE- V                                                         Ashif A R                                                  Ph. No. 8547638466",
-      ml: "എഇ- V                                                         ആശിഫ് എ ആർ                                                  ഫോൺ നമ്പർ. 8547638466",
+      en: "AE-V, Ashif A R, Ph: 8547638466",
+      ml: "എ.ഇ-V, ആഷിഫ് എ ആർ, ഫോൺ: 8547638466",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_7",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     name: {
-      en: "Jal Jeevan Mission (JJM)-JJM-WSS to Munnar-Pallivasal, Devikulam-Chinnakanal Panchayath in Idukki District",
-      ml: "ജൽ ജീവൻ മിഷൻ (ജജെഎം)-ജജെഎം-ജലവിതരണ സംവിധാനം ഇടുക്കി ജില്ലയിലെ മുന്നാർ-പള്ളിവാസൽ, ദേവികുളം-ചിന്നക്കനാൽ പഞ്ചായത്തുകൾക്ക്",
+      en: "Jal Jeevan Mission (JJM) - WSS to Munnar-Pallivasal, Devikulam-Chinnakanal Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - മൂന്നാർ-പള്ളിവാസൽ, ദേവികുളം-ചിന്നക്കനാൽ പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -6964,37 +7407,53 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: " functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details  are collected from the panchayaths ",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE- VI                                                       Manoj Kumar K                                  Ph. No.  8547638465",
-      ml: "എഇ- VI                                                       മനോജ് കുമാർ കെ                                  ഫോൺ നമ്പർ.  8547638465",
+      en: "AE-VI, Manoj Kumar K, Ph: 8547638465",
+      ml: "എ.ഇ-VI, മനോജ് കുമാർ കെ, ഫോൺ: 8547638465",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "kerala_water_authority_8",
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
+    },
   },
   {
     ratings: {
@@ -7003,8 +7462,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_9",
     name: {
-      en: "JJM CWSS to Vattavada panchayath in idukki district",
-      ml: "ഇടുക്കി ജില്ലയിലെ വട്ടവട പഞ്ചായത്തിലേക്കുള്ള JJM CWSS",
+      en: "JJM - WSS to Vattavada panchayath in Idukki district",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഇടുക്കി ജില്ലയിലെ വട്ടവട പഞ്ചായത്തിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7012,31 +7471,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE- VI                                                       Manoj Kumar K                                  Ph. No.  8547638466",
-      ml: "എഇ- VI                                                       മനോജ് കുമാർ കെ                                  ഫോൺ നമ്പർ  8547638466",
+      en: "AE-VI, Manoj Kumar K, Ph: 8547638466",
+      ml: "എ.ഇ-VI, മനോജ് കുമാർ കെ, ഫോൺ: 8547638466",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7046,8 +7521,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_10",
     name: {
-      en: "Jal Jeevan Mission (JJM)-JJM CWSS to Marayoor and Kanthalloor Panchayths in Idukki District",
-      ml: "ജൽ ജീവൻ മിഷൻ (JJM)-ഇടുക്കി ജില്ലയിലെ മരയൂർ, കാന്തല്ലൂർ പഞ്ചായത്തുകളിലേക്കുള്ള JJM CWSS",
+      en: "Jal Jeevan Mission (JJM) - WSS to Marayoor and Kanthalloor Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - മറയൂർ, കാന്തല്ലൂർ പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7055,31 +7530,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE- V                                                         Ashif A R                                                  Ph. No. 8547638466",
-      ml: "എഇ- V                                                         അഷിഫ് എ ആർ                                                  ഫോൺ നമ്പർ 8547638466",
+      en: "AE-V, Ashif A R, Ph: 8547638466",
+      ml: "എ.ഇ-V, ആഷിഫ് എ ആർ, ഫോൺ: 8547638466",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7089,8 +7580,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_11",
     name: {
-      en: "WSS to Mankulam Adimali and Pallivasal (part) Panchayath in Idukki District",
-      ml: "ഇടുക്കി ജില്ലയിലെ മാങ്കുളം ആദിമാലി, പല്ലിവാസൽ (ഭാഗം) പഞ്ചായത്തുകളിലേക്കുള്ള WSS",
+      en: "JJM - WSS to Mankulam, Adimali and Pallivasal (part) Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - മാങ്കുളം, അടിമാലി, പള്ളിവാസൽ (ഭാഗികം) പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7098,31 +7589,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE- V                                                         Ashif A R                                                  Ph. No. 8547638467",
-      ml: "എഇ- V                                                         അഷിഫ് എ ആർ                                                  ഫോൺ നമ്പർ 8547638467",
+      en: "AE-V, Ashif A R, Ph: 8547638467",
+      ml: "എ.ഇ-V, ആഷിഫ് എ ആർ, ഫോൺ: 8547638467",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7132,8 +7639,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_12",
     name: {
-      en: "JJM WSS to Edamalakudy panchayath in Idukki District",
-      ml: "ഇടുക്കി ജില്ലയിലെ ഏടമലക്കുടി പഞ്ചായത്തിലേക്കുള്ള JJM WSS",
+      en: "JJM - WSS to Edamalakudy panchayath in Idukki District",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഇടുക്കി ജില്ലയിലെ ഇടമലക്കുടി പഞ്ചായത്തിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7141,31 +7648,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-1                                                        Sandeep S Pillai                                                         Ph. No.  9188955514",
-      ml: "എഇ-1                                                        സന്ദീപ് എസ് പിള്ള                                                         ഫോൺ നമ്പർ  9188955514",
+      en: "AE-1, Sandeep S Pillai, Ph: 9188955514",
+      ml: "എ.ഇ-1, സന്ദീപ് എസ് പിള്ള, ഫോൺ: 9188955514",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7176,7 +7699,7 @@ export const keralaWaterAuthority = [
     id: "kerala_water_authority_13",
     name: {
       en: "JJM - WSS to Arakkulam and Velliyamattom Panchayaths",
-      ml: "ആറക്കുളം, വെള്ളിയാമറ്റം പഞ്ചായത്തുകളിലേക്കുള്ള JJM - WSS",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - അറക്കുളം, വെള്ളിയാമറ്റം പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7184,31 +7707,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-III Nandakumar V Ph. No. 8547638467",
-      ml: "എഇ-III നന്ദകുമാർ വി ഫോൺ നമ്പർ 8547638467",
+      en: "AE-III, Nandakumar V, Ph: 8547638467",
+      ml: "എ.ഇ-III, നന്ദകുമാർ വി, ഫോൺ: 8547638467",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7218,8 +7757,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_14",
     name: {
-      en: "JJM-RWSS TO MUTTOM KARIMKUNNAM",
-      ml: "മുട്ടം കരിങ്കുന്നത്തിലേക്കുള്ള JJM-RWSS",
+      en: "JJM - RWSS to Muttom and Karimkunnam Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - മുട്ടം, കരിങ്കുന്നം പഞ്ചായത്തുകളിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7227,31 +7766,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-III                                                        Nandakumar V                                    Ph. No. 8547638468",
-      ml: "എഇ-III                                                        നന്ദകുമാർ വി                                    ഫോൺ നമ്പർ 8547638468",
+      en: "AE-III, Nandakumar V, Ph: 8547638468",
+      ml: "എ.ഇ-III, നന്ദകുമാർ വി, ഫോൺ: 8547638468",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7261,8 +7816,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_15",
     name: {
-      en: "JJM-WSS to Kudayathoor panchayath in Idukki District",
-      ml: "ഇടുക്കി ജില്ലയിലെ കുടയത്തൂർ പഞ്ചായത്തിലേക്കുള്ള JJM-WSS",
+      en: "JJM - WSS to Kudayathoor panchayath in Idukki District",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഇടുക്കി ജില്ലയിലെ കുടയത്തൂർ പഞ്ചായത്തിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7270,31 +7825,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-III                                                        Nandakumar V                                    Ph. No. 8547638469",
-      ml: "എഇ-III                                                        നന്ദകുമാർ വി                                    ഫോൺ നമ്പർ 8547638469",
+      en: "AE-III, Nandakumar V, Ph: 8547638469",
+      ml: "എ.ഇ-III, നന്ദകുമാർ വി, ഫോൺ: 8547638469",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7304,8 +7875,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_16",
     name: {
-      en: "JJM - WSS TO KUMARAMANGALAM PANCHAYATH IN IDUKKI DISTRICT",
-      ml: "ഇടുക്കി ജില്ലയിലെ കുമാരമംഗലം പഞ്ചായത്തിലേക്കുള്ള JJM - WSS",
+      en: "JJM - WSS to Kumaramangalam Panchayath in Idukki District",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഇടുക്കി ജില്ലയിലെ കുമാരമംഗലം പഞ്ചായത്തിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7313,31 +7884,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-III                                                        Nandakumar V                                    Ph. No. 8547638470",
-      ml: "എഇ-III                                                        നന്ദകുമാർ വി                                    ഫോൺ നമ്പർ 8547638470",
+      en: "AE-III, Nandakumar V, Ph: 8547638470",
+      ml: "എ.ഇ-III, നന്ദകുമാർ വി, ഫോൺ: 8547638470",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7347,8 +7934,8 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_17",
     name: {
-      en: "Jal Jeevan Mission (JJM)-JJM-WSS to Vellathooval Panchayath in Idukki District",
-      ml: "ജൽ ജീവൻ മിഷൻ (JJM)-ഇടുക്കി ജില്ലയിലെ വെള്ളത്തൂവാൽ പഞ്ചായത്തിലേക്കുള്ള JJM-WSS",
+      en: "Jal Jeevan Mission (JJM) - WSS to Vellathooval Panchayath",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - വെള്ളത്തൂവൽ പഞ്ചായത്തിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
       en: [
@@ -7356,31 +7943,47 @@ export const keralaWaterAuthority = [
         "Government of Kerala",
         "Local Self-Government Institutions",
       ],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every rural household with a functional tap water connection.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
+      en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all rural houses.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE- IV                                                      Siya M Basheer                                        Ph. No. 9188954498",
-      ml: "എഇ- IV                                                      സിയ എം ബഷീർ                                        ഫോൺ നമ്പർ 9188954498",
+      en: "AE-IV, Siya M Basheer, Ph: 9188954498",
+      ml: "എ.ഇ-IV, സിയ എം ബഷീർ, ഫോൺ: 9188954498",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7390,36 +7993,54 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_18",
     name: {
-      en: "AMRUT 2.0 - UWSS TO KATTAPPANA MUNCIPALITY - Providing Functional Tap Connections to Households Connected",
-      ml: "അമൃത് 2.0 - കാട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലേക്കുള്ള UWSS - കുടുംബങ്ങൾക്ക് പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ നൽകൽ",
+      en: "AMRUT 2.0 - UWSS to Kattappana Municipality",
+      ml: "അമൃത് 2.0 - കാട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലെ നഗര കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ വകുപ്പ്"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ വകുപ്പ്"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every urban household with a functional tap water connection.",
+      ml: "എല്ലാ നഗര വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Every rural households",
-      ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
+      en: "Every urban household",
+      ml: "എല്ലാ നഗര കുടുംബങ്ങളും",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar Card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all urban houses.",
+      ml: "എല്ലാ നഗര വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിശദാംശങ്ങളും പഞ്ചായത്തുകളിൽ നിന്നും ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the Municipality.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും മുനിസിപ്പാലിറ്റിയിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-1                                                        Sandeep S Pillai                                                         Ph. No.  9188955514",
-      ml: "എഇ-1                                                        സന്ദീപ് എസ് പിള്ള                                                         ഫോൺ നമ്പർ  9188955514",
+      en: "AE-1, Sandeep S Pillai, Ph: 9188955514",
+      ml: "എ.ഇ-1, സന്ദീപ് എസ് പിള്ള, ഫോൺ: 9188955514",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+        "amrut",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+        "അമൃത്",
+      ],
     },
   },
   {
@@ -7429,36 +8050,54 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_19",
     name: {
-      en: "AMRUT-AMRUT 2.0 - SWAP- 2",
-      ml: "അമൃത്-അമൃത് 2.0 - സ്വാപ്- 2",
+      en: "AMRUT 2.0 - SWAP-2",
+      ml: "അമൃത് 2.0 - സ്വാപ് 2",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "To provide every rural household in India with a functional tap water connection",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ കുടുംബങ്ങൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് വാട്ടർ കണക്ഷൻ നൽകുക",
+      en: "To provide every household with a functional tap water connection.",
+      ml: "എല്ലാ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "Citizens of Ayyappancovil,Kanchiyar and Kattappana Municipality.",
-      ml: "അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ, കട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലെ പൗരന്മാർ.",
+      en: "Citizens of Ayyappancovil, Kanchiyar and Kattappana Municipality.",
+      ml: "അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ പഞ്ചായത്തുകളിലെയും കട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലെയും പൗരന്മാർ.",
     },
     eligibilityCriterias: {
-      en: "Aadhar card & Ownnership certificate",
-      ml: "ആധാർ കാർഡ് & ഉടമസ്ഥത സർട്ടിഫിക്കറ്റ്",
+      en: "Aadhaar card & Ownership certificate",
+      ml: "ആധാർ കാർഡ്, ഉടമസ്ഥാവകാശ സർട്ടിഫിക്കറ്റ്",
     },
     benefitsProvided: {
-      en: "Domestic/Non domestic/Industrial connections",
-      ml: "ഗാർഹിക/അഗാർഹിക/വ്യാവസായിക കണക്ഷനുകൾ",
+      en: "Domestic/Non-domestic/Industrial connections",
+      ml: "ഗാർഹിക/ഗാർഹികേതര/വ്യാവസായിക കണക്ഷനുകൾ.",
     },
     applicationProcess: {
-      en: "Online applicationProcess through KWA site",
-      ml: "കെ.ഡബ്ല്യു.എ സൈറ്റ് വഴി ഓൺലൈൻ അപേക്ഷാ പ്രക്രിയ",
+      en: "Online application process through the KWA site.",
+      ml: "കേരള വാട്ടർ അതോറിറ്റി (KWA) വെബ്സൈറ്റ് വഴി ഓൺലൈനായി അപേക്ഷിക്കാം.",
     },
     contact: {
-      en: "AE-1 Sandeep S Pillai Ph. No. 9188955514",
-      ml: "എ.ഇ-1 സന്ദീപ് എസ് പിള്ള ഫോൺ നമ്പർ 9188955514",
+      en: "AE-1, Sandeep S Pillai, Ph: 9188955514",
+      ml: "എ.ഇ-1, സന്ദീപ് എസ് പിള്ള, ഫോൺ: 9188955514",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+        "amrut",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+        "അമൃത്",
+      ],
     },
   },
   {
@@ -7468,36 +8107,54 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_20",
     name: {
-      en: "KIIFB TRAN 10: WRD025-06 - WSS to Ayyappankovil Panchayat in Idukki District",
-      ml: "കെ.ഐ.ഐ.എഫ്.ബി ട്രാൻ 10: WRD025-06 - ഇടുക്കി ജില്ലയിലെ അയ്യപ്പൻകോവിൽ പഞ്ചായത്തിലേക്ക് ജലവിതരണം",
+      en: "KIIFB TRAN 10: WSS to Ayyappankovil Panchayat",
+      ml: "കിഫ്ബി (KIIFB) - അയ്യപ്പൻകോവിൽ പഞ്ചായത്തിലെ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["G0k"],
-      ml: ["ജി0കെ"],
+      en: ["KIIFB", "Govt of Kerala"],
+      ml: ["കിഫ്ബി", "കേരള സർക്കാർ"],
     },
     objective: {
-      en: "To provide drinking water supply to Ayyappancovil,Kanchiyar and Kattappana Municipality.",
-      ml: "അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ, കട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലേക്ക് കുടിവെള്ള വിതരണം നൽകുക.",
+      en: "To provide drinking water supply to Ayyappancovil, Kanchiyar and Kattappana Municipality.",
+      ml: "അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ പഞ്ചായത്തുകളിലും കട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലും കുടിവെള്ളം എത്തിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Citizens of Ayyappancovil panchayat",
       ml: "അയ്യപ്പൻകോവിൽ പഞ്ചായത്തിലെ പൗരന്മാർ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card",
+      en: "Aadhaar card",
       ml: "ആധാർ കാർഡ്",
     },
     benefitsProvided: {
-      en: "functional tap connection to all rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ",
+      en: "A functional tap connection for all houses.",
+      ml: "എല്ലാ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ.",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "AE-1 Sandeep S Pillai Ph. No. 9188955514",
-      ml: "എ.ഇ-1 സന്ദീപ് എസ് പിള്ള ഫോൺ നമ്പർ 9188955514",
+      en: "AE-1, Sandeep S Pillai, Ph: 9188955514",
+      ml: "എ.ഇ-1, സന്ദീപ് എസ് പിള്ള, ഫോൺ: 9188955514",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+        "kiifb",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+        "കിഫ്ബി",
+      ],
     },
   },
   {
@@ -7507,36 +8164,52 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_21",
     name: {
-      en: "JJM - CARWSS to Alacode and adjoinig Panchayaths",
-      ml: "ജെ.ജെ.എം - അലക്കോടും അടുത്തുള്ള പഞ്ചായത്തുകളിലേക്കും സംയുക്ത ഗ്രാമീണ ജലവിതരണ പദ്ധതി",
+      en: "JJM - CARWSS to Alacode and adjoining Panchayaths",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ആലക്കോട്, സമീപ പഞ്ചായത്തുകളിലേക്കുള്ള സംയുക്ത ഗ്രാമീണ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും വീട്ടിലേക്കുള്ള കണക്ഷൻ നൽകുന്നതിനായി",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Alacode, Kodikkulam, Karimannoor ,Udumbanoor and vannappuram panchayaths",
-      ml: "അലക്കോട്, കോടിക്കുളം, കരിമന്നൂർ, ഉടുമ്പൻനൂർ, വണ്ണപ്പുറം പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
+      en: "Households in Alacode, Kodikkulam, Karimannoor, Udumbanoor and Vannappuram panchayaths",
+      ml: "ആലക്കോട്, കോടിക്കുളം, കരിമണ്ണൂർ, ഉടുമ്പന്നൂർ, വണ്ണപ്പുറം പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥത സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "വീട്ടിലേക്കുള്ള കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Assistant Engineer, P. H Section I , Thodupuzha , 8547638429/aeno1tdpa@gmail.com",
-      ml: "അസിസ്റ്റന്റ് എൻജിനീയർ, പി.എച്ച് സെക്ഷൻ I, തൊടുപുഴ, 8547638429/aeno1tdpa@gmail.com",
+      en: "Assistant Engineer, P.H. Section I, Thodupuzha, Ph: 8547638429, Email: aeno1tdpa@gmail.com",
+      ml: "അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ I, തൊടുപുഴ, ഫോൺ: 8547638429, ഇമെയിൽ: aeno1tdpa@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7547,35 +8220,51 @@ export const keralaWaterAuthority = [
     id: "kerala_water_authority_22",
     name: {
       en: "JJM - RWSS to Manakkad and Purappuzha panchayaths",
-      ml: "ജെ.ജെ.എം - മാണക്കാട്, പുരപ്പുഴ പഞ്ചായത്തുകളിലേക്ക് ഗ്രാമീണ ജലവിതരണ പദ്ധതി",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - മണക്കാട്, പുറപ്പുഴ പഞ്ചായത്തുകളിലെ ഗ്രാമീണ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും വീട്ടിലേക്കുള്ള കണക്ഷൻ നൽകുന്നതിനായി",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Manakkad and Purappuzha panchayaths",
-      ml: "മാണക്കാട്, പുരപ്പുഴ പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
+      en: "Households in Manakkad and Purappuzha panchayaths",
+      ml: "മണക്കാട്, പുറപ്പുഴ പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥത സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "വീട്ടിലേക്കുള്ള കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Assistant Engineer, P. H Section II Thodupuzha , 8289940584/aesection2tdpa@gmail.com",
-      ml: "അസിസ്റ്റന്റ് എൻജിനീയർ, പി.എച്ച് സെക്ഷൻ II തൊടുപുഴ, 8289940584/aesection2tdpa@gmail.com",
+      en: "Assistant Engineer, P.H. Section II, Thodupuzha, Ph: 8289940584, Email: aesection2tdpa@gmail.com",
+      ml: "അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ II, തൊടുപുഴ, ഫോൺ: 8289940584, ഇമെയിൽ: aesection2tdpa@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7585,36 +8274,52 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_23",
     name: {
-      en: "AMRUT- UWSS to Thodupuzha Municipality and Kumaramangalam Panchayaths",
-      ml: "അമൃത്- തൊടുപുഴ മുനിസിപ്പാലിറ്റിയിലേക്കും കുമാരമംഗലം പഞ്ചായത്തുകളിലേക്കും നഗര ജലവിതരണ പദ്ധതി",
+      en: "AMRUT - UWSS to Thodupuzha Municipality and Kumaramangalam Panchayath",
+      ml: "അമൃത് - തൊടുപുഴ മുനിസിപ്പാലിറ്റിയിലേക്കും കുമാരമംഗലം പഞ്ചായത്തിലേക്കുമുള്ള നഗര കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "For providing house connection to every urban houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ നഗര വീടുകളിലേക്കും വീട്ടിലേക്കുള്ള കണക്ഷൻ നൽകുന്നതിനായി",
+      en: "To provide house connections to every urban household.",
+      ml: "എല്ലാ നഗര വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Thodupuzha Municipality",
+      en: "Households in Thodupuzha Municipality",
       ml: "തൊടുപുഴ മുനിസിപ്പാലിറ്റിയിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥത സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "വീട്ടിലേക്കുള്ള കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the Municipality",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും മുനിസിപ്പാലിറ്റിയിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the Municipality.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും മുനിസിപ്പാലിറ്റിയിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Assistant Engineer, P. H Section I , Thodupuzha , 8547638429/aeno1tdpa@gmail.com",
-      ml: "അസിസ്റ്റന്റ് എൻജിനീയർ, പി.എച്ച് സെക്ഷൻ I, തൊടുപുഴ, 8547638429/aeno1tdpa@gmail.com",
+      en: "Assistant Engineer, P.H. Section I, Thodupuzha, Ph: 8547638429, Email: aeno1tdpa@gmail.com",
+      ml: "അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ I, തൊടുപുഴ, ഫോൺ: 8547638429, ഇമെയിൽ: aeno1tdpa@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7625,35 +8330,51 @@ export const keralaWaterAuthority = [
     id: "kerala_water_authority_24",
     name: {
       en: "RWSS to Adimaly",
-      ml: "ആടിമാലിയിലേക്ക് ഗ്രാമീണ ജലവിതരണ പദ്ധതി",
+      ml: "അടിമാലി ഗ്രാമീണ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും വീട്ടിലേക്കുള്ള കണക്ഷൻ നൽകുന്നതിനായി",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Adimaly Panchayath",
-      ml: "ആടിമാലി പഞ്ചായത്തിലെ കുടുംബങ്ങൾ",
+      en: "Households in Adimaly Panchayath",
+      ml: "അടിമാലി പഞ്ചായത്തിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥത സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "വീട്ടിലേക്കുള്ള കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from Adimaly Panchayath",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും ആടിമാലി പഞ്ചായത്തിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from Adimaly Panchayath.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും അടിമാലി പഞ്ചായത്തിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Assistant Engineer, P. H Section , Adimali/ 8547638568/phsectionadimaly@gmail.com",
-      ml: "അസിസ്റ്റന്റ് എൻജിനീയർ, പി.എച്ച് സെക്ഷൻ, ആടിമാലി/ 8547638568/phsectionadimaly@gmail.com",
+      en: "Assistant Engineer, P.H. Section, Adimali, Ph: 8547638568, Email: phsectionadimaly@gmail.com",
+      ml: "അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ, അടിമാലി, ഫോൺ: 8547638568, ഇമെയിൽ: phsectionadimaly@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7663,36 +8384,52 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_25",
     name: {
-      en: "JJM- CARWSS to Elappara and adjoining villages",
-      ml: "ജെ.ജെ.എം- എലപ്പാറയിലേക്കും അടുത്തുള്ള ഗ്രാമങ്ങളിലേക്കും സംയുക്ത ഗ്രാമീണ ജലവിതരണ പദ്ധതി",
+      en: "JJM - CARWSS to Elappara and adjoining villages",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഏലപ്പാറയിലേക്കും സമീപ ഗ്രാമങ്ങളിലേക്കുമുള്ള സംയുക്ത ഗ്രാമീണ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും വീട്ടിലേക്കുള്ള കണക്ഷൻ നൽകുന്നതിനായി",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Peermade, Peruvanthanam, Kokkayar and Elappara Panchayath",
-      ml: "പീരുമേട്, പെരുവന്തനം, കൊക്കയാർ, എലപ്പാറ പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
+      en: "Households in Peermade, Peruvanthanam, Kokkayar and Elappara Panchayaths",
+      ml: "പീരുമേട്, പെരുവന്താനം, കൊക്കയാർ, ഏലപ്പാറ പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥത സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "വീട്ടിലേക്കുള്ള കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Vinod Ravi, Assistant Engineer, P. H Section , Peermade 8547638434 aekwapmd@gmail.com",
-      ml: "വിനോദ് രവി, അസിസ്റ്റന്റ് എൻജിനീയർ, പി.എച്ച് സെക്ഷൻ, പീരുമേട് 8547638434 aekwapmd@gmail.com",
+      en: "Vinod Ravi, Assistant Engineer, P.H. Section, Peermade, Ph: 8547638434, Email: aekwapmd@gmail.com",
+      ml: "വിനോദ് രവി, അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ, പീരുമേട്, ഫോൺ: 8547638434, ഇമെയിൽ: aekwapmd@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7702,36 +8439,52 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_26",
     name: {
-      en: "JJM- ARWSS to Kumily",
-      ml: "ജെ.ജെ.എം- കുമിളിയിലേക്ക് പ്രാദേശിക ഗ്രാമീണ ജലവിതരണ പദ്ധതി",
+      en: "JJM - ARWSS to Kumily",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - കുമളിയിലേക്കുള്ള ഗ്രാമീണ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും വീട്ടിലേക്കുള്ള കണക്ഷൻ നൽകുന്നതിനായി",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Kumily Panchayath",
-      ml: "കുമിളി പഞ്ചായത്തിലെ കുടുംബങ്ങൾ",
+      en: "Households in Kumily Panchayath",
+      ml: "കുമളി പഞ്ചായത്തിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥത സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "വീട്ടിലേക്കുള്ള കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Jintamol PY, Assistant Engineer, P. H Section, Kumily 8547605753 kwakumily@gmail.com",
-      ml: "ജിന്തമോൾ പി.വൈ., അസിസ്റ്റന്റ് എൻജിനീയർ, പി.എച്ച് സെക്ഷൻ, കുമിളി 8547605753 kwakumily@gmail.com",
+      en: "Jintamol P.Y, Assistant Engineer, P.H. Section, Kumily, Ph: 8547605753, Email: kwakumily@gmail.com",
+      ml: "ജിൻ്റമോൾ പി.വൈ., അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ, കുമളി, ഫോൺ: 8547605753, ഇമെയിൽ: kwakumily@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7741,36 +8494,52 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_27",
     name: {
-      en: "JJM- CARWSS to Idukki Kanjikuzhy",
-      ml: "ജെ.ജെ.എം- ഇടുക്കി കാഞ്ചിക്കുഴിയിലേക്ക് സംയുക്ത ഗ്രാമീണ ജലവിതരണ പദ്ധതി",
+      en: "JJM - CARWSS to Idukki-Kanjikuzhy",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - ഇടുക്കി-കാഞ്ഞിക്കുഴിയിലേക്കുള്ള സംയുക്ത ഗ്രാമീണ കുടിവെള്ള പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "എൽഎസ്ജിഡി"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "എൽ.എസ്.ജി.ഡി"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലേക്കും വീട്ടിലേക്കുള്ള കണക്ഷൻ നൽകുന്നതിനായി",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Idukki-kanjikuzhi and Vazhathope(part) Panchayath",
-      ml: "ഇടുക്കി-കാഞ്ചിക്കുഴി, വഴത്തോപ്പ് (ഭാഗം) പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
+      en: "Households in Idukki-Kanjikuzhi and Vazhathope(part) Panchayaths",
+      ml: "ഇടുക്കി-കാഞ്ഞിക്കുഴി, വഴത്തോപ്പ് (ഭാഗികം) പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥത സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "വീട്ടിലേക്കുള്ള കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Nandu B, Assistant Engineer, P. H Section, Painavu 8547638431 aekwapnv@gmail.com",
-      ml: "നന്ദു ബി., അസിസ്റ്റന്റ് എൻജിനീയർ, പി.എച്ച് സെക്ഷൻ, പൈനാവ് 8547638431 aekwapnv@gmail.com",
+      en: "Nandu B, Assistant Engineer, P.H. Section, Painavu, Ph: 8547638431, Email: aekwapnv@gmail.com",
+      ml: "നന്ദു ബി., അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ, പൈനാവ്, ഫോൺ: 8547638431, ഇമെയിൽ: aekwapnv@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7780,36 +8549,52 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_28",
     name: {
-      en: "JJM- Peruvanthanam Panchayath: Providing Functional house hold tap connection inrural house holds",
-      ml: "ജെജെഎം- പെരുവന്തനം പഞ്ചായത്ത്: ഗ്രാമീണ വീടുകളിൽ പ്രവർത്തനക്ഷമമായ ഗാർഹിക ടാപ്പ് കണക്ഷൻ നൽകുന്നു",
+      en: "JJM - Peruvanthanam Panchayath: Providing functional household tap connections",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - പെരുവന്താനം പഞ്ചായത്തിലെ വീടുകൾക്ക് കുടിവെള്ള കണക്ഷൻ",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനം"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലും ഗാർഹിക കണക്ഷൻ നൽകുന്നതിന്",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Peruvanthanam Panchayath",
-      ml: "പെരുവന്തനം പഞ്ചായത്തിലെ വീട്ടുകാർ",
+      en: "Households in Peruvanthanam Panchayath",
+      ml: "പെരുവന്താനം പഞ്ചായത്തിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥാവകാശ സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "ഗാർഹിക കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Vinod Ravi,Assistant Engineer, P. H Section, Peermade   8547638434   aekwapmd@gmail.com",
-      ml: "വിനോദ് രവി, അസിസ്റ്റന്റ് എൻജിനീയർ, പി. എച്ച് സെക്ഷൻ, പീർമേട്   8547638434   aekwapmd@gmail.com",
+      en: "Vinod Ravi, Assistant Engineer, P.H. Section, Peermade, Ph: 8547638434, Email: aekwapmd@gmail.com",
+      ml: "വിനോദ് രവി, അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ, പീരുമേട്, ഫോൺ: 8547638434, ഇമെയിൽ: aekwapmd@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
   {
@@ -7819,36 +8604,52 @@ export const keralaWaterAuthority = [
     },
     id: "kerala_water_authority_29",
     name: {
-      en: "JJM- Peermade Panchayath: Providing Functional house hold tap connection to rural house holds",
-      ml: "ജെജെഎം- പീർമേട് പഞ്ചായത്ത്: ഗ്രാമീണ വീടുകളിൽ പ്രവർത്തനക്ഷമമായ ഗാർഹിക ടാപ്പ് കണക്ഷൻ നൽകുന്നു",
+      en: "JJM - Peermade Panchayath: Providing functional household tap connections",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) - പീരുമേട് പഞ്ചായത്തിലെ വീടുകൾക്ക് കുടിവെള്ള കണക്ഷൻ",
     },
     implementedBy: {
-      en: ["Government of India", "Government of Kerala", "Lsgd"],
-      ml: ["ഭാരത സർക്കാർ", "കേരള സർക്കാർ", "പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനം"],
+      en: ["Government of India", "Government of Kerala", "LSGD"],
+      ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
     },
     objective: {
-      en: "For providing house connection to every rural houses in India",
-      ml: "ഇന്ത്യയിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലും ഗാർഹിക കണക്ഷൻ നൽകുന്നതിന്",
+      en: "To provide house connections to every rural household.",
+      ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
     targetBeneficiaries: {
-      en: "House holds in Peermade Panchayath",
-      ml: "പീർമേട് പഞ്ചായത്തിലെ വീട്ടുകാർ",
+      en: "Households in Peermade Panchayath",
+      ml: "പീരുമേട് പഞ്ചായത്തിലെ കുടുംബങ്ങൾ",
     },
     eligibilityCriterias: {
-      en: "Aadhar card and ownership certificate",
-      ml: "ആധാർ കാർഡും ഉടമസ്ഥാവകാശ സർട്ടിഫിക്കറ്റും",
+      en: "Aadhaar card and ownership certificate",
+      ml: "ആധാർ കാർഡും, വസ്തുവിന്റെ ഉടമസ്ഥാവകാശ രേഖയും",
     },
     benefitsProvided: {
-      en: "house connection",
-      ml: "ഗാർഹിക കണക്ഷൻ",
+      en: "House connection",
+      ml: "വീടുകളിലേക്ക് പൈപ്പ് കണക്ഷൻ",
     },
     applicationProcess: {
-      en: "List of applicants and their details are collected from the panchayaths",
-      ml: "അപേക്ഷകരുടെ പട്ടികയും അവരുടെ വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു",
+      en: "The list of applicants and their details are collected from the concerned Panchayats.",
+      ml: "ഗുണഭോക്താക്കളുടെ പട്ടികയും വിവരങ്ങളും പഞ്ചായത്തുകളിൽ നിന്ന് ശേഖരിക്കുന്നു.",
     },
     contact: {
-      en: "Vinod Ravi,Assistant Engineer, P. H Section, Peermade   8547638434   aekwapmd@gmail.com",
-      ml: "വിനോദ് രവി, അസിസ്റ്റന്റ് എൻജിനീയർ, പി. എച്ച് സെക്ഷൻ, പീർമേട്   8547638434   aekwapmd@gmail.com",
+      en: "Vinod Ravi, Assistant Engineer, P.H. Section, Peermade, Ph: 8547638434, Email: aekwapmd@gmail.com",
+      ml: "വിനോദ് രവി, അസിസ്റ്റന്റ് എഞ്ചിനീയർ, പി.എച്ച് സെക്ഷൻ, പീരുമേട്, ഫോൺ: 8547638434, ഇമെയിൽ: aekwapmd@gmail.com",
+    },
+    keywords: {
+      en: [
+        "jjm",
+        "jal jeevan mission",
+        "water supply",
+        "tap connection",
+        "kwa",
+      ],
+      ml: [
+        "ജെജെഎം",
+        "ജൽ ജീവൻ മിഷൻ",
+        "കുടിവെള്ളം",
+        "ടാപ്പ് കണക്ഷൻ",
+        "കെഡബ്ല്യുഎ",
+      ],
     },
   },
 ];
@@ -7863,115 +8664,109 @@ export const lifeMission = [
       ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "The LIFE (Livelihood Inclusion Financial Empowerment) Mission is an initiative implemented by the State Government with the objective of providing housing to all homeless people in the state, enabling them to earn a livelihood, and providing a dignified means to participate in social processes. This mission also aims to provide secure and dignified homes that facilitate the centralization of benefits from all social welfare schemes, including financial services, for the beneficiaries.",
-      ml: "ലൈഫ് (ലൈവ്‌ലിഹുഡ് ഇൻക്ലൂഷൻ ഫൈനാൻഷ്യൽ എംപവർമെന്റ്) മിഷൻ സംസ്ഥാന സർക്കാർ നടപ്പിലാക്കുന്ന ഒരു സംരംഭമാണ്, ഇത് സംസ്ഥാനത്തെ എല്ലാ വീടില്ലാത്തവർക്കും വീട് നൽകുക, അവർക്ക് ഉപജീവനം നേടാൻ സഹായിക്കുക, സാമൂഹിക പ്രക്രിയകളിൽ മാന്യമായ പങ്കാളിത്തം നൽകുക എന്നിവ ലക്ഷ്യമിടുന്നു. ഈ മിഷൻ ഗുണഭോക്താക്കൾക്ക് സാമ്പത്തിക സേവനങ്ങൾ ഉൾപ്പെടെ എല്ലാ സാമൂഹിക ക്ഷേമ പദ്ധതികളുടെയും ആനുകൂല്യങ്ങളുടെ കേന്ദ്രീകരണം സാധ്യമാക്കുന്ന സുരക്ഷിതവും മാന്യവുമായ വീടുകൾ നൽകുന്നു.",
+      en: "The LIFE (Livelihood Inclusion Financial Empowerment) Mission aims to provide secure and dignified housing to all homeless people in the state, enabling them to earn a livelihood and participate in social processes.",
+      ml: "സംസ്ഥാനത്തെ എല്ലാ ഭവനരഹിതർക്കും സുരക്ഷിതവും മാന്യവുമായ വീട് നൽകുക, ഉപജീവനമാർഗ്ഗം നേടാൻ അവരെ പ്രാപ്തരാക്കുക, സാമൂഹിക പ്രവർത്തനങ്ങളിൽ പങ്കാളികളാക്കുക എന്നിവയാണ് ലൈഫ് (Livelihood Inclusion Financial Empowerment) മിഷന്റെ ലക്ഷ്യം.",
     },
     targetBeneficiaries: {
-      en: 40552,
-      ml: 40552,
+      en: "40,552 beneficiaries (as per data)",
+      ml: "40,552 ഗുണഭോക്താക്കൾ (കണക്കനുസരിച്ച്)",
     },
     eligibilityCriterias: {
-      en: "Homeless people\n Eligibility Criteria \n1. Those who do not own a house in their name or their family members' names / those who are unlikely to inherit a house traditionally.\n2. Families with a ration card (those included in one ration card should be considered as one family and eligible for only one house). (This is not applicable to SC/ST/Fisherfolk categories)\n3. Those who own land (maximum 5 cents in urban areas, 25 cents in rural areas)\n Land limit is not applicable to SC/ST/Fisherfolk categories.\n4. Annual family income should not exceed 3 lakhs.\n5. Families with members who are permanent employees in government/semi-government/public sector institutions or receiving pensions from such institutions are not eligible for the LIFE scheme.\n6. Families owning a four-wheeler vehicle for non-livelihood purposes should be excluded.\n7. Those who received financial assistance for house construction under any housing scheme and 12 years have not passed since then will not be eligible for a house.\n8. Those who received financial assistance for a house and later canceled the contract by repaying the amount will not be eligible.\n\n Landless people\n Eligibility Criteria \n \n Those who do not own land in their name or their family members' names, / those who are unlikely to inherit land traditionally.\n \n Families with a ration card (one house per ration card). Not applicable to SC / ST / Fisherfolk categories.\n \n Families with an annual income below three lakhs.\n \n Families with members who are permanent employees in government/semi-government/public sector institutions or receiving pensions from such institutions are not eligible for the LIFE scheme.\n \n Should not own a four-wheeler vehicle for private use.\n \n Those who became landless due to technically not owning land after partitioning property among heirs are not eligible.\n \n Those who previously sold or transferred land or houses provided by the government or local bodies, except to legal heirs, and became landless, should not be provided land again.",
-      ml: "വീടില്ലാത്ത ആളുകൾ\n യോഗ്യതാ മാനദണ്ഡങ്ങൾ \n1. തങ്ങളുടെ പേരിലോ കുടുംബാംഗങ്ങളുടെ പേരിലോ വീട് ഇല്ലാത്തവർ / പരമ്പരാഗതമായി വീട് അവകാശമായി ലഭിക്കാൻ സാധ്യതയില്ലാത്തവർ.\n2. റേഷൻ കാർഡുള്ള കുടുംബങ്ങൾ (ഒരു റേഷൻ കാർഡിൽ ഉൾപ്പെട്ടിരിക്കുന്നവരെ ഒരു കുടുംബമായി കണക്കാക്കുകയും ഒരു വീടിന് മാത്രം യോഗ്യത ഉണ്ടായിരിക്കുകയും ചെയ്യും). (ഇത് SC/ST/മത്സ്യത്തൊഴിലാളി വിഭാഗങ്ങൾക്ക് ബാധകമല്ല)\n3. ഭൂമിയുള്ളവർ (നഗര പ്രദേശങ്ങളിൽ പരമാവധി 5 സെന്റ്, ഗ്രാമപ്രദേശങ്ങളിൽ 25 സെന്റ്)\n ഭൂമിയുടെ പരിധി SC/ST/മത്സ്യത്തൊഴിലാളി വിഭാഗങ്ങൾക്ക് ബാധകമല്ല.\n4. വാർഷിക കുടുംബ വരുമാനം 3 ലക്ഷത്തിൽ കൂടുതലായിരിക്കരുത്.\n5. സർക്കാർ/അർദ്ധ സർക്കാർ/പൊതുമേഖലാ സ്ഥാപനങ്ങളിലെ സ്ഥിര ജോലിക്കാരോ അത്തരം സ്ഥാപനങ്ങളിൽ നിന്ന് പെൻഷൻ ലഭിക്കുന്നവരോ ആയ അംഗങ്ങളുള്ള കുടുംബങ്ങൾ ലൈഫ് പദ്ധതിക്ക് യോഗ്യമല്ല.\n6. ഉപജീവന ആവശ്യങ്ങളല്ലാത്ത നാല് ചക്ര വാഹനമുള്ള കുടുംബങ്ങളെ ഒഴിവാക്കണം.\n7. ഏതെങ്കിലും ഭവന പദ്ധതിയിൽ വീട് നിർമ്മാണത്തിന് സാമ്പത്തിക സഹായം ലഭിച്ചവരും അതിന് 12 വർഷം കഴിഞ്ഞിട്ടില്ലാത്തവരും വീടിന് യോഗ്യമല്ല.\n8. വീടിന് സാമ്പത്തിക സഹായം ലഭിച്ച് പിന്നീട് തുക തിരിച്ച് നൽകി കരാർ റദ്ദാക്കിയവർ യോഗ്യമല്ല.\n\n ഭൂമിയില്ലാത്ത ആളുകൾ\n യോഗ്യതാ മാനദണ്ഡങ്ങൾ \n \n തങ്ങളുടെ പേരിലോ കുടുംബാംഗങ്ങളുടെ പേരിലോ ഭൂമിയില്ലാത്തവർ / പരമ്പരാഗതമായി ഭൂമി അവകാശമായി ലഭിക്കാൻ സാധ്യതയില്ലാത്തവർ.\n \n റേഷൻ കാർഡുള്ള കുടുംബങ്ങൾ (ഒരു റേഷൻ കാർഡിന് ഒരു വീട്). SC / ST / മത്സ്യത്തൊഴിലാളി വിഭാഗങ്ങൾക്ക് ബാധകമല്ല.\n \n വാർഷിക വരുമാനം മൂന്ന് ലക്ഷത്തിൽ താഴെയുള്ള കുടുംബങ്ങൾ.\n \n സർക്കാർ/അർദ്ധ സർക്കാർ/പൊതുമേഖലാ സ്ഥാപനങ്ങളിലെ സ്ഥിര ജോലിക്കാരോ അത്തരം സ്ഥാപനങ്ങളിൽ നിന്ന് പെൻഷൻ ലഭിക്കുന്നവരോ ആയ അംഗങ്ങളുള്ള കുടുംബങ്ങൾ ലൈഫ് പദ്ധതിക്ക് യോഗ്യമല്ല.\n \n സ്വകാര്യ ഉപയോഗത്തിനായി നാല് ചക്ര വാഹനമുണ്ടാകരുത്.\n \n വാരിസുകാർക്കിടയിൽ സ്വത്ത് വിഭജനം നടത്തിയതിന് ശേഷം സാങ്കേതികമായി ഭൂമി ഇല്ലാത്തതിനാൽ ഭൂമിയില്ലാത്തവരായവർ യോഗ്യമല്ല.\n \n നിയമപരമായ വാരിസുകാർ ഒഴികെ സർക്കാരോ പ്രാദേശിക സ്വയംഭരണ സ്ഥാപനങ്ങളോ നൽകിയ ഭൂമിയോ വീടുകളോ മുമ്പ് വിൽക്കുകയോ കൈമാറുകയോ ചെയ്ത് ഭൂമിയില്ലാത്തവരായവർക്ക് വീണ്ടും ഭൂമി നൽകാനാകില്ല.",
+      en: "Homeless and landless families as per the criteria defined by the government, including income limits and exclusion of families with permanent government employees or non-livelihood four-wheelers.",
+      ml: "സർക്കാർ നിശ്ചയിച്ച മാനദണ്ഡങ്ങൾ അനുസരിച്ചുള്ള ഭവനരഹിതരും ഭൂരഹിതരുമായ കുടുംബങ്ങൾ. വരുമാന പരിധി, സർക്കാർ സ്ഥിരം ജീവനക്കാർ, ഉപജീവനത്തിനല്ലാതെ നാലുചക്ര വാഹനം ഉള്ളവർ തുടങ്ങിയ ഒഴിവാക്കൽ മാനദണ്ഡങ്ങൾ ബാധകമാണ്.",
     },
     benefitsProvided: {
-      en: "General: Rs. 4,00,000\nScheduled Caste: Rs. 4,00,000\nScheduled Tribe: Rs. 4,00,000\nFor those residing in tribal settlements and nearby areas: Rs. 6,00,000",
-      ml: "പൊതുവിഭാഗം: ₹4,00,000\nപട്ടികജാതി: ₹4,00,000\nപട്ടികവർഗ്ഗം: ₹4,00,000\nഗിരിജൻ കോളനികളിലും സമീപ പ്രദേശങ്ങളിലും താമസിക്കുന്നവർക്ക്: ₹6,00,000",
+      en: "General/SC: ₹4,00,000; ST: ₹4,00,000; Tribal settlements: ₹6,00,000.",
+      ml: "പൊതുവിഭാഗം/SC: ₹4,00,000; ST: ₹4,00,000; പട്ടികവർഗ്ഗ കോളനികളിൽ: ₹6,00,000.",
     },
     applicationProcess: {
-      en: "Currently, benefits are being provided from the 2017 survey list and the 2020 list. Applications can only be submitted when approval is received from the government.",
-      ml: "നിലവിൽ 2017 ലെ സർവേ ലിസ്റ്റിൽ നിന്നും 2020 ലെ ലിസ്റ്റിൽ നിന്നും ആനുകൂല്യങ്ങൾ നൽകിവരുന്നു. സർക്കാരിന്റെ അനുമതി ലഭിക്കുമ്പോൾ മാത്രമേ അപേക്ഷ നൽകാൻ കഴിയൂ.",
+      en: "Beneficiaries are selected from lists prepared through government surveys (e.g., 2017 and 2020). New applications are accepted only when notified by the government.",
+      ml: "സർക്കാർ സർവേയിലൂടെ തയ്യാറാക്കിയ 2017-ലെയും 2020-ലെയും പട്ടികയിൽ നിന്നാണ് ഗുണഭോക്താക്കളെ തിരഞ്ഞെടുക്കുന്നത്. സർക്കാർ വിജ്ഞാപനം ചെയ്യുമ്പോൾ മാത്രമേ പുതിയ അപേക്ഷകൾ സ്വീകരിക്കുകയുള്ളൂ.",
     },
     contact: {
-      en: "Saboora Beevi. S\nDistrict Mission Co-ordinator\n9447080998\nlifemissionidk@gmail.com",
-      ml: "സബൂറ ബീവി. എസ്\nജില്ലാ മിഷൻ കോ-ഓർഡിനേറ്റർ\n9447080998\nlifemissionidk@gmail.com",
+      en: "Saboora Beevi S, District Mission Co-ordinator, Ph: 9447080998, Email: lifemissionidk@gmail.com",
+      ml: "സബൂറ ബീവി എസ്, ജില്ലാ മിഷൻ കോ-ഓർഡിനേറ്റർ, ഫോൺ: 9447080998, ഇമെയിൽ: lifemissionidk@gmail.com",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "life_misssion_1",
+    keywords: {
+      en: ["life mission", "housing", "homeless", "landless"],
+      ml: ["ലൈഫ് മിഷൻ", "ഭവനം", "വീടില്ലാത്തവർ", "ഭൂരഹിതർ"],
+    },
   },
 ];
 
 export const cooperative = [
   {
     name: {
-      en: "Relief Fund for Helpless Cooperators",
-      ml: "നിസ്സഹായരായ സഹകരണ പ്രവർത്തകർക്കുള്ള ദുരിതാശ്വാസ ഫണ്ട്",
+      en: "Relief Fund for Destitute Cooperators",
+      ml: "നിരാലംബരായ സഹകാരികൾക്കുള്ള ദുരിതാശ്വാസ നിധി",
     },
     implementedBy: {
       en: ["Registrar of Cooperative Societies"],
-      ml: ["സഹകരണ സംഘങ്ങളുടെ രജിസ്ട്രാർ"],
+      ml: ["സഹകരണ സംഘം രജിസ്ട്രാർ"],
     },
     objective: {
-      en: "Benefit for destitute and helpless cooperators who have worked for a long time in the cooperative sector (taluk, district) and contributed to its progress and growth throughout their lives.",
-      ml: "സഹകരണ മേഖലയിൽ (താലൂക്ക്, ജില്ല) കാലം നീണ്ട് പ്രവർത്തിച്ചിട്ടുള്ളതും അവരുടെ ജീവിതകാലത്ത് മുഴുവൻ അതിന്റെ പുരോഗതിക്കും വളർച്ചയ്ക്കും സംഭാവന നൽകിയിട്ടുള്ളതുമായ നിരാലംബരും നിസ്സഹായരുമായ സഹകരണ പ്രവർത്തകർക്കുള്ള ആനുകൂല്യം.",
+      en: "To provide benefits to destitute and helpless cooperators who have contributed significantly to the cooperative sector.",
+      ml: "സഹകരണ മേഖലയ്ക്ക് മികച്ച സംഭാവനകൾ നൽകിയ നിരാലംബരും നിസ്സഹായരുമായ സഹകാരികൾക്ക് ആനുകൂല്യങ്ങൾ നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Destitute and helpless cooperators",
-      ml: "നിരാലംബരും നിസ്സഹായരുമായ സഹകരണ പ്രവർത്തകർ",
+      ml: "നിരാലംബരും നിസ്സഹായരുമായ സഹകാരികൾ",
     },
     eligibilityCriterias: {
-      en: "The cooperator's annual income should not exceed Rs. 36,000/-. An application in the prescribed format, along with an income certificate from the Village Officer, a doctor's certificate regarding medical expenses, and sufficient documents, should be submitted to the Registrar of Cooperative Societies through the Secretary of the Circle Cooperative Union/Assistant Registrar (General) of the taluk where they permanently reside.",
-      ml: "സഹകരണ പ്രവർത്തകന്റെ വാർഷിക വരുമാനം ₹36,000/- കവിയാനാകില്ല. നിശ്ചിത ഫോമിൽ അപേക്ഷ, വില്ലേജ് ഓഫിസറിൽ നിന്നുള്ള വരുമാന സർട്ടിഫിക്കറ്റ്, മെഡിക്കൽ ചെലവുകൾ സംബന്ധിച്ച ഡോക്ടറുടെ സർട്ടിഫിക്കറ്റ്, മതിയായ രേഖകൾ എന്നിവ സഹിതം സ്ഥിരതാമസമുള്ള താലൂക്കിലെ സർക്കിൾ സഹകരണ യൂണിയന്റെ സെക്രട്ടറി / അസിസ്റ്റന്റ് രജിസ്ട്രാർ (ജനറൽ) മുഖേന സഹകരণ സംഘങ്ങളുടെ രജിസ്ട്രാർക്ക് സമർപ്പിക്കേണ്ടതാണ്.",
+      en: "Annual income should not exceed ₹36,000/-. The application must be submitted with required documents through the Circle Cooperative Union/Assistant Registrar (General) of the respective taluk.",
+      ml: "വാർഷിക വരുമാനം ₹36,000/- കവിയരുത്. ആവശ്യമായ രേഖകൾ സഹിതം, സ്ഥിരതാമസമുള്ള താലൂക്കിലെ സർക്കിൾ സഹകരണ യൂണിയൻ/അസിസ്റ്റന്റ് രജിസ്ട്രാർ (ജനറൽ) മുഖേന അപേക്ഷിക്കണം.",
     },
     benefitsProvided: {
-      en: "Cooperator - Rs. 50,000, if deceased, family members/dependents will receive up to Rs. 25,000/-.",
-      ml: "സഹകരണ പ്രവർത്തകന് - ₹50,000, മരണം സംഭവിച്ചാൽ കുടുംബാംഗങ്ങൾ / ആശ്രിതർക്ക് ₹25,000/- വരെ ലഭിക്കും.",
+      en: "₹50,000/- for the cooperator. If deceased, up to ₹25,000/- for dependents.",
+      ml: "സഹകാരിക്ക് ₹50,000/-. മരിച്ചാൽ, ആശ്രിതർക്ക് ₹25,000/- വരെ.",
     },
     applicationProcess: {
-      en: "Registrar of Cooperative Societies, Thiruvananthapuram",
-      ml: "സഹകരണ സംഘങ്ങളുടെ രജിസ്ട്രാർ, തിരുവനന്തപുരം",
+      en: "To the Registrar of Cooperative Societies, Thiruvananthapuram.",
+      ml: "സഹകരണ സംഘം രജിസ്ട്രാർ, തിരുവനന്തപുരം എന്ന വിലാസത്തിൽ.",
     },
     contact: {
-      en: "Assistant Registrar (General) Offices at Taluk level",
-      ml: "താലൂക്ക് തലത്തിലുള്ള അസിസ്റ്റന്റ് രജിസ്ട്രാർ (ജനറൽ) ഓഫീസുകൾ",
+      en: "Assistant Registrar (General) Offices at the Taluk level.",
+      ml: "താലൂക്ക് തലത്തിലുള്ള അസിസ്റ്റന്റ് രജിസ്ട്രാർ (ജനറൽ) ഓഫീസുകൾ.",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "cooperative_1",
+    keywords: {
+      en: ["relief fund", "cooperators", "destitute"],
+      ml: ["ദുരിതാശ്വാസ നിധി", "സഹകാരികൾ", "നിരാലംബർ"],
+    },
   },
   {
     name: {
-      en: "Interest-free loan for paddy farmers",
-      ml: "നെല്ലുകൃഷിക്കാർക്കുള്ള പലിശരഹിത വായ്പ",
+      en: "Interest-free Loan for Paddy Farmers",
+      ml: "നെൽ കർഷകർക്കുള്ള പലിശരഹിത വായ്പ",
     },
     implementedBy: {
       en: [],
       ml: [],
     },
-    objective: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    targetBeneficiaries: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    eligibilityCriterias: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    benefitsProvided: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    applicationProcess: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
-    contact: {
-      en: "Not Available",
-      ml: "ലഭ്യമല്ല",
-    },
+    objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    applicationProcess: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    contact: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "cooperative_2",
+    keywords: {
+      en: ["paddy loan", "interest-free", "farmers"],
+      ml: ["നെൽവായ്പ", "പലിശരഹിതം", "കർഷകർ"],
+    },
   },
 ];
 
@@ -7982,28 +8777,28 @@ export const policeDepartment = [
       ml: "ചിരി ഹെൽപ്പ്‌ലൈൻ",
     },
     implementedBy: {
-      en: ["Government of India"],
-      ml: ["ഭാരത സർക്കാർ"],
+      en: ["Kerala Police"],
+      ml: ["കേരള പോലീസ്"],
     },
     objective: {
-      en: "To identify and appropriately address behavioral disorders, emotional and personal problems, learning difficulties, and physical challenges in children. To ensure the well-being of all children.",
-      ml: "കുട്ടികളിലെ പെരുമാറ്റ വൈകല്യങ്ങൾ, വൈകാരികവും വ്യക്തിപരവുമായ പ്രശ്നങ്ങൾ, പഠന ബുദ്ധിമുട്ടുകൾ, ശാരീരിക വെല്ലുവിളികൾ എന്നിവ തിരിച്ചറിയുകയും ഉചിതമായി പരിഹരിക്കുകയും ചെയ്യുക. എല്ലാ കുട്ടികളുടെയും ക്ഷേമം ഉറപ്പാക്കുക.",
+      en: "To identify and address behavioral disorders, emotional problems, and learning difficulties in children, ensuring their well-being.",
+      ml: "കുട്ടികളിലെ പെരുമാറ്റ വൈകല്യങ്ങൾ, വൈകാരിക പ്രശ്നങ്ങൾ, പഠന വൈകല്യങ്ങൾ എന്നിവ കണ്ടെത്തി പരിഹരിക്കുക, കുട്ടികളുടെ ക്ഷേമം ഉറപ്പാക്കുക.",
     },
     targetBeneficiaries: {
       en: "Children",
       ml: "കുട്ടികൾ",
     },
     eligibilityCriterias: {
-      en: "Children facing various mental health issues and their guardians can call this helpdesk to register their problems.",
-      ml: "വിവിധ മാനസികാരോഗ്യ പ്രശ്നങ്ങൾ നേരിടുന്ന കുട്ടികൾക്കും അവരുടെ രക്ഷിതാക്കൾക്കും അവരുടെ പ്രശ്നങ്ങൾ രജിസ്റ്റർ ചെയ്യാൻ ഈ ഹെൽപ്പ്‌ഡെസ്കിൽ വിളിക്കാം.",
+      en: "Children facing mental health issues and their guardians can call this helpdesk.",
+      ml: "മാനസികാരോഗ്യ പ്രശ്നങ്ങൾ നേരിടുന്ന കുട്ടികൾക്കും അവരുടെ രക്ഷാകർത്താക്കൾക്കും ഈ ഹെൽപ്പ്‌ലൈനിൽ വിളിക്കാം.",
     },
     benefitsProvided: {
-      en: "Ensures the protection and safety of children.",
-      ml: "കുട്ടികളുടെ സംരക്ഷണവും സുരക്ഷയും ഉറപ്പാക്കുന്നു.",
+      en: "Provides counseling and support to ensure the protection and safety of children.",
+      ml: "കൗൺസിലിംഗിലൂടെയും പിന്തുണയിലൂടെയും കുട്ടികളുടെ സംരക്ഷണവും സുരക്ഷയും ഉറപ്പാക്കുന്നു.",
     },
     applicationProcess: {
-      en: "Through telephonic contact",
-      ml: "ടെലിഫോൺ സമ്പർക്കത്തിലൂടെ",
+      en: "Through telephonic contact.",
+      ml: "ഫോൺ വഴി ബന്ധപ്പെടുക.",
     },
     contact: {
       en: "Chiri Helpline: 9497900200",
@@ -8014,45 +8809,53 @@ export const policeDepartment = [
       count: 0,
     },
     id: "police_department_1",
+    keywords: {
+      en: ["helpline", "children", "mental health", "counseling"],
+      ml: ["ഹെൽപ്പ് ലൈൻ", "കുട്ടികൾ", "മാനസികാരോഗ്യം", "കൗൺസിലിംഗ്"],
+    },
   },
   {
     name: {
-      en: "Student Police Cadet Project",
-      ml: "വിദ്യാർത്ഥി പോലീസ് കേഡറ്റ് പ്രോജക്ട്",
+      en: "Student Police Cadet (SPC) Project",
+      ml: "സ്റ്റുഡന്റ് പോലീസ് കേഡറ്റ് (SPC) പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India"],
-      ml: ["ഭാരത സർക്കാർ"],
+      en: ["Government of Kerala"],
+      ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "To instill in high school students respect for law, discipline, civic sense, compassion towards vulnerable sections of society, and the ability to resist social evils, thereby training them to become future leaders of this society. This project also aims to nurture the inherent talents of youth and enable them to resist negative tendencies such as intolerance, substance abuse, indiscipline, and violence.",
-      ml: "ഹൈസ്കൂൾ വിദ്യാർത്ഥികളിൽ നിയമത്തോടുള്ള ബഹുമാനം, അച്ചടക്കം, നാഗരിക ബോധം, സമൂഹത്തിലെ ദുർബല വിഭാഗങ്ങളോടുള്ള അനുകമ്പ, സാമൂഹിക തിന്മകളെ പ്രതിരോധിക്കാനുള്ള കഴിവ് എന്നിവ നട്ടുവളർത്തി അവരെ ഈ സമൂഹത്തിന്റെ ഭാവി നേതാക്കളാകാൻ പരിശീലിപ്പിക്കുക. ഈ പ്രോജക്ട് യുവാക്കളുടെ അന്തർലീനമായ കഴിവുകൾ വളർത്തുകയും അസഹിഷ്ണുത, ലഹരിവസ്തുക്കളുടെ ഉപയോഗം, അച്ചടക്കക്കുറവ്, അക്രമം എന്നിവ പോലുള്ള നെഗറ്റീവ് പ്രവണതകളെ പ്രതിരോധിക്കാൻ അവരെ സഹായിക്കുകയും ചെയ്യുന്നു.",
+      en: "To instill respect for the law, discipline, and civic sense in students, training them to become future leaders and resist social evils.",
+      ml: "വിദ്യാർത്ഥികളിൽ നിയമബോധം, അച്ചടക്കം, പൗരബോധം എന്നിവ വളർത്തി, സാമൂഹിക തിന്മകളെ പ്രതിരോധിക്കുന്ന നല്ല പൗരന്മാരാക്കാൻ പരിശീലിപ്പിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Students",
       ml: "വിദ്യാർത്ഥികൾ",
     },
     eligibilityCriterias: {
-      en: "High School/Higher Secondary School students",
-      ml: "ഹൈസ്കൂൾ/ഹയർ സെക്കൻഡറി സ്കൂൾ വിദ്യാർത്ഥികൾ",
+      en: "High School/Higher Secondary School students.",
+      ml: "ഹൈസ്കൂൾ/ഹയർ സെക്കൻഡറി സ്കൂൾ വിദ്യാർത്ഥികൾ.",
     },
     benefitsProvided: {
-      en: "Helps in working together with the police to create more secure social spaces.",
-      ml: "കൂടുതൽ സുരക്ഷിതമായ സാമൂഹിക ഇടങ്ങൾ സൃഷ്ടിക്കുന്നതിന് പോലീസുമായി ഒരുമിച്ച് പ്രവർത്തിക്കാൻ സഹായിക്കുന്നു.",
+      en: "Helps in working with the police to create more secure social spaces.",
+      ml: "സുരക്ഷിതമായ ഒരു സമൂഹം കെട്ടിപ്പടുക്കുന്നതിന് പോലീസുമായി ചേർന്ന് പ്രവർത്തിക്കാൻ സഹായിക്കുന്നു.",
     },
     applicationProcess: {
-      en: "Through school.",
+      en: "Through the school.",
       ml: "സ്കൂൾ വഴി.",
     },
     contact: {
-      en: "District Nodal Officer, S.P.C. Project",
-      ml: "ജില്ലാ നോഡൽ ഓഫീസർ, എസ്.പി.സി. പ്രോജക്ട്",
+      en: "District Nodal Officer, SPC Project",
+      ml: "ജില്ലാ നോഡൽ ഓഫീസർ, SPC പദ്ധതി",
     },
     ratings: {
       avgRating: 0,
       count: 0,
     },
     id: "police_department_2",
+    keywords: {
+      en: ["spc", "student police", "discipline"],
+      ml: ["എസ്പിസി", "സ്റ്റുഡന്റ് പോലീസ്", "അച്ചടക്കം"],
+    },
   },
   {
     name: {
@@ -8060,12 +8863,12 @@ export const policeDepartment = [
       ml: "കൂട്ട്",
     },
     implementedBy: {
-      en: ["Government of India"],
-      ml: ["ഭാരത സർക്കാർ"],
+      en: ["Kerala Police"],
+      ml: ["കേരള പോലീസ്"],
     },
     objective: {
-      en: "Formed to equip children against increasing cybercrimes in the cyber world.",
-      ml: "സൈബർ ലോകത്തെ വർദ്ധിച്ചുവരുന്ന സൈബർ കുറ്റകൃത്യങ്ങളിൽ നിന്ന് കുട്ടികളെ സംരക്ഷിക്കുന്നതിനായി രൂപീകരിച്ചത്.",
+      en: "To protect children from increasing cybercrimes.",
+      ml: "വർദ്ധിച്ചുവരുന്ന സൈബർ കുറ്റകൃത്യങ്ങളിൽ നിന്ന് കുട്ടികളെ സംരക്ഷിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Children / Students",
@@ -8073,11 +8876,11 @@ export const policeDepartment = [
     },
     eligibilityCriterias: {
       en: "None",
-      ml: "ഒന്നുമില്ല",
+      ml: "മാനദണ്ഡങ്ങളില്ല",
     },
     benefitsProvided: {
-      en: "Provides psychological support to child victims of crimes through counseling centers and ensures legal assistance to fight against criminals.",
-      ml: "കൗൺസിലിംഗ് കേന്ദ്രങ്ങളിലൂടെ കുറ്റകൃത്യങ്ങളുടെ ഇരകളായ കുട്ടികൾക്ക് മാനസിക പിന്തുണ നൽകുകയും കുറ്റവാളികൾക്കെതിരെ പോരാടുന്നതിന് നിയമസഹായം ഉറപ്പാക്കുകയും ചെയ്യുന്നു.",
+      en: "Provides psychological support and legal assistance to child victims of cybercrimes.",
+      ml: "സൈബർ കുറ്റകൃത്യങ്ങൾക്ക് ഇരയാകുന്ന കുട്ടികൾക്ക് മാനസിക പിന്തുണയും നിയമസഹായവും നൽകുന്നു.",
     },
     applicationProcess: {
       en: "Not Available",
@@ -8092,6 +8895,10 @@ export const policeDepartment = [
       count: 0,
     },
     id: "police_department_3",
+    keywords: {
+      en: ["cybercrime", "children", "online safety"],
+      ml: ["സൈബർ ക്രൈം", "കുട്ടികൾ", "ഓൺലൈൻ സുരക്ഷ"],
+    },
   },
   {
     name: {
@@ -8099,24 +8906,24 @@ export const policeDepartment = [
       ml: "നിർഭയ പദ്ധതി",
     },
     implementedBy: {
-      en: ["Government of India"],
-      ml: ["ഭാരത സർക്കാർ"],
+      en: ["Government of Kerala"],
+      ml: ["കേരള സർക്കാർ"],
     },
     objective: {
-      en: "To prevent atrocities against women and children",
-      ml: "സ്ത്രീകൾക്കും കുട്ടികൾക്കും എതിരായ അതിക്രമങ്ങൾ തടയുന്നതിന്",
+      en: "To prevent atrocities against women and children.",
+      ml: "സ്ത്രീകൾക്കും കുട്ടികൾക്കും നേരെയുള്ള അതിക്രമങ്ങൾ തടയുക.",
     },
     targetBeneficiaries: {
       en: "Women / Children",
-      ml: "സ്ത്രീകൾ / കുട്ടികൾ",
+      ml: "വനിതകൾ / കുട്ടികൾ",
     },
     eligibilityCriterias: {
-      en: "Women and children facing atrocities",
-      ml: "അതിക്രമങ്ങൾ നേരിടുന്ന സ്ത്രീകളും കുട്ടികളും",
+      en: "Women and children facing atrocities.",
+      ml: "അതിക്രമങ്ങൾ നേരിടുന്ന സ്ത്രീകളും കുട്ടികളും.",
     },
     benefitsProvided: {
-      en: "Under this scheme, 24-hour operational women-friendly auto-rickshaws and taxis have been formed with the aim of assisting traveling women, especially those traveling late after work. Auto-rickshaws and taxis selected through a strict selection and verification process will be designated as Nirbhaya Auto / Taxi at all stands. 'Nirbhaya Auto / Taxi' stickers will be prominently displayed as a logo to identify women-friendly auto-rickshaws and taxis.",
-      ml: "ഈ പദ്ധതിയിൽ, സ്ത്രീകളെ സഹായിക്കുന്നതിന്, പ്രത്യേകിച്ച് ജോലി കഴിഞ്ഞ് വൈകിയുള്ള യാത്രയിൽ സഹായിക്കുന്നതിന് 24 മണിക്കൂർ പ്രവർത്തിക്കുന്ന സ്ത്രീ സൗഹൃദ ഓട്ടോറിക്ഷകളും ടാക്സികളും രൂപീകരിച്ചിട്ടുണ്ട്. കർശനമായ തിരഞ്ഞെടുപ്പ്, പരിശോധന പ്രക്രിയയിലൂടെ തിരഞ്ഞെടുക്കപ്പെട്ട ഓട്ടോറിക്ഷകളും ടാക്സികളും എല്ലാ സ്റ്റാൻഡുകളിലും നിർഭയ ഓട്ടോ / ടാക്സി എന്ന് നിശ്ചയിക്കപ്പെടും. സ്ത്രീ സൗഹൃദ ഓട്ടോറിക്ഷകളും ടാക്സികളും തിരിച്ചറിയുന്നതിന് 'നിർഭയ ഓട്ടോ / ടാക്സി' സ്റ്റിക്കറുകൾ ലോഗോ ആയി പ്രകടമായി പ്രദർശിപ്പിക്കും.",
+      en: "This scheme includes 24-hour women-friendly auto-rickshaws and taxis to assist traveling women, especially those traveling late.",
+      ml: "യാത്ര ചെയ്യുന്ന സ്ത്രീകൾക്ക്, പ്രത്യേകിച്ച് രാത്രി വൈകി യാത്ര ചെയ്യുന്നവർക്ക് സഹായത്തിനായി 24 മണിക്കൂറും പ്രവർത്തിക്കുന്ന വനിതാ സൗഹൃദ ഓട്ടോറിക്ഷകളും ടാക്സികളും ഈ പദ്ധതിയുടെ ഭാഗമാണ്.",
     },
     applicationProcess: {
       en: "Not Available",
@@ -8131,31 +8938,35 @@ export const policeDepartment = [
       count: 0,
     },
     id: "police_department_4",
+    keywords: {
+      en: ["nirbhaya", "women safety", "children safety", "atrocities"],
+      ml: ["നിർഭയ", "വനിതാ സുരക്ഷ", "ബാല സുരക്ഷ", "അതിക്രമം"],
+    },
   },
   {
     name: {
       en: "Project Hope",
-      ml: "പ്രൊജക്ട് ഹോപ്പ്",
+      ml: "പ്രോജക്ട് ഹോപ്പ്",
     },
     implementedBy: {
-      en: ["Government of India"],
-      ml: ["ഭാരത സർക്കാർ"],
+      en: ["Kerala Police"],
+      ml: ["കേരള പോലീസ്"],
     },
     objective: {
-      en: "To help students who fail in SSLC and Plus Two examinations pass by providing them with classes.",
-      ml: "SSLC, പ്ലസ് ടു പരീക്ഷകളിൽ വിജയിക്കാത്ത വിദ്യാർത്ഥികൾക്ക് ക്ലാസുകൾ നൽകി വിജയിക്കാൻ സഹായിക്കുന്നതിന്.",
+      en: "To help students who fail in SSLC and Plus Two examinations pass by providing them with special classes.",
+      ml: "SSLC, പ്ലസ് ടു പരീക്ഷകളിൽ പരാജയപ്പെട്ട വിദ്യാർത്ഥികൾക്ക് പ്രത്യേക ക്ലാസുകൾ നൽകി അവരെ വിജയിപ്പിക്കാൻ സഹായിക്കുക.",
     },
     targetBeneficiaries: {
       en: "Students",
       ml: "വിദ്യാർത്ഥികൾ",
     },
     eligibilityCriterias: {
-      en: "Students who fail in SSLC and Plus Two examinations",
-      ml: "SSLC, പ്ലസ് ടു പരീക്ഷകളിൽ വിജയിക്കാത്ത വിദ്യാർത്ഥികൾ",
+      en: "Students who have failed in SSLC and Plus Two examinations.",
+      ml: "SSLC, പ്ലസ് ടു പരീക്ഷകളിൽ പരാജയപ്പെട്ട വിദ്യാർത്ഥികൾ.",
     },
     benefitsProvided: {
-      en: "Identifies students who fail in SSLC and Plus Two examinations, provides them with classes and awareness classes, and prepares them for the examination.",
-      ml: "SSLC, പ്ലസ് ടു പരീക്ഷകളിൽ വിജയിക്കാത്ത വിദ്യാർത്ഥികളെ തിരിച്ചറിയുകയും അവർക്ക് ക്ലാസുകളും അവബോധ ക്ലാസുകളും നൽകി പരീക്ഷയ്ക്ക് തയ്യാറാക്കുകയും ചെയ്യുന്നു.",
+      en: "Identifies students who fail, provides them with classes and awareness, and prepares them for the examination.",
+      ml: "പരാജയപ്പെട്ട വിദ്യാർത്ഥികളെ കണ്ടെത്തി, അവർക്ക് പ്രത്യേക ക്ലാസുകളും ബോധവൽക്കരണവും നൽകി പരീക്ഷയ്ക്ക് തയ്യാറാക്കുന്നു.",
     },
     applicationProcess: {
       en: "Not Available",
@@ -8170,5 +8981,14 @@ export const policeDepartment = [
       count: 0,
     },
     id: "police_department_5",
+    keywords: {
+      en: ["education", "sslc fail", "plus two fail", "student support"],
+      ml: [
+        "വിദ്യാഭ്യാസം",
+        "എസ്എസ്എൽസി തോറ്റവർ",
+        "പ്ലസ് ടു തോറ്റവർ",
+        "വിദ്യാർത്ഥി പിന്തുണ",
+      ],
+    },
   },
 ];

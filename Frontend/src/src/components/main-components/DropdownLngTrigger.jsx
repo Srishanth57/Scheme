@@ -6,10 +6,7 @@ import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Languages } from "lucide-react";
@@ -25,21 +22,17 @@ export function DropdownMenuRadioGroupDemo() {
           <Languages />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Languages</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-          <DropdownMenuRadioItem value="en">
-            <Button variant="ghost" onClick={() => i18n.changeLanguage("en")}>
-              English
-            </Button>
-          </DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="ml">
-            <Button variant="ghost" onClick={() => i18n.changeLanguage("ml")}>
-              Malayalam
-            </Button>
-          </DropdownMenuRadioItem>
-        </DropdownMenuRadioGroup>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem>
+          <Button variant="ghost" onClick={() => i18n.changeLanguage("en")}>
+            English
+          </Button>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Button variant="ghost" onClick={() => i18n.changeLanguage("ml")}>
+            Malayalam
+          </Button>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

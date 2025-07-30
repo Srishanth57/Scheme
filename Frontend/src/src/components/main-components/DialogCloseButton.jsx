@@ -20,7 +20,7 @@ export function DialogCloseButton({ scheme, currentLang }) {
         <Button variant="outline" className="w-full relative">
           {currentLang === "ml" ? "കൂടുതൽ കാണുക" : "View More"}
         </Button>
-      </DialogTrigger>
+      </DialogTrigger>{" "}
       <DialogContent className="sm:max-w-md font-serif min-md:max-w-10/12 min-md:h-2/3">
         <DialogHeader>
           <DialogTitle>
@@ -47,8 +47,8 @@ export function DialogCloseButton({ scheme, currentLang }) {
                       .join(", ")
                   : typeof scheme.implementingAgency === "string"
                   ? scheme.implementingAgency
-                  : scheme.implementingAgency?.[currentLang] ||
-                    scheme.implementingAgency?.en}
+                  : scheme.implementedBy?.[currentLang].map(each => each).join(", ") ||
+                    scheme.implementedBy?.en}
                 <br />
               </>
             )}
@@ -56,7 +56,7 @@ export function DialogCloseButton({ scheme, currentLang }) {
               <>
                 <span className="font-bold">
                   {currentLang === "ml" ? "ലക്ഷ്യം:" : "Objective:"}
-                </span>{" "}
+                </span>
                 {scheme.objective?.[currentLang]}
                 <br />
               </>
@@ -109,7 +109,9 @@ export function DialogCloseButton({ scheme, currentLang }) {
             {scheme.applicationProcess && (
               <>
                 <span className="font-bold">
-                  {currentLang === "ml" ? "അപേക്ഷാ പ്രക്രിയ :" : "Application Process :"}
+                  {currentLang === "ml"
+                    ? "അപേക്ഷാ പ്രക്രിയ :"
+                    : "Application Process :"}
                 </span>
                 {scheme.applicationProcess?.[currentLang]}
                 <br />
@@ -123,9 +125,11 @@ export function DialogCloseButton({ scheme, currentLang }) {
                     : "Contact Person/Designation/Phone/Email :"}
                 </span>
                 <span className="list-decimal pl-7">
-                  {scheme.contact?.[currentLang].split(";").map((value, index) => (
-                    <li key={index}>{value}</li>
-                  ))}
+                  {scheme.contact?.[currentLang]
+                    .split(";")
+                    .map((value, index) => (
+                      <li key={index}>{value}</li>
+                    ))}
                 </span>
                 <br />
               </>
@@ -144,7 +148,9 @@ export function DialogCloseButton({ scheme, currentLang }) {
             {scheme.benefits && (
               <>
                 <span className="font-bold">
-                  {currentLang === "ml" ? "ആനുകൂല്യങ്ങൾ (രൂപ വരെ) :" : "Benefits ( UPTO/RS ): "}
+                  {currentLang === "ml"
+                    ? "ആനുകൂല്യങ്ങൾ (രൂപ വരെ) :"
+                    : "Benefits ( UPTO/RS ): "}
                 </span>
                 {scheme.benefits?.[currentLang]}
                 <br />
@@ -162,7 +168,9 @@ export function DialogCloseButton({ scheme, currentLang }) {
             {scheme.implementingAgency && (
               <>
                 <span className="font-bold">
-                  {currentLang === "ml" ? "നടപ്പാക്കുന്ന ഏജൻസി:" : "Implementing Agency:"}
+                  {currentLang === "ml"
+                    ? "നടപ്പാക്കുന്ന ഏജൻസി:"
+                    : "Implementing Agency:"}
                 </span>
                 {scheme.implementingAgency?.[currentLang]}
                 <br />
@@ -206,7 +214,9 @@ export function DialogCloseButton({ scheme, currentLang }) {
                 {scheme.documents_required && (
                   <>
                     <span className="font-bold">
-                      {currentLang === "ml" ? "ആവശ്യമുള്ള രേഖകൾ: " : "Documents Required: "}
+                      {currentLang === "ml"
+                        ? "ആവശ്യമുള്ള രേഖകൾ: "
+                        : "Documents Required: "}
                     </span>
                     {scheme.documents_required?.[currentLang]}
                     <br />
@@ -224,18 +234,22 @@ export function DialogCloseButton({ scheme, currentLang }) {
                 {scheme.socialCategory && scheme.socialCategory.length > 0 && (
                   <>
                     <span className="font-bold">
-                      {currentLang === "ml" ? "സാമൂഹിക വിഭാഗം:" : "Social Category:"}
+                      {currentLang === "ml"
+                        ? "സാമൂഹിക വിഭാഗം:"
+                        : "Social Category:"}
                     </span>
                     {/* Ensure socialCategory is handled for multilingual objects as well */}
-                    {Array.isArray(scheme.socialCategory) ?
-                      scheme.socialCategory.map((eachCategory, index) => (
-                        <span key={index}>
-                          {typeof eachCategory === "string" ? eachCategory : eachCategory?.[currentLang] || eachCategory?.en}
-                          {index < scheme.socialCategory.length - 1 && ","}
-                        </span>
-                      )) :
-                      (scheme.socialCategory?.[currentLang] || scheme.socialCategory?.en)
-                    }
+                    {Array.isArray(scheme.socialCategory)
+                      ? scheme.socialCategory.map((eachCategory, index) => (
+                          <span key={index}>
+                            {typeof eachCategory === "string"
+                              ? eachCategory
+                              : eachCategory?.[currentLang] || eachCategory?.en}
+                            {index < scheme.socialCategory.length - 1 && ","}
+                          </span>
+                        ))
+                      : scheme.socialCategory?.[currentLang] ||
+                        scheme.socialCategory?.en}
                     <br />
                   </>
                 )}
@@ -255,11 +269,20 @@ export function DialogCloseButton({ scheme, currentLang }) {
               {scheme.application_process && (
                 <div className="gap-1 flex">
                   <p className="font-bold inline">
-                    {currentLang === "ml" ? "അപേക്ഷാ പ്രക്രിയ / ലിങ്ക്: " : "Application Process / Link: "}
+                    {currentLang === "ml"
+                      ? "അപേക്ഷാ പ്രക്രിയ / ലിങ്ക്: "
+                      : "Application Process / Link: "}
                   </p>
-                  {scheme.application_process.process_description?.[currentLang]}
+                  {
+                    scheme.application_process.process_description?.[
+                      currentLang
+                    ]
+                  }
                   {!(scheme.application_process.link === "N/A") && (
-                    <Link href={scheme.application_process.link} target="_blank">
+                    <Link
+                      href={scheme.application_process.link}
+                      target="_blank"
+                    >
                       / {scheme.application_process.link}
                     </Link>
                   )}

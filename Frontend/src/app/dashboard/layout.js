@@ -2,7 +2,7 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useCallback } from "react";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/main-components/app-sidebar";
 
@@ -27,7 +27,17 @@ export function useDashboardContext() {
 }
 
 export default function RootLayout({ children }) {
-  const [sidebarFilters, setSidebarFilters] = useState(null);
+  const [sidebarFilters, setSidebarFilters] = useState({
+    ageGroup: "All",
+    gender: "All",
+    incomeLevel: "All",
+    profession: "All",
+    location: "All",
+    implementedBy: "All",
+    category: [],
+    keywords: [],
+  });
+
   const [inputValue, setInputValue] = useState("");
   const [selectedTab, setSelectedTab] = useState("agriculture");
   const { i18n } = useTranslation();
@@ -35,9 +45,10 @@ export default function RootLayout({ children }) {
   const handleInputValue = (value) => {
     setInputValue(value);
   };
-  const handleSidebarFilterChange = (newFiltersFromSidebar) => {
-    setSidebarFilters(newFiltersFromSidebar);
-  };
+
+  const handleSidebarFilterChange = useCallback((newFilters) => {
+    setSidebarFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
+  }, []);
 
   const handleNavMenuSelection = (value) => {
     setSelectedTab(value);
@@ -68,11 +79,10 @@ export default function RootLayout({ children }) {
                 <AppSidebar />
                 <SidebarInset className="overflow-x-hidden">
                   <NavBar />
-                  <div className=" sticky top-0 z-50 backdrop-blur-lg bg-white/60 dark:bg-black/60">
-                    <Header handleInputValue={handleInputValue} />
-                  </div>
+                  <Header handleInputValue={handleInputValue} />
+
                   {/* Main Content */}
-                  <div>{children}</div>
+                  {children}
                 </SidebarInset>
               </SidebarProvider>
             </DashboardContext.Provider>

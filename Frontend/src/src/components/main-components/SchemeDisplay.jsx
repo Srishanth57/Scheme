@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { DialogCloseButton } from "./DialogCloseButton";
 import { useDashboardContext } from "app/dashboard/layout";
-import { Star } from "lucide-react";
+import { Info, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 //Type safety check
@@ -17,10 +17,9 @@ const SchemeDisplay = ({ scheme }) => {
   const { i18n } = useTranslation();
   const currentLang = i18n.language || "en";
 
-  console.log(currentScheme);
   const schemesToDisplay = useMemo(() => {
     const filteredInput = inputValue || "";
-
+    console.log(sidebarFilters);
     let filteredSchemes = currentScheme.filter((scheme) => {
       const name =
         typeof scheme.name === "string"
@@ -38,7 +37,8 @@ const SchemeDisplay = ({ scheme }) => {
           value === undefined ||
           value === "" ||
           value === "All" ||
-          (Array.isArray(value) && value.length === 0)
+          (Array.isArray(value) && value.length === 0) ||
+          (value instanceof Set && value.size === 0)
       );
 
     if (isSidebarFiltersEmptyOrDefault) return filteredSchemes;
@@ -156,14 +156,26 @@ const SchemeDisplay = ({ scheme }) => {
         (currentLang === "en" ? "All" : "എല്ലാവരും")
     ) {
       filteredSchemes = filteredSchemes.filter((scheme) => {
+        //Used for schemes using key property with "implementingAgency"
         const agency =
           typeof scheme.implementingAgency === "string"
             ? scheme.implementingAgency
             : scheme.implementingAgency?.[currentLang] ||
               scheme.implementingAgency?.en ||
               "";
-        return safeString(agency).includes(
-          safeString(sidebarFilters.implementedBy)
+
+        //Used for schemes using key property with "implementedBy"
+        const implementedBy =
+          typeof scheme.implementedBy === "string"
+            ? scheme.implementedBy
+            : scheme.implementedBy?.[currentLang] ||
+              scheme.implementedBy?.en ||
+              [];
+
+        return (
+          safeString(agency).includes(
+            safeString(sidebarFilters.implementedBy)
+          ) || implementedBy.includes(sidebarFilters.implementedBy)
         );
       });
     }
@@ -180,6 +192,22 @@ const SchemeDisplay = ({ scheme }) => {
       });
     }
 
+    if (sidebarFilters.keywords && sidebarFilters.keywords.length > 0) {
+      filteredSchemes = filteredSchemes.filter((scheme) => {
+        // This correctly creates a Set of the scheme's keyword strings for fast lookups
+        const schemeKeywords = new Set(
+          scheme.keywords?.[currentLang] || scheme.keywords?.en || []
+        );
+
+        // Use .some() to check if any keyword from the filter exists in the scheme's keywords.
+        // .some() stops and returns true as soon as it finds a match.
+        return sidebarFilters.keywords.some((filterObject) => {
+          // For each object in the filter array, check if its 'key' is in the scheme's keywords
+          return schemeKeywords.has(filterObject.label?.[currentLang]);
+        });
+      });
+    }
+
     return filteredSchemes;
   }, [inputValue, sidebarFilters, currentScheme, currentLang]);
 
@@ -187,7 +215,10 @@ const SchemeDisplay = ({ scheme }) => {
     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
       {schemesToDisplay.length === 0 ? (
         <div className="flex justify-center items-center h-[70vh]">
-          <h1>No schemes to display</h1>
+          <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
+            <Info className="h-5 w-5" />
+            <p className="text-lg font-medium">No schemes to display</p>
+          </div>
         </div>
       ) : (
         <ul className="grid auto-rows-min gap-4 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

@@ -24,7 +24,7 @@ const GovernmentSchemeSchema = new mongoose.Schema(
     benefitsProvided: MultilingualString,
     applicationProcess: MultilingualString,
     contact: MultilingualString,
-
+    keywords: MultilingualStringArray,
     ratings: {
       avgRating: {
         type: Number,

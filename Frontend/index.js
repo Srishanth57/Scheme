@@ -13,7 +13,6 @@ import { healthCare } from "./src/app/data/translatedData/healthcare.js";
 import DisabledSchemes from "./src/modals/Disabled.js";
 import { disabled } from "./src/app/data/translatedData/disabled.js";
 
-import GovernmentSchemeSchemas from "./src/modals/Government.js";
 import { scheme } from "./src/app/data/translatedData/government.js";
 import { cooperative } from "./src/app/data/translatedData/government.js";
 import { policeDepartment } from "./src/app/data/translatedData/government.js";
@@ -24,8 +23,8 @@ import WomenSchemes from "./src/modals/Women.js";
 import { womenScheme } from "./src/app/data/translatedData/women.js";
 import { elderly } from "./src/app/data/translatedData/elderly.js";
 import ElderlySchemes from "./src/modals/Elderly.js";
-import CategorySchemes from "./src/modals/Category.js";
-import { category } from "./src/app/data/translatedData/category.js";
+import GovernmentSchemeSchema from "./src/modals/Government.js";
+import { getSchemeModel } from "./src/lib/govtSchemeModel.js";
 
 dotenv.config();
 
@@ -45,13 +44,11 @@ async function insertData() {
     } catch (err) {
       console.error("❌ MongoDB connection error:", err);
       process.exit(1); // Stop the app
-    } // ✅ connectDB should use MONGODB_URI internally
-    // await mongoose.connection.db
-    //   .collection("Government_lifeMission_New")
-    //   .rename("Government_LifeMission");
-    // console.log("success"); // Used for renaming the scheme names
+    }
     // Insert schemes
-    const result = await CategorySchemes.insertMany(category);
+    const result = await getSchemeModel(
+      "Government_Cooperative"
+    ).insertMany(cooperative);
   } catch (err) {
     if (err.code === 11000) {
       console.error("⚠️ Duplicate key error: Data might already exist.");
@@ -64,3 +61,20 @@ async function insertData() {
 }
 
 insertData();
+
+// const allowedGovCollections = [
+//   "Government_Cooperative",
+//   "Government_KeralaWaterAuthority",
+//   "Government_LifeMission",
+//   "Government_NationalHealthMission",
+//   "Government_PoliceDepartment",
+//   "Government_Schemes",
+// ];
+
+// Rename collection code
+
+// ✅ connectDB should use MONGODB_URI internally
+//     await mongoose.connection.db
+//       .collection("Government_lifeMission_New")
+//       .rename("Government_LifeMission");
+//     console.log("success"); // Used for renaming the scheme names

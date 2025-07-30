@@ -1,5 +1,5 @@
+import GovernmentSchemeSchema from "../modals/Government.js";
 import mongoose from "mongoose";
-import GovernmentSchemeSchema from "modals/Government";
 
 export function getSchemeModel(collectionName) {
   // Prevent model overwrite error

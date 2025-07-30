@@ -11,6 +11,7 @@ import { Label } from "@/components/ui/label"; // Adjust path as per your projec
 import { ChevronDownIcon, XIcon } from "lucide-react"; // Added XIcon for clear button
 import { Checkbox } from "@/components/ui/checkbox";
 import { useDashboardContext } from "app/dashboard/layout";
+import Autocomplete from "./Autocomplete";
 
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(false);
@@ -47,13 +48,15 @@ const filterOptions = {
     { en: "All", ml: "എല്ലാവരും" },
     { en: "Male", ml: "പുരുഷൻ" },
     { en: "Female", ml: "സ്ത്രീ" },
-    { en: "Other", ml: "മറ്റുള്ളത്" },
+    { en: "Other", ml: "മറ്റുള്ളവ" },
   ],
   incomeLevel: [
     { en: "All", ml: "എല്ലാവരും" },
-    { en: "Below Poverty Line(BPL)", ml: "ദാരിദ്ര്യ രേഖയ്ക്ക് താഴെ (BPL)" },
-    { en: "Marginal", ml: "ചെറുകിട" },
-    { en: "Indebted", ml: "കടത്തിലുള്ളത്" },
+    {
+      en: "Below Poverty Line(BPL)",
+      ml: "ദാരിദ്ര്യരേഖയ്ക്ക് താഴെയുള്ളവർ (BPL)",
+    },
+    { en: "Indebted", ml: "കടബാധ്യതയുള്ളവർ" },
     { en: "Low Income", ml: "കുറഞ്ഞ വരുമാനം" },
     { en: "Middle Income", ml: "ഇടത്തരം വരുമാനം" },
     { en: "High Income", ml: "ഉയർന്ന വരുമാനം" },
@@ -62,11 +65,11 @@ const filterOptions = {
     { en: "All", ml: "എല്ലാവരും" },
     { en: "Farmer", ml: "കർഷകൻ" },
     { en: "Student", ml: "വിദ്യാർത്ഥി" },
-    { en: "Employed", ml: "തൊഴിലിലുള്ളത്" },
-    { en: "Unemployed", ml: "തൊഴില്ലാത്തത്" },
-    { en: "Entrepreneur", ml: "ഉദ്യോഗസ്ഥൻ" },
-    { en: "Self-employed", ml: "സ്വയംതൊഴിലാളി" },
-    { en: "Retired", ml: "വിശ്രമപ്രാപ്തനായത്" },
+    { en: "Employed", ml: "ജോലിയുള്ളവർ" },
+    { en: "Unemployed", ml: "തൊഴിൽരഹിതർ" },
+    { en: "Entrepreneur", ml: "സംരംഭകൻ" },
+    { en: "Self-employed", ml: "സ്വയം തൊഴിൽ ചെയ്യുന്നവർ" },
+    { en: "Retired", ml: "വിരമിച്ചവർ" },
   ],
   location: [
     { en: "All", ml: "എല്ലാവരും" },
@@ -86,36 +89,39 @@ const filterOptions = {
     { en: "Disabled", ml: "ഭിന്നശേഷിക്കാർ" },
     {
       en: "Economically Weaker Section (EWS)",
-      ml: "സാമ്പത്തികമായി ദുർബലരായ വിഭാഗം (EWS)",
+      ml: "സാമ്പത്തികമായി പിന്നോക്കം നിൽക്കുന്ന വിഭാഗം (EWS)",
     },
     { en: "Migrant Workers", ml: "അതിഥി തൊഴിലാളികൾ" },
     { en: "Children", ml: "കുട്ടികൾ" },
-    { en: "Senior Citizen", ml: "മുതിർന്ന പൗരൻ" },
+    { en: "Senior Citizen", ml: "മുതിർന്ന പൗരന്മാർ" },
     {
       en: "Government Employees/Pensioners",
       ml: "സർക്കാർ ജീവനക്കാർ/പെൻഷൻകാർ",
     },
   ],
   implementedBy: [
-    { en: "Government of India", ml: "ഭാരത സർക്കാരിന്‍റേത്" },
-    { en: "Government of Kerala", ml: "കേരള സർക്കാരിന്‍റേത്" },
-    { en: "Local Self-Government Institutions", ml: "സ്ഥാപിത ഭരണ സ്ഥാപനങ്ങൾ" },
+    { en: "Government of India", ml: "കേന്ദ്ര സർക്കാർ" },
+    { en: "Government of Kerala", ml: "കേരള സർക്കാർ" },
+    {
+      en: "Local Self-Government Institutions",
+      ml: "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ",
+    },
     {
       en: "Registrar of Cooperative Societies",
-      ml: "കോപറേറ്റീവ് സൊസൈറ്റികളുടെ രജിസ്ട്രാർ",
+      ml: "സഹകരണസംഘം രജിസ്ട്രാർ",
     },
   ],
 };
 
 // Helper for display names of filters
 const filterDisplayNames = {
-  ageGroup: { en: "Age Group", ml: "പ്രായ ശ്രേണി" },
+  ageGroup: { en: "Age Group", ml: "പ്രായപരിധി" },
   gender: { en: "Gender", ml: "ലിംഗം" },
-  incomeLevel: { en: "Income Level", ml: "വരുമാന നിരപ്പ്" },
+  incomeLevel: { en: "Income Level", ml: "വരുമാന നിലവാരം" },
   profession: { en: "Profession", ml: "തൊഴിൽ" },
-  location: { en: "Location", ml: "പ്രദേശം" },
-  implementedBy: { en: "Implemented By", ml: "പ്രവർത്തിപ്പിക്കുന്നത്" },
-  category: { en: "Category", ml: "വർഗ്ഗം" },
+  location: { en: "Location", ml: "സ്ഥലം" },
+  implementedBy: { en: "Implemented By", ml: "നടപ്പിലാക്കുന്നത്" },
+  category: { en: "Category", ml: "വിഭാഗം" },
 };
 
 export function FilterSection() {
@@ -134,6 +140,7 @@ export function FilterSection() {
     location: currentLang === "en" ? "All" : "എല്ലാവരും",
     implementedBy: currentLang === "en" ? "All" : "എല്ലാവരും",
     category: [],
+    keywords: [],
   };
 
   const [selectedFilters, setSelectedFilters] = useState(
@@ -149,41 +156,52 @@ export function FilterSection() {
 
   const handleSelectFilter = useCallback(
     (filterType, value) => {
-      setSelectedFilters((prevFilters) => ({
-        ...prevFilters,
-        [filterType]:
-          prevFilters[filterType] === value
-            ? currentLang === "en"
-              ? "All"
-              : "എല്ലാവരും"
-            : value,
-      }));
+      const newValue =
+        sidebarFilters[filterType] === value
+          ? currentLang === "en"
+            ? "All"
+            : "എല്ലാവരും"
+          : value;
+      handleSidebarFilterChange({ [filterType]: newValue });
     },
-    [currentLang]
+    [currentLang, handleSidebarFilterChange, sidebarFilters]
   );
 
   const clearFilters = useCallback(() => {
-    const resetFilters = { ...initialFilters, category: [] };
-    setSelectedFilters(resetFilters);
+    const resetFilters = {
+      ageGroup: currentLang === "en" ? "All" : "എല്ലാവരും",
+      gender: currentLang === "en" ? "All" : "എല്ലാവരും",
+      incomeLevel: currentLang === "en" ? "All" : "എല്ലാവരും",
+      profession: currentLang === "en" ? "All" : "എല്ലാവരും",
+      location: currentLang === "en" ? "All" : "എല്ലാവരും",
+      implementedBy: currentLang === "en" ? "All" : "എല്ലാവരും",
+      category: [],
+      keywords: [],
+    };
     handleSidebarFilterChange(resetFilters);
-  }, [selectedTab, currentLang]);
+  }, [currentLang, handleSidebarFilterChange]);
 
+  // Update the handleCheckboxChange function
   const handleCheckboxChange = useCallback(
     (filterType, value, checked) => {
-      setSelectedFilters((prevFilters) => {
-        let updatedValues = prevFilters[filterType] || [];
-        if (checked) {
-          updatedValues = [...updatedValues, value];
-        } else {
-          updatedValues = updatedValues.filter((item) => item !== value);
-        }
+      setSelectedFilters((prev) => {
+        const updatedValues = checked
+          ? [...(prev[filterType] || []), value]
+          : prev[filterType].filter((item) => item !== value);
+
+        // Update sidebar filters immediately
+        handleSidebarFilterChange({
+          ...prev,
+          [filterType]: updatedValues,
+        });
+
         return {
-          ...prevFilters,
+          ...prev,
           [filterType]: updatedValues,
         };
       });
     },
-    [currentLang]
+    [handleSidebarFilterChange]
   );
 
   useEffect(() => {
@@ -206,96 +224,96 @@ export function FilterSection() {
     return isCategoryFiltered || isSingleSelectFiltered;
   }, [selectedFilters, currentLang]);
 
-  const FilterDropdown = ({ filterType, label, options }) => (
-    <div className="flex flex-col space-y-1.5 w-full">
-      <Label
-        htmlFor={filterType}
-        className="text-sm font-medium text-muted-foreground"
-      >
-        {label}
-      </Label>
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="w-[80%] justify-between ">
-            <span className="truncate pr-1">
-              {/* Display selected value(s) for single select */}
-              {Array.isArray(selectedFilters[filterType])
-                ? selectedFilters[filterType].length > 0
-                  ? selectedFilters[filterType].join(", ")
+  const FilterDropdown = ({ filterType, label, options }) => {
+    return (
+      <div className="flex flex-col space-y-1.5 w-full">
+        <Label
+          htmlFor={filterType}
+          className="text-sm font-medium text-muted-foreground"
+        >
+          {label}
+        </Label>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className="w-[80%] justify-between">
+              <span className="truncate pr-1">
+                {Array.isArray(sidebarFilters[filterType])
+                  ? sidebarFilters[filterType].length > 0
+                    ? sidebarFilters[filterType].join(", ")
+                    : `${
+                        currentLang === "en"
+                          ? "Select " + label
+                          : label + " തിരഞ്ഞെടുക്കുക"
+                      }`
+                  : sidebarFilters[filterType] !==
+                    (currentLang === "en" ? "All" : "എല്ലാവരും")
+                  ? sidebarFilters[filterType]
                   : `${
                       currentLang === "en"
                         ? "Select " + label
-                        : label + "തിരഞ്ഞെടുക്കുക"
-                    }`
-                : selectedFilters[filterType] !==
-                  (currentLang === "en" ? "All" : "എല്ലാവരും")
-                ? selectedFilters[filterType]
-                : `${
-                    currentLang === "en"
-                      ? "Select " + label
-                      : label + "തിരഞ്ഞെടുക്കുക"
-                  }`}
-            </span>
-            <ChevronDownIcon className="ml-2 h-4 w-4 opacity-50 flex-shrink-0" />
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56" sideOffset={5}>
-          {/* Show clear selection for single-select dropdowns if not 'All' */}
-          {!Array.isArray(selectedFilters[filterType]) &&
-            selectedFilters[filterType] !== ("All" || "എല്ലാവരും") && (
-              <>
-                <DropdownMenuCheckboxItem
-                  onSelect={() => {
-                    const value = currentLang === "en" ? "All" : "എല്ലാവരും";
-                    return handleSelectFilter(filterType, value);
-                  }} // Deselect to "All"
-                  className="text-destructive focus:text-destructive"
-                >
-                  {currentLang === "en"
-                    ? "Clear selection"
-                    : "തെരഞ്ഞെടുപ്പ് ഒഴിവാക്കുക"}
-                </DropdownMenuCheckboxItem>
-                <DropdownMenuSeparator />
-              </>
-            )}
-          {/* For single-select (e.g., ageGroup, gender) */}
-          {!Array.isArray(selectedFilters[filterType])
-            ? options.map((option) => (
-                <DropdownMenuCheckboxItem
-                  key={option?.[currentLang]}
-                  checked={
-                    selectedFilters[filterType] === option?.[currentLang]
-                  }
-                  onCheckedChange={() =>
-                    handleSelectFilter(filterType, option?.[currentLang])
-                  }
-                >
-                  {option?.[currentLang]}
-                </DropdownMenuCheckboxItem>
-              ))
-            : // For multi-select (e.g., category - though category is handled by checkboxes directly)
-              // This part might not be needed if category is only via checkboxes
-              options.map((option) => (
-                <DropdownMenuCheckboxItem
-                  key={option?.[currentLang]}
-                  checked={selectedFilters[filterType].includes(
-                    option?.[currentLang]
-                  )}
-                  onCheckedChange={(checked) =>
-                    handleCheckboxChange(
-                      filterType,
-                      option?.[currentLang],
-                      checked
-                    )
-                  }
-                >
-                  {option?.[currentLang]}
-                </DropdownMenuCheckboxItem>
-              ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </div>
-  );
+                        : label + " തിരഞ്ഞെടുക്കുക"
+                    }`}
+              </span>
+              <ChevronDownIcon className="ml-2 h-4 w-4 opacity-50 flex-shrink-0" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56" sideOffset={5}>
+            {/* Show clear selection for single-select dropdowns if not 'All' */}
+            {!Array.isArray(sidebarFilters[filterType]) &&
+              sidebarFilters[filterType] !== ("All" || "എല്ലാവരും") && (
+                <>
+                  <DropdownMenuCheckboxItem
+                    onSelect={() => {
+                      const value = currentLang === "en" ? "All" : "എല്ലാവരും";
+                      return handleSelectFilter(filterType, value);
+                    }} // Deselect to "All"
+                    className="text-destructive focus:text-destructive"
+                  >
+                    {currentLang === "en"
+                      ? "Clear selection"
+                      : "തിരഞ്ഞെടുത്തത് ഒഴിവാക്കുക"}
+                  </DropdownMenuCheckboxItem>
+                  <DropdownMenuSeparator />
+                </>
+              )}
+            {/* For single-select (e.g., ageGroup, gender) */}
+            {!Array.isArray(sidebarFilters[filterType])
+              ? options.map((option) => (
+                  <DropdownMenuCheckboxItem
+                    key={option?.[currentLang]}
+                    checked={
+                      sidebarFilters[filterType] === option?.[currentLang]
+                    }
+                    onCheckedChange={() =>
+                      handleSelectFilter(filterType, option?.[currentLang])
+                    }
+                  >
+                    {option?.[currentLang]}
+                  </DropdownMenuCheckboxItem>
+                ))
+              : // For multi-select (e.g., category)
+                options.map((option) => (
+                  <DropdownMenuCheckboxItem
+                    key={option?.[currentLang]}
+                    checked={sidebarFilters[filterType].includes(
+                      option?.[currentLang]
+                    )}
+                    onCheckedChange={(checked) =>
+                      handleCheckboxChange(
+                        filterType,
+                        option?.[currentLang],
+                        checked
+                      )
+                    }
+                  >
+                    {option?.[currentLang]}
+                  </DropdownMenuCheckboxItem>
+                ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+    );
+  };
 
   return (
     <div>
@@ -305,15 +323,14 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -323,25 +340,21 @@ export function FilterSection() {
               label={filterDisplayNames.ageGroup?.[currentLang]}
               options={filterOptions.ageGroup}
             />
-
             <FilterDropdown
               filterType="gender"
               label={filterDisplayNames.gender?.[currentLang]}
               options={filterOptions.gender}
             />
-
             <FilterDropdown
               filterType="incomeLevel"
               label={filterDisplayNames.incomeLevel?.[currentLang]}
               options={filterOptions.incomeLevel}
             />
-
             <FilterDropdown
               filterType="profession"
               label={filterDisplayNames.profession?.[currentLang]}
               options={filterOptions.profession}
             />
-
             <FilterDropdown
               filterType="location"
               label={filterDisplayNames.location?.[currentLang]}
@@ -351,7 +364,7 @@ export function FilterSection() {
               htmlFor="category"
               className="text-sm font-medium text-muted-foreground"
             >
-              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+              {filterDisplayNames.category?.[currentLang]}
             </Label>
             {filterOptions.category.map((eachCategory) => {
               const category = eachCategory?.[currentLang];
@@ -359,7 +372,7 @@ export function FilterSection() {
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox
                     id={category}
-                    checked={selectedFilters.category.includes(category)}
+                    checked={sidebarFilters.category.includes(category)}
                     onCheckedChange={(checked) => {
                       handleCheckboxChange("category", category, checked);
                     }}
@@ -368,8 +381,7 @@ export function FilterSection() {
                 </div>
               );
             })}
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -377,11 +389,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -400,15 +412,14 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -442,7 +453,7 @@ export function FilterSection() {
               htmlFor="category"
               className="text-sm font-medium text-muted-foreground"
             >
-              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+              {filterDisplayNames.category?.[currentLang]}
             </Label>
             {filterOptions.category.map((eachCategory) => {
               const category = eachCategory?.[currentLang] || eachCategory;
@@ -450,7 +461,7 @@ export function FilterSection() {
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox
                     id={category}
-                    checked={selectedFilters.category.includes(category)}
+                    checked={sidebarFilters.category.includes(category)}
                     onCheckedChange={(checked) => {
                       handleCheckboxChange("category", category, checked);
                     }}
@@ -459,8 +470,7 @@ export function FilterSection() {
                 </div>
               );
             })}
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -468,11 +478,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -491,15 +501,14 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -533,7 +542,7 @@ export function FilterSection() {
               htmlFor="healthCategory"
               className="text-sm font-medium text-muted-foreground"
             >
-              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+              {filterDisplayNames.category?.[currentLang]}
             </Label>
             {filterOptions.healthCategory.map((eachCategory) => {
               const category = eachCategory?.[currentLang] || eachCategory;
@@ -541,7 +550,7 @@ export function FilterSection() {
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox
                     id={category}
-                    checked={selectedFilters.category.includes(category)}
+                    checked={sidebarFilters.category.includes(category)}
                     onCheckedChange={(checked) => {
                       handleCheckboxChange("category", category, checked);
                     }}
@@ -550,8 +559,7 @@ export function FilterSection() {
                 </div>
               );
             })}
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -559,11 +567,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -582,15 +590,14 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -620,9 +627,7 @@ export function FilterSection() {
               label={filterDisplayNames.location?.[currentLang]}
               options={filterOptions.location}
             />
-
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -630,11 +635,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -653,15 +658,14 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -695,7 +699,7 @@ export function FilterSection() {
               htmlFor="category"
               className="text-sm font-medium text-muted-foreground"
             >
-              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+              {filterDisplayNames.category?.[currentLang]}
             </Label>
             {filterOptions.category.map((eachCategory) => {
               const category = eachCategory?.[currentLang] || eachCategory;
@@ -703,7 +707,7 @@ export function FilterSection() {
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox
                     id={category}
-                    checked={selectedFilters.category.includes(category)}
+                    checked={sidebarFilters.category.includes(category)}
                     onCheckedChange={(checked) => {
                       handleCheckboxChange("category", category, checked);
                     }}
@@ -712,8 +716,7 @@ export function FilterSection() {
                 </div>
               );
             })}
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -721,11 +724,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -744,21 +747,19 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
           <div className="flex flex-col gap-y-5">
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -766,11 +767,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -789,15 +790,14 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -812,7 +812,7 @@ export function FilterSection() {
               htmlFor="category"
               className="text-sm font-medium text-muted-foreground"
             >
-              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+              {filterDisplayNames.category?.[currentLang]}
             </Label>
             {filterOptions.category.map((eachCategory) => {
               const category = eachCategory?.[currentLang] || eachCategory;
@@ -820,7 +820,7 @@ export function FilterSection() {
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox
                     id={category}
-                    checked={selectedFilters.category.includes(category)}
+                    checked={sidebarFilters.category.includes(category)}
                     onCheckedChange={(checked) => {
                       handleCheckboxChange("category", category, checked);
                     }}
@@ -829,8 +829,7 @@ export function FilterSection() {
                 </div>
               );
             })}
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -838,11 +837,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -854,21 +853,21 @@ export function FilterSection() {
           </div>
         </div>
       )}
+
       {selectedTab === "women" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -891,8 +890,6 @@ export function FilterSection() {
               options={filterOptions.incomeLevel}
             />
 
-        
-
             <FilterDropdown
               filterType="location"
               label={filterDisplayNames.location?.[currentLang]}
@@ -902,7 +899,7 @@ export function FilterSection() {
               htmlFor="category"
               className="text-sm font-medium text-muted-foreground"
             >
-              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+              {filterDisplayNames.category?.[currentLang]}
             </Label>
             {filterOptions.category.map((eachCategory) => {
               const category = eachCategory?.[currentLang];
@@ -910,7 +907,7 @@ export function FilterSection() {
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox
                     id={category}
-                    checked={selectedFilters.category.includes(category)}
+                    checked={sidebarFilters.category.includes(category)}
                     onCheckedChange={(checked) => {
                       handleCheckboxChange("category", category, checked);
                     }}
@@ -919,8 +916,7 @@ export function FilterSection() {
                 </div>
               );
             })}
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -928,11 +924,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -944,21 +940,21 @@ export function FilterSection() {
           </div>
         </div>
       )}
+
       {selectedTab === "elderly" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -981,7 +977,6 @@ export function FilterSection() {
               options={filterOptions.incomeLevel}
             />
 
-
             <FilterDropdown
               filterType="location"
               label={filterDisplayNames.location?.[currentLang]}
@@ -991,7 +986,7 @@ export function FilterSection() {
               htmlFor="category"
               className="text-sm font-medium text-muted-foreground"
             >
-              {currentLang === "en" ? "Category" : "വിഭാഗം"}
+              {filterDisplayNames.category?.[currentLang]}
             </Label>
             {filterOptions.category.map((eachCategory) => {
               const category = eachCategory?.[currentLang];
@@ -999,7 +994,7 @@ export function FilterSection() {
                 <div key={category} className="flex items-center gap-3">
                   <Checkbox
                     id={category}
-                    checked={selectedFilters.category.includes(category)}
+                    checked={sidebarFilters.category.includes(category)}
                     onCheckedChange={(checked) => {
                       handleCheckboxChange("category", category, checked);
                     }}
@@ -1008,8 +1003,7 @@ export function FilterSection() {
                 </div>
               );
             })}
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -1017,11 +1011,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"
@@ -1040,15 +1034,14 @@ export function FilterSection() {
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </h2>
-            {/* Show Clear all button on desktop, hide on mobile */}
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center" // Show only on md and up
+                className="text-sm px-2 hidden md:flex items-center"
               >
                 <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -1058,9 +1051,8 @@ export function FilterSection() {
               label={filterDisplayNames.implementedBy?.[currentLang]}
               options={filterOptions.implementedBy}
             />
-
-            {/* Action buttons visible only on mobile (max-md) */}
-            {!isDesktop && ( // Use !isDesktop for mobile-only visibility
+            <Autocomplete />
+            {!isDesktop && (
               <div className="flex justify-between gap-2 mt-4">
                 <Button
                   variant="ghost"
@@ -1068,11 +1060,11 @@ export function FilterSection() {
                   className="text-sm px-2 flex-1 bg-[#FD151B]"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം നീക്കം ചെയ്യുക"}
+                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
                 <Button
                   variant="ghost"
-                  onClick={applyFiltersForMobile} // Use the new function for mobile apply
+                  onClick={applyFiltersForMobile}
                   className="text-sm px-2 flex-1 bg-[#688E26]"
                 >
                   {currentLang === "en"

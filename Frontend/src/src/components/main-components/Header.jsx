@@ -17,7 +17,7 @@ import { usePathname } from "next/navigation";
 import { MobileNavMenu, NavigationMenuDemo } from "./NavigationMenu";
 
 const Links = [
-  { displayName: "All Schemes", link: "/dashboard/allScheme" },
+  { displayName: "Recommended for you", link: "/dashboard/allScheme" },
   { displayName: "Agriculture", link: "/dashboard/agriculture" },
   { displayName: "Health-care", link: "/dashboard/healthCare" },
   { displayName: "Disabled", link: "/dashboard/disabled" },
@@ -55,7 +55,7 @@ const Header = ({ handleInputValue }) => {
     handleInputValue(event.target.value);
   };
   return (
-    <div>
+    <div className=" sticky top-0 z-50 backdrop-blur-lg bg-white/60 dark:bg-black/60">
       <header className=" flex h-16 w-[100%] items-center justify-between gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
         <div className="flex items-center gap-2 px-4">
           <SidebarTrigger className="-ml-1 max-md:visible " />
@@ -66,11 +66,11 @@ const Header = ({ handleInputValue }) => {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem className="hidden md:block">
-                <Link href="/">Home page</Link>
+                <Link href="/">Home </Link>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
-                <BreadcrumbPage>Data Fetching</BreadcrumbPage>
+                <BreadcrumbPage>Dashboard</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -91,8 +91,17 @@ const Header = ({ handleInputValue }) => {
         <NavigationMenuDemo /> {/* for desktop view */}
         <MobileNavMenu /> {/* for mobile view */}
       </div>
-      <div>
-        <p>{currentLinkObject?.displayName}</p>
+      <div className="px-6 py-4">
+        <div className="flex items-center space-x-2 mb-1">
+          <div className="h-1 w-6 bg-primary rounded-full"></div>
+          <h2 className="text-xl font-semibold text-foreground">
+            {currentLinkObject?.displayName}
+          </h2>
+        </div>
+        <p className="text-sm text-muted-foreground">
+          Browse and manage {currentLinkObject?.displayName?.toLowerCase()}{" "}
+          related content
+        </p>
       </div>
     </div>
   );

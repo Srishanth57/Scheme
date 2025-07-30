@@ -1,0 +1,10 @@
+{
+	"servers": {
+	
+		"my-mcp-server-36a630f8": {
+			"url": "https://mcp.pipedream.net/7c9465c4-0e72-4006-acca-e6e9942a975a/mongodb",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}

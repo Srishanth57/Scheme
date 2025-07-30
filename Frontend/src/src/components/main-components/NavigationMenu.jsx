@@ -4,7 +4,12 @@ import * as React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -123,7 +128,7 @@ export function NavigationMenuDemo() {
                 handleNavMenu("allScheme");
               }}
             >
-              All Schemes
+              Recommended
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -185,80 +190,69 @@ function ListItem({ title, children, href, ...props }) {
 
 export function MobileNavMenu() {
   const { setSelectedTab } = useDashboardContext();
+
   const handleNavMenu = (value) => {
-    console.log(value);
     setSelectedTab(value);
   };
+
   return (
-    <NavigationMenu
-      viewport={false}
-      className="ml-5 mb-3 relative z-30 min-lg:hidden" // Makes it dropdown-style
-    >
-      <NavigationMenuList className="flex gap-4">
-        {/* All Schemes */}
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link
-              href="/dashboard/allScheme"
-              onClick={() => {
-                handleNavMenu("allScheme");
-              }}
-            >
-              All Schemes
-            </Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
+    // This menu is hidden on large screens (lg) and up
+    <div className="w-full px-2 lg:hidden">
+      {/* Standalone link for "Recommended" */}
+      <Link
+        href="/dashboard/allScheme"
+        onClick={() => handleNavMenu("allScheme")}
+        className="block w-full text-left px-4 py-3 text-sm font-medium border-b hover:bg-accent hover:text-accent-foreground"
+      >
+        Recommended
+      </Link>
 
-        {/* General Schemes Dropdown */}
-        <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="font-medium px-3 py-2">
-            General
-          </NavigationMenuTrigger>
-          <NavigationMenuContent
-            className={cn(
-              "absolute top-full mt-2 w-64 rounded-md bg-white shadow-md p-2 grid gap-2 z-50"
-            )}
-          >
-            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+      {/* Accordion for collapsible sections */}
+      <Accordion type="single" collapsible className="w-full">
+        {/* General Schemes Item */}
+        <AccordionItem value="general-schemes" className="border-b">
+          <AccordionTrigger className="px-4 py-3 text-sm font-medium">
+            General Schemes
+          </AccordionTrigger>
+          <AccordionContent>
+            <ul className="pl-6 pr-4 py-2 flex flex-col space-y-1">
               {components.map((component) => (
-                <li
-                  key={component.title}
-                  title={component.title}
-                  onClick={() => {
-                    handleNavMenu(component.key);
-                  }}
-                >
-                  <Link href={component.href}>{component.title}</Link>
+                <li key={component.title}>
+                  <Link
+                    href={component.href}
+                    onClick={() => handleNavMenu(component.key)}
+                    className="block p-2 rounded-md text-muted-foreground hover:text-primary hover:bg-accent"
+                  >
+                    {component.title}
+                  </Link>
                 </li>
               ))}
             </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
+          </AccordionContent>
+        </AccordionItem>
 
-        {/* Government Schemes Dropdown */}
-        <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="font-medium px-3 py-2">
-            Govt.
-          </NavigationMenuTrigger>
-          <NavigationMenuContent
-            className={cn(
-              "absolute top-full mt-2 w-64 rounded-md bg-white shadow-md p-2 grid gap-2 z-50"
-            )}
-          >
-            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+        {/* Government Schemes Item */}
+        <AccordionItem value="govt-schemes" className="border-b-0">
+          <AccordionTrigger className="px-4 py-3 text-sm font-medium">
+            Government Schemes
+          </AccordionTrigger>
+          <AccordionContent>
+            <ul className="pl-6 pr-4 py-2 flex flex-col space-y-1">
               {GovernmentSchemeComponents.map((component) => (
-                <li
-                  key={component.title}
-                  title={component.title}
-                  onClick={() => handleNavMenu("governmentSchemes")}
-                >
-                  <Link href={component.key}>{component.title}</Link>
+                <li key={component.title}>
+                  <Link
+                    href={component.key}
+                    onClick={() => handleNavMenu("governmentSchemes")}
+                    className="block p-2 rounded-md text-muted-foreground hover:text-primary hover:bg-accent"
+                  >
+                    {component.title}
+                  </Link>
                 </li>
               ))}
             </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
   );
 }

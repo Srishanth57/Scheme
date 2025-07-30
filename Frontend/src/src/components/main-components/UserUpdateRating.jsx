@@ -76,7 +76,7 @@ export default function StarRating({ schemeId, avgRating = 0, count = 0 }) {
   };
 
   return (
-    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+    <div className="flex items-center gap-2 text-sm text-muted-foreground flex-col">
       <div className="flex">
         {[1, 2, 3, 4, 5].map((star) => (
           <Star
@@ -91,16 +91,17 @@ export default function StarRating({ schemeId, avgRating = 0, count = 0 }) {
             onClick={() => handleRating(star)}
           />
         ))}
+        <span className="ml-2">
+          {avgRating.toFixed(1)} ({count} rating{count !== 1 && "s"})
+        </span>
       </div>
-      <span className="ml-2">
-        {avgRating.toFixed(1)} ({count} rating{count !== 1 && "s"})
-      </span>
-
-     { errorMsg && <SignUpButton>
-        <Button className="text-white font-bold font-sans bg-red-500 p-2 rounded-b-sm">
-          {errorMsg && "Login/SignUp to Rate"}
-        </Button>
-      </SignUpButton>}
+      {errorMsg && (
+        <SignUpButton>
+          <Button className="text-red-400  hover:bg-transparent hover:underline font-light font-sans bg-transparent p-2 rounded-b-sm">
+            {errorMsg && "*Login/SignUp to Rate"}
+          </Button>
+        </SignUpButton>
+      )}
     </div>
   );
 }
