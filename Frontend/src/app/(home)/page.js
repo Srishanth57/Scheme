@@ -24,6 +24,12 @@ import {
 import { useRouter } from "next/navigation";
 import { Spinner } from "@heroui/react";
 
+import dynamic from "next/dynamic";
+
+// Dynamically import the Chatbot component with SSR disabled
+const Chatbot = dynamic(() => import("./component/Chatbot"), { ssr: false });
+// import CustomBotpresChat from "./CustomBotpressChat";
+
 const Page = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const router = useRouter();
@@ -255,8 +261,8 @@ const Page = () => {
         </header>
 
         {/* Main Hero Content */}
-        <section className="relative py-10 sm:py-16 lg:py-20 flex-1 z-10 pt-[20%]">
-          <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <section className="relative py-10 sm:py-16 lg:py-20 flex-1 z-10 pt-[40%]">
+          <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mt-40">
             <div className="flex flex-col lg:flex-row items-center justify-between min-h-[60vh] gap-8 lg:gap-12">
               {/* Text Content */}
               <div className="flex-1 text-center lg:text-left max-w-2xl">
@@ -282,7 +288,7 @@ const Page = () => {
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
                   <a
-                    onClick={() => router.push("/dashboard")}
+                    onClick={() => router.push("/recommend")}
                     className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-300 bg-blue-500 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-offset-blue-400 hover:bg-blue-600 hover:scale-105 transform shadow-lg cursor-pointer"
                   >
                     Explore Schemes
@@ -329,11 +335,6 @@ const Page = () => {
             </div>
           </div>
         </section>
-
-        {/* Floating Action Button */}
-        <div className="fixed bottom-5 right-10 w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full shadow-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300 z-50 cursor-pointer">
-          <CheckCircle className="w-8 h-8 text-white" />
-        </div>
       </div>
 
       {/* Government Schemes Section */}

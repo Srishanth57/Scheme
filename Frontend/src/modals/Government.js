@@ -18,6 +18,7 @@ const GovernmentSchemeSchema = new mongoose.Schema(
     },
     name: MultilingualString,
     implementedBy: MultilingualStringArray,
+    description: MultilingualString,
     objective: MultilingualString,
     targetBeneficiaries: MultilingualString,
     eligibilityCriterias: MultilingualString,

@@ -47,8 +47,8 @@ async function insertData() {
     }
     // Insert schemes
     const result = await getSchemeModel(
-      "Government_Cooperative"
-    ).insertMany(cooperative);
+      "Government_Schemes"
+    ).insertMany(scheme);
   } catch (err) {
     if (err.code === 11000) {
       console.error("⚠️ Duplicate key error: Data might already exist.");

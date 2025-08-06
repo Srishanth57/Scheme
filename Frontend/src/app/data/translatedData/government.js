@@ -4,6 +4,10 @@ export const scheme = [
       en: "Rural Dairy Extension Services",
       ml: "ഗ്രാമീണ ക്ഷീര വിജ്ഞാന വ്യാപന സേവനങ്ങൾ",
     },
+    description: {
+      en: "A scheme aimed at providing effective dairy extension services in rural areas to support farmers.",
+      ml: "കർഷകരെ പിന്തുണയ്ക്കുന്നതിനായി ഗ്രാമീണ മേഖലകളിൽ ഫലപ്രദമായ ക്ഷീര വിജ്ഞാന വ്യാപന സേവനങ്ങൾ നൽകാൻ ലക്ഷ്യമിട്ടുള്ള ഒരു പദ്ധതി.",
+    },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
     objective: {
       en: "Effective Extension Work",
@@ -30,6 +34,10 @@ export const scheme = [
       ml: "കർഷക സമ്പർക്ക പരിപാടി",
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
+    description: {
+      en: "A program to facilitate direct contact between the dairy department and farmers through co-operative societies, providing financial assistance for each program.",
+      ml: "സഹകരണ സംഘങ്ങൾ വഴി ക്ഷീര വകുപ്പും കർഷകരും തമ്മിൽ നേരിട്ട് സമ്പർക്കം പുലർത്തുന്നതിനും ഓരോ പരിപാടിക്കും സാമ്പത്തിക സഹായം നൽകുന്നതിനുമുള്ള ഒരു പരിപാടി.",
+    },
     objective: {
       en: "Effective Extension Work",
       ml: "ഫലപ്രദമായ വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ",
@@ -120,6 +128,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Awareness among public about Milk and Milk Products",
       ml: "പാലിനെയും പാൽ ഉത്പന്നങ്ങളെയും കുറിച്ച് പൊതുജനങ്ങളിൽ അവബോധം സൃഷ്ടിക്കുക.",
     },
+    description: {
+      en: "World Milk Day is celebrated to recognize the importance of milk as a global food and to promote awareness about the nutritional benefits of milk and dairy products. Dairy Co-operative Societies organize public events, exhibitions, and campaigns to educate people about dairy farming, quality milk production, and its contribution to rural livelihoods.",
+      ml: "പാലിന്റെ ആഗോള ആഹാര പ്രാധാന്യം അംഗീകരിക്കുകയും പാലിനെയും പാൽ ഉത്പന്നങ്ങളെയും കുറിച്ചുള്ള പോഷകമൂല്യങ്ങളിലേക്കുള്ള അവബോധം വർദ്ധിപ്പിക്കുകയും ചെയ്യുന്നതിന്റെ ഭാഗമായി ലോക ക്ഷീരദിനം ആഘോഷിക്കുന്നു. ക്ഷീര സഹകരണ സംഘങ്ങൾ പൊതുജനങ്ങൾക്കായി പ്രദർശനങ്ങൾ, കാമ്പെയ്‌നുകൾ, ശില്പശാലകൾ എന്നിവ സംഘടിപ്പിക്കാറുണ്ട്. ക്ഷീരഉൽപ്പാദനത്തിന്റെ ഗുണനിലവാരവും ഗ്രാമീണ ജീവനോപാധികളിലേക്കുള്ള സംഭാവനകളും ഇതിലൂടെ പൊതുജനങ്ങൾക്കിടയിൽ പരിചയപ്പെടുത്തുന്നു.",
+    },
     targetBeneficiaries: {
       en: "General Public",
       ml: "പൊതുജനങ്ങൾ",
@@ -205,6 +217,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Support in case of cow death due to unforeseen reasons",
       ml: "അപ്രതീക്ഷിത കാരണങ്ങളാൽ പശുക്കൾ ചത്തുപോകുന്ന സാഹചര്യത്തിൽ സഹായം നൽകുക.",
+    },
+    description: {
+      en: "The Contingency Fund provides financial assistance to dairy farmers who face the loss of their cattle due to sudden and unforeseen circumstances such as disease outbreaks or accidents. This scheme aims to mitigate the financial burden on farmers and ensure livelihood security.",
+      ml: "രോഗവ്യാപനങ്ങളോ അപകടങ്ങളോ പോലുള്ള അപ്രതീക്ഷിത സാഹചര്യങ്ങളിൽ പശുക്കളുടെ മരണത്തിൽ പ്രതിസന്ധിയിലാകുന്ന ക്ഷീരകർഷകർക്ക് സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതിയാണ് അടിയന്തര സഹായ നിധി. ക്ഷീരകർഷകരുടെ തൊഴിൽ സുരക്ഷ ഉറപ്പാക്കാനും സാമ്പത്തികഭാരമകറ്റാനും ഈ പദ്ധതി ലക്ഷ്യമിടുന്നു.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -295,6 +311,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Effective Extension Work, Awareness among Public and farmers about Department activities",
       ml: "വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ച് പൊതുജനങ്ങളിലും കർഷകരിലും അവബോധം സൃഷ്ടിക്കുകയും വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ നടത്തുകയും ചെയ്യുക.",
     },
+    description: {
+      en: "Block Ksheerasangamam is a special program organized at the block level to enhance awareness among dairy farmers and the public about various dairy development activities. The program aims to promote effective extension work, interaction with experts, and dissemination of best practices in dairy farming.",
+      ml: "ക്ഷീര വികസന പ്രവർത്തനങ്ങളെക്കുറിച്ചുള്ള അവബോധം ക്ഷീരകർഷകരിലും പൊതുജനങ്ങളിലും വർധിപ്പിക്കുന്നതിനായി ബ്ലോക്ക് തലത്തിൽ സംഘടിപ്പിക്കുന്ന പ്രത്യേക പരിപാടിയാണ് ബ്ലോക്ക് ക്ഷീരസംഗമം. ഫലപ്രദമായ വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ നടത്താനും, വിദഗ്ധരുമായി സംവദിക്കാനും, ക്ഷീരകൃഷിയിലെ മികച്ച പ്രവർത്തനങ്ങൾ പ്രചരിപ്പിക്കാനും ഈ പദ്ധതി ലക്ഷ്യമിടുന്നു.",
+    },
     targetBeneficiaries: {
       en: "General Public & Dairy Farmers",
       ml: "പൊതുജനങ്ങളും ക്ഷീരകർഷകരും",
@@ -379,6 +399,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Effective Extension Work, Awareness among Public and farmers about Department activities",
       ml: "വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ച് പൊതുജനങ്ങളിലും കർഷകരിലും അവബോധം സൃഷ്ടിക്കുകയും വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ നടത്തുകയും ചെയ്യുക.",
+    },
+    description: {
+      en: "Block Ksheerasangamam is a special program organized at the block level to enhance awareness among dairy farmers and the public about various dairy development activities. The program aims to promote effective extension work, interaction with experts, and dissemination of best practices in dairy farming.",
+      ml: "ക്ഷീര വികസന പ്രവർത്തനങ്ങളെക്കുറിച്ചുള്ള അവബോധം ക്ഷീരകർഷകരിലും പൊതുജനങ്ങളിലും വർധിപ്പിക്കുന്നതിനായി ബ്ലോക്ക് തലത്തിൽ സംഘടിപ്പിക്കുന്ന പ്രത്യേക പരിപാടിയാണ് ബ്ലോക്ക് ക്ഷീരസംഗമം. ഫലപ്രദമായ വിജ്ഞാന വ്യാപന പ്രവർത്തനങ്ങൾ നടത്താനും, വിദഗ്ധരുമായി സംവദിക്കാനും, ക്ഷീരകൃഷിയിലെ മികച്ച പ്രവർത്തനങ്ങൾ പ്രചരിപ്പിക്കാനും ഈ പദ്ധതി ലക്ഷ്യമിടുന്നു.",
     },
     targetBeneficiaries: {
       en: "General Public & Dairy Farmers",
@@ -469,6 +493,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Awareness among Students about Dairy Sector and Department activities.",
       ml: "ക്ഷീര മേഖലയെക്കുറിച്ചും വകുപ്പിന്റെ പ്രവർത്തനങ്ങളെക്കുറിച്ചും വിദ്യാർത്ഥികളിൽ അവബോധം സൃഷ്ടിക്കുക.",
     },
+    description: {
+      en: "Students Dairy Club aims to engage school students with activities related to the dairy sector, fostering awareness and interest in dairy farming practices and the initiatives of the Dairy Development Department.",
+      ml: "വിദ്യാർത്ഥി ക്ഷീര ക്ലബ്ബ് സ്കൂൾ വിദ്യാർത്ഥികളെ ക്ഷീര മേഖലയുമായി ബന്ധിപ്പിക്കുകയും, ക്ഷീരകൃഷിയും ക്ഷീരവകുപ്പിന്റെ പ്രവർത്തനങ്ങളും സംബന്ധിച്ചുള്ള അവബോധം വർദ്ധിപ്പിക്കുകയും ചെയ്യുന്നതിനുള്ള പ്രവർത്തനങ്ങളിൽ പങ്കാളികളാക്കുകയാണ് ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Government Schools in the District",
       ml: "ജില്ലയിലെ സർക്കാർ സ്കൂളുകൾ",
@@ -550,6 +578,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: ["Government of Kerala"],
       ml: ["കേരള സർക്കാർ"],
     },
+    description: {
+      en: "Details regarding the objectives and benefits of this scheme are currently not available.",
+      ml: "ഈ പദ്ധതിയുടെ ലക്ഷ്യങ്ങൾക്കും പ്രയോജനങ്ങൾക്കും സംബന്ധിച്ച വിവരങ്ങൾ നിലവിൽ ലഭ്യമല്ല.",
+    },
     objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
@@ -624,6 +656,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Eradication of Extreme Poverty",
       ml: "അതിദാരിദ്ര്യം ഇല്ലാതാക്കുക",
+    },
+    description: {
+      en: "A program aimed at eradicating extreme poverty by providing necessary assistance to families identified in the extreme poverty list.",
+      ml: "അതിദാരിദ്ര്യ പട്ടികയിൽ ഉൾപ്പെട്ട കുടുംബങ്ങൾക്കു ആവശ്യമായ സഹായം നൽകിക്കൊണ്ട് അതിദാരിദ്ര്യം ഇല്ലാതാക്കുന്നതിന് ലക്ഷ്യമിട്ടുള്ള പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "All members included in the extreme poverty list can apply",
@@ -706,6 +742,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Provide assistance to dairy farmers",
       ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
+    },
+    description: {
+      en: "A scheme to provide financial assistance for purchasing a cow and improving livelihood opportunities for dairy farmers.",
+      ml: "പശു വാങ്ങുന്നതിനും ക്ഷീരകർഷകരുടെ ഉപജീവനാവസരങ്ങൾ മെച്ചപ്പെടുത്തുന്നതിനുമായി ധനസഹായം നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -793,6 +833,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Provide assistance to dairy farmers",
       ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
+    description: {
+      en: "A scheme to provide financial assistance for purchasing two cows to support dairy farmers' livelihood and boost milk production.",
+      ml: "ക്ഷീരകർഷകരുടെ ഉപജീവനവും പാലുത്പാദനവും വർദ്ധിപ്പിക്കുന്നതിന് രണ്ട് പശു വാങ്ങുന്നതിനുള്ള ധനസഹായം നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -879,6 +923,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Provide assistance to dairy farmers",
       ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
+    description: {
+      en: "A scheme to provide financial support for purchasing five cows to enhance the livelihood of dairy farmers and increase milk production.",
+      ml: "ക്ഷീരകർഷകരുടെ ഉപജീവനവും പാലുത്പാദനവും വർദ്ധിപ്പിക്കുന്നതിന് അഞ്ച് പശു വാങ്ങുന്നതിനുള്ള ധനസഹായം നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -961,6 +1009,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Provide assistance to dairy farmers",
       ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
+    },
+    description: {
+      en: "Financial assistance for Joint Liability Groups (JLG) and SHG units to establish five cow dairy units, enhancing group-based livelihood and milk production.",
+      ml: "JLG, SHG യൂണിറ്റുകൾക്ക് അഞ്ച് പശു യൂണിറ്റുകൾ സ്ഥാപിക്കാൻ ധനസഹായം നൽകുന്നതിലൂടെ കൂട്ടായ്മ അധിഷ്ഠിത ഉപജീവനവും പാലുത്പാദനവും വർദ്ധിപ്പിക്കുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Ksheerasree/SHG/JLG/Kudumbasree groups",
@@ -1048,6 +1100,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Provide assistance to dairy farmers",
       ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
     },
+    description: {
+      en: "Financial support for establishing ten cow dairy units to enhance milk production and livelihood for dairy farmers.",
+      ml: "പാൽ ഉത്പാദനവും ക്ഷീരകർഷകരുടെ ഉപജീവനവും വർദ്ധിപ്പിക്കുന്നതിനായി പത്ത് പശു യൂണിറ്റുകൾ സ്ഥാപിക്കാൻ ധനസഹായം നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -1130,6 +1186,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Provide assistance to dairy farmers",
       ml: "ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക",
+    },
+    description: {
+      en: "Financial support for Joint Liability Groups (JLG), Self Help Groups (SHG), Kudumbasree units, and Ksheerasree groups to establish ten cow dairy units to promote group-based dairy farming.",
+      ml: "ഗ്രൂപ്പ് അധിഷ്ഠിത ക്ഷീരകൃഷി പ്രോത്സാഹിപ്പിക്കാൻ JLG, SHG, കുടുംബശ്രീ യൂണിറ്റുകൾ, ക്ഷീരശ്രീ ഗ്രൂപ്പുകൾ എന്നിവയ്ക്ക് പത്ത് പശു യൂണിറ്റുകൾ സ്ഥാപിക്കാൻ ധനസഹായം നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Ksheerasree/SHG/JLG/Kudumbasree groups",
@@ -1217,6 +1277,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Provide special financial assistance for commercial and smart dairy farms for youth.",
       ml: "യുവാക്കൾക്കായി വാണിജ്യാടിസ്ഥാനത്തിലുള്ള സ്മാർട്ട് ഡയറി ഫാമുകൾക്ക് പ്രത്യേക സാമ്പത്തിക സഹായം നൽകുക.",
     },
+    description: {
+      en: "This scheme encourages young entrepreneurs to establish technologically advanced dairy farms by providing financial support and necessary guidance.",
+      ml: "തന്ത്രപരമായ സൗകര്യങ്ങളോടു കൂടിയ ഡയറി ഫാമുകൾ സ്ഥാപിക്കാൻ യുവ സംരംഭകരെ പ്രോത്സാഹിപ്പിക്കാൻ ധനസഹായവും ആവശ്യമായ മാർഗനിർദ്ദേശവും നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Young entrepreneurs in the dairy sector.",
       ml: "ക്ഷീരമേഖലയിലെ യുവ സംരംഭകർ.",
@@ -1302,6 +1366,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "For the development of working families in plantation areas.",
       ml: "തോട്ടം മേഖലയിലെ തൊഴിലാളി കുടുംബങ്ങളുടെ ഉന്നമനത്തിനായി.",
+    },
+    description: {
+      en: "The scheme aims to improve the socio-economic conditions of plantation workers through dairy-related livelihood opportunities.",
+      ml: "തോട്ടം തൊഴിലാളി കുടുംബങ്ങൾക്കായി ക്ഷീരബന്ധിത ഉപജീവന അവസരങ്ങൾ ഒരുക്കി അവരുടെ സാമൂഹ്യ-ആർത്തവസ്ഥിതിയിൽ മെച്ചപ്പെടുത്തലുണ്ടാക്കുകയാണ് പദ്ധതിയുടെ ലക്ഷ്യം.",
     },
     targetBeneficiaries: {
       en: "Plantation workers",
@@ -1389,6 +1457,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To assist dairy farmers in rearing high-quality heifers.",
       ml: "ഉയർന്ന ഗുണമേന്മയുള്ള കിടാരികളെ വളർത്തുന്നതിന് കർഷകരെ സഹായിക്കുക.",
     },
+    description: {
+      en: "The scheme provides infrastructure and financial assistance for establishing Heifer Parks to promote the rearing of high-yielding heifers by farmers and self-help groups.",
+      ml: "കർഷകരെയും സ്വയം സഹായ സംഘങ്ങളെയും ഉപയോഗപ്പെടുത്തി ഉയർന്ന ഉൽപാദനക്ഷമതയുള്ള കിടാരികളെ വളർത്തുന്നതിനായി കിടാരി പാർക്കുകൾ സ്ഥാപിക്കാൻ അടിസ്ഥാന സൗകര്യങ്ങളുടെയും ധനസഹായത്തിന്റെയും രൂപത്തിലുള്ള പിന്തുണ നൽകുന്ന പദ്ധതിയാണ് ഇത്.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers/SHG/JLG/Kudumbasree groups",
       ml: "ക്ഷീരകർഷകർ/സ്വയം സഹായ സംഘങ്ങൾ/JLG/കുടുംബശ്രീ യൂണിറ്റുകൾ",
@@ -1474,6 +1546,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To provide quality cattle to dairy farmers.",
       ml: "ക്ഷീരകർഷകർക്ക് ഗുണമേന്മയുള്ള കന്നുകാലികളെ ലഭ്യമാക്കുക.",
+    },
+    description: {
+      en: "Establish Quarantine cum Trading Centres to ensure the availability of disease-free, high-quality cattle to Dairy Co-operative Societies for distribution to farmers.",
+      ml: "രോഗരഹിതമായ ഉയർന്ന ഗുണമേന്മയുള്ള കന്നുകാലികളെ ക്ഷീര സഹകരണ സംഘങ്ങൾക്കായി ലഭ്യമാക്കുന്നതിനായി ക്വാറന്റൈൻ കം ട്രേഡിംഗ് സെന്ററുകൾ സ്ഥാപിക്കുന്നതാണ് ഈ പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
@@ -1561,6 +1637,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide assistance to dairy farmers by reducing the interest burden on loans.",
       ml: "വായ്പകളുടെ പലിശ ഭാരം കുറച്ച് ക്ഷീരകർഷകർക്ക് സഹായം നൽകുക.",
     },
+    description: {
+      en: "Under this scheme, a portion of the interest on loans taken by dairy farmers for dairy-related activities will be subsidized to reduce their financial burden.",
+      ml: "ക്ഷീരകർഷകർ ക്ഷീരകൃഷിക്കായി എടുത്ത വായ്പകളുടെ പലിശയുടെ ഒരു ശതമാനം വകുപ്പിന് നൽകുന്ന പദ്ധതിയാണ് പലിശയിളവ് പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -1646,6 +1726,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Provide assistance to dairy farmers for constructing cattle sheds.",
       ml: "ക്ഷീരകർഷകർക്ക് തൊഴുത്ത് നിർമ്മിക്കാൻ സഹായം നൽകുക.",
+    },
+    description: {
+      en: "The scheme aims to provide financial support to dairy farmers for building hygienic and spacious cattle sheds to enhance livestock health and productivity.",
+      ml: "മൃഗങ്ങളുടെ ആരോഗ്യവും ഉൽപ്പാദനക്ഷമതയും വർദ്ധിപ്പിക്കാൻ ശുചിത്വപരവും വിശാലവുമായ തൊഴുത്തുകൾ നിർമിക്കാൻ ക്ഷീരകർഷകർക്ക് സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതിയാണ്.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -1733,6 +1817,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide assistance to dairy farmers for purchasing milking machines.",
       ml: "ക്ഷീരകർഷകർക്ക് പാൽ കറവ യന്ത്രങ്ങൾ വാങ്ങാൻ സഹായം നൽകുക.",
     },
+    description: {
+      en: "The scheme aims to support dairy farmers in adopting mechanized milking to improve efficiency, hygiene, and reduce labor dependency.",
+      ml: "ക്ഷീരകർഷകർക്ക് പാൽ കറവ യന്ത്രങ്ങൾ ഉപയോഗിച്ച് ഫലപ്രദതയും ശുചിത്വവും മെച്ചപ്പെടുത്താനും തൊഴിൽഭാരം കുറയ്ക്കാനും സഹായിക്കുന്നതാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -1819,6 +1907,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide flexible assistance to dairy farmers based on their specific needs.",
       ml: "ക്ഷീരകർഷകരുടെ പ്രത്യേക ആവശ്യങ്ങൾക്കനുസരിച്ച് സഹായം നൽകുക.",
     },
+    description: {
+      en: "This scheme is designed to support dairy farmers by providing financial assistance tailored to their specific requirements for modernization and mechanization.",
+      ml: "ഡയറി ഫാം ആധുനികവൽക്കരണത്തിനും യന്ത്രവൽക്കരണത്തിനും വേണ്ടിയുള്ള പ്രത്യേക ആവശ്യങ്ങൾക്കനുസരിച്ച് സാമ്പത്തിക സഹായം നൽകുന്നതിനുള്ള പദ്ധതിയാണിത്.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -1900,8 +1992,15 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Fodder Development Programme",
       ml: "തീറ്റപ്പുൽ കൃഷി വികസന പരിപാടി",
     },
+    description: {
+      en: "This scheme encourages dairy farmers to cultivate green fodder by providing support for inputs like seeds, fertilizers, and irrigation assistance.",
+      ml: "തീറ്റപ്പുൽ കൃഷി പ്രോത്സാഹിപ്പിക്കുന്നതിന് വിത്ത്, ഫലവത്താക്കൽ, ജലസേചനം തുടങ്ങിയ ആവശ്യകതകൾക്ക് സഹായം നൽകുന്ന പദ്ധതിയാണ് ഇത്.",
+    },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
-    objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    objective: {
+      en: "To promote fodder cultivation and ensure availability of quality fodder for dairy farmers.",
+      ml: "ക്ഷീരകർഷകർക്ക് ഉചിതമായ ഗുണമേന്മയുള്ള തീറ്റപ്പുൽ ലഭ്യമാക്കുന്നതിനും തീറ്റപ്പുൽ കൃഷി പ്രോത്സാഹിപ്പിക്കുന്നതിനുമാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
+    },
     targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
@@ -1977,6 +2076,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To reduce feed cost for dairy farmers.",
       ml: "ക്ഷീരകർഷകരുടെ തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
+    description: {
+      en: "The Fodder Cultivation (Below 20 cents) scheme aims to support small-scale dairy farmers in cultivating fodder on plots smaller than 20 cents. By encouraging localized fodder production, the scheme helps reduce dependency on external feed sources, thereby cutting down on feed expenses and promoting self-sufficiency. Eligible farmers can avail financial assistance of ₹970 per 10 cents through the Dairy Extension Service Units or via the Ksheerasree Portal.",
+      ml: "20 സെന്റിൽ താഴെ കൃഷിയോഗ്യ ഭൂമിയുള്ള ക്ഷീരകർഷകർക്ക് തീറ്റപ്പുൽ കൃഷിക്ക് സഹായം നൽകുകയാണ് 'തീറ്റപ്പുൽ കൃഷി (20 സെന്റിന് താഴെ)' പദ്ധതി ലക്ഷ്യമിടുന്നത്. സ്വന്തം സ്ഥലത്ത് തീറ്റപ്പുൽ ഉൽപാദനം പ്രോത്സാഹിപ്പിച്ച് ഇറക്കുമതി തീറ്റയുടെ ആശ്രിതത്വം കുറയ്ക്കുകയും, തീറ്റച്ചെലവ് കുറയ്ക്കുകയും ചെയ്യുന്നു. അർഹതയുള്ള കർഷകർ ക്ഷീര വിജ്ഞാന വ്യാപന യൂണിറ്റുകൾ വഴിയോ, ക്ഷീരശ്രീ പോർട്ടൽ വഴിയോ അപേക്ഷിച്ച് 10 സെന്റിന് ₹970/-യുടെ സാമ്പത്തിക സഹായം ലഭ്യമാക്കാം.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -2063,6 +2167,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To reduce feed cost for dairy farmers.",
       ml: "ക്ഷീരകർഷകരുടെ തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
+    description: {
+      en: "The Fodder Cultivation (Below 20 cents) scheme is designed to support small-scale dairy farmers who cultivate fodder on plots smaller than 20 cents. Under this scheme, farmers supplying milk to Dairy Co-operative Societies are provided with free slips of fodder seeds or planting materials. The initiative aims to encourage self-sufficiency in fodder production and reduce the recurring expenses on cattle feed, thus ensuring better profitability for marginal farmers.",
+      ml: "20 സെന്റിൽ താഴെ ഭൂമിയിലുള്ള ചെറിയ ക്ഷീരകർഷകരെ ലക്ഷ്യമാക്കി 'തീറ്റപ്പുൽ കൃഷി (20 സെന്റിന് താഴെ)' പദ്ധതി നടപ്പാക്കുന്നു. ക്ഷീര സഹകരണ സംഘങ്ങളിൽ പാൽ നൽകുന്ന കർഷകർക്ക് വിത്ത് സ്ലിപ്പുകളും നടീൽ വസ്തുക്കളും സൗജന്യമായി വിതരണം ചെയ്യുന്ന പദ്ധതി ഈ പദ്ധതിയാണ്. സ്വന്തം തീറ്റ ഉൽപാദനം പ്രോത്സാഹിപ്പിക്കുകയും, സ്ഥിരം തീറ്റച്ചെലവ് കുറയ്ക്കുകയും ചെയ്യുന്നതിനായി കർഷകർക്ക് ആത്മവിശ്വാസം നൽകുക എന്നതാണ് പദ്ധതിയുടെ പ്രധാന ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -2145,6 +2253,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To provide assistance to dairy farmers for irrigation.",
       ml: "ക്ഷീരകർഷകർക്ക് ജലസേചനത്തിനായി സഹായം നൽകുക.",
+    },
+    description: {
+      en: "The Irrigation Assistance scheme aims to support dairy farmers by providing financial assistance for establishing efficient irrigation systems for fodder cultivation. Ensuring a reliable water source for fodder farms helps in maintaining consistent green fodder availability throughout the year, thereby reducing dependence on costly external feed sources. This scheme is intended to enhance the self-reliance and profitability of dairy farmers.",
+      ml: "ക്ഷീരകർഷകർക്ക് തീറ്റപ്പുൽ കൃഷിക്കായി കാര്യക്ഷമമായ ജലസേചന സംവിധാനം ഒരുക്കുന്നതിന് സാമ്പത്തിക സഹായം നൽകുന്നതിനുള്ള പദ്ധതി ആണ് 'ജലസേചന സഹായം'.തീറ്റപ്പുൽ കൃഷിക്ക് സ്ഥിരതയുള്ള വെള്ളസേചനം ഉറപ്പാക്കുന്നതിലൂടെ മുഴുവൻ വർഷവും ഗ്രീൻ തീറ്റ ലഭ്യത ഉറപ്പാക്കുകയും, വിലയേറിയ പുറത്തുനിന്നുള്ള തീറ്റയ്ക്ക് ആശ്രയമാകേണ്ടതില്ലാത്ത നിലയിൽ ക്ഷീരകർഷകരെ സ്വയംപര്യാപ്തരാക്കുകയും ചെയ്യുന്നു. ക്ഷീരകർഷകരുടെ വരുമാന വർദ്ധനവിനും ഈ പദ്ധതി സഹായകമാകും.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -2232,6 +2344,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide assistance to dairy farmers for irrigation.",
       ml: "ക്ഷീരകർഷകർക്ക് ജലസേചനത്തിനായി സഹായം നൽകുക.",
     },
+    description: {
+      en: "The Irrigation Assistance (Above 1 Hectare) scheme is designed to provide financial support to dairy farmers who cultivate fodder in large areas exceeding one hectare. The scheme ensures the development of sustainable irrigation infrastructure to promote year-round green fodder cultivation, thereby reducing the dependence on external feed sources and enhancing farm productivity.",
+      ml: "ഒരു ഹെക്ടറിൽ കൂടുതലായുള്ള സ്ഥലത്ത് തീറ്റപ്പുൽ കൃഷി നടത്തുന്ന ക്ഷീരകർഷകർക്ക് ജലസേചന സൗകര്യങ്ങൾ ഒരുക്കുന്നതിനായി സാമ്പത്തിക സഹായം നൽകുന്നതിനുള്ള പദ്ധതി ആണ് 'ജലസേചന സഹായം (1 ഹെക്ടറിന് മുകളിൽ)'. തീറ്റപ്പുൽ കൃഷിക്ക് സ്ഥിരതയുള്ള വെള്ളസേചനം ഒരുക്കുന്നതിലൂടെ, പുറത്തുനിന്നുള്ള തീറ്റയ്ക്ക് ആശ്രയമില്ലാതെ, കർഷകന്റെ ഉൽപാദന ശേഷിയും വരുമാനവും വർദ്ധിപ്പിക്കാൻ ഈ പദ്ധതി സഹായകമാകും.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -2318,6 +2434,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide assistance to dairy farmers for mechanization.",
       ml: "ക്ഷീരകർഷകർക്ക് യന്ത്രവൽക്കരണത്തിന് സഹായം നൽകുക.",
     },
+    description: {
+      en: "The Mechanisation in Fodder Cultivation scheme aims to support dairy farmers by providing financial assistance for purchasing machinery and equipment used in fodder cultivation. By promoting mechanization, the scheme helps reduce manual labor, increase efficiency, and encourage large-scale green fodder production, thereby lowering feed costs and improving overall farm productivity.",
+      ml: "തീറ്റപ്പുൽ കൃഷിയിൽ ഉപയോഗിക്കുന്ന യന്ത്രങ്ങൾക്കും ഉപകരണങ്ങൾക്കും ധനസഹായം നൽകുന്നതിലൂടെ ക്ഷീരകർഷകർക്ക് പിന്തുണ നൽകുകയാണ് 'തീറ്റപ്പുൽ കൃഷിയിലെ യന്ത്രവൽക്കരണം' പദ്ധതി ലക്ഷ്യമിടുന്നത്. യന്ത്രവൽക്കരണം പ്രോത്സാഹിപ്പിക്കുന്നതിലൂടെ കർഷകന്റെ തൊഴിൽച്ചെലവും കുറയ്ക്കുകയും, ഉൽപാദനക്ഷമതയും ഉയർത്തുകയും, തീറ്റച്ചെലവ് കുറയ്ക്കുകയും farm ഉൽപാദനക്ഷമത വർദ്ധിപ്പിക്കുകയും ചെയ്യുന്നതാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -2404,6 +2525,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To reduce feed cost by promoting fodder cultivation in barren lands.",
       ml: "തരിശുഭൂമിയിൽ തീറ്റപ്പുൽ കൃഷി പ്രോത്സാഹിപ്പിച്ച് തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
+    description: {
+      en: "The Fodder Cultivation in Barren Land scheme is designed to encourage dairy farmers to utilize unused and barren lands for fodder cultivation. The scheme provides financial assistance to reduce feed costs and promote self-sufficiency in green fodder production. It also aims to increase the availability of quality fodder, improve milk production, and enhance the profitability of dairy farms.",
+      ml: "തരിശുഭൂമികളെ തീറ്റപ്പുൽ കൃഷിക്കായി ഉപയോഗിക്കാൻ ക്ഷീരകർഷകരെ പ്രേരിപ്പിക്കുന്നതാണ് 'തരിശുഭൂമിയിലെ തീറ്റപ്പുൽ കൃഷി' പദ്ധതിയുടെ ലക്ഷ്യം. തീറ്റച്ചെലവ് കുറയ്ക്കാനും കർഷകർക്ക് സ്വയം തീറ്റ ഉൽപാദനം ഉറപ്പാക്കാനും ധനസഹായം നൽകുന്നു. കൂടാതെ, ഗുണമേന്മയുള്ള തീറ്റയുടെ ലഭ്യത വർദ്ധിപ്പിക്കാനും പാലിന്റെ ഉൽപാദനം ഉയർത്താനും ക്ഷീരകർഷകന്റെ ലാഭം വർദ്ധിപ്പിക്കാനുമാണ് പദ്ധതി ലക്ഷ്യമിടുന്നത്.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -2489,6 +2615,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To reduce feed cost and promote group-based fodder enterprises.",
       ml: "തീറ്റച്ചെലവ് കുറയ്ക്കുകയും സംഘാധിഷ്ഠിത തീറ്റപ്പുൽ സംരംഭങ്ങൾ പ്രോത്സാഹിപ്പിക്കുകയും ചെയ്യുക.",
+    },
+    description: {
+      en: "The scheme encourages Self Help Groups (SHGs) and other group formations to engage in fodder cultivation and its marketing. It aims to reduce the feed cost of dairy farmers by promoting collective cultivation, ensuring steady supply, and creating sustainable fodder-based micro-enterprises. Financial assistance is provided to groups for cultivation, harvesting, storage, and marketing activities, enhancing income and self-reliance.",
+      ml: "സ്വയം സഹായ സംഘങ്ങളും മറ്റ് സംഘാടിത രൂപീകരണങ്ങളും ചേർന്ന് തീറ്റപ്പുൽ കൃഷിയിലും അതിന്റെ വിപണന പ്രവർത്തനങ്ങളിലും ഏർപ്പെടാൻ ഉത്സാഹിപ്പിക്കുന്നതാണ് ഈ പദ്ധതി. സംഘംപാരമ്പര്യത്തിലുള്ള കൃഷിയെ പ്രോത്സാഹിപ്പിച്ച് തീറ്റച്ചെലവ് കുറയ്ക്കുകയും സ്ഥിരതയുള്ള തീറ്റ ലഭ്യത ഉറപ്പാക്കുകയും തീറ്റപാതി സംരംഭങ്ങൾ സൃഷ്ടിക്കുകയും ചെയ്യുക എന്നതാണ് ലക്ഷ്യം. കൃഷി, കൊയ്ത്ത്, സംഭരണം, വിപണനം എന്നിവയ്ക്കായി ധനസഹായം നൽകുന്നതോടെ കർഷകന്റെ വരുമാനവും സ്വാവലംബനവും വർദ്ധിപ്പിക്കും.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers in SHGs/Groups",
@@ -2576,6 +2706,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To reduce feed cost by promoting maize cultivation for fodder.",
       ml: "കാലിത്തീറ്റയ്ക്കായി ചോളം കൃഷി പ്രോത്സാഹിപ്പിച്ച് തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
+    description: {
+      en: "The scheme aims to encourage dairy farmers to cultivate maize as a fodder crop to reduce dependency on external feed and lower production costs. Financial assistance is provided to farmers who undertake maize cultivation on a minimum of 30 cents of land. This initiative ensures the availability of nutritious green fodder for livestock, promotes self-sufficiency in feed production, and supports sustainable dairy farming practices.",
+      ml: "ക്ഷീരകർഷകർക്ക് തീറ്റക്കായി ചോളം കൃഷി നടത്താൻ പ്രോത്സാഹനം നൽകി പുറം തീറ്റയുടെ ആശ്രയം കുറച്ചും ഉൽപ്പാദന ചെലവ് കുറച്ചും ചെയ്യുന്നതാണ് പദ്ധതി. കുറഞ്ഞത് 30 സെന്റിൽ ചോളം കൃഷി ചെയ്യുന്ന കർഷകർക്ക് ധനസഹായം നൽകുന്നു. മൃഗങ്ങൾക്ക് പോഷക സമൃദ്ധമായ പച്ച തീറ്റ ലഭ്യത ഉറപ്പാക്കുകയും, തീറ്റ ഉൽപ്പാദനത്തിൽ സ്വയംപര്യാപ്തത വളർത്തുകയും, സ്ഥിരതയുള്ള ക്ഷീരകൃഷി പ്രവർത്തനങ്ങൾ പിന്തുണയ്ക്കുകയും ചെയ്യുന്നതാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -2662,6 +2797,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To reduce feed cost using an intensive fodder cultivation model.",
       ml: "ശാസ്ത്രീയ തീറ്റപ്പുൽ കൃഷി രീതിയിലൂടെ തീറ്റച്ചെലവ് കുറയ്ക്കുക.",
     },
+    description: {
+      en: "The scheme promotes an intensive fodder cultivation model known as the 'Kolar Model', designed to optimize land use and increase fodder production. By adopting scientific methods, dairy farmers can achieve higher fodder yield per unit area, ensuring consistent feed supply at a lower cost. The program provides financial support and technical guidance, especially to farmers with larger cattle holdings, to implement this model effectively.",
+      ml: "ഭൂമിയുടെ പരമാവധി ഉപയോഗം ഉറപ്പാക്കിയും തീറ്റ ഉൽപ്പാദനം വർധിപ്പിക്കാനും രൂപകൽപ്പന ചെയ്ത 'കോലാർ മാതൃക' എന്ന ശാസ്ത്രീയ തീറ്റപ്പുൽ കൃഷി മാതൃകയാണ് പദ്ധതി പ്രോത്സാഹിപ്പിക്കുന്നത്. ശാസ്ത്രീയ രീതികൾ സ്വീകരിക്കുന്നതിലൂടെ, ക്ഷീരകർഷകർക്ക് കുറഞ്ഞ ചെലവിൽ ഏറു വിസ്തീർണ്ണത്തിൽ കൂടുതൽ തീറ്റ ഉത്പാദിപ്പിക്കാൻ കഴിയുന്നു. കൂടുതൽ പശുക്കളുള്ള കർഷകർക്ക് ഈ മാതൃക നടപ്പാക്കാൻ ധനസഹായവും സാങ്കേതിക മാർഗനിർദേശങ്ങളും പദ്ധതിയുടെ ഭാഗമായി നൽകുന്നു.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -2743,6 +2882,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Assistance to Dairy Co-operative Societies (DCS)",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്കുള്ള (DCS) സഹായം",
     },
+    description: {
+      en: "This scheme provides financial assistance to Dairy Co-operative Societies (DCS) for infrastructure development, procurement of equipment, and capacity building activities. The support aims to enhance the operational efficiency of DCS, improve milk collection and processing facilities, and promote effective service delivery to dairy farmers associated with the societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളുടെ അടിസ്ഥാന സൗകര്യ വികസനത്തിനും ഉപകരണങ്ങൾ വാങ്ങുന്നതിനും ശേഷി വർധിപ്പിക്കൽ പ്രവർത്തനങ്ങൾക്കുമായി സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതിയാണ് ഇത്. ക്ഷീര സഹകരണ സംഘങ്ങളുടെ പ്രവർത്തനക്ഷമത മെച്ചപ്പെടുത്താനും, പാൽ ശേഖരണവും പ്രോസസ്സിങ്ങ് സംവിധാനങ്ങളും മെച്ചപ്പെടുത്താനും, സംഘങ്ങളുമായി ബന്ധപ്പെട്ട ക്ഷീരകർഷകർക്ക് ഫലപ്രദമായ സേവനങ്ങൾ നൽകുന്നതിനും പദ്ധതി ലക്ഷ്യമിടുന്നു.",
+    },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
     objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
@@ -2819,6 +2962,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To provide financial assistance to Dairy Co-operative Societies for obtaining FSSAI registration/license.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് FSSAI രജിസ്ട്രേഷൻ/ലൈസൻസ് നേടുന്നതിന് സാമ്പത്തിക സഹായം നൽകുക.",
+    },
+    description: {
+      en: "This scheme provides financial assistance to Dairy Co-operative Societies for obtaining Food Safety and Standards Authority of India (FSSAI) registration or license. The support helps societies comply with food safety regulations, ensuring the quality and safety of milk and milk products.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് ഇന്ത്യയിലെ ഭക്ഷ്യസുരക്ഷ സ്റ്റാൻഡേർഡ് അതോറിറ്റി (FSSAI) രജിസ്ട്രേഷൻ അല്ലെങ്കിൽ ലൈസൻസ് നേടുന്നതിന് സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതിയാണ് ഇത്. പാൽ ഉൽപ്പന്നങ്ങളുടെ ഗുണമേന്മയും സുരക്ഷയും ഉറപ്പാക്കുന്നതിന് സംഘടനകൾക്ക് ഭക്ഷ്യസുരക്ഷാ നിയമങ്ങൾ പാലിക്കുവാൻ സഹായിക്കുന്നു.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
@@ -2906,6 +3053,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Financial Assistance to Dairy Co-operative Societies.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
+    description: {
+      en: "This scheme provides financial assistance of ₹120,000/- to financially stable Dairy Co-operative Societies to support their operational and developmental activities.",
+      ml: "സാമ്പത്തികമായി സുസ്ഥിരമായ ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് അവരുടെ പ്രവർത്തനങ്ങളും വികസന പ്രവർത്തനങ്ങളും പിന്തുണയ്ക്കുന്നതിനായി ₹1,20,000/- സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
@@ -2992,6 +3143,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Financial assistance to newly registered Dairy Co-operative Societies.",
       ml: "പുതുതായി രജിസ്റ്റർ ചെയ്ത ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
+    description: {
+      en: "This scheme provides financial support to newly registered Dairy Co-operative Societies to help them establish and strengthen their operations.",
+      ml: "പുതുതായി രജിസ്റ്റർ ചെയ്ത ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് അവരുടെ പ്രവർത്തനങ്ങൾ സ്ഥാപിക്കാൻ കൂടിയും ശക്തിപ്പെടുത്താൻ കൂടിയുമായി സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതി.",
+    },
+
     targetBeneficiaries: {
       en: "Newly Registered Dairy Co-operative Societies",
       ml: "പുതുതായി രജിസ്റ്റർ ചെയ്ത ക്ഷീര സഹകരണ സംഘങ്ങൾ",
@@ -3077,6 +3233,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Financial assistance for Dairy Co-operative Societies to purchase their own land.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സ്വന്തമായി ഭൂമി വാങ്ങുന്നതിന് സാമ്പത്തിക സഹായം നൽകുക.",
+    },
+    description: {
+      en: "This scheme offers financial assistance to Dairy Co-operative Societies to help them purchase their own land for operational and developmental purposes.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് അവരുടെ പ്രവർത്തനങ്ങളും വികസനത്തിനുമുള്ള ഭൂമി സ്വന്തമാക്കാൻ സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
@@ -3164,6 +3324,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Financial assistance to Dairy Co-operative Societies for automation.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് ഓട്ടോമേഷനായി സാമ്പത്തിക സഹായം നൽകുക.",
     },
+    description: {
+      en: "This scheme provides financial support to Dairy Co-operative Societies for implementing automation to improve operational efficiency and management.",
+      ml: "പ്രവർത്തന കാര്യക്ഷമതയും മാനേജ്മെന്റും മെച്ചപ്പെടുത്തുന്നതിനായി ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് ഓട്ടോമേഷൻ നടപ്പിലാക്കാൻ സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതി.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
@@ -3246,6 +3411,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Financial assistance to Dairy Co-operative Societies without milk route access.",
       ml: "പാൽ സംഭരണ റൂട്ട് ഇല്ലാത്ത ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം.",
+    },
+    description: {
+      en: "Provides financial assistance to Dairy Co-operative Societies that do not have established milk transportation routes, to facilitate smooth milk collection and distribution.",
+      ml: "പാൽ ഗതാഗതത്തിന് റൂട്ട് ഇല്ലാത്ത ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് പാൽ ശേഖരണവും വിതരണം സുതാര്യവും കാര്യക്ഷമവുമാക്കാൻ സാമ്പത്തിക സഹായം നൽകുന്നു.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
@@ -3333,6 +3502,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide financial incentives to dairy farmers.",
       ml: "ക്ഷീരകർഷകർക്ക് സാമ്പത്തിക പ്രോത്സാഹനം നൽകുക.",
     },
+    description: {
+      en: "Provides financial incentives to dairy farmers to encourage increased milk production and improve livelihood.",
+      ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുകയും ജീവിതോര്ജ്ജം മെച്ചപ്പെടുത്തുകയും ചെയ്യാൻ ക്ഷീരകർഷകർക്ക് സാമ്പത്തിക പ്രോത്സാഹനം നൽകുന്നു.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -3414,6 +3587,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Investment in DCS",
       ml: "ക്ഷീര സംഘങ്ങളിലെ നിക്ഷേപം",
     },
+    description: {
+      en: "Details regarding investment opportunities and support for Dairy Co-operative Societies are currently not available.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളുടെ നിക്ഷേപ അവസരങ്ങളും സഹായവും സംബന്ധിച്ച വിശദാംശങ്ങൾ നിലവിൽ ലഭ്യമല്ല.",
+    },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
     objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
     targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
@@ -3487,6 +3664,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Financial assistance to Dairy Co-operative Societies for building construction.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് കെട്ടിട നിർമ്മാണത്തിന് സാമ്പത്തിക സഹായം.",
+    },
+    description: {
+      en: "To provide financial assistance to Dairy Co-operative Societies for the construction of hygienic milk collection rooms ensuring quality and safety.",
+      ml: "ഗുണനിലവാരവും സുരക്ഷയും ഉറപ്പാക്കുന്നതിന് ശുചിത്വമുള്ള പാൽ ശേഖരണ മുറികൾ നിർമ്മിക്കുന്നതിന് ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
@@ -3574,6 +3755,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Financial assistance to Dairy Co-operative Societies for establishing a farmers' facilitation centre.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് കർഷക സഹായ കേന്ദ്രം സ്ഥാപിക്കുന്നതിന് സാമ്പത്തിക സഹായം.",
     },
+    description: {
+      en: "To provide financial assistance to Dairy Co-operative Societies for setting up Farmers Facilitation Centres to support dairy farmers with various services.",
+      ml: "ക്ഷീര കർഷകർക്കായി വിവിധ സേവനങ്ങൾ നൽകുന്നതിന് കർഷക സഹായ കേന്ദ്രങ്ങൾ സ്ഥാപിക്കുന്നതിന് ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
+    },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
@@ -3659,6 +3844,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Financial assistance to Dairy Co-operative Societies for installing solar panels.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സോളാർ പാനൽ സ്ഥാപിക്കുന്നതിന് സാമ്പത്തിക സഹായം.",
+    },
+    description: {
+      en: "To provide financial assistance to Dairy Co-operative Societies for installing solar panels to promote renewable energy and reduce electricity costs.",
+      ml: "നവീകരണ ഊർജ്ജ പ്രോത്സാഹിപ്പിക്കുകയും വൈദ്യുതി ചെലവ് കുറയ്ക്കുകയും ചെയ്യുന്നതിന് ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സോളാർ പാനലുകൾ സ്ഥാപിക്കാൻ സാമ്പത്തിക സഹായം നൽകുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
@@ -3746,6 +3935,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Financial assistance to Dairy Co-operative Societies for establishing an ETP.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് മാലിന്യ സംസ്കരണ പ്ലാന്റ് സ്ഥാപിക്കാൻ സാമ്പത്തിക സഹായം.",
     },
+    description: {
+      en: "To provide financial assistance to Dairy Co-operative Societies for establishing Effluent Treatment Plants to ensure proper waste management and environmental protection.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് മാലിന്യ സംസ്കരണ പ്ലാന്റുകൾ സ്ഥാപിച്ച് മാലിന്യ നിയന്ത്രണം ശരിയായി നടപ്പിലാക്കുകയും പരിസ്ഥിതി സംരക്ഷണം ഉറപ്പാക്കുകയും ചെയ്യുന്നതിനുള്ള സാമ്പത്തിക സഹായം നൽകുക.",
+    },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
@@ -3827,6 +4020,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Cattle Feed Subsidy",
       ml: "കാലിത്തീറ്റ സബ്സിഡി",
     },
+    description: {
+      en: "To provide financial subsidy to dairy farmers for purchasing cattle feed, reducing their overall feeding costs.",
+      ml: "ക്ഷീരകർഷകർക്ക് കാലിത്തീറ്റ വാങ്ങുന്നതിനായി സാമ്പത്തിക സബ്സിഡി നൽകുകയും ആഹാരച്ചെലവ് കുറയ്ക്കുകയും ചെയ്യുക.",
+    },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
     objective: { en: "Not specified", ml: "ലഭ്യമല്ല" },
     targetBeneficiaries: { en: "Not specified", ml: "ലഭ്യമല്ല" },
@@ -3903,6 +4100,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To provide assistance to dairy farmers for feed components.",
       ml: "ക്ഷീരകർഷകർക്ക് കാലിത്തീറ്റ ഘടകങ്ങൾക്കായി സഹായം നൽകുക.",
+    },
+    description: {
+      en: "To assist dairy farmers by providing fodder and straw components through Dairy Co-operative Societies to reduce feeding costs.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിലൂടെ ക്ഷീരകർഷകർക്ക് തീറ്റപ്പുൾ, പുല്ല് എന്നിവ നൽകുന്നതിനായി സഹായം നൽകുകയും ആഹാരച്ചെലവ് കുറയ്ക്കുകയും ചെയ്യുക.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -3994,6 +4195,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide assistance to dairy farmers for cattle feed supplements.",
       ml: "ക്ഷീരകർഷകർക്ക് കാലിത്തീറ്റ സപ്ലിമെന്റുകൾക്ക് സഹായം നൽകുക.",
     },
+    description: {
+      en: "To support dairy farmers by providing mineral mixtures and feed supplements to improve cattle nutrition and productivity.",
+      ml: "പശുക്കളുടെ പോഷണം മെച്ചപ്പെടുത്താനും ഉൽപ്പാദനക്ഷമത വർദ്ധിപ്പിക്കാനും ക്ഷീരകർഷകർക്ക് ധാതുലവണ മിശ്രിതങ്ങളും കാലിത്തീറ്റ സപ്ലിമെന്റുകളും നൽകുന്നത്.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -4076,6 +4281,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Strengthening Quality Control Labs & Activities",
       ml: "ഗുണനിലവാര നിയന്ത്രണ ലാബുകളും പ്രവർത്തനങ്ങളും ശക്തിപ്പെടുത്തൽ",
     },
+    description: {
+      en: "To support dairy farmers by providing mineral mixtures and feed supplements to improve cattle nutrition and productivity.",
+      ml: "പശുക്കളുടെ പോഷണം മെച്ചപ്പെടുത്താനും ഉൽപ്പാദനക്ഷമത വർദ്ധിപ്പിക്കാനും ക്ഷീരകർഷകർക്ക് ധാതുലവണ മിശ്രിതങ്ങളും കാലിത്തീറ്റ സപ്ലിമെന്റുകളും നൽകുന്നത്.",
+    },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
     objective: { en: "Not specified", ml: "ലഭ്യമല്ല" },
     targetBeneficiaries: { en: "Not specified", ml: "ലഭ്യമല്ല" },
@@ -4152,6 +4361,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To conduct effective extension work on quality.",
       ml: "ഗുണനിലവാരത്തെക്കുറിച്ച് ഫലപ്രദമായ ബോധവൽക്കരണം നടത്തുക.",
+    },
+    description: {
+      en: "This programme aims to raise awareness about quality standards and practices among dairy co-operative societies and farmers, helping to improve milk production and product quality.",
+      ml: "ഈ പരിപാടിയുടെ ലക്ഷ്യം ക്ഷീര സഹകരണ സംഘങ്ങൾക്കും കർഷകർക്കും ഗുണനിലവാര മാനദണ്ഡങ്ങളും പ്രവർത്തനങ്ങളും കുറിച്ച് ബോധവൽക്കരണം ഉയർത്തുക, പാൽ ഉത്പാദനവും ഉൽപ്പന്ന ഗുണനിലവാരവും മെച്ചപ്പെടുത്തുന്നതിന് സഹായിക്കുക എന്നതാണ്.",
     },
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies & Farmers",
@@ -4236,6 +4449,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     },
     implementedBy: { en: ["Government of Kerala"], ml: ["കേരള സർക്കാർ"] },
     objective: {
+      en: "To create a platform for interaction between consumers and producers.",
+      ml: "ഉപഭോക്താക്കളും ഉത്പാദകരും തമ്മിൽ സംവദിക്കാൻ ഒരു വേദി ഒരുക്കുക.",
+    },
+    description: {
       en: "To create a platform for interaction between consumers and producers.",
       ml: "ഉപഭോക്താക്കളും ഉത്പാദകരും തമ്മിൽ സംവദിക്കാൻ ഒരു വേദി ഒരുക്കുക.",
     },
@@ -4325,6 +4542,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Financial assistance to Dairy Co-operative Societies for improving quality control activities.",
       ml: "ഗുണനിലവാര നിയന്ത്രണ പ്രവർത്തനങ്ങൾ മെച്ചപ്പെടുത്തുന്നതിന് ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം.",
     },
+    description: {
+      en: "Financial assistance to Dairy Co-operative Societies for improving quality control activities.",
+      ml: "ഗുണനിലവാര നിയന്ത്രണ പ്രവർത്തനങ്ങൾ മെച്ചപ്പെടുത്തുന്നതിന് ക്ഷീര സഹകരണ സംഘങ്ങൾക്ക് സാമ്പത്തിക സഹായം.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
@@ -4411,6 +4633,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Financial assistance for setting up advanced milk testing facilities in Dairy Co-operative Societies.",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ അത്യാധുനിക പാൽ പരിശോധനാ സൗകര്യം സ്ഥാപിക്കുന്നതിന് സാമ്പത്തിക സഹായം.",
     },
+    description: {
+      en: "Financial assistance for setting up advanced milk testing facilities in Dairy Co-operative Societies.",
+      ml: "ക്ഷീര സഹകരണ സംഘങ്ങളിൽ അത്യാധുനിക പാൽ പരിശോധനാ സൗകര്യം സ്ഥാപിക്കുന്നതിന് സാമ്പത്തിക സഹായം.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Co-operative Societies",
       ml: "ക്ഷീര സഹകരണ സംഘങ്ങൾ",
@@ -4497,6 +4724,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide financial assistance to ensure hygiene at the farm level for clean milk production.",
       ml: "ശുദ്ധമായ പാൽ ഉത്പാദനത്തിനായി ഫാം തലത്തിൽ ശുചിത്വം ഉറപ്പാക്കുന്നതിന് സാമ്പത്തിക സഹായം നൽകുക.",
     },
+    description: {
+      en: "To provide financial assistance to ensure hygiene at the farm level for clean milk production.",
+      ml: "ശുദ്ധമായ പാൽ ഉത്പാദനത്തിനായി ഫാം തലത്തിൽ ശുചിത്വം ഉറപ്പാക്കുന്നതിന് സാമ്പത്തിക സഹായം നൽകുക.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -4586,6 +4818,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To increase milk production.",
       ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
+    description: {
+      en: "To provide financial incentives to dairy farmers who supply milk and are recognized by the Grama Sabha, aiming to increase milk production.",
+      ml: "പാൽ അളക്കുന്ന, ഗ്രാമസഭ അംഗീകൃത പട്ടികയിൽ പേരുള്ള ക്ഷീരകർഷകർക്ക് സാമ്പത്തിക പ്രോത്സാഹനം നൽകുക, പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക ലക്ഷ്യമിട്ട്.",
+    },
+
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -4674,6 +4911,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To increase milk production.",
       ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
+    },
+    description: {
+      en: "An incentive scheme to support dairy farmers by providing subsidized cattle feed, aiming to enhance milk production and ensure better income for farmers.",
+      ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുകയും കർഷകർക്ക് കൂടുതൽ വരുമാനം ഉറപ്പാക്കുകയും ചെയ്യുന്നതിനായി ക്ഷീരകർഷകർക്ക് സബ്സിഡി cattle feed നൽകുന്ന ഒരു പ്രോത്സാഹന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -4764,6 +5005,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To increase milk production.",
       ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
+    description: {
+      en: "An incentive scheme to support dairy farmers by providing subsidized cattle feed, aiming to enhance milk production and ensure better income for farmers.",
+      ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുകയും കർഷകർക്ക് കൂടുതൽ വരുമാനം ഉറപ്പാക്കുകയും ചെയ്യുന്നതിനായി ക്ഷീരകർഷകർക്ക് സബ്സിഡിയോടെ കാലിത്തീറ്റ നൽകുന്ന ഒരു പ്രോത്സാഹന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -4852,6 +5097,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To increase milk production through mechanization.",
       ml: "യന്ത്രവൽക്കരണത്തിലൂടെ പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
+    },
+    description: {
+      en: "A scheme aimed at promoting mechanization in dairy farming by providing milking machines, thereby improving efficiency and increasing milk production.",
+      ml: "യന്ത്രങ്ങൾ വഴി ക്ഷീര കർഷകർക്കുള്ള കറവ പ്രവർത്തനങ്ങൾ എളുപ്പമാക്കി പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുന്നതിന് ദേഹിയായ കറവ യന്ത്രങ്ങൾ നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -4942,6 +5191,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To prevent diseases in cattle.",
       ml: "കന്നുകാലികളിലെ രോഗങ്ങൾ തടയുക.",
     },
+    description: {
+      en: "A scheme to support dairy farmers by providing essential veterinary medicines to prevent diseases in cattle and ensure better animal health.",
+      ml: "കന്നുകാലികളിലെ രോഗങ്ങൾ തടയുകയും അവയുടെ ആരോഗ്യം മെച്ചപ്പെടുത്തുകയും ചെയ്യുന്നതിനായി ആവശ്യമായ മൃഗചികിത്സാ മരുന്നുകൾ നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -5030,6 +5283,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To reduce feed cost and improve the health of cows.",
       ml: "തീറ്റച്ചെലവ് കുറയ്ക്കുകയും പശുക്കളുടെ ആരോഗ്യം മെച്ചപ്പെടുത്തുകയും ചെയ്യുക.",
+    },
+    description: {
+      en: "A scheme to support dairy farmers by providing essential veterinary medicines to prevent diseases in cattle and ensure better animal health.",
+      ml: "കന്നുകാലികളിലെ രോഗങ്ങൾ തടയുകയും അവയുടെ ആരോഗ്യത്തെ മെച്ചപ്പെടുത്തുകയും ചെയ്യുന്നതിനായി ആവശ്യമായ മൃഗചികിത്സാ മരുന്നുകൾ നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -5175,6 +5432,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide assistance for modernizing mini dairy farms.",
       ml: "മിനി ഡയറി ഫാമുകൾ ആധുനികവൽക്കരിക്കാൻ സഹായം നൽകുക.",
     },
+    description: {
+      en: "A scheme to assist dairy farmers in upgrading and modernizing their mini dairy farms with improved infrastructure and facilities for better productivity and efficiency.",
+      ml: "മിനി ഡയറി ഫാമുകളുടെ ഉത്പാദനക്ഷമതയും പ്രവർത്തനക്ഷമതയും മെച്ചപ്പെടുത്താൻ മികച്ച സൗകര്യങ്ങളോടെ ആധുനികവൽക്കരിക്കാനായി ക്ഷീരകർഷകർക്ക് സഹായം നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -5264,6 +5525,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To avoid pollution in dairy farms and increase fertility of the soil.",
       ml: "ഡയറി ഫാമുകളിലെ മലിനീകരണം ഒഴിവാക്കുകയും മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത വർദ്ധിപ്പിക്കുകയും ചെയ്യുക.",
     },
+    description: {
+      en: "A scheme to support dairy farmers by providing cow dung drying units, aimed at reducing pollution in dairy farms and improving soil fertility through better manure management.",
+      ml: "ഡയറി ഫാമുകളിലെ മലിനീകരണം കുറയ്ക്കുകയും ചാണകത്തെ ശരിയായി സംസ്കരിച്ച് മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത ഉയർത്തുകയും ചെയ്യുന്നതിനായി കർഷകർക്ക് ചാണകം ഉണക്കുന്നതിനുള്ള യൂണിറ്റുകൾ നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -5352,6 +5617,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To avoid pollution in dairy farms and increase fertility of the soil.",
       ml: "ഡയറി ഫാമുകളിലെ മലിനീകരണം ഒഴിവാക്കുകയും മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത വർദ്ധിപ്പിക്കുകയും ചെയ്യുക.",
+    },
+    description: {
+      en: "A scheme that provides assistance to dairy farmers for constructing cow dung and urine pits, aimed at reducing environmental pollution and enhancing soil fertility through proper waste management.",
+      ml: "ചാണകവും മൂത്രവും ശരിയായി സംസ്കരിച്ച് ഡയറി ഫാമുകളിലെ മലിനീകരണം കുറയ്ക്കുകയും മണ്ണിന്റെ ഫലഭൂയിഷ്ഠത വർദ്ധിപ്പിക്കുകയും ചെയ്യുന്നതിനായി ചാണകക്കുഴികളും മൂത്രക്കുഴികളും നിർമ്മിക്കാൻ ക്ഷീരകർഷകർക്ക് സഹായം നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Dairy Farmers",
@@ -5447,6 +5716,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To increase milk production through community enterprises.",
       ml: "സാമൂഹിക സംരംഭങ്ങളിലൂടെ പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുക.",
     },
+    description: {
+      en: "A scheme that promotes collective dairy farming by supporting community cattle shed enterprises and mini dairy farms, aimed at boosting milk production and creating livelihood opportunities, especially for NRIs and local farmers.",
+      ml: "പാൽ ഉത്പാദനം വർദ്ധിപ്പിക്കുകയും NRIsഉം പ്രാദേശിക ക്ഷീരകർഷകരും ഉൾപ്പെടെ livelihood സാധ്യതകൾ സൃഷ്ടിക്കുകയും ചെയ്യുന്നതിനായി കമ്മ്യൂണിറ്റി തൊഴുത്ത് സംരംഭങ്ങൾക്കും മിനി ഡയറി ഫാമുകൾക്കും പിന്തുണ നൽകുന്ന ഒരു സംരംഭമാണ് ഈ പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers, NRIs",
       ml: "ക്ഷീരകർഷകർ, പ്രവാസികൾ",
@@ -5535,6 +5808,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To streamline milk collection and create employment.",
       ml: "പാൽ സംഭരണം കാര്യക്ഷമമാക്കുകയും തൊഴിലവസരങ്ങൾ സൃഷ്ടിക്കുകയും ചെയ്യുക.",
+    },
+    description: {
+      en: "A scheme to facilitate doorstep milk collection and marketing, aiming to improve efficiency, ensure fair prices, and generate employment opportunities for women.",
+      ml: "വീട്ടുപടിക്കൽ പാൽ ശേഖരണവും വിപണനവും എളുപ്പമാക്കുകയും കൃത്യത വർദ്ധിപ്പിക്കുകയും ന്യായമായ വില ഉറപ്പാക്കുകയും വനിതകൾക്ക് തൊഴിൽ അവസരങ്ങൾ സൃഷ്ടിക്കുകയും ചെയ്യുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Women",
@@ -5625,6 +5902,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To increase milk procurement in Milk Societies.",
       ml: "ക്ഷീര സംഘങ്ങളിലെ പാൽ സംഭരണം വർദ്ധിപ്പിക്കുക.",
     },
+    description: {
+      en: "A scheme that provides financial assistance through revolving funds to milk societies to increase milk procurement and support dairy farmers effectively.",
+      ml: "ക്ഷീര സംഘങ്ങളുടെ പാൽ സംഭരണം വർദ്ധിപ്പിക്കുകയും ക്ഷീരകർഷകരെ ഫലപ്രദമായി സഹായിക്കുകയും ചെയ്യുന്നതിനായി റിവോൾവിംഗ് ഫണ്ടുകളിലൂടെ സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Dairy Farmers",
       ml: "ക്ഷീരകർഷകർ",
@@ -5658,6 +5939,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "70% funding for LSGI projects - Community Sanitary Complexes, Solid/Liquid Waste Management, etc.",
       ml: "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളുടെ പദ്ധതികൾക്ക് (കമ്മ്യൂണിറ്റി ടോയ്‌ലറ്റുകൾ, ഖര/ദ്രവ മാലിന്യ സംസ്കരണം മുതലായവ) 70% ധനസഹായം.",
+    },
+    description: {
+      en: "A scheme providing 70% funding support for Local Self-Government Institution projects such as community sanitary complexes and solid/liquid waste management to improve sanitation and hygiene at the community level.",
+      ml: "കമ്മ്യൂണിറ്റി ടോയ്‌ലറ്റുകളും ഖര/ദ്രവ മാലിന്യ സംസ്കരണവും പോലുള്ള തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങളുടെ പദ്ധതികൾക്ക് 70% ധനസഹായം നൽകുന്ന പദ്ധതി, സമൂഹ തലത്തിൽ ശുചിത്വവും ഹൈജീനും മെച്ചപ്പെടുത്തുന്നതിനായി.",
     },
     targetBeneficiaries: {
       en: "All LSGIs (community level)",
@@ -5702,6 +5987,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide individual household latrines.",
       ml: "വ്യക്തിഗത വീടുകളിൽ ശൗചാലയങ്ങൾ നിർമ്മിക്കുക.",
     },
+    description: {
+      en: "A scheme aimed at providing individual household latrines to ensure sanitation and improve health conditions, especially for households without existing latrine facilities.",
+      ml: "ശൗചാലയ സൗകര്യമില്ലാത്ത കുടുംബങ്ങൾക്ക് വ്യക്തിഗത ഗാർഹിക ശൗചാലയങ്ങൾ നൽകുന്നതിനുള്ള പദ്ധതിയാണ് ഇത്, ശുചിത്വവും ആരോഗ്യനിലവാരവും മെച്ചപ്പെടുത്താൻ ലക്ഷ്യമിടുന്നു.",
+    },
     targetBeneficiaries: {
       en: "Households without latrine provisions",
       ml: "ശൗചാലയ സൗകര്യമില്ലാത്ത കുടുംബങ്ങൾ",
@@ -5744,6 +6033,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Soil Conservation Activities",
       ml: "മണ്ണ് സംരക്ഷണ പ്രവർത്തനങ്ങൾ",
+    },
+    description: {
+      en: "This scheme implements soil conservation measures to improve land productivity and prevent degradation, benefiting landholders within the project boundaries.",
+      ml: "മണ്ണ് സംരക്ഷണ നടപടികൾ നടപ്പിലാക്കി ഭൂമിയുടെ ഉത്പാദകത്വം മെച്ചപ്പെടുത്താനും മണ്ണിന്റെ ക്ഷയം തടയാനുമുള്ള പദ്ധതി, പദ്ധതി പരിധിയിൽ ഉള്ള ഭൂമിയുടമകൾക്ക് ഗുണം ചെയ്യുന്നു.",
     },
     targetBeneficiaries: {
       en: "Beneficiaries holding land under the scheme area",
@@ -5788,6 +6081,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide financial assistance to Micro, Small, and Medium Enterprises engaged in manufacturing activities in the State.",
       ml: "സംസ്ഥാനത്ത് ഉത്പാദന മേഖലയിൽ പ്രവർത്തിക്കുന്ന സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
+    description: {
+      en: "A scheme to provide financial assistance and support to Micro, Small, and Medium Enterprises in the manufacturing sector to promote entrepreneurship and industrial growth in the state.",
+      ml: "സംസ്ഥാനത്ത് സംരംഭകത്വവും വ്യവസായ വികസനവും പ്രോത്സാഹിപ്പിക്കാൻ ഉത്പാദന മേഖലയിൽ പ്രവർത്തിക്കുന്ന സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾക്ക് സാമ്പത്തിക സഹായവും പിന്തുണയും നൽകുന്ന പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Entrepreneurs in the Manufacturing Sector",
       ml: "ഉത്പാദന മേഖലയിലെ സംരംഭകർ",
@@ -5830,6 +6127,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To generate employment opportunities in rural as well as urban areas by setting up new self-employment ventures.",
       ml: "പുതിയ സ്വയംതൊഴിൽ സംരംഭങ്ങൾ സ്ഥാപിച്ച് രാജ്യത്തെ ഗ്രാമ-നഗര പ്രദേശങ്ങളിൽ തൊഴിലവസരങ്ങൾ സൃഷ്ടിക്കുക.",
+    },
+    description: {
+      en: "A scheme aimed at creating employment by supporting the establishment of new self-employment ventures and micro-enterprises in both rural and urban areas, boosting local economies.",
+      ml: "ഗ്രാമീണവും നഗര പ്രദേശങ്ങളുമായി പുതിയ സ്വയംതൊഴിൽ സംരംഭങ്ങളും മൈക്രോ സംരംഭങ്ങളും സ്ഥാപിക്കുന്നതിന് പിന്തുണ നൽകി തൊഴിലവസരങ്ങൾ സൃഷ്ടിക്കുന്നതിന് ലക്ഷ്യമിട്ട പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "All new viable micro-enterprises, including Village Industries projects, except those in the negative list.",
@@ -5874,6 +6175,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide financial assistance to Nano units in the State, engaged in manufacturing, job work, and service activities with any type of value addition.",
       ml: "ഉത്പാദനം, ജോബ് വർക്ക്, മൂല്യവർദ്ധിത സേവനങ്ങൾ എന്നിവയിൽ ഏർപ്പെട്ടിരിക്കുന്ന സംസ്ഥാനത്തെ നാനോ യൂണിറ്റുകൾക്ക് സാമ്പത്തിക സഹായം നൽകുക.",
     },
+
+    description: {
+      en: "A scheme that provides financial assistance in the form of margin money grants to nano units engaged in manufacturing, job work, and service activities within the state, supporting value addition and business growth.",
+      ml: "സംസ്ഥാനത്ത് ഉത്പാദനം, ജോബ് വർക്ക്, മൂല്യവർദ്ധന സേവനങ്ങളിൽ ഏർപ്പെട്ടിരിക്കുന്ന നാനോ യൂണിറ്റുകൾക്ക് മാർജിൻ മണി ഗ്രാന്റ് എന്ന സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതി, മൂല്യവർദ്ധനയ്ക്കും ബിസിനസ്സ് വളർച്ചയ്ക്കും പിന്തുണ നൽകുന്നു.",
+    },
     targetBeneficiaries: {
       en: "Nano units in the State engaged in manufacturing, job work, and service activities with any type of value addition.",
       ml: "ഉത്പാദനം, ജോബ് വർക്ക്, മൂല്യവർദ്ധിത സേവനങ്ങൾ എന്നിവയിൽ ഏർപ്പെട്ടിരിക്കുന്ന സംസ്ഥാനത്തെ നാനോ യൂണിറ്റുകൾ.",
@@ -5916,6 +6222,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To encourage entrepreneurial activity in every household and to provide interest subvention for loans up to ₹10 lakh.",
       ml: "ഓരോ കുടുംബത്തിലും സംരംഭകത്വം പ്രോത്സാഹിപ്പിക്കുക, ₹10 ലക്ഷം രൂപ വരെയുള്ള വായ്പകൾക്ക് പലിശയിളവ് നൽകുക.",
+    },
+    description: {
+      en: "A scheme to promote entrepreneurship within every family by providing financial support including interest subvention on loans up to ₹10 lakh for new micro, small, and medium enterprises across manufacturing, service, and trading sectors.",
+      ml: "ഓരോ കുടുംബത്തിലും സംരംഭകത്വം പ്രോത്സാഹിപ്പിക്കുന്നതിനായി, ഉത്പാദനം, സേവന, വ്യാപാര മേഖലയിലെ പുതിയ സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾക്ക് ₹10 ലക്ഷം വരെയുള്ള വായ്പകളിൽ പലിശയിളവ് ഉൾപ്പെടെ സാമ്പത്തിക സഹായം നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "All new micro, small, and medium enterprises in manufacturing, service, and trading activities which have availed a term loan and/or working capital loan.",
@@ -5965,6 +6275,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Enhance the competitiveness of existing individual micro-enterprises in the unorganized food processing industry and promote formalization of the sector.",
       ml: "അസംഘടിത ഭക്ഷ്യ സംസ്കരണ മേഖലയിലെ നിലവിലുള്ള മൈക്രോ സംരംഭങ്ങളുടെ മത്സരക്ഷമത വർദ്ധിപ്പിക്കുകയും ഈ മേഖലയെ ഔപചാരികമാക്കുകയും ചെയ്യുക.",
     },
+    description: {
+      en: "A scheme to enhance the competitiveness of individual micro food processing enterprises in the unorganized sector by promoting formalization, capacity building, and financial support.",
+      ml: "അസംഘടിത മേഖലയിൽ ഉള്ള വ്യക്തിഗത മൈക്രോ ഭക്ഷ്യസംസ്കരണ സംരംഭങ്ങളുടെ മത്സരം മെച്ചപ്പെടുത്തുന്നതിനും ഔപചാരികമാക്കുന്നതിനും ശേഷി വികസനത്തിനും സാമ്പത്തിക സഹായത്തിനും ലക്ഷ്യമിട്ട പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Individual micro food processing units, FPOs, SHGs, and Producers Cooperatives.",
       ml: "വ്യക്തിഗത മൈക്രോ ഭക്ഷ്യ സംസ്കരണ യൂണിറ്റുകൾ, FPO-കൾ, സ്വയം സഹായ സംഘങ്ങൾ, ഉത്പാദക സഹകരണ സംഘങ്ങൾ.",
@@ -6007,6 +6321,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Providing financial protection to MSMEs against unforeseen risks that can have a detrimental impact on their businesses.",
       ml: "അപ്രതീക്ഷിത നഷ്ടങ്ങളിൽ നിന്ന് സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾക്ക് (MSME) സാമ്പത്തിക സംരക്ഷണം നൽകുക.",
+    },
+    description: {
+      en: "A scheme designed to provide MSMEs with financial protection against unexpected risks and losses, ensuring business continuity and stability.",
+      ml: "അപ്രതീക്ഷിത നഷ്ടങ്ങളെയും അപകടങ്ങളെയും നേരിടാൻ MSMEകൾക്ക് സാമ്പത്തിക സംരക്ഷണം നൽകുന്നതിനും ബിസിനസ്സ് സ്ഥിരത ഉറപ്പാക്കുന്നതിനുമുള്ള പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "MSMEs",
@@ -6051,6 +6369,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To uplift 1000 Micro, Small and Medium Enterprises (MSMEs) in the State into businesses with a ₹100 crore turnover within four years.",
       ml: "സംസ്ഥാനത്തെ 1000 സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങളെ (MSME) നാല് വർഷത്തിനുള്ളിൽ ₹100 കോടി വിറ്റുവരവുള്ള ബിസിനസ്സുകളാക്കി ഉയർത്തുക.",
     },
+    description: {
+      en: "An ambitious initiative to scale up 1000 high-potential MSMEs in Kerala into large enterprises by offering structured support in finance, technology, mentorship, and market access over a four-year period.",
+      ml: "വിതരണ സഹായം, സാങ്കേതിക വിദ്യ, മാർക്കറ്റ് ആക്സസ്, ഉപദേശകർ എന്നിവയിലൂടെ കേരളത്തിലെ 1000 ഉയർന്ന സാധ്യതയുള്ള എം.എസ്.എം.ഇ. സംരംഭങ്ങളെ നാലുവർഷത്തിനുള്ളിൽ വലിയ സംരംഭങ്ങളാക്കാൻ ലക്ഷ്യമിടുന്ന ആഗ്രഹാഭിലാഷിയുള്ള ഒരു പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Potential Micro, Small and Medium Enterprises (MSMEs) in the State.",
       ml: "സംസ്ഥാനത്തെ വളർച്ചാ സാധ്യതയുള്ള സൂക്ഷ്മ, ചെറുകിട, ഇടത്തരം സംരംഭങ്ങൾ.",
@@ -6093,6 +6415,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "One-time support for handicraft artisans who have invested in plant and machinery for a running handicraft unit.",
       ml: "പ്രവർത്തിക്കുന്ന കരകൗശല യൂണിറ്റിനായി യന്ത്രസാമഗ്രികളിൽ നിക്ഷേപം നടത്തിയ കരകൗശല തൊഴിലാളികൾക്ക് ഒറ്റത്തവണ സഹായം നൽകുക.",
+    },
+    description: {
+      en: "A one-time financial assistance scheme for handicraft artisans who have invested in machinery and equipment for operating a functional handicraft unit, aimed at sustaining traditional crafts and livelihoods.",
+      ml: "പ്രവർത്തിക്കുന്ന കരകൗശല യൂണിറ്റിനായി യന്ത്രസാമഗ്രികൾ വാങ്ങിയ കരകൗശല തൊഴിലാളികൾക്ക് ഏകോപിത ജീവിതം നിലനിർത്താനും പരമ്പരാഗത കരകൗശലങ്ങൾ സംരക്ഷിക്കാനുമായി ഒറ്റത്തവണ ധനസഹായം നൽകുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Handicraft artisans",
@@ -6137,6 +6463,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "Compensation for victims affected by wildlife attacks.",
       ml: "വന്യജീവി ആക്രമണത്തിന് ഇരയായവർക്ക് നഷ്ടപരിഹാരം നൽകുക.",
     },
+    description: {
+      en: "A compensation scheme by the Government of Kerala for individuals affected by wildlife attacks, including cases of human injury or death, livestock loss, and crop damage, with assistance based on verified documentation.",
+      ml: "മാനുഷിക പരിക്കുകൾ, മരണങ്ങൾ, കന്നുകാലി നഷ്ടം, വിളനാശം എന്നിവ ഉൾപ്പെടെ വന്യജീവി ആക്രമണങ്ങളിൽ നിന്ന് ബാധിക്കപ്പെട്ടവർക്ക് സാധുവായ രേഖകൾ അടിസ്ഥാനമാക്കി സഹായം നൽകുന്ന കേരള സർക്കാർ നഷ്ടപരിഹാര പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Victims affected by wildlife attacks",
       ml: "വന്യജീവി ആക്രമണത്തിന് ഇരയായവർ",
@@ -6179,6 +6509,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "To provide assistance for self-employment to vulnerable women.",
       ml: "പിന്നാക്കം നിൽക്കുന്ന വനിതകൾക്ക് സ്വയംതൊഴിലിന് സഹായം നൽകുക.",
+    },
+    description: {
+      en: "A self-employment scheme by the Government of Kerala aimed at empowering vulnerable women such as widows, deserted women, unmarried mothers, and women with disabilities by providing financial assistance to start their own ventures.",
+      ml: "വിധവകൾ, ഉപേക്ഷിക്കപ്പെട്ട സ്ത്രീകൾ, അവിവാഹിതരായ അമ്മമാർ, ഭിന്നശേഷിയുള്ള വനിതകൾ എന്നിവരെ തങ്ങൾക്കേതായ സംരംഭങ്ങൾ ആരംഭിക്കാൻ സാമ്പത്തിക സഹായം നൽകി ശാക്തീകരിക്കുന്നതിനായുള്ള കേരള സർക്കാരിന്റെ സ്വയംതൊഴിൽ പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Unemployed widows, deserted women, unmarried mothers, and disabled women aged 18-55.",
@@ -6223,6 +6557,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide assistance for self-employment to persons with disabilities.",
       ml: "ഭിന്നശേഷിക്കാർക്ക് സ്വയംതൊഴിലിന് സഹായം നൽകുക.",
     },
+    description: {
+      en: "A self-employment support scheme by the Government of Kerala that offers financial assistance to persons with disabilities aged 21–55, helping them start and sustain income-generating ventures.",
+      ml: "21-നും 55-നും ഇടയിൽ പ്രായമുള്ള ഭിന്നശേഷിക്കാർക്ക് തങ്ങൾക്കേതായ വരുമാനമുണ്ടാക്കുന്ന സംരംഭങ്ങൾ ആരംഭിക്കാനും നിലനിർത്താനുമുള്ള സാമ്പത്തിക സഹായം നൽകുന്ന കേരള സർക്കാരിന്റെ സ്വയംതൊഴിൽ സഹായ പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Persons with disabilities aged 21-55 registered in an Employment Exchange.",
       ml: "21-നും 55-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്ത ഭിന്നശേഷിക്കാർ.",
@@ -6266,6 +6604,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
       en: "To provide loans for self-employment.",
       ml: "സ്വയംതൊഴിലിനായി വായ്പ നൽകുക.",
     },
+
+    description: {
+      en: "A self-employment scheme by the Government of Kerala that offers loans to individuals aged 21–50 who are registered with the Employment Exchange, to help them start viable income-generating ventures.",
+      ml: "21-നും 50-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ രജിസ്റ്റർ ചെയ്ത വ്യക്തികൾക്ക് തങ്ങൾക്കേതായ വരുമാനമുണ്ടാക്കുന്ന സംരംഭങ്ങൾ ആരംഭിക്കാൻ സഹായിക്കുന്നതിനായി വായ്പ നൽകുന്ന കേരള സർക്കാരിന്റെ സ്വയംതൊഴിൽ പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Individuals aged 21-50 with employment registration.",
       ml: "21-നും 50-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് രജിസ്ട്രേഷനുള്ള വ്യക്തികൾ.",
@@ -6303,6 +6646,10 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Self-employment scheme for groups.",
       ml: "സംഘങ്ങൾക്കായുള്ള സ്വയംതൊഴിൽ പദ്ധതി.",
+    },
+    description: {
+      en: "A group-based self-employment scheme by the Government of Kerala, aimed at helping registered job-seekers aged 21–45 to establish multipurpose service centres by forming groups of two or more individuals.",
+      ml: "21-നും 45-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ രജിസ്റ്റർ ചെയ്ത രണ്ട് അല്ലെങ്കിൽ അതിലധികം അംഗങ്ങളുള്ള സംഘങ്ങൾ രൂപീകരിച്ച് മൾട്ടിപർപ്പസ് സേവന കേന്ദ്രങ്ങൾ ആരംഭിക്കാനായി സഹായിക്കുന്ന സർക്കാർ സ്വയംതൊഴിൽ പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Groups of 2 or more individuals aged 21-45 with employment registration.",
@@ -6346,6 +6693,11 @@ Email - dd-idk.dairy@kerala.gov.in`,
     objective: {
       en: "Self-employment scheme for senior citizens.",
       ml: "മുതിർന്ന പൗരന്മാർക്കായുള്ള സ്വയംതൊഴിൽ പദ്ധതി.",
+    },
+
+    description: {
+      en: "A self-employment scheme by the Government of Kerala aimed at empowering senior citizens aged 50–65 by providing financial support to start income-generating ventures, subject to employment registration.",
+      ml: "50-നും 65-നും ഇടയിൽ പ്രായമുള്ള, എംപ്ലോയ്‌മെന്റ് എക്സ്ചേഞ്ചിൽ പേര് രജിസ്റ്റർ ചെയ്ത മുതിർന്ന പൗരന്മാർക്ക് വരുമാനമുണ്ടാക്കുന്ന സംരംഭങ്ങൾ ആരംഭിക്കാൻ ധനസഹായം നൽകുന്ന സ്വയംതൊഴിൽ പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Individuals aged 50-65 with employment registration.",
@@ -6392,6 +6744,10 @@ export const nationalHealthMission = [
       en: "To reduce Maternal and Infant Mortality rates.",
       ml: "മാതൃ-ശിശു മരണനിരക്ക് കുറയ്ക്കുക.",
     },
+    description: {
+      en: "Janani Suraksha Yojana (JSY) is a safe motherhood intervention under the National Health Mission. It aims to reduce maternal and infant mortality by encouraging institutional deliveries among pregnant women, especially those from below poverty line families. Eligible women delivering in government hospitals are provided financial assistance of ₹700.",
+      ml: "ജനനി സുരക്ഷാ യോജന (JSY) ആണ് ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായി നടപ്പിലാക്കിയ മാതൃത്വ സുരക്ഷാ പദ്ധതി. പ്രസവത്തിനായി ഗർഭിണികൾ, പ്രത്യേകിച്ച് പാവപ്പെട്ട കുടുംബങ്ങളിലുള്ളവ, സർക്കാർ ആശുപത്രികളിൽ പ്രസവിക്കാൻ പ്രോത്സാഹിപ്പിക്കുകയും മാതൃ-ശിശു മരണനിരക്ക് കുറയ്ക്കുകയും ചെയ്യുന്നു. സർക്കാർ ആശുപത്രികളിൽ പ്രസവിക്കുന്ന അർഹതയുള്ള ഗർഭിണികൾക്ക് ₹700 ധനസഹായം ലഭിക്കും.",
+    },
     targetBeneficiaries: {
       en: "Pregnant Women",
       ml: "ഗർഭിണികൾ",
@@ -6434,6 +6790,10 @@ export const nationalHealthMission = [
     objective: {
       en: "To provide transport facilities for pregnant women.",
       ml: "ഗർഭിണികൾക്ക് യാത്രാസൗകര്യം ഒരുക്കുക.",
+    },
+    description: {
+      en: "Mathruyaanam is a transportation assistance scheme under the National Health Mission aimed at ensuring safe and timely access to government hospitals for pregnant women. The scheme provides free vehicle support to transport expectant mothers to and from the hospital for their delivery, addressing transportation barriers that could delay institutional deliveries.",
+      ml: "മാതൃയാനം ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായി നടപ്പിലാക്കുന്ന ഗർഭിണികൾക്കുള്ള സൗജന്യ ഗതാഗത സഹായ പദ്ധതിയാണ്. സർക്കാർ ആശുപത്രികളിലെ പ്രസവത്തിന് പോകുന്നതിന് ഗർഭിണികൾക്ക് സൗജന്യ വാഹന സൗകര്യം ലഭ്യമാക്കുകയാണ് പദ്ധതിയുടെ ലക്ഷ്യം. യാത്രാ സൗകര്യമില്ലാത്തത് മൂലം ആശുപത്രിയിലെത്തി സമയത്ത് പ്രസവിക്കാൻ കഴിയാത്ത പ്രശ്നങ്ങൾ ഇതിലൂടെ പരിഹരിക്കുകയാണ് ലക്ഷ്യം.",
     },
     targetBeneficiaries: {
       en: "Pregnant Women",
@@ -6478,6 +6838,10 @@ export const nationalHealthMission = [
       en: "To reduce Maternal and Infant Mortality rates by providing free services.",
       ml: "സൗജന്യ സേവനങ്ങൾ നൽകി മാതൃ-ശിശു മരണനിരക്ക് കുറയ്ക്കുക.",
     },
+    description: {
+      en: "JSSK is a flagship initiative under the National Health Mission that aims to eliminate out-of-pocket expenses for pregnant women and newborns. The scheme provides free delivery services including Caesarean section (C-section), free drugs, diagnostics, blood transfusion, and diet during hospital stay. Newborns receive free treatment up to 1 year of age, ensuring comprehensive maternal and child care in government health facilities.",
+      ml: "ജനനി ശിശു സുരക്ഷാ കാര്യക്രം (JSSK)യാണ് ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായി നടപ്പിലാക്കുന്ന ഒരു പ്രധാന പദ്ധതി. ഗർഭിണികൾക്കും നവജാതശിശുക്കൾക്കും ചികിത്സക്കായി ചെലവഴിക്കേണ്ടി വരുന്ന ആധികാരിക ചെലവുകൾ ഒഴിവാക്കുകയാണ് പദ്ധതിയുടെ ലക്ഷ്യം. സിസേറിയൻ ഉൾപ്പെടെയുള്ള സൗജന്യ പ്രസവം, സൗജന്യ മരുന്ന്, പരിശോധന, രക്തസമർപ്പണം, ആശുപത്രിതാമസകാലത്തെ ഭക്ഷണസൗകര്യം എന്നിവയിലൂടെ മാതാവിനെയും ശിശുവിനെയും സംരക്ഷിക്കുന്നു. നവജാതശിശുക്കൾക്ക് ഒരു വയസ്സുവരെ സൗജന്യ ചികിത്സ ലഭ്യമാണ്.",
+    },
     targetBeneficiaries: {
       en: "Pregnant Women and Newborns",
       ml: "ഗർഭിണികളും നവജാതശിശുക്കളും",
@@ -6520,6 +6884,10 @@ export const nationalHealthMission = [
     objective: {
       en: "To provide free medical assistance and early intervention for children.",
       ml: "കുട്ടികൾക്ക് സൗജന്യ ചികിത്സയും രോഗങ്ങൾ നേരത്തെ കണ്ടെത്താനുള്ള സഹായവും നൽകുക.",
+    },
+    description: {
+      en: "RBSK is a child health program under the National Health Mission aimed at early detection and intervention for children from birth to 18 years. The scheme focuses on identifying 4Ds – Defects at birth, Diseases, Deficiencies, and Developmental delays including disabilities. Screening is conducted through schools, Anganwadis, and health facilities, ensuring free treatment and referral services for detected health conditions.",
+      ml: "രാഷ്ട്രീയ ബാൽ സ്വാസ്ഥ്യ കാര്യക്രം (RBSK) കുട്ടികളുടെ ആരോഗ്യ സംരക്ഷണത്തിന് ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായി നടപ്പിലാക്കുന്ന ഒരു പദ്ധതി ആണ്. ജനനത്തോടുകൂടി 18 വയസ്സുവരെ ഉള്ള കുട്ടികളിലെ ജനനദോഷങ്ങൾ, രോഗങ്ങൾ, പോഷകക്കുറവ്, വളർച്ചാ കാലതാമസങ്ങൾ ഉൾപ്പെടെയുള്ള 4Dസ് തിരിച്ചറിഞ്ഞ് ആവശ്യമായ ചികിത്സ നൽകുകയാണ് പദ്ധതിയുടെ ലക്ഷ്യം. സ്കൂളുകളും ആംഗൻവാടികളുമുപയോഗിച്ചും ആരോഗ്യ കേന്ദ്രങ്ങളിലൂടെയും പരിശോധന നടത്തുകയും കണ്ടെത്തിയ പ്രശ്നങ്ങൾക്ക് സൗജന്യ ചികിത്സയും റഫറൽ സേവനങ്ങളും ഉറപ്പാക്കുകയും ചെയ്യുന്നു.",
     },
     targetBeneficiaries: {
       en: "Children under 18 years.",
@@ -6564,6 +6932,10 @@ export const nationalHealthMission = [
       en: "To provide special services for children with developmental delays and disabilities.",
       ml: "വളർച്ചാപരമായ കാലതാമസങ്ങളും വെല്ലുവിളികളും നേരിടുന്ന കുട്ടികൾക്ക് പ്രത്യേക സേവനങ്ങൾ നൽകുക.",
     },
+    description: {
+      en: "District Early Intervention Centers (DEIC) are specialized facilities established under the Rashtriya Bal Swasthya Karyakram (RBSK) to provide comprehensive care for children identified with developmental delays, disabilities, or congenital conditions. DEICs offer a range of services including physiotherapy, speech therapy, occupational therapy, psychological counseling, and medical interventions. These centers function as referral hubs, ensuring early diagnosis and timely interventions to enhance the overall development of children.",
+      ml: "ജില്ലാ ഏർളി ഇന്റർവെൻഷൻ സെന്ററുകൾ (DEIC) ഭാരത സർക്കാർ റാഷ്‌ട്രീയ ബാല സ്വാസ്ഥ്യ കാര്യക്രമിന്റെ ഭാഗമായി വികസന വൈകല്യങ്ങളും ഭിന്നശേഷിയും ഉണ്ടാകാവുന്ന കുട്ടികൾക്ക് സമഗ്ര സേവനങ്ങൾ നൽകുന്നതിന് സ്ഥാപിച്ചിരിക്കുന്ന പ്രത്യേക കേന്ദ്രങ്ങളാണ്. ഫിസിയോതെറാപ്പി, സ്‌പീച്ച് തെറാപ്പി, ഓക്ക്യുപേഷണൽ തെറാപ്പി, മനോപരിശോധന, മെഡിക്കൽ ഇന്റർവെൻഷൻ എന്നിവ DEIC മുഖേന സൗജന്യമായി നൽകുന്നു. കുട്ടികളുടെ വളർച്ചയും വികസനവും ഉത്തേജിപ്പിക്കുന്നതിന് ആവശ്യമായ നേരിയ തിരിച്ചറിവുകളും ഇടപെടലുകളും DEIC കേന്ദ്രങ്ങൾ വഴി ഉറപ്പാക്കുന്നു.",
+    },
     targetBeneficiaries: {
       en: "Children under 18 years.",
       ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ.",
@@ -6606,6 +6978,10 @@ export const nationalHealthMission = [
     objective: {
       en: "To provide free treatment for congenital heart diseases in children.",
       ml: "കുട്ടികളിലെ ജന്മനായുള്ള ഹൃദ്രോഗങ്ങൾക്ക് സൗജന്യ ചികിത്സ നൽകുക.",
+    },
+    description: {
+      en: "Hridyam is a state-level initiative by the Government of Kerala to provide comprehensive care and free treatment for children diagnosed with congenital heart diseases (CHD). The program facilitates early detection, referral, and surgical interventions through empanelled hospitals. Hridyam ensures that children from economically weaker sections receive quality cardiac care, including surgeries, without financial burden.",
+      ml: "ജന്മനായുള്ള ഹൃദ്രോഗമുള്ള കുട്ടികൾക്ക് സൗജന്യ ചികിത്സ നൽകുന്നതിനുള്ള കേരള സർക്കാരിന്റെ സംസ്ഥാനതല പദ്ധതി ആണ് ഹൃദ്യം. രോഗനിർണ്ണയം മുതൽ ശസ്ത്രക്രിയയിലേക്കുള്ള റഫറൽ സംവിധാനവും സഹകരണ ആശുപത്രികളിലൂടെ ശസ്ത്രക്രിയയുമാണ് പദ്ധതിയുടെ ഭാഗമാക്കുന്നത്. സാമ്പത്തികമായി പിന്നാക്കം നിൽക്കുന്ന കുടുംബങ്ങളിൽ നിന്നുള്ള കുട്ടികൾക്ക് ചെലവുകൂടിയ ഹൃദ്രോഗ ശസ്ത്രക്രിയകൾ സൗജന്യമായി ലഭ്യമാക്കുകയാണ് പദ്ധതിയുടെ പ്രധാന ലക്ഷ്യം.",
     },
     targetBeneficiaries: {
       en: "Children under 18 years.",
@@ -6650,6 +7026,10 @@ export const nationalHealthMission = [
       en: "To provide special services for differently-abled children in their locality.",
       ml: "ഭിന്നശേഷിക്കാരായ കുട്ടികൾക്ക് അവരുടെ താമസസ്ഥലത്ത് പ്രത്യേക സേവനങ്ങൾ നൽകുക.",
     },
+    description: {
+      en: "Mobile Intervention Units are specialized outreach services under the National Health Mission aimed at delivering rehabilitation and therapy services to differently-abled children in remote and underserved areas. These mobile units, staffed with trained professionals like physiotherapists, speech therapists, and special educators, visit communities and schools to provide on-site early intervention therapies, reducing the need for frequent hospital visits.",
+      ml: "മൊബൈൽ ഇന്റർവെൻഷൻ യൂണിറ്റുകൾ ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായി ഭിന്നശേഷിക്കാരായ കുട്ടികൾക്ക് അവരുടെ താമസസ്ഥലത്ത് നേരിട്ട് ചികിത്സയും പുനരധിവാസ സേവനങ്ങളും എത്തിക്കുന്ന പ്രത്യേക സർവീസുകളാണ്. ഫിസിയോതെറാപ്പിസ്റ്റുകൾ, സ്പീച്ച് തെറാപ്പിസ്റ്റുകൾ, സ്പെഷ്യൽ എഡുക്കേറ്റർമാർ എന്നിവ ഉൾപ്പെടുന്ന ടീമുകൾ സമൂഹങ്ങളിലും സ്കൂളുകളിലുമെത്തി കുട്ടികൾക്ക് ആവശ്യമായ തെറാപ്പികൾ നൽകുന്നു. ഇതുവഴി കുട്ടികൾക്ക് ആശുപത്രികളിലേക്ക് ആവർത്തിച്ചെത്തേണ്ടത് കുറയുകയും അവർക്കുള്ള ഇടപെടലുകൾ നേരത്തേ ആരംഭിക്കുവാൻ സഹായിക്കുകയും ചെയ്യുന്നു.",
+    },
     targetBeneficiaries: {
       en: "Children under 18 years.",
       ml: "18 വയസ്സിന് താഴെയുള്ള കുട്ടികൾ.",
@@ -6692,6 +7072,10 @@ export const nationalHealthMission = [
     objective: {
       en: "To provide free medical screening for newborn babies.",
       ml: "നവജാതശിശുക്കൾക്ക് സൗജന്യ ആരോഗ്യ പരിശോധന നടത്തുക.",
+    },
+    description: {
+      en: "Shalabhavam Screening is a newborn health initiative under the National Health Mission aimed at early detection of congenital anomalies and health conditions in newborn babies. The screening is conducted at government delivery points to identify birth defects, metabolic disorders, hearing impairments, and other developmental issues at an early stage. Early detection through Shalabhavam enables timely medical interventions and improves long-term child health outcomes.",
+      ml: "ശലഭം സ്ക്രീനിംഗ് എന്നത് നവജാതശിശുക്കളിലെ ജനന ദോഷങ്ങളും മറ്റ് ആരോഗ്യപ്രശ്നങ്ങളും ആദ്യം തിരിച്ചറിയുന്നതിനുള്ള ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായി നടപ്പിലാക്കുന്ന ആരോഗ്യ പരിശോധനാ പദ്ധതിയാണ്. സർക്കാർ ആശുപത്രികളിൽ പ്രസവിക്കുന്ന കുഞ്ഞുങ്ങളെ ലക്ഷ്യമാക്കി ഈ സ്ക്രീനിംഗ് നടത്തപ്പെടുന്നു. ജനനദോഷങ്ങൾ, മെറ്റബോളിക് ഡിസോർഡുകൾ, കേൾവി വൈകല്യം, വികസന വൈകല്യങ്ങൾ എന്നിവ മനസ്സിലാക്കുന്നതിനുള്ള ഈ പരിശോധന മുഖേന കുട്ടികൾക്ക് ആവശ്യമായ അടിയന്തര ചികിത്സകൾ ഉറപ്പാക്കുകയും ആരോഗ്യ പ്രശ്നങ്ങൾക്കുള്ള ദീർഘകാല പരിഹാര മാർഗങ്ങൾ ഒരുക്കുകയും ചെയ്യുന്നു.",
     },
     targetBeneficiaries: {
       en: "Newborn babies",
@@ -6736,6 +7120,10 @@ export const nationalHealthMission = [
       en: "To provide free treatment for Hemophilia patients.",
       ml: "ഹീമോഫീലിയ രോഗികൾക്ക് സൗജന്യ ചികിത്സ നൽകുക.",
     },
+    description: {
+      en: "Aashadhara is a comprehensive healthcare program designed to support individuals suffering from Hemophilia by providing free medical care, including Factor Replacement Therapy. Implemented under the National Health Mission, this scheme aims to alleviate the financial burden of expensive Hemophilia treatments and ensures continuous medical support through District Hemophilia Care Centers. The program also emphasizes awareness creation and early diagnosis.",
+      ml: "ഹീമോഫീലിയ ബാധിച്ച വ്യക്തികൾക്ക് സൗജന്യ ചികിത്സയും ഫാക്ടർ റീപ്ലേസ്മെന്റ് തെറാപ്പിയുമടക്കമുള്ള സമഗ്ര ആരോഗ്യസേവനങ്ങൾ നൽകുന്നതിനുള്ള പദ്ധതിയാണ് ആശാധാര. ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായുള്ള ഈ പദ്ധതി, ചിലവേറിയ ഹീമോഫീലിയ ചികിത്സകളുടെ സാമ്പത്തിക ഭാരം കുറയ്ക്കുകയും ജില്ലാതല ഹീമോഫീലിയ കെയർ സെന്ററുകൾ മുഖേന തുടർച്ചയായ ചികിത്സ ഉറപ്പാക്കുകയും ചെയ്യുന്നു. കൂടാതെ, രോഗബോധവും സമയബന്ധിതമായ രോഗനിർണ്ണയവും ഈ പദ്ധതിയുടെ ഭാഗമാണ്.",
+    },
     targetBeneficiaries: {
       en: "All Hemophilia patients.",
       ml: "എല്ലാ ഹീമോഫീലിയ രോഗികളും.",
@@ -6778,6 +7166,10 @@ export const nationalHealthMission = [
     objective: {
       en: "To provide free treatment for clubfoot and cleft lip.",
       ml: "ക്ലബ്ബ്ഫൂട്ട്, മുറിച്ചുണ്ട് എന്നിവയ്ക്ക് സൗജന്യ ചികിത്സ നൽകുക.",
+    },
+    description: {
+      en: "This scheme provides specialized medical and surgical care for children born with congenital deformities like clubfoot and cleft lip. Under the National Health Mission, these services are offered free of cost through District Early Intervention Centers (DEICs), ensuring timely correction and rehabilitation. The program aims to enhance the quality of life for affected children by facilitating access to expert surgical procedures, physiotherapy, and follow-up care.",
+      ml: "ജനനദോഷങ്ങളായ ക്ലബ്ബ്ഫൂട്ട്, മുറിച്ചുണ്ട് എന്നിവയോടെ ജനിക്കുന്ന കുട്ടികൾക്ക് സൗജന്യ ശസ്ത്രക്രിയകളും ചികിത്സകളും നൽകുന്നതിനുള്ള പദ്ധതിയാണ് ഇത്. ദേശീയ ആരോഗ്യ ദൗത്യത്തിന്റെ ഭാഗമായുള്ള ഈ സേവനങ്ങൾ ജില്ലാ എർളി ഇന്റർവെൻഷൻ സെന്ററുകൾ (DEIC) മുഖേനയാണ് നൽകുന്നത്. വൈകാതെ തന്നെ ശസ്ത്രക്രിയയിലൂടെ ഡീഫോമിറ്റികൾ ശരിയാക്കാനും തുടര്‍ന്നുള്ള പുനരധിവാസ സേവനങ്ങൾ ഉറപ്പാക്കാനും ഈ പദ്ധതി ലക്ഷ്യമിടുന്നു. ഇതുവഴി ബാധിക്കപ്പെട്ട കുട്ടികളുടെ ജീവിത നിലവാരം മെച്ചപ്പെടുത്താനാണ് പദ്ധതി ശ്രമിക്കുന്നത്.",
     },
     targetBeneficiaries: {
       en: "Children under 18 years.",
@@ -6822,6 +7214,10 @@ export const nationalHealthMission = [
       en: "To provide better medical services at the primary level.",
       ml: "പ്രാഥമിക തലത്തിൽ മികച്ച വൈദ്യസേവനം ലഭ്യമാക്കുക.",
     },
+    description: {
+      en: "Aardram Mission Clinics are an initiative under the Kerala government's Aardram Mission, aimed at strengthening the public healthcare system by enhancing the quality and accessibility of services at Family Health Centres (FHCs). These clinics offer a wide range of services including outpatient care, diagnostic tests, maternal and child health services, non-communicable disease management, and health education. The program focuses on providing patient-friendly environments with modern infrastructure and streamlined processes.",
+      ml: "ആർദ്രം മിഷൻ ക്ലിനിക്കുകൾ, കുടുംബാരോഗ്യ കേന്ദ്രങ്ങളിലെ (FHC) സേവനങ്ങളുടെ നിലവാരം മെച്ചപ്പെടുത്തുകയും പൊതുജനങ്ങൾക്ക് സൗകര്യപ്രദമായ ആരോഗ്യമേഖല ഒരുക്കുകയും ചെയ്യുന്നതിന് കേരള സർക്കാരിന്റെ 'ആർദ്രം മിഷൻ' പദ്ധതിയുടെ ഭാഗമായി നടപ്പിലാക്കുന്നു. OP സേവനങ്ങൾ, രോഗനിർണ്ണയ പരിശോധനകൾ, മാതൃ-ശിശു ആരോഗ്യസംരക്ഷണം, അപ്രസാര രോഗങ്ങൾ എന്നിവയ്ക്ക് മികച്ച പരിചരണം, ആരോഗ്യ വിദ്യാഭ്യാസം എന്നിവയാണ് ഈ ക്ലിനിക്കുകളുടെ മുഖ്യസേവനങ്ങൾ. ആധുനിക സൗകര്യങ്ങളും സുഗമമായ സേവന സംവിധാനങ്ങളുമുള്ള രോഗിവാത്സല്യ അന്തരീക്ഷം ഒരുക്കുകയാണ് പദ്ധതിയുടെ പ്രധാന ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Public",
       ml: "പൊതുജനങ്ങൾ",
@@ -6864,6 +7260,10 @@ export const nationalHealthMission = [
     objective: {
       en: "To provide better medical services to the urban population.",
       ml: "നഗരപ്രദേശങ്ങളിലെ ജനങ്ങൾക്ക് മികച്ച ആരോഗ്യ സേവനങ്ങൾ നൽകുക.",
+    },
+    description: {
+      en: "The National Urban Health Mission (NUHM) aims to strengthen the healthcare delivery system in urban areas, especially for the urban poor and vulnerable sections. It focuses on setting up Urban Family Health Centres (UFHCs), providing essential healthcare services like outpatient care, maternal and child health, immunizations, and non-communicable disease management. The mission also emphasizes community participation through Urban Health and Nutrition Days, awareness campaigns, and special outreach activities to ensure comprehensive health coverage in cities and towns.",
+      ml: "ദേശീയ നഗരാരോഗ്യ ദൗത്യം (NUHM) നഗരപ്രദേശങ്ങളിലെ പ്രത്യേകിച്ച് നഗരത്തിലെ ദാരിദ്ര്യരേഖയ്ക്ക് താഴെയുള്ളവർക്കും മറ്റ് പരിതാപകരമായ വിഭാഗങ്ങൾക്കും മികച്ച ആരോഗ്യ സേവനങ്ങൾ ഉറപ്പാക്കുന്നതാണ് ലക്ഷ്യം. നഗര കുടുംബാരോഗ്യ കേന്ദ്രങ്ങൾ (UFHC) സ്ഥാപിച്ച് OP സേവനങ്ങൾ, മാതൃ-ശിശു ആരോഗ്യ പരിരക്ഷ, പ്രതിരോധമർദ്ദങ്ങൾ, അപ്രസാര രോഗങ്ങൾ എന്നിവയ്ക്കുള്ള ചികിത്സ എന്നിവയാണ് പദ്ധതിയുടെ ഭാഗം. 'അർബൻ ഹെൽത്ത് ആൻഡ് ന്യൂട്രീഷൻ ഡേസ്', അവബോധ കാമ്പെയ്‌നുകൾ, പ്രത്യേക ഔട്ട്‌റീച്ച് പ്രവർത്തനങ്ങൾ എന്നിവയിലൂടെ സമൂഹ പങ്കാളിത്തം ശക്തിപ്പെടുത്തിയാണ് സമഗ്ര ആരോഗ്യ പരിരക്ഷ ലക്ഷ്യമിടുന്നത്.",
     },
     targetBeneficiaries: {
       en: "Urban Area Population",
@@ -6908,6 +7308,10 @@ export const nationalHealthMission = [
       en: "To provide support for victims of Gender-Based Violence.",
       ml: "ലിംഗപരമായ അതിക്രമങ്ങൾക്ക് ഇരയായവർക്ക് പിന്തുണ നൽകുക.",
     },
+    description: {
+      en: "Bhoomika is a support initiative designed to assist survivors of gender-based violence (GBV) by providing psychological counseling, legal aid, medical assistance, and rehabilitation support. The program operates through dedicated GBV counselors stationed at district hospitals, ensuring immediate and comprehensive care. Bhoomika also focuses on creating awareness about gender rights and reducing social stigma associated with victims. The initiative ensures confidentiality, compassion, and coordinated services for effective rehabilitation.",
+      ml: "ലിംഗപരമായ അതിക്രമങ്ങൾക്കിരയായവർക്കുള്ള മനഃശാസ്ത്രപരമായ കൗൺസിലിംഗ്, നിയമസഹായം, വൈദ്യസഹായം, പുനരധിവാസം എന്നിവ ഒരുക്കുന്ന പിന്തുണാ പദ്ധതിയാണ് 'ഭൂമിക'. ജില്ലാ ആശുപത്രികളിൽ സ്പെഷ്യലൈസ്ഡ് GBV കൗൺസിലർമാർ മുഖാന്തിരം അടിയന്തിരവും സമഗ്രവുമായ സേവനം ഉറപ്പാക്കുന്നു. ലൈംഗിക അതിക്രമങ്ങൾക്കിരയായവരെ കുറിച്ചുള്ള സാമൂഹ്യകാണിക്യങ്ങൾ കുറയ്ക്കാനും അവകാശങ്ങൾക്കുറിച്ചുള്ള അവബോധം ഉയർത്താനും പദ്ധതി ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്നു. രഹസ്യത്വം, കരുണ, ഏകോപിത സേവനങ്ങൾ എന്നിവ ഉറപ്പാക്കി ഫലപ്രദമായ പുനരധിവാസം ലക്ഷ്യമിടുന്നു.",
+    },
     targetBeneficiaries: {
       en: "Victims of Gender-Based Violence",
       ml: "ലിംഗപരമായ അതിക്രമങ്ങൾക്ക് ഇരയായവർ",
@@ -6950,6 +7354,10 @@ export const nationalHealthMission = [
     objective: {
       en: "To provide screening and control services for non-communicable diseases.",
       ml: "ജീവിതശൈലീ രോഗങ്ങൾക്കുള്ള പരിശോധനയും നിയന്ത്രണവും ഉറപ്പാക്കുക.",
+    },
+    description: {
+      en: "The Non-Communicable Disease Control Programme is a comprehensive initiative aimed at preventing and controlling the rising burden of non-communicable diseases (NCDs) such as diabetes, hypertension, cardiovascular diseases, and cancer. The program focuses on health promotion, early diagnosis, and management of NCDs through a network of healthcare facilities. Key activities include population-based screening for common NCDs, providing free essential medicines and diagnostics, and promoting healthy lifestyles to reduce risk factors. The initiative aims to reduce premature mortality from NCDs and improve the overall quality of life for the population by ensuring accessible and affordable healthcare services.",
+      ml: "വർദ്ധിച്ചുവരുന്ന ജീവിതശൈലീ രോഗങ്ങളായ പ്രമേഹം, രക്താതിമർദ്ദം, ഹൃദ്രോഗങ്ങൾ, കാൻസർ എന്നിവയെ പ്രതിരോധിക്കുന്നതിനും നിയന്ത്രിക്കുന്നതിനും ലക്ഷ്യമിട്ടുള്ള ഒരു സമഗ്ര പദ്ധതിയാണ് ജീവിതശൈലീ രോഗ നിയന്ത്രണ പരിപാടി. ആരോഗ്യ സംരക്ഷണം, നേരത്തെയുള്ള രോഗനിർണയം, രോഗനിയന്ത്രണം എന്നിവ ആരോഗ്യകേന്ദ്രങ്ങളുടെ ശൃംഖല വഴി നടപ്പിലാക്കുന്നു. പ്രധാന പ്രവർത്തനങ്ങളിൽ സാധാരണ ജീവിതശൈലീ രോഗങ്ങൾക്കായുള്ള ജനസംഖ്യാടിസ്ഥാനത്തിലുള്ള സ്ക്രീനിംഗ്, സൗജന്യ അവശ്യ മരുന്നുകളും രോഗനിർണ്ണയവും നൽകൽ, അപകടസാധ്യത ഘടകങ്ങൾ കുറയ്ക്കുന്നതിന് ആരോഗ്യകരമായ ജീവിതശൈലി പ്രോത്സാഹിപ്പിക്കൽ എന്നിവ ഉൾപ്പെടുന്നു. അകാലമരണങ്ങൾ കുറയ്ക്കുന്നതിനും പ്രാപ്യവും താങ്ങാനാവുന്നതുമായ ആരോഗ്യ സേവനങ്ങൾ ഉറപ്പുവരുത്തി ജനങ്ങളുടെ ജീവിതനിലവാരം മെച്ചപ്പെടുത്തുന്നതിനും ഈ പദ്ധതി ലക്ഷ്യമിടുന്നു.",
     },
     targetBeneficiaries: {
       en: "General Public",
@@ -6995,6 +7403,10 @@ export const keralaWaterAuthority = [
         "Local Self-Government Institutions",
       ],
       ml: ["കേന്ദ്ര സർക്കാർ", "കേരള സർക്കാർ", "തദ്ദേശ സ്വയംഭരണ സ്ഥാപനങ്ങൾ"],
+    },
+    description: {
+      en: "This project under Jal Jeevan Mission aims to ensure functional household tap connections (FHTCs) in Nedumkandam, Pampadumpara, Upputhara, Elappara (Part), and Arakulam (Part) Panchayaths by improving water supply infrastructure and ensuring sustainable water sources.",
+      ml: "ജൽജീവൻ മിഷന്റെ ഭാഗമായി, നെടുങ്കണ്ടം, പാമ്പാടുംപാറ, ഉപ്പുതറ, ഏലപ്പാറ (ഭാഗികം), അറക്കുളം (ഭാഗികം) പഞ്ചായത്തുകളിലെ വീടുകളിൽ പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ (FHTC) ഉറപ്പാക്കുന്നതിന് കുടിവെള്ള വിതരണം മെച്ചപ്പെടുത്തുകയും നീരാവശ്യങ്ങൾ നിരന്തരമായി നിറവേറ്റുന്നതിന് ഉറപ്പുള്ള ജലസ്രോതസ്സുകൾ ഒരുക്കുകയും ചെയ്യുന്ന പദ്ധതി.",
     },
     objective: {
       en: "To provide every rural household in India with a functional tap water connection.",
@@ -7059,6 +7471,11 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The scheme focuses on providing safe and adequate drinking water through individual household tap connections (FHTCs) in Chakkupallam, Vandanmedu, Karunapuram, and Vandiperiyar Panchayaths, improving water accessibility in rural areas.",
+      ml: "ചക്കുപള്ളം, വണ്ടൻമേട്, കരുണാപുരം, വണ്ടിപ്പെരിയാർ പഞ്ചായത്തുകളിലെ വീടുകളിൽ സുരക്ഷിതവും മതിയായതുമായ കുടിവെള്ളം ടാപ്പ് കണക്ഷൻ വഴി നൽകുന്നതിനുള്ള പദ്ധതിയാണ് ഇത്.",
+    },
+
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7117,6 +7534,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "Under this scheme, FHTCs will be provided to households in Idukki-Kanjikuzhi, Vazhathope, Mariyapuram, Kamakshi, Vathikudy, and Vannapuram (Part) Panchayaths, enhancing their daily access to potable water.",
+      ml: "ഇടുക്കി-കാഞ്ഞിക്കുഴി, വഴത്തോപ്പ്, മരിയാപുരം, കാമാക്ഷി, വാത്തിക്കുടി, വണ്ണപ്പുറം (ഭാഗികം) പഞ്ചായത്തുകളിലെ വീടുകളിൽ പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ (FHTC) ഉറപ്പാക്കുന്നതിനുള്ള പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Every rural household",
@@ -7177,6 +7598,10 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The project ensures every household in Erattayar and Kamakshi (Part) Panchayaths receives a functional tap connection, reducing dependency on unsafe water sources.",
+      ml: "ഇരട്ടയാർ, കാമാക്ഷി (ഭാഗികം) പഞ്ചായത്തുകളിലെ എല്ലാ വീടുകൾക്കും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ നൽകുന്നതിനുള്ള പദ്ധതിയാണ് ഇത്, thereby providing safe drinking water.",
+    },
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7235,6 +7660,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "This scheme is aimed at providing functional household tap connections (FHTCs) to all houses in Ayyappancovil and Kanchiyar Panchayaths, ensuring continuous access to drinking water.",
+      ml: "അയ്യപ്പൻകോവിലും കാഞ്ചിയാറിലും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ നൽകുന്നതിലൂടെ ഗ്രാമീണ ജനങ്ങൾക്ക് കുടിവെള്ളം ഉറപ്പാക്കുന്ന പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Every rural household",
@@ -7295,6 +7724,10 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "This project aims to strengthen water supply systems and provide functional tap water connections (FHTCs) to households in Konnathady, Udumbanchola, Rajakkad, Bisonvally, Rajakumary (Part), and Senapathy (Part) Panchayaths.",
+      ml: "കൊന്നത്തടി, ഉടുമ്പൻചോല, രാജാക്കാട്, ബൈസൺവാലി, രാജകുമാരി (ഭാഗികം), സേനാപതി (ഭാഗികം) പഞ്ചായത്തുകളിലെ വീടുകളിൽ പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ (FHTC) ഉറപ്പാക്കുന്നതിനുള്ള പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7354,6 +7787,11 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The project under Jal Jeevan Mission aims to provide functional household tap connections (FHTCs) in Santhanpara, Rajakumary (Part), and Senapathy (Part) Panchayaths, improving the availability of safe drinking water.",
+      ml: "ജൽജീവൻ മിഷന്റെ ഭാഗമായി, ശാന്തൻപാറ, രാജകുമാരി (ഭാഗികം), സേനാപതി (ഭാഗികം) പഞ്ചായത്തുകളിലെ വീടുകളിൽ പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ (FHTC) ഉറപ്പാക്കുന്നതിന് പദ്ധതി.",
+    },
+
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7412,6 +7850,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "The scheme ensures every household in Munnar-Pallivasal, Devikulam-Chinnakanal Panchayaths gets a functional tap water connection, reducing reliance on alternative sources.",
+      ml: "മൂന്നാർ-പള്ളിവാസൽ, ദേവികുളം-ചിന്നക്കനാൽ പഞ്ചായത്തുകളിലെ വീടുകളിൽ പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷൻ (FHTC) ഉറപ്പാക്കുന്നതിനുള്ള പദ്ധതിയാണ് ഇത്.",
     },
     targetBeneficiaries: {
       en: "Every rural household",
@@ -7477,6 +7919,10 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "This project aims to provide safe and sufficient drinking water to every household in Vattavada Panchayath through individual household tap connections under the Jal Jeevan Mission initiative.",
+      ml: "ജൽ ജീവൻ മിഷൻ പദ്ധതിയുടെ ഭാഗമായി വട്ടവട പഞ്ചായത്തിലെ ഓരോ വീട്ടിലേക്കും വ്യക്തിഗത ടാപ്പ് കണക്ഷനുകൾ വഴി സുരക്ഷിതവും മതിയായതുമായ കുടിവെള്ളം എത്തിക്കുന്നതാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7535,6 +7981,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "This project aims to ensure the provision of safe and adequate drinking water through individual household tap connections to all households in Marayoor and Kanthalloor Panchayaths.",
+      ml: "മറയൂർ, കാന്തല്ലൂർ പഞ്ചായത്തുകളിലെ എല്ലാ വീടുകളിലും വ്യക്തിഗത കുടിവെള്ള ടാപ്പ് കണക്ഷനുകൾ വഴി സുരക്ഷിതവും മതിയായതുമായ കുടിവെള്ളം നൽകുകയാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
     },
     targetBeneficiaries: {
       en: "Every rural household",
@@ -7595,6 +8045,10 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The project aims to provide functional household tap connections to all rural households in Mankulam, Adimali, and Pallivasal (part) Panchayaths, ensuring safe and sustainable water supply.",
+      ml: "മാങ്കുളം, അടിമാലി, പള്ളിവാസൽ (ഭാഗികം) പഞ്ചായത്തുകളിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷനുകൾ വഴി സുരക്ഷിതവും സുസ്ഥിരവുമായ കുടിവെള്ളം നൽകുന്നതിനാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7653,6 +8107,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "Focused on the remote Edamalakudy Panchayath, this project ensures that even the most interior tribal settlements receive safe and adequate drinking water through household tap connections.",
+      ml: "എടമലക്കുടി പഞ്ചായത്തിലെ അകമ്പടിയിലുള്ള ആദിവാസി കോളനികൾക്കും സുരക്ഷിതവും മതിയായതുമായ കുടിവെള്ളം നൽകാൻ ഈ പദ്ധതി ലക്ഷ്യമിടുന്നു.",
     },
     targetBeneficiaries: {
       en: "Every rural household",
@@ -7713,6 +8171,10 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The project focuses on providing reliable and safe drinking water to all households in Arakkulam and Velliyamattom Panchayaths through individual tap connections under the Jal Jeevan Mission.",
+      ml: "ജൽ ജീവൻ മിഷൻ പദ്ധതിയുടെ ഭാഗമായി അറക്കുളം, വെള്ളിയാമറ്റം പഞ്ചായത്തുകളിലെ എല്ലാ വീടുകളിലും വ്യക്തിഗത ടാപ്പ് കണക്ഷനുകൾ വഴി സുരക്ഷിതവും വിശ്വസനീയവുമായ കുടിവെള്ളം എത്തിക്കുന്നതാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7771,6 +8233,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "This project under the Jal Jeevan Mission (JJM) aims to ensure safe and adequate drinking water supply to all households in Muttom and Karimkunnam Panchayaths through individual household tap connections.",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) പദ്ധതിയുടെ ഭാഗമായി മുട്ടം, കരിങ്കുന്നം പഞ്ചായത്തുകളിലെ എല്ലാ വീടുകളിലും വ്യക്തിഗത ടാപ്പ് കണക്ഷനുകൾ വഴി ശുദ്ധജല വിതരണമാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം.",
     },
     targetBeneficiaries: {
       en: "Every rural household",
@@ -7831,6 +8297,10 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The Kudayathoor Panchayath Water Supply Scheme under Jal Jeevan Mission focuses on ensuring tap water supply to every household, aiming to eliminate the dependency on external water sources.",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) പദ്ധതിയുടെ ഭാഗമായി കുടയത്തൂർ പഞ്ചായത്തിലെ എല്ലാ വീടുകളിലും ടാപ്പ് കണക്ഷൻ വഴി കുടിവെള്ളം എത്തിക്കുകയാണ് ഈ പദ്ധതിയുടെ ലക്ഷ്യം. ബാഹ്യജലസ്രോതസ്സുകളിൽ നിന്ന് ഉള്ള ആശ്രിതത്വം ഒഴിവാക്കാനാണ് പദ്ധതിയുടെ പ്രധാന ഉദ്ദേശം.",
+    },
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -7889,6 +8359,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "The Water Supply Scheme (WSS) for Kumaramangalam Panchayath under the Jal Jeevan Mission aims to ensure that every rural household in the panchayath receives a reliable and continuous tap water connection, promoting health and hygiene in the region.",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) പദ്ധതിയുടെ ഭാഗമായി ഇടുക്കി ജില്ലയിലെ കുമാരമംഗലം പഞ്ചായത്തിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലും സ്ഥിരതയുള്ള ടാപ്പ് കണക്ഷൻ ലഭ്യമാക്കുക എന്നതാണ് പദ്ധതിയുടെ പ്രധാന ലക്ഷ്യം. പ്രദേശത്തെ ആരോഗ്യം, ശുചിത്വം എന്നിവ മെച്ചപ്പെടുത്താൻ ഈ പദ്ധതി സഹായിക്കും.",
     },
     targetBeneficiaries: {
       en: "Every rural household",
@@ -7949,6 +8423,10 @@ export const keralaWaterAuthority = [
       en: "To provide every rural household with a functional tap water connection.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The Jal Jeevan Mission (JJM) Water Supply Scheme (WSS) for Vellathooval Panchayath is aimed at providing every rural household in the panchayath with a reliable and functional tap water connection. This initiative focuses on improving the quality of life by ensuring safe drinking water access to all residents.",
+      ml: "ജൽ ജീവൻ മിഷൻ (JJM) പദ്ധതിയുടെ ഭാഗമായി വെള്ളത്തൂവൽ പഞ്ചായത്തിലെ എല്ലാ ഗ്രാമീണ വീടുകളിലും വിശ്വസനീയവും പ്രവർത്തനക്ഷമവുമായ ടാപ്പ് കണക്ഷൻ ലഭ്യമാക്കുക എന്നതാണ് പദ്ധതിയുടെ ലക്ഷ്യം. കുടിവെള്ളത്തിന്റെ ലഭ്യത ഉറപ്പാക്കുന്നതിനിലൂടെ ജനങ്ങളുടെ ജീവിത നിലവാരം മെച്ചപ്പെടുത്തുകയാണ് ഈ പദ്ധതിയുടെ പ്രധാന ഉദ്ദേശ്യം.",
+    },
     targetBeneficiaries: {
       en: "Every rural household",
       ml: "എല്ലാ ഗ്രാമീണ കുടുംബങ്ങളും",
@@ -8004,6 +8482,11 @@ export const keralaWaterAuthority = [
       en: "To provide every urban household with a functional tap water connection.",
       ml: "എല്ലാ നഗര വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "The AMRUT 2.0 (Atal Mission for Rejuvenation and Urban Transformation) Urban Water Supply Scheme (UWSS) for Kattappana Municipality aims to ensure every urban household has access to a reliable and safe tap water connection. The project focuses on enhancing water infrastructure and providing equitable water distribution to improve the standard of living in urban areas.",
+      ml: "അമൃത് 2.0 (അറ്റൽ മിഷൻ ഫോർ റിജുവനേഷൻ ആൻഡ് അർബൻ ട്രാൻസ്ഫോർമേഷൻ) പദ്ധതിയുടെ ഭാഗമായി കാട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലെ എല്ലാ നഗര വീടുകളിലും വിശ്വസനീയമായതും സുരക്ഷിതവുമായ കുടിവെള്ള ടാപ്പ് കണക്ഷൻ ലഭ്യമാക്കുക എന്നതാണ് പദ്ധതി ലക്ഷ്യം. നഗരജീവിത നിലവാരം മെച്ചപ്പെടുത്തുന്നതിനായി കുടിവെള്ള അടിസ്ഥാന സൗകര്യങ്ങൾ വികസിപ്പിക്കുകയും വെള്ള വിതരണം സമതുലിതമാക്കുകയും ചെയ്യുകയാണ് പദ്ധതിയുടെ പ്രധാനമായ ഉദ്ദേശ്യം.",
+    },
+
     targetBeneficiaries: {
       en: "Every urban household",
       ml: "എല്ലാ നഗര കുടുംബങ്ങളും",
@@ -8060,6 +8543,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide every household with a functional tap water connection.",
       ml: "എല്ലാ വീടുകളിലും പ്രവർത്തനക്ഷമമായ കുടിവെള്ള കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "The AMRUT 2.0 - SWAP-2 (Service Level Benchmarking and Water Supply Augmentation Program) is designed to enhance water supply infrastructure in Ayyappancovil, Kanchiyar Panchayats, and Kattappana Municipality. The project focuses on ensuring universal coverage of functional tap connections, improving water quality, and promoting efficient water management practices in urban and semi-urban areas.",
+      ml: "അമൃത് 2.0 - സ്വാപ് 2 (സർവീസ് ലെവൽ ബെഞ്ച്മാർക്കിംഗ് ആൻഡ് വാട്ടർ സപ്ലൈ അഗ്‌മെന്റേഷൻ പ്രോഗ്രാം) അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ പഞ്ചായത്തുകളിലും കട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലും കുടിവെള്ള അടിസ്ഥാന സൗകര്യങ്ങൾ വികസിപ്പിക്കുന്നതിനുള്ള പദ്ധതിയാണ്. പ്രവർത്തനക്ഷമമായ ടാപ്പ് കണക്ഷനുകളുടെ സർവത്രീകൃത കവർേജ് ഉറപ്പാക്കുക, വെള്ളത്തിന്റെ ഗുണനിലവാരം മെച്ചപ്പെടുത്തുക, വെള്ളവ്യാപനത്തിൽ കാര്യക്ഷമത നേടുക എന്നിവയാണ് പദ്ധതിയുടെ ലക്ഷ്യങ്ങൾ.",
     },
     targetBeneficiaries: {
       en: "Citizens of Ayyappancovil, Kanchiyar and Kattappana Municipality.",
@@ -8118,6 +8605,10 @@ export const keralaWaterAuthority = [
       en: "To provide drinking water supply to Ayyappancovil, Kanchiyar and Kattappana Municipality.",
       ml: "അയ്യപ്പൻകോവിൽ, കാഞ്ചിയാർ പഞ്ചായത്തുകളിലും കട്ടപ്പന മുനിസിപ്പാലിറ്റിയിലും കുടിവെള്ളം എത്തിക്കുക.",
     },
+    description: {
+      en: "The KIIFB TRAN 10 project aims to strengthen the water supply system in Ayyappankovil Panchayat under the Kerala Infrastructure Investment Fund Board (KIIFB) initiative. The project focuses on providing safe and reliable drinking water to rural households through the development of efficient water distribution networks, storage facilities, and advanced supply mechanisms. This initiative aligns with the state government's vision of achieving 100% tap water connectivity in underserved regions.",
+      ml: "കേരള ഇൻഫ്രാസ്ട്രക്ചർ ഇൻവെസ്റ്റ്‌മെന്റ് ഫണ്ട് ബോർഡിന്റെ (KIIFB) കീഴിൽ നടപ്പാക്കുന്ന TRAN 10 പദ്ധതി, അയ്യപ്പൻകോവിൽ പഞ്ചായത്തിലെ കുടിവെള്ള വിതരണ സംവിധാനങ്ങൾ ശക്തിപ്പെടുത്തുകയാണ് ലക്ഷ്യം. പ്രവർത്തനക്ഷമമായ വെള്ളവിതരണ ശൃംഖലകൾ, സംഭരണശാലകൾ, ആധുനിക വിതരണ സംവിധാനങ്ങൾ എന്നിവയുടെ വികസനം മുഖേന ഗ്രാമീണ വീടുകളിലേക്ക് സുരക്ഷിതവും വിശ്വാസയോഗ്യവുമായ കുടിവെള്ളം എത്തിക്കുന്നതിലാണ് പദ്ധതി ശ്രദ്ധ നൽകുന്നത്. കുടിവെള്ള കണക്ഷനുകളുടെ 100% കവർേജ് ലക്ഷ്യമിടുന്ന സംസ്ഥാന സർക്കാരിന്റെ ദിശാബോധത്തിലാണ് ഈ പദ്ധതി നടപ്പാക്കുന്നത്.",
+    },
     targetBeneficiaries: {
       en: "Citizens of Ayyappancovil panchayat",
       ml: "അയ്യപ്പൻകോവിൽ പഞ്ചായത്തിലെ പൗരന്മാർ",
@@ -8175,6 +8666,10 @@ export const keralaWaterAuthority = [
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "A Combined Rural Water Supply Scheme (CARWSS) aimed at providing functional tap connections to households in Alacode, Kodikkulam, Karimannoor, Udumbanoor and Vannappuram Panchayaths.",
+      ml: "ആലക്കോട്, കോടിക്കുളം, കരിമണ്ണൂർ, ഉടുമ്പന്നൂർ, വണ്ണപ്പുറം പഞ്ചായത്തുകളിലെ വീടുകളിൽ ടാപ്പ് കണക്ഷൻ നൽകുന്ന സംയുക്ത ഗ്രാമീണ കുടിവെള്ള പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Households in Alacode, Kodikkulam, Karimannoor, Udumbanoor and Vannappuram panchayaths",
       ml: "ആലക്കോട്, കോടിക്കുളം, കരിമണ്ണൂർ, ഉടുമ്പന്നൂർ, വണ്ണപ്പുറം പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
@@ -8229,6 +8724,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "A Rural Water Supply Scheme (RWSS) to provide piped water connections to households in Manakkad and Purappuzha Panchayaths.",
+      ml: "മണക്കാട്, പുറപ്പുഴ പഞ്ചായത്തുകളിലെ വീടുകളിൽ പൈപ്പ് കണക്ഷൻ നൽകുന്ന ഗ്രാമീണ കുടിവെള്ള പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Households in Manakkad and Purappuzha panchayaths",
@@ -8285,6 +8784,10 @@ export const keralaWaterAuthority = [
       en: "To provide house connections to every urban household.",
       ml: "എല്ലാ നഗര വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "An Urban Water Supply Scheme (UWSS) under AMRUT to provide functional tap connections to households in Thodupuzha Municipality and Kumaramangalam Panchayath.",
+      ml: "അമൃത് പദ്ധതിയിൽ ഉൾപ്പെടുന്ന തൊടുപുഴ മുനിസിപ്പാലിറ്റിയിലും കുമാരമംഗലം പഞ്ചായത്തിലും വീടുകളിൽ ടാപ്പ് കണക്ഷൻ നൽകുന്ന നഗര കുടിവെള്ള പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Households in Thodupuzha Municipality",
       ml: "തൊടുപുഴ മുനിസിപ്പാലിറ്റിയിലെ കുടുംബങ്ങൾ",
@@ -8339,6 +8842,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "A Rural Water Supply Scheme (RWSS) to provide piped water connections to households in Adimaly Panchayath.",
+      ml: "അടിമാലി പഞ്ചായത്തിലെ വീടുകളിൽ പൈപ്പ് കണക്ഷൻ നൽകുന്ന ഗ്രാമീണ കുടിവെള്ള പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Households in Adimaly Panchayath",
@@ -8395,6 +8902,10 @@ export const keralaWaterAuthority = [
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "A Combined Rural Water Supply Scheme (CARWSS) for households in Elappara, Peermade, Peruvanthanam and Kokkayar Panchayaths.",
+      ml: "ഏലപ്പാറ, പീരുമേട്, പെരുവന്താനം, കൊക്കയാർ പഞ്ചായത്തുകളിലെ വീടുകളിൽ ടാപ്പ് കണക്ഷൻ നൽകുന്ന സംയുക്ത ഗ്രാമീണ കുടിവെള്ള പദ്ധതി.",
+    },
     targetBeneficiaries: {
       en: "Households in Peermade, Peruvanthanam, Kokkayar and Elappara Panchayaths",
       ml: "പീരുമേട്, പെരുവന്താനം, കൊക്കയാർ, ഏലപ്പാറ പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
@@ -8449,6 +8960,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "An Augmented Rural Water Supply Scheme (ARWSS) to provide functional tap connections to households in Kumily Panchayath.",
+      ml: "കുമളി പഞ്ചായത്തിലെ വീടുകളിൽ ടാപ്പ് കണക്ഷൻ നൽകുന്ന ഗ്രാമീണ കുടിവെള്ള പദ്ധതി.",
     },
     targetBeneficiaries: {
       en: "Households in Kumily Panchayath",
@@ -8505,6 +9020,10 @@ export const keralaWaterAuthority = [
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "This Combined Rural Water Supply Scheme (CARWSS) under Jal Jeevan Mission aims to provide safe and reliable tap water connections to households in Idukki-Kanjikuzhy and parts of Vazhathope Panchayaths, ensuring access to clean drinking water for all residents.",
+      ml: "ജൽ ജീവൻ മിഷനിന്റെ ഭാഗമായി നടപ്പിലാക്കുന്ന ഈ സംയുക്ത ഗ്രാമീണ കുടിവെള്ള പദ്ധതി ഇടുക്കി-കാഞ്ഞിക്കുഴി, വഴത്തോപ്പ് (ഭാഗികം) പഞ്ചായത്തുകളിലെ വീടുകളിൽ സുരക്ഷിതവും വിശ്വസനീയവുമായ ടാപ്പ് കണക്ഷനുകൾ നൽകുകയാണ് ലക്ഷ്യം. എല്ലാ താമസക്കാരിലും ശുദ്ധമായ കുടിവെള്ളം ലഭ്യമാക്കുന്നതാണ് പദ്ധതിയുടെ പ്രധാന ലക്ഷ്യം.",
+    },
     targetBeneficiaries: {
       en: "Households in Idukki-Kanjikuzhi and Vazhathope(part) Panchayaths",
       ml: "ഇടുക്കി-കാഞ്ഞിക്കുഴി, വഴത്തോപ്പ് (ഭാഗികം) പഞ്ചായത്തുകളിലെ കുടുംബങ്ങൾ",
@@ -8560,6 +9079,10 @@ export const keralaWaterAuthority = [
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
     },
+    description: {
+      en: "Under the Jal Jeevan Mission (JJM), this scheme aims to provide every household in Peruvanthanam Panchayath with a functional tap connection, ensuring access to clean and safe drinking water directly at home.",
+      ml: "ജൽ ജീവൻ മിഷന്റെ ഭാഗമായി, പെരുവന്താനം പഞ്ചായത്തിലെ ഓരോ വീടിലും ശുദ്ധവും സുരക്ഷിതവുമായ കുടിവെള്ളം ലഭ്യമാക്കുന്നതിനായി ഈ പദ്ധതി നടപ്പിലാക്കുന്നു. വീടുകളിലേക്ക് നേരിട്ട് ടാപ്പ് കണക്ഷൻ നൽകുന്നതിനാണ് പദ്ധതി ലക്ഷ്യമിടുന്നത്.",
+    },
     targetBeneficiaries: {
       en: "Households in Peruvanthanam Panchayath",
       ml: "പെരുവന്താനം പഞ്ചായത്തിലെ കുടുംബങ്ങൾ",
@@ -8614,6 +9137,10 @@ export const keralaWaterAuthority = [
     objective: {
       en: "To provide house connections to every rural household.",
       ml: "എല്ലാ ഗ്രാമീണ വീടുകൾക്കും പൈപ്പ് കണക്ഷൻ നൽകുക.",
+    },
+    description: {
+      en: "This project under the Jal Jeevan Mission (JJM) aims to ensure safe and adequate drinking water through individual household tap connections in Peermade Panchayath. The initiative focuses on providing a reliable water supply to all rural households, improving living standards and public health.",
+      ml: "ജൽ ജീവൻ മിഷന്റെ ഭാഗമായി, പീരുമേട് പഞ്ചായത്തിലെ ഓരോ വീടിലും ശുദ്ധജലവിതരണം ഉറപ്പാക്കാൻ ഈ പദ്ധതി നടപ്പാക്കുന്നു. ഗ്രാമീണ കുടുംബങ്ങൾക്കുള്ള കുടിവെള്ള ക്ഷാമം പരിഹരിക്കുകയും അവരുടെ ജീവിത നിലവാരവും പൊതുജനാരോഗ്യവും മെച്ചപ്പെടുത്തുകയും ചെയ്യുന്നതാണ് പദ്ധതി ലക്ഷ്യമിടുന്നത്.",
     },
     targetBeneficiaries: {
       en: "Households in Peermade Panchayath",
@@ -8691,10 +9218,14 @@ export const lifeMission = [
       avgRating: 0,
       count: 0,
     },
-    id: "life_misssion_1",
+    id: "life_mission_1",
     keywords: {
       en: ["life mission", "housing", "homeless", "landless"],
       ml: ["ലൈഫ് മിഷൻ", "ഭവനം", "വീടില്ലാത്തവർ", "ഭൂരഹിതർ"],
+    },
+    description: {
+      en: "LIFE Mission is Kerala Government’s flagship housing scheme that ensures a safe and dignified home for every homeless and landless family in the state. The mission also focuses on empowering beneficiaries by supporting their livelihood and integrating them into the social mainstream.",
+      ml: "കേരള സർക്കാരിന്റെ ആധാരപദ്ധതിയായ ലൈഫ് മിഷൻ പദ്ധതിയിലൂടെ സംസ്ഥാനത്തെ എല്ലാ ഭവനരഹിതർക്കും ഭൂരഹിതർക്കും സുരക്ഷിതവും മാന്യവുമായ താമസസ്ഥലം ഉറപ്പാക്കുന്നു. വീടിനൊപ്പം ഉപജീവനമാർഗ്ഗം ഉറപ്പാക്കുന്നതിനും ഗുണഭോക്താക്കളെ സമൂഹത്തിലേക്ക് പ്രാപ്തരാക്കുന്നതിനും ലൈഫ് മിഷൻ ശ്രമിക്കുന്നു.",
     },
   },
 ];
@@ -8742,6 +9273,10 @@ export const cooperative = [
       en: ["relief fund", "cooperators", "destitute"],
       ml: ["ദുരിതാശ്വാസ നിധി", "സഹകാരികൾ", "നിരാലംബർ"],
     },
+    description: {
+      en: "A welfare scheme providing financial assistance to destitute cooperators who have significantly contributed to the cooperative sector, ensuring their dignity and support in difficult times.",
+      ml: "സഹകരണ മേഖലയ്ക്ക് സംഭാവനകൾ നൽകിയെങ്കിലും ഇന്ന് നിരാലംബരായ സഹകാരികൾക്ക് സാമ്പത്തിക സഹായം നൽകുന്നതിനുള്ള പദ്ധതിയാണ് ദുരിതാശ്വാസ നിധി. അവരുടെ ആത്മാഭിമാനവും പിന്തുണയും ഉറപ്പാക്കുന്നതാണ് ഈ പദ്ധതി.",
+    },
   },
   {
     name: {
@@ -8752,12 +9287,30 @@ export const cooperative = [
       en: [],
       ml: [],
     },
-    objective: { en: "Not Available", ml: "ലഭ്യമല്ല" },
-    targetBeneficiaries: { en: "Not Available", ml: "ലഭ്യമല്ല" },
-    eligibilityCriterias: { en: "Not Available", ml: "ലഭ്യമല്ല" },
-    benefitsProvided: { en: "Not Available", ml: "ലഭ്യമല്ല" },
-    applicationProcess: { en: "Not Available", ml: "ലഭ്യമല്ല" },
-    contact: { en: "Not Available", ml: "ലഭ്യമല്ല" },
+    objective: {
+      en: "Not Available",
+      ml: "ലഭ്യമല്ല",
+    },
+    targetBeneficiaries: {
+      en: "Not Available",
+      ml: "ലഭ്യമല്ല",
+    },
+    eligibilityCriterias: {
+      en: "Not Available",
+      ml: "ലഭ്യമല്ല",
+    },
+    benefitsProvided: {
+      en: "Not Available",
+      ml: "ലഭ്യമല്ല",
+    },
+    applicationProcess: {
+      en: "Not Available",
+      ml: "ലഭ്യമല്ല",
+    },
+    contact: {
+      en: "Not Available",
+      ml: "ലഭ്യമല്ല",
+    },
     ratings: {
       avgRating: 0,
       count: 0,
@@ -8766,6 +9319,10 @@ export const cooperative = [
     keywords: {
       en: ["paddy loan", "interest-free", "farmers"],
       ml: ["നെൽവായ്പ", "പലിശരഹിതം", "കർഷകർ"],
+    },
+    description: {
+      en: "An initiative aimed at supporting paddy farmers by providing them with interest-free loans to encourage sustainable agriculture and reduce financial burdens. (Detailed information not available yet.)",
+      ml: "നെൽ കർഷകർക്ക് സാമ്പത്തിക ബാധ്യത കുറയ്ക്കാനും, സ്ഥിരതയുള്ള കൃഷിയെ പ്രോത്സാഹിപ്പിക്കാനുമായി പലിശരഹിത വായ്പകൾ നൽകുന്ന പദ്ധതിയാണ് ഇത്. (വിവരങ്ങൾ പിന്നീട് അപ്ഡേറ്റ് ചെയ്യും.)",
     },
   },
 ];
@@ -8813,6 +9370,10 @@ export const policeDepartment = [
       en: ["helpline", "children", "mental health", "counseling"],
       ml: ["ഹെൽപ്പ് ലൈൻ", "കുട്ടികൾ", "മാനസികാരോഗ്യം", "കൗൺസിലിംഗ്"],
     },
+    description: {
+      en: "A helpline service by Kerala Police offering counseling and emotional support for children facing mental health issues and behavioral challenges.",
+      ml: "മാനസികാരോഗ്യ പ്രശ്നങ്ങളും പെരുമാറ്റപ്രശ്നങ്ങളും നേരിടുന്ന കുട്ടികൾക്കായി കേരള പോലീസ് നടത്തുന്ന കൗൺസിലിംഗും മാനസിക പിന്തുണയും നൽകുന്ന ഹെൽപ്പ്‌ലൈൻ സേവനമാണ് ചിരി.",
+    },
   },
   {
     name: {
@@ -8855,6 +9416,10 @@ export const policeDepartment = [
     keywords: {
       en: ["spc", "student police", "discipline"],
       ml: ["എസ്പിസി", "സ്റ്റുഡന്റ് പോലീസ്", "അച്ചടക്കം"],
+    },
+    description: {
+      en: "A student-based program by Kerala Police aimed at nurturing responsible citizenship, discipline, and leadership skills through police-community collaboration.",
+      ml: "പോലീസ്-സമൂഹ സഹകരണത്തിലൂടെ ഉത്തരവാദിത്വമുള്ള പൗരത്വവും അച്ചടക്കവും നേതൃത്വംഗുണങ്ങളും വളർത്തുന്ന വിദ്യാർത്ഥി അടിസ്ഥാനപരമായ പദ്ധതിയാണ് സ്റ്റുഡന്റ് പോലീസ് കേഡറ്റ് (SPC).",
     },
   },
   {
@@ -8899,6 +9464,10 @@ export const policeDepartment = [
       en: ["cybercrime", "children", "online safety"],
       ml: ["സൈബർ ക്രൈം", "കുട്ടികൾ", "ഓൺലൈൻ സുരക്ഷ"],
     },
+    description: {
+      en: "An initiative by Kerala Police to offer support and protection to children vulnerable to cyber threats, providing counseling and legal help.",
+      ml: "സൈബർ ആക്രമണങ്ങൾക്കും കുറ്റകൃത്യങ്ങൾക്കും ഇരയാകുന്ന കുട്ടികൾക്ക് സംരക്ഷണവും മാനസിക/നിയമ പിന്തുണയും നൽകുന്നതിനുള്ള കേരള പോലീസ് പദ്ധതി ആണ് കൂട്ട്.",
+    },
   },
   {
     name: {
@@ -8941,6 +9510,10 @@ export const policeDepartment = [
     keywords: {
       en: ["nirbhaya", "women safety", "children safety", "atrocities"],
       ml: ["നിർഭയ", "വനിതാ സുരക്ഷ", "ബാല സുരക്ഷ", "അതിക്രമം"],
+    },
+    description: {
+      en: "A women and child safety initiative focusing on preventing violence and providing support services like women-friendly transportation facilities.",
+      ml: "സ്ത്രീകൾക്കും കുട്ടികൾക്കും നേരെയുള്ള അതിക്രമങ്ങൾ തടയുന്നതിനും, യാത്ര സൗകര്യങ്ങൾ ഉൾപ്പെടെയുള്ള പിന്തുണാ സേവനങ്ങൾ നൽകുന്നതിനുമായി കേരള സർക്കാർ നടപ്പിലാക്കിയ പദ്ധതി ആണ് നിർഭയ.",
     },
   },
   {
@@ -8989,6 +9562,10 @@ export const policeDepartment = [
         "പ്ലസ് ടു തോറ്റവർ",
         "വിദ്യാർത്ഥി പിന്തുണ",
       ],
+    },
+    description: {
+      en: "An educational rehabilitation initiative for students who failed SSLC and Plus Two, providing them with free classes and motivational support to reappear for exams.",
+      ml: "SSLC, പ്ലസ് ടു പരീക്ഷകളിൽ പരാജയപ്പെട്ട വിദ്യാർത്ഥികൾക്ക് ഉന്നത വിദ്യാഭ്യാസം നേടാൻ സഹായിക്കുന്നതിനായി കേരള പോലീസ് നടത്തുന്ന ഉന്നത പരിശീലന പദ്ധതിയാണ് പ്രോജക്ട് ഹോപ്പ്.",
     },
   },
 ];

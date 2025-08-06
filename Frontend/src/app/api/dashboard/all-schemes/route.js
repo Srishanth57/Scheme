@@ -61,8 +61,6 @@ export async function GET() {
     // Flatten the array of arrays into a single array
     const allSchemes = results.flat();
 
-    console.log(`Fetched ${allSchemes.length} schemes in total.`);
-    console.log(allSchemes);
     return new Response(JSON.stringify(allSchemes), {
       status: 200,
       headers: { "Content-Type": "application/json" },

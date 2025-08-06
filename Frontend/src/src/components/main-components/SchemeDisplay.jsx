@@ -1,17 +1,23 @@
 "use client";
 import React, { useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { DialogCloseButton } from "./DialogCloseButton";
 import { useDashboardContext } from "app/dashboard/layout";
-import { Info, Star } from "lucide-react";
+import { Info, Star, MapPin, Users, Building2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { usePathname } from "next/navigation";
+import { useAppContext } from "app/layout";
 
 //Type safety check
 const safeString = (value) =>
   typeof value === "string" ? value.toLowerCase() : "";
 
 const SchemeDisplay = ({ scheme }) => {
+  const pathname = usePathname();
   const { inputValue, sidebarFilters } = useDashboardContext();
+  const { tags, setTags } = useAppContext();
+
   const currentScheme = scheme;
 
   const { i18n } = useTranslation();
@@ -19,7 +25,7 @@ const SchemeDisplay = ({ scheme }) => {
 
   const schemesToDisplay = useMemo(() => {
     const filteredInput = inputValue || "";
-    console.log(sidebarFilters);
+
     let filteredSchemes = currentScheme.filter((scheme) => {
       const name =
         typeof scheme.name === "string"
@@ -40,6 +46,15 @@ const SchemeDisplay = ({ scheme }) => {
           (Array.isArray(value) && value.length === 0) ||
           (value instanceof Set && value.size === 0)
       );
+
+    if (pathname === "/dashboard/allScheme" && tags !== undefined) {
+      filteredSchemes = filteredSchemes.filter((scheme) => {
+        const schemeKeywords =
+          scheme.keywords?.[currentLang] || scheme.keywords?.en || [];
+
+        return schemeKeywords.some((keyword) => tags.includes(keyword));
+      });
+    }
 
     if (isSidebarFiltersEmptyOrDefault) return filteredSchemes;
 
@@ -212,67 +227,82 @@ const SchemeDisplay = ({ scheme }) => {
   }, [inputValue, sidebarFilters, currentScheme, currentLang]);
 
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
+    <div className="flex flex-1 flex-col gap-6 p-6 pt-0">
       {schemesToDisplay.length === 0 ? (
         <div className="flex justify-center items-center h-[70vh]">
-          <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
-            <Info className="h-5 w-5" />
-            <p className="text-lg font-medium">No schemes to display</p>
+          <div className="flex flex-col items-center gap-4 text-muted-foreground">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-muted">
+              <Info className="h-8 w-8" />
+            </div>
+            <div className="text-center space-y-2">
+              <h3 className="text-xl font-semibold tracking-tight">No schemes found</h3>
+              <p className="text-sm text-muted-foreground max-w-md">
+                Try adjusting your filters or search terms to find relevant schemes.
+              </p>
+            </div>
           </div>
         </div>
       ) : (
-        <ul className="grid auto-rows-min gap-4 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid auto-rows-min gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {schemesToDisplay.map((eachScheme) => (
-            <li
-              className="bg-muted/50 aspect-video rounded-xl p-5 gap-2.5 max-sm-w-[100vw]"
-              key={eachScheme.id}
+            <Card 
+              key={eachScheme.id} 
+              className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md bg-gradient-to-br from-white to-gray-50/80 dark:from-gray-900 dark:to-gray-800/80"
             >
-              <h1 className="text-xl mb-3">
-                {typeof eachScheme.name === "string"
-                  ? eachScheme.name
-                  : eachScheme.name?.[currentLang]}
-              </h1>
-
-              {eachScheme.location && (
-                <Badge
-                  variant="secondary"
-                  className="bg-blue-500 text-white dark:bg-blue-600 mt-3.5"
-                >
-                  <span>
+              <CardHeader className="pb-3">
+                <div className="flex items-start justify-between gap-3">
+                  <CardTitle className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {typeof eachScheme.name === "string"
+                      ? eachScheme.name
+                      : eachScheme.name?.[currentLang]}
+                  </CardTitle>
+                </div>
+                
+                {eachScheme.location && (
+                  <Badge
+                    variant="secondary"
+                    className="w-fit bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-200 border-blue-200 dark:border-blue-800 font-medium"
+                  >
+                    <MapPin className="w-3 h-3 mr-1" />
                     {typeof eachScheme.location === "string"
                       ? eachScheme.location
                       : eachScheme.location?.[currentLang]}
-                  </span>
-                </Badge>
-              )}
+                  </Badge>
+                )}
+              </CardHeader>
 
-              {eachScheme.description && (
-                <p className="text-md pt-6 pb-6">
-                  {typeof eachScheme.description === "string"
-                    ? eachScheme.description
-                    : eachScheme.description?.[currentLang]}
-                </p>
-              )}
+              <CardContent className="space-y-4">
+                {eachScheme.description && (
+                  <CardDescription className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3">
+                    {typeof eachScheme.description === "string"
+                      ? eachScheme.description
+                      : eachScheme.description?.[currentLang]}
+                  </CardDescription>
+                )}
 
-              <div className="flex text-center gap-3 item-center mb-4">
-                <div className="bg-green-600 w-fit p-2 pt-1 pb-1 rounded-2xl flex gap-2">
-                  <p className="text-white">
-                    {eachScheme.ratings?.avgRating?.toFixed(1) || "0.0"}
-                  </p>
-                  <Star color="#ffffff" strokeWidth={1.75} fill="white" />
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-1 bg-gradient-to-r from-emerald-500 to-green-600 text-white px-3 py-1.5 rounded-full shadow-sm">
+                      <span className="text-sm font-semibold">
+                        {eachScheme.ratings?.avgRating?.toFixed(1) || "0.0"}
+                      </span>
+                      <Star className="w-4 h-4 fill-white" />
+                    </div>
+                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                      <Users className="w-4 h-4" />
+                      <span>({eachScheme.ratings?.count || 0})</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="flex items-center">
-                  ( {eachScheme.ratings?.count || 0} )
-                </p>
-              </div>
 
-              <DialogCloseButton
-                scheme={eachScheme}
-                currentLang={currentLang}
-              />
-            </li>
+                <DialogCloseButton
+                  scheme={eachScheme}
+                  currentLang={currentLang}
+                />
+              </CardContent>
+            </Card>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

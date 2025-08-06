@@ -418,35 +418,67 @@ const keywords = [
   },
   { key: "youth", label: { en: "youth", ml: "യുവജനങ്ങൾ" } },
 ];
+//Custom hook for media query
+function useMediaQuery(query) {
+  const [matches, setMatches] = useState(false);
 
-export default function Autocomplete() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const mediaQuery = window.matchMedia(query);
+      setMatches(mediaQuery.matches);
+
+      const handler = (event) => setMatches(event.matches);
+      mediaQuery.addEventListener("change", handler);
+
+      return () => mediaQuery.removeEventListener("change", handler);
+    }
+    return undefined;
+  }, [query]);
+
+  return matches;
+}
+
+export default function Autocomplete({
+  onKeywordsChange,
+  currentKeywords = [],
+  isDesktop: propIsDesktop,
+}) {
   const { currentLang, handleSidebarFilterChange, sidebarFilters } =
     useDashboardContext();
+
+  // Use prop if provided, otherwise use media query
+  const mediaQueryDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop =
+    propIsDesktop !== undefined ? propIsDesktop : mediaQueryDesktop;
 
   const [inputValue, setInputValue] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [focusedIndex, setFocusedIndex] = useState(-1);
+
+  // Local state for mobile (to prevent immediate updates)
+  const [localSelectedItems, setLocalSelectedItems] = useState([]);
+
   const dropdownRef = useRef(null);
   const inputRef = useRef(null);
 
-  const selectedKeys = useMemo(
-    () => new Set(sidebarFilters.keywords.map((k) => k.key)),
-    [sidebarFilters.keywords]
-  );
-  // This is now clean. Its only job is to compute the selectedItems array.
-  const selectedItems = useMemo(() => {
-    return keywords.filter((item) => selectedKeys.has(item.key));
-  }, [selectedKeys]);
-
+  // Initialize local state from props or context
   useEffect(() => {
-    // We create a *new* object for the filters to ensure immutability.
-    handleSidebarFilterChange((prev) => ({
-      ...prev,
-      keywords: selectedItems,
-    }));
-    // Optionally, log the new value:
-    
-  }, [selectedKeys, handleSidebarFilterChange, selectedItems]);
+    const initialKeywords =
+      currentKeywords.length > 0
+        ? currentKeywords
+        : sidebarFilters.keywords || [];
+    setLocalSelectedItems(initialKeywords);
+  }, [currentKeywords, sidebarFilters.keywords]);
+
+  // Use the appropriate selected items based on desktop/mobile
+  const selectedItems = isDesktop
+    ? sidebarFilters.keywords || []
+    : localSelectedItems;
+
+  const selectedKeys = useMemo(
+    () => new Set(selectedItems.map((k) => k.key)),
+    [selectedItems]
+  );
 
   const filteredItems = useMemo(() => {
     if (!inputValue) return keywords;
@@ -463,27 +495,74 @@ export default function Autocomplete() {
   }, [inputValue]);
 
   const handleSelectionChange = (key) => {
-    if (key && !selectedKeys.has(key)) {
-      const selectedKeyword = keywords.find((k) => k.key === key);
-      if (selectedKeyword) {
-        const newKeywords = [...sidebarFilters.keywords, selectedKeyword];
-        handleSidebarFilterChange({ keywords: newKeywords });
+    if (!key || selectedKeys.has(key)) return;
+
+    const selectedKeyword = keywords.find((k) => k.key === key);
+    if (!selectedKeyword) return;
+
+    const newKeywords = [...selectedItems, selectedKeyword];
+
+    if (isDesktop) {
+      // Desktop: Update immediately
+      handleSidebarFilterChange({ keywords: newKeywords });
+      if (onKeywordsChange) {
+        onKeywordsChange(newKeywords);
       }
-      setInputValue("");
-      setIsOpen(false);
-      setFocusedIndex(-1);
+    } else {
+      // Mobile: Update only local state
+      setLocalSelectedItems(newKeywords);
+      if (onKeywordsChange) {
+        onKeywordsChange(newKeywords);
+      }
     }
+
+    setInputValue("");
+    setIsOpen(false);
+    setFocusedIndex(-1);
   };
 
   const removeSelectedItem = (key) => {
-    const newKeywords = sidebarFilters.keywords.filter((k) => k.key !== key);
-    handleSidebarFilterChange({ keywords: newKeywords });
+    const newKeywords = selectedItems.filter((k) => k.key !== key);
+
+    if (isDesktop) {
+      // Desktop: Update immediately
+      handleSidebarFilterChange({ keywords: newKeywords });
+      if (onKeywordsChange) {
+        onKeywordsChange(newKeywords);
+      }
+    } else {
+      // Mobile: Update only local state
+      setLocalSelectedItems(newKeywords);
+      if (onKeywordsChange) {
+        onKeywordsChange(newKeywords);
+      }
+    }
   };
 
   const clearAll = () => {
-    handleSidebarFilterChange({ keywords: [] });
+    if (isDesktop) {
+      // Desktop: Update immediately
+      handleSidebarFilterChange({ keywords: [] });
+      if (onKeywordsChange) {
+        onKeywordsChange([]);
+      }
+    } else {
+      // Mobile: Update only local state
+      setLocalSelectedItems([]);
+      if (onKeywordsChange) {
+        onKeywordsChange([]);
+      }
+    }
     setInputValue("");
   };
+
+  // Effect to sync when desktop/mobile mode changes
+  useEffect(() => {
+    if (isDesktop && localSelectedItems.length > 0) {
+      // When switching to desktop, sync local state to global state
+      handleSidebarFilterChange({ keywords: localSelectedItems });
+    }
+  }, [isDesktop, localSelectedItems, handleSidebarFilterChange]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -530,19 +609,30 @@ export default function Autocomplete() {
     }
   };
 
+  // Debug logging
+  console.log("Autocomplete Debug:", {
+    isDesktop,
+    selectedItemsLength: selectedItems.length,
+    localSelectedItemsLength: localSelectedItems.length,
+    sidebarFiltersKeywords: sidebarFilters.keywords?.length || 0,
+  });
+
   return (
     <div className="mx-auto space-y-6 h-fit">
-      {/* 3. Removed language switcher buttons */}
-
       {/* Selected Items Card */}
       {selectedItems.length > 0 && (
         <div className="bg-card border border-border rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-md">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-medium text-foreground flex items-center gap-2">
-              Selections
+              {currentLang === "en" ? "Keywords" : "കീവേഡുകൾ"}
               <span className="bg-primary/10 text-primary text-xs font-medium px-2 py-1 rounded-full">
                 {selectedItems.length}
               </span>
+              {!isDesktop && (
+                <span className="text-xs text-muted-foreground ml-2">
+                  ({currentLang === "en" ? "Pending" : "കാത്തിരിക്കുന്നു"})
+                </span>
+              )}
             </h3>
             <button
               onClick={clearAll}
@@ -555,14 +645,17 @@ export default function Autocomplete() {
             {selectedItems.map((item, index) => (
               <div
                 key={item.key}
-                className="group inline-flex items-center gap-1.5 bg-primary text-primary-foreground px-2.5 py-1.5 rounded-full text-sm font-medium shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-200 animate-[fadeInUp_0.5s_ease-out_forwards]"
+                className={`group inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-sm font-medium shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-200 animate-[fadeInUp_0.5s_ease-out_forwards] ${
+                  isDesktop
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-orange-100 text-orange-800 border border-orange-200"
+                }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {/* 4. Displaying label based on currentLang from context */}
                 <span>{item.label[currentLang]}</span>
                 <button
                   onClick={() => removeSelectedItem(item.key)}
-                  className="hover:bg-primary-foreground/20 rounded-full p-0.5 transition-colors duration-200"
+                  className="hover:bg-black/20 rounded-full p-0.5 transition-colors duration-200"
                 >
                   <X size={12} />
                 </button>
@@ -581,7 +674,11 @@ export default function Autocomplete() {
           <input
             ref={inputRef}
             type="text"
-            placeholder="Search for schemes or keywords..."
+            placeholder={
+              currentLang === "en"
+                ? "Search for schemes or keywords..."
+                : "സ്കീമുകൾക്കോ കീവേഡുകൾക്കോ വേണ്ടി തിരയുക..."
+            }
             value={inputValue}
             onChange={(e) => {
               setInputValue(e.target.value);
@@ -632,13 +729,16 @@ export default function Autocomplete() {
                                     : "text-foreground"
                                 }`}
                               >
-                                {/* 4. Displaying label based on currentLang from context */}
                                 {item.label[currentLang]}
                               </span>
                               {isSelected && (
                                 <div className="flex items-center gap-1 bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-xs font-medium">
                                   <Check size={10} />
-                                  <span>Selected</span>
+                                  <span>
+                                    {currentLang === "en"
+                                      ? "Selected"
+                                      : "തിരഞ്ഞെടുത്തു"}
+                                  </span>
                                 </div>
                               )}
                             </div>
@@ -656,8 +756,12 @@ export default function Autocomplete() {
                   />
                   <p className="text-muted-foreground text-sm">
                     {inputValue
-                      ? `No keywords found matching "${inputValue}"`
-                      : "Start typing to search..."}
+                      ? currentLang === "en"
+                        ? `No keywords found matching "${inputValue}"`
+                        : `"${inputValue}" എന്നതിനോട് ചേർന്ന കീവേഡുകളൊന്നും കണ്ടെത്തിയില്ല`
+                      : currentLang === "en"
+                      ? "Start typing to search..."
+                      : "തിരയാൻ ടൈപ്പ് ചെയ്യാൻ തുടങ്ങുക..."}
                   </p>
                 </div>
               )}

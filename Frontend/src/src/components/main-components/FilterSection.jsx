@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import clsx from "clsx";
 import { Button } from "@/components/ui/button"; // Adjust path as per your project
 import {
   DropdownMenu,
@@ -12,6 +13,7 @@ import { ChevronDownIcon, XIcon } from "lucide-react"; // Added XIcon for clear 
 import { Checkbox } from "@/components/ui/checkbox";
 import { useDashboardContext } from "app/dashboard/layout";
 import Autocomplete from "./Autocomplete";
+import { usePathname } from "next/navigation";
 
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(false);
@@ -132,6 +134,7 @@ export function FilterSection() {
     currentLang,
   } = useDashboardContext();
 
+  const pathname = usePathname();
   const initialFilters = {
     ageGroup: currentLang === "en" ? "All" : "എല്ലാവരും",
     gender: currentLang === "en" ? "All" : "എല്ലാവരും",
@@ -147,7 +150,7 @@ export function FilterSection() {
     sidebarFilters || initialFilters
   );
 
-  const isDesktop = useMediaQuery("(min-width: 768px)"); // Tailwind's 'md' breakpoint
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   useEffect(() => {
     setSelectedFilters(initialFilters);
@@ -210,19 +213,26 @@ export function FilterSection() {
     }
   }, [selectedFilters, isDesktop, handleSidebarFilterChange, currentLang]);
 
+  // And update your applyFiltersForMobile function:
   const applyFiltersForMobile = useCallback(() => {
+    console.log("Applying mobile filters:", selectedFilters); // Debug log
     handleSidebarFilterChange(selectedFilters);
-  }, [selectedFilters, handleSidebarFilterChange, selectedTab, currentLang]);
+  }, [selectedFilters, handleSidebarFilterChange]);
 
-  // Check if any filters are applied (for showing/hiding clear button)
+  // Also update your areFiltersApplied function:
   const areFiltersApplied = useCallback(() => {
-    const isCategoryFiltered = selectedFilters.category.length > 0;
+    const isCategoryFiltered =
+      selectedFilters.category && selectedFilters.category.length > 0;
+    const isKeywordFiltered =
+      selectedFilters.keywords && selectedFilters.keywords.length > 0;
     const isSingleSelectFiltered = Object.keys(initialFilters).some(
       (key) =>
-        key !== "category" && selectedFilters[key] !== initialFilters[key]
+        key !== "category" &&
+        key !== "keywords" &&
+        selectedFilters[key] !== initialFilters[key]
     );
-    return isCategoryFiltered || isSingleSelectFiltered;
-  }, [selectedFilters, currentLang]);
+    return isCategoryFiltered || isSingleSelectFiltered || isKeywordFiltered;
+  }, [selectedFilters, initialFilters, currentLang]);
 
   const FilterDropdown = ({ filterType, label, options }) => {
     return (
@@ -320,17 +330,22 @@ export function FilterSection() {
       {selectedTab === "agriculture" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -409,17 +424,22 @@ export function FilterSection() {
       {selectedTab === "allScheme" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -498,17 +518,22 @@ export function FilterSection() {
       {selectedTab === "healthCare" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -587,17 +612,22 @@ export function FilterSection() {
       {selectedTab === "disabled" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -655,17 +685,22 @@ export function FilterSection() {
       {selectedTab === "national" && (
         <div className="min-md:pl-13 pl-7 p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -744,17 +779,22 @@ export function FilterSection() {
       {selectedTab === "children" && (
         <div className="min-md:pl-13 pl-7 p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -787,17 +827,22 @@ export function FilterSection() {
       {selectedTab === "caste" && (
         <div className="min-md:pl-13 pl-7 p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -857,17 +902,22 @@ export function FilterSection() {
       {selectedTab === "women" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -944,17 +994,22 @@ export function FilterSection() {
       {selectedTab === "elderly" && (
         <div className="p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto min-md:pl-13 pl-7">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "": currentLang === "ml",
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -1004,22 +1059,46 @@ export function FilterSection() {
               );
             })}
             {!isDesktop && (
-              <div className="flex justify-between gap-2 mt-4">
+              <div className="flex gap-3 mt-6 px-1">
                 <Button
-                  variant="ghost"
+                  variant="outline"
                   onClick={clearFilters}
-                  className="text-sm px-2 flex-1 bg-[#FD151B]"
+                  className="
+        flex-1 h-11 text-sm font-medium
+        border-2 border-red-200 dark:border-red-800
+        bg-red-50 dark:bg-red-950
+        text-red-700 dark:text-red-300
+        hover:bg-red-100 dark:hover:bg-red-900
+        hover:border-red-300 dark:hover:border-red-700
+        active:bg-red-200 dark:active:bg-red-800
+        transition-all duration-200
+        focus:ring-2 focus:ring-red-500 focus:ring-opacity-50
+        rounded-lg shadow-sm
+      "
                 >
-                  <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                  <XIcon className="h-4 w-4 mr-2" />
+                  {currentLang === "en" ? "Clear All" : "എല്ലാം മായ്ക്കുക"}
                 </Button>
+
                 <Button
-                  variant="ghost"
+                  variant="outline"
                   onClick={applyFiltersForMobile}
-                  className="text-sm px-2 flex-1 bg-[#688E26]"
+                  className="
+        flex-1 h-11 text-sm font-medium
+        border-2 border-green-200 dark:border-green-800
+        bg-green-50 dark:bg-green-950
+        text-green-700 dark:text-green-300
+        hover:bg-green-100 dark:hover:bg-green-900
+        hover:border-green-300 dark:hover:border-green-700
+        active:bg-green-200 dark:active:bg-green-800
+        transition-all duration-200
+        focus:ring-2 focus:ring-green-500 focus:ring-opacity-50
+        rounded-lg shadow-sm
+      "
                 >
+                  <FilterIcon className="h-4 w-4 mr-2" />
                   {currentLang === "en"
-                    ? "Apply filters"
+                    ? "Apply Filters"
                     : "ഫിൽട്ടറുകൾ പ്രയോഗിക്കുക"}
                 </Button>
               </div>
@@ -1031,17 +1110,22 @@ export function FilterSection() {
       {selectedTab === "governmentSchemes" && (
         <div className="min-md:pl-13 pl-7 p-4 md:p-6 space-y-6 bg-card text-card-foreground rounded-lg border h-full md:w-full lg:w-auto">
           <div className="flex flex-row justify-between items-center">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span
+              className={clsx(" font-semibold  tracking-tight", {
+                "text-2xl ": currentLang === "en",
+                "text-xl": currentLang === "ml", // Fixed: Added proper Malayalam text size
+              })}
+            >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
-            </h2>
+            </span>
             {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="text-sm px-2 hidden md:flex items-center"
+                className="text-sm px-2 hidden md:flex items-center ml-1"
               >
-                <XIcon className="h-4 w-4 mr-1 sm:mr-2" />
-                {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                <XIcon className="h-4 w-4  sm:mr-1" />
+                {currentLang === "en" ? "Clear all" : "മായ്ക്കുക"}
               </Button>
             )}
           </div>
@@ -1051,25 +1135,39 @@ export function FilterSection() {
               label={filterDisplayNames.implementedBy?.[currentLang]}
               options={filterOptions.implementedBy}
             />
-            <Autocomplete />
+            <Autocomplete
+              onKeywordsChange={(keywords) => {
+                // Update selectedFilters for mobile behavior
+                setSelectedFilters((prev) => ({
+                  ...prev,
+                  keywords: keywords,
+                }));
+              }}
+              currentKeywords={selectedFilters.keywords || []}
+              isDesktop={isDesktop}
+            />
             {!isDesktop && (
-              <div className="flex justify-between gap-2 mt-4">
+              <div className="flex flex-col sm:flex-row justify-between gap-2 mt-4">
                 <Button
-                  variant="ghost"
+                  variant="default"
                   onClick={clearFilters}
-                  className="text-sm px-2 flex-1 bg-[#FD151B]"
+                  className="text-sm px-2 flex-1 bg-red-500 hover:bg-red-600 text-white border-red-500"
                 >
                   <XIcon className="h-4 w-4 mr-1" />
-                  {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                  <span className="truncate">
+                    {currentLang === "en" ? "Clear all" : "എല്ലാം മായ്ക്കുക"}
+                  </span>
                 </Button>
                 <Button
-                  variant="ghost"
+                  variant="default"
                   onClick={applyFiltersForMobile}
-                  className="text-sm px-2 flex-1 bg-[#688E26]"
+                  className="text-sm px-2 flex-1 bg-green-600 hover:bg-green-700 text-white border-green-600"
                 >
-                  {currentLang === "en"
-                    ? "Apply filters"
-                    : "ഫിൽട്ടറുകൾ പ്രയോഗിക്കുക"}
+                  <span className="truncate">
+                    {currentLang === "en"
+                      ? "Apply filters"
+                      : "ഫിൽട്ടറുകൾ പ്രയോഗിക്കുക"}
+                  </span>
                 </Button>
               </div>
             )}

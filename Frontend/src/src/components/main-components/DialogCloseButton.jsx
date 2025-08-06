@@ -10,300 +10,441 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  ExternalLink,
+  Target,
+  Users,
+  FileText,
+  Phone,
+  Mail,
+  Calendar,
+  DollarSign,
+  Building,
+  Star,
+  UserCheck,
+  Shield,
+  Globe,
+  Award,
+  Eye,
+} from "lucide-react";
 import Link from "next/link";
 import StarRating from "./UserUpdateRating";
 
 export function DialogCloseButton({ scheme, currentLang }) {
+  const InfoRow = ({ icon: Icon, label, children, className = "" }) => (
+    <div className={`mb-4 ${className}`}>
+      <div className="flex items-start gap-3">
+        {Icon && (
+          <Icon className="h-4 w-4 mt-0.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+        )}
+        <div className="flex-1">
+          <span className="font-bold text-slate-700 dark:text-slate-300 text-sm">
+            {label}
+          </span>
+          <div className="mt-1 text-emerald-700 dark:text-emerald-400 font-medium text-sm leading-relaxed">
+            {children}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" className="w-full relative">
-          {currentLang === "ml" ? "കൂടുതൽ കാണുക" : "View More"}
+        <Button
+          variant="outline"
+          className="w-full group hover:bg-slate-100 hover:text-slate-900
+               dark:hover:bg-slate-800 dark:hover:text-slate-100
+               transition-all duration-200"
+        >
+          <Eye className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+          <span>{currentLang === "ml" ? "കൂടുതൽ കാണുക" : "View More"}</span>
         </Button>
-      </DialogTrigger>{" "}
-      <DialogContent className="sm:max-w-md font-serif min-md:max-w-10/12 min-md:h-2/3">
-        <DialogHeader>
-          <DialogTitle>
+      </DialogTrigger>
+
+      <DialogContent className="w-[98vw] max-w-6xl max-h-[90vh] flex flex-col">
+        <DialogHeader className="space-y-4 pb-4 border-b">
+          <DialogTitle className="text-xl font-bold leading-tight pr-8 flex items-start gap-3">
+            <Award className="h-6 w-6 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
             {typeof scheme.name === "string"
               ? scheme.name
               : scheme.name?.[currentLang]}
           </DialogTitle>
-          <DialogDescription className="font-sans">
-            {/* Government Schemes Rendering Criteria */}
-            {scheme.implementedBy && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "നടപ്പിലാക്കിയത് (GoI/GoK/LSGI):"
-                    : "Implemented By (GoI/GoK/LSGI):"}
-                </span>
-                {Array.isArray(scheme.implementedBy)
-                  ? scheme.implementedBy
-                      .map((agency) =>
-                        typeof agency === "string"
-                          ? agency
-                          : agency?.[currentLang] || agency?.en
-                      )
-                      .join(", ")
-                  : typeof scheme.implementingAgency === "string"
-                  ? scheme.implementingAgency
-                  : scheme.implementedBy?.[currentLang].map(each => each).join(", ") ||
-                    scheme.implementedBy?.en}
-                <br />
-              </>
-            )}
-            {scheme.objective && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml" ? "ലക്ഷ്യം:" : "Objective:"}
-                </span>
-                {scheme.objective?.[currentLang]}
-                <br />
-              </>
-            )}
-            {scheme.targetBeneficiaries && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "ലക്ഷ്യമിടുന്ന ഗുണഭോക്താക്കൾ:"
-                    : "Target Beneficiaries:"}
-                </span>{" "}
-                {scheme.targetBeneficiaries?.[currentLang]}
-                <br />
-              </>
-            )}
-            {scheme.eligibilityCriterias && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "അർഹതാ മാനദണ്ഡങ്ങൾ :"
-                    : "Eligibility Criteria :"}
-                </span>
-                <span className="list-decimal pl-7">
-                  {scheme.eligibilityCriterias?.[currentLang]
-                    .split(";")
-                    .map((value, index) => (
-                      <li key={index}>{value}</li>
-                    ))}
-                </span>
-                <br />
-              </>
-            )}
-            {scheme.benefitsProvided && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "നൽകുന്ന ആനുകൂല്യങ്ങൾ/സഹായം :"
-                    : "Benefits/Assistance Provided :"}
-                </span>
-                <span className="list-decimal pl-7">
-                  {scheme.benefitsProvided?.[currentLang]
-                    .split(";")
-                    .map((value, index) => (
-                      <li key={index}>{value}</li>
-                    ))}
-                </span>
-                <br />
-              </>
-            )}
-            {scheme.applicationProcess && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "അപേക്ഷാ പ്രക്രിയ :"
-                    : "Application Process :"}
-                </span>
-                {scheme.applicationProcess?.[currentLang]}
-                <br />
-              </>
-            )}
-            {scheme.contact && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "ബന്ധപ്പെടാനുള്ള വ്യക്തി/പദവി/ഫോൺ/ഇമെയിൽ :"
-                    : "Contact Person/Designation/Phone/Email :"}
-                </span>
-                <span className="list-decimal pl-7">
-                  {scheme.contact?.[currentLang]
-                    .split(";")
-                    .map((value, index) => (
-                      <li key={index}>{value}</li>
-                    ))}
-                </span>
-                <br />
-              </>
-            )}
-
-            {/* Other Schemes Rendering Criteria */}
-            {scheme.targetAudience && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml" ? "വേണ്ടി: " : "For: "}
-                </span>
-                {scheme.targetAudience?.[currentLang]}
-                <br />
-              </>
-            )}
-            {scheme.benefits && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "ആനുകൂല്യങ്ങൾ (രൂപ വരെ) :"
-                    : "Benefits ( UPTO/RS ): "}
-                </span>
-                {scheme.benefits?.[currentLang]}
-                <br />
-              </>
-            )}
-            {scheme.category && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml" ? "വിഭാഗം:" : "Category:"}
-                </span>{" "}
-                {scheme.category?.[currentLang]}
-                <br />
-              </>
-            )}
-            {scheme.implementingAgency && (
-              <>
-                <span className="font-bold">
-                  {currentLang === "ml"
-                    ? "നടപ്പാക്കുന്ന ഏജൻസി:"
-                    : "Implementing Agency:"}
-                </span>
-                {scheme.implementingAgency?.[currentLang]}
-                <br />
-              </>
-            )}
-          </DialogDescription>
         </DialogHeader>
-        <DialogHeader>
-          <DialogDescription asChild>
-            <div>
-              <div className="font-sans">
-                {scheme.ageGroup && (
-                  <>
-                    <span className="font-bold">
-                      {currentLang === "ml" ? "പ്രായപരിധി:" : "Age Group:"}
-                    </span>
-                    {scheme.ageGroup?.[currentLang]}
-                    <br />
-                  </>
-                )}
 
-                {scheme.gender && (
-                  <>
-                    <span className="font-bold">
-                      {currentLang === "ml" ? "ലിംഗഭേദം:" : "Gender:"}
-                    </span>{" "}
-                    {scheme.gender?.[currentLang]}
-                    <br />
-                  </>
-                )}
-
-                {scheme.incomeLevel && (
-                  <>
-                    <span className="font-bold">
-                      {currentLang === "ml" ? "വരുമാന നില:" : "Income Level:"}
-                    </span>
-                    {scheme.incomeLevel?.[currentLang]}
-                    <br />
-                  </>
-                )}
-                {scheme.documents_required && (
-                  <>
-                    <span className="font-bold">
-                      {currentLang === "ml"
-                        ? "ആവശ്യമുള്ള രേഖകൾ: "
-                        : "Documents Required: "}
-                    </span>
-                    {scheme.documents_required?.[currentLang]}
-                    <br />
-                  </>
-                )}
-                {scheme.eligibility && (
-                  <>
-                    <span className="font-bold">
-                      {currentLang === "ml" ? "അർഹതപ്പെട്ടവർ: " : "Eligible: "}
-                    </span>
-                    {scheme.eligibility?.[currentLang]}
-                    <br />
-                  </>
-                )}
-                {scheme.socialCategory && scheme.socialCategory.length > 0 && (
-                  <>
-                    <span className="font-bold">
-                      {currentLang === "ml"
-                        ? "സാമൂഹിക വിഭാഗം:"
-                        : "Social Category:"}
-                    </span>
-                    {/* Ensure socialCategory is handled for multilingual objects as well */}
-                    {Array.isArray(scheme.socialCategory)
-                      ? scheme.socialCategory.map((eachCategory, index) => (
-                          <span key={index}>
-                            {typeof eachCategory === "string"
-                              ? eachCategory
-                              : eachCategory?.[currentLang] || eachCategory?.en}
-                            {index < scheme.socialCategory.length - 1 && ","}
-                          </span>
-                        ))
-                      : scheme.socialCategory?.[currentLang] ||
-                        scheme.socialCategory?.en}
-                    <br />
-                  </>
-                )}
-              </div>
-
-              {scheme.link && (
-                <div>
-                  <p className="font-bold inline">
-                    {currentLang === "ml" ? "ലിങ്ക്: " : "Link: "}
-                  </p>
-                  <Link href={scheme.link} target="_blank">
-                    {scheme.link}
-                  </Link>
-                  <br />
-                </div>
-              )}
-              {scheme.application_process && (
-                <div className="gap-1 flex">
-                  <p className="font-bold inline">
-                    {currentLang === "ml"
-                      ? "അപേക്ഷാ പ്രക്രിയ / ലിങ്ക്: "
-                      : "Application Process / Link: "}
-                  </p>
-                  {
-                    scheme.application_process.process_description?.[
-                      currentLang
-                    ]
-                  }
-                  {!(scheme.application_process.link === "N/A") && (
-                    <Link
-                      href={scheme.application_process.link}
-                      target="_blank"
+        <div className="flex-1 overflow-y-auto">
+          <div className="space-y-4 p-1">
+            <Card className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border-slate-200 dark:border-slate-700 shadow-lg">
+              <CardContent className="p-5">
+                <DialogDescription className="space-y-4">
+                  {/* Government Schemes Rendering Criteria */}
+                  {scheme.implementedBy && (
+                    <InfoRow
+                      icon={Building}
+                      label={
+                        currentLang === "ml"
+                          ? "നടപ്പിലാക്കിയത് (GoI/GoK/LSGI):"
+                          : "Implemented By (GoI/GoK/LSGI):"
+                      }
                     >
-                      / {scheme.application_process.link}
-                    </Link>
+                      {Array.isArray(scheme.implementedBy)
+                        ? scheme.implementedBy
+                            .map((agency) =>
+                              typeof agency === "string"
+                                ? agency
+                                : agency?.[currentLang] || agency?.en
+                            )
+                            .join(", ")
+                        : typeof scheme.implementingAgency === "string"
+                        ? scheme.implementingAgency
+                        : scheme.implementedBy?.[currentLang]
+                            ?.map((each) => each)
+                            .join(", ") || scheme.implementedBy?.en}
+                    </InfoRow>
                   )}
-                </div>
-              )}
 
-              <h1 className="font-bold inline">
-                {currentLang === "ml" ? "റേറ്റിംഗുകൾ: " : "Ratings: "}
-              </h1>
-              <StarRating
-                count={scheme.ratings.count}
-                avgRating={scheme.ratings.avgRating}
-                schemeId={scheme._id}
-              />
-            </div>
-          </DialogDescription>
-        </DialogHeader>
+                  {scheme.objective && (
+                    <InfoRow
+                      icon={Target}
+                      label={currentLang === "ml" ? "ലക്ഷ്യം:" : "Objective:"}
+                    >
+                      {scheme.objective?.[currentLang]}
+                    </InfoRow>
+                  )}
 
-        <DialogFooter className="sm:justify-start">
+                  {scheme.targetBeneficiaries && (
+                    <InfoRow
+                      icon={Users}
+                      label={
+                        currentLang === "ml"
+                          ? "ലക്ഷ്യമിടുന്ന ഗുണഭോക്താക്കൾ:"
+                          : "Target Beneficiaries:"
+                      }
+                    >
+                      {scheme.targetBeneficiaries?.[currentLang]}
+                    </InfoRow>
+                  )}
+
+                  {scheme.eligibilityCriterias && (
+                    <InfoRow
+                      icon={FileText}
+                      label={
+                        currentLang === "ml"
+                          ? "അർഹതാ മാനദണ്ഡങ്ങൾ :"
+                          : "Eligibility Criteria :"
+                      }
+                    >
+                      <ul className="list-none space-y-2 mt-2">
+                        {scheme.eligibilityCriterias?.[currentLang]
+                          .split(";")
+                          .map((value, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full mt-2 flex-shrink-0" />
+                              <span>{value}</span>
+                            </li>
+                          ))}
+                      </ul>
+                    </InfoRow>
+                  )}
+
+                  {scheme.benefitsProvided && (
+                    <InfoRow
+                      icon={DollarSign}
+                      label={
+                        currentLang === "ml"
+                          ? "നൽകുന്ന ആനുകൂല്യങ്ങൾ/സഹായം :"
+                          : "Benefits/Assistance Provided :"
+                      }
+                    >
+                      <ul className="list-none space-y-2 mt-2">
+                        {scheme.benefitsProvided?.[currentLang]
+                          .split(";")
+                          .map((value, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full mt-2 flex-shrink-0" />
+                              <span>{value}</span>
+                            </li>
+                          ))}
+                      </ul>
+                    </InfoRow>
+                  )}
+
+                  {scheme.applicationProcess && (
+                    <InfoRow
+                      icon={FileText}
+                      label={
+                        currentLang === "ml"
+                          ? "അപേക്ഷാ പ്രക്രിയ :"
+                          : "Application Process :"
+                      }
+                    >
+                      {scheme.applicationProcess?.[currentLang]}
+                    </InfoRow>
+                  )}
+
+                  {scheme.contact && (
+                    <InfoRow
+                      icon={Phone}
+                      label={
+                        currentLang === "ml"
+                          ? "ബന്ധപ്പെടാനുള്ള വ്യക്തി/പദവി/ഫോൺ/ഇമെയിൽ :"
+                          : "Contact Person/Designation/Phone/Email :"
+                      }
+                    >
+                      <ul className="list-none space-y-2 mt-2">
+                        {scheme.contact?.[currentLang]
+                          .split(";")
+                          .map((value, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full mt-2 flex-shrink-0" />
+                              <span>{value}</span>
+                            </li>
+                          ))}
+                      </ul>
+                    </InfoRow>
+                  )}
+
+                  {/* Other Schemes Rendering Criteria */}
+                  {scheme.targetAudience && (
+                    <InfoRow
+                      icon={Users}
+                      label={currentLang === "ml" ? "വേണ്ടി: " : "For: "}
+                    >
+                      {scheme.targetAudience?.[currentLang]}
+                    </InfoRow>
+                  )}
+
+                  {scheme.benefits && (
+                    <InfoRow
+                      icon={DollarSign}
+                      label={
+                        currentLang === "ml"
+                          ? "ആനുകൂല്യങ്ങൾ (രൂപ വരെ) :"
+                          : "Benefits ( UPTO/RS ): "
+                      }
+                    >
+                      <div className="bg-emerald-50 dark:bg-emerald-950/30 px-3 py-2 rounded-md border border-emerald-200 dark:border-emerald-800 font-semibold">
+                        {scheme.benefits?.[currentLang]}
+                      </div>
+                    </InfoRow>
+                  )}
+
+                  {scheme.category && (
+                    <InfoRow
+                      icon={Shield}
+                      label={currentLang === "ml" ? "വിഭാഗം:" : "Category:"}
+                    >
+                      <Badge variant="secondary" className="text-xs px-3 py-1">
+                        {scheme.category?.[currentLang]}
+                      </Badge>
+                    </InfoRow>
+                  )}
+
+                  {scheme.implementingAgency && (
+                    <InfoRow
+                      icon={Building}
+                      label={
+                        currentLang === "ml"
+                          ? "നടപ്പാക്കുന്ന ഏജൻസി:"
+                          : "Implementing Agency:"
+                      }
+                    >
+                      {scheme.implementingAgency?.[currentLang]}
+                    </InfoRow>
+                  )}
+                </DialogDescription>
+              </CardContent>
+            </Card>
+
+            {/* Additional Details Card */}
+            <Card className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border-slate-200 dark:border-slate-700 shadow-lg">
+              <CardContent className="p-5">
+                <DialogDescription className="space-y-4">
+                  {scheme.ageGroup && (
+                    <InfoRow
+                      icon={Calendar}
+                      label={
+                        currentLang === "ml" ? "പ്രായപരിധി:" : "Age Group:"
+                      }
+                    >
+                      {scheme.ageGroup?.[currentLang]}
+                    </InfoRow>
+                  )}
+
+                  {scheme.gender && (
+                    <InfoRow
+                      icon={Users}
+                      label={currentLang === "ml" ? "ലിംഗഭേദം:" : "Gender:"}
+                    >
+                      <Badge variant="outline" className="text-xs">
+                        {scheme.gender?.[currentLang]}
+                      </Badge>
+                    </InfoRow>
+                  )}
+
+                  {scheme.incomeLevel && (
+                    <InfoRow
+                      icon={DollarSign}
+                      label={
+                        currentLang === "ml" ? "വരുമാന നില:" : "Income Level:"
+                      }
+                    >
+                      {scheme.incomeLevel?.[currentLang]}
+                    </InfoRow>
+                  )}
+
+                  {scheme.documents_required && (
+                    <InfoRow
+                      icon={FileText}
+                      label={
+                        currentLang === "ml"
+                          ? "ആവശ്യമുള്ള രേഖകൾ: "
+                          : "Documents Required: "
+                      }
+                    >
+                      {scheme.documents_required?.[currentLang]}
+                    </InfoRow>
+                  )}
+
+                  {scheme.eligibility && (
+                    <InfoRow
+                      icon={UserCheck}
+                      label={
+                        currentLang === "ml" ? "അർഹതപ്പെട്ടവർ: " : "Eligible: "
+                      }
+                    >
+                      {scheme.eligibility?.[currentLang]}
+                    </InfoRow>
+                  )}
+
+                  {scheme.socialCategory &&
+                    scheme.socialCategory.length > 0 && (
+                      <InfoRow
+                        icon={Shield}
+                        label={
+                          currentLang === "ml"
+                            ? "സാമൂഹിക വിഭാഗം:"
+                            : "Social Category:"
+                        }
+                      >
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {Array.isArray(scheme.socialCategory) ? (
+                            scheme.socialCategory.map((eachCategory, index) => (
+                              <Badge
+                                key={index}
+                                variant="secondary"
+                                className="text-xs"
+                              >
+                                {typeof eachCategory === "string"
+                                  ? eachCategory
+                                  : eachCategory?.[currentLang] ||
+                                    eachCategory?.en}
+                              </Badge>
+                            ))
+                          ) : (
+                            <Badge variant="secondary" className="text-xs">
+                              {scheme.socialCategory?.[currentLang] ||
+                                scheme.socialCategory?.en}
+                            </Badge>
+                          )}
+                        </div>
+                      </InfoRow>
+                    )}
+                </DialogDescription>
+              </CardContent>
+            </Card>
+
+            {/* Links and Application Process */}
+            {(scheme.link || scheme.application_process) && (
+              <Card className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border-slate-200 dark:border-slate-700 shadow-lg">
+                <CardContent className="p-5">
+                  <DialogDescription className="space-y-4">
+                    {scheme.link && (
+                      <InfoRow
+                        icon={Globe}
+                        label={currentLang === "ml" ? "ലിങ്ക്: " : "Link: "}
+                      >
+                        <div className="bg-slate-800 dark:bg-slate-900 rounded-lg p-3 border border-slate-600">
+                          <Link
+                            href={scheme.link}
+                            target="_blank"
+                            className="inline-flex items-center gap-2 text-slate-300 hover:text-white font-medium transition-colors text-sm group"
+                          >
+                            <ExternalLink className="h-4 w-4 flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                            <span className="break-all">{scheme.link}</span>
+                          </Link>
+                        </div>
+                      </InfoRow>
+                    )}
+
+                    {scheme.application_process && (
+                      <InfoRow
+                        icon={FileText}
+                        label={
+                          currentLang === "ml"
+                            ? "അപേക്ഷാ പ്രക്രിയ / ലിങ്ക്: "
+                            : "Application Process / Link: "
+                        }
+                      >
+                        <div className="space-y-3">
+                          <div className="text-emerald-700 dark:text-emerald-400 font-medium">
+                            {
+                              scheme.application_process.process_description?.[
+                                currentLang
+                              ]
+                            }
+                          </div>
+                          {!(scheme.application_process.link === "N/A") && (
+                            <div className="bg-slate-800 dark:bg-slate-900 rounded-lg p-3 border border-slate-600">
+                              <Link
+                                href={scheme.application_process.link}
+                                target="_blank"
+                                className="inline-flex items-center gap-2 text-slate-300 hover:text-white font-medium transition-colors text-sm group"
+                              >
+                                <ExternalLink className="h-4 w-4 flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                                <span className="break-all">
+                                  {scheme.application_process.link}
+                                </span>
+                              </Link>
+                            </div>
+                          )}
+                        </div>
+                      </InfoRow>
+                    )}
+                  </DialogDescription>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Ratings Card */}
+            <Card className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border-slate-200 dark:border-slate-700 shadow-lg">
+              <CardContent className="p-5">
+                <InfoRow
+                  icon={Star}
+                  label={currentLang === "ml" ? "റേറ്റിംഗുകൾ: " : "Ratings: "}
+                >
+                  <div className="flex items-center gap-4 mt-2">
+                    <StarRating
+                      count={scheme.ratings.count}
+                      avgRating={scheme.ratings.avgRating}
+                      schemeId={scheme._id}
+                    />
+                  </div>
+                </InfoRow>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <Separator className="my-1" />
+
+        <DialogFooter className="pt-4 bg-muted/20">
           <DialogClose asChild>
-            <Button type="button" variant="secondary">
+            <Button variant="secondary" className="min-w-28 h-10">
               {currentLang === "ml" ? "അടയ്ക്കുക" : "Close"}
             </Button>
           </DialogClose>

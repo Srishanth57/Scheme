@@ -1,10 +1,8 @@
 "use client";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
-
 import React, { createContext, useContext, useState } from "react";
+import Chatbot from "./(home)/component/Chatbot";
 
-import { useTranslation } from "next-i18next";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,14 +20,11 @@ export function useAppContext() {
 }
 
 export default function RootLayout({ children }) {
-  const [prompt, setPrompt] = useState("");
-
-  const { i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
+  const [tags, setTags] = useState();
 
   const contextValue = {
-    prompt,
-    setPrompt,
+    tags,
+    setTags,
   };
   return (
     <html lang="en" suppressHydrationWarning>
@@ -37,7 +32,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AppContext.Provider value={contextValue}>
-          <div>{children}</div>
+          {children}
+          <Chatbot />
         </AppContext.Provider>
       </body>
     </html>
