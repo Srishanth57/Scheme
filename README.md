@@ -19,11 +19,11 @@ Here's a look at the application:
 
 **2. Dashboard View**
 *The main dashboard where users can browse and search for various government schemes.*
-![Dashboard](https://i.imgur.com/5g2c3fF.jpeg)
+![Dashboard](https://res.cloudinary.com/dkneuqj45/image/upload/v1756194445/Screenshot_2025-08-18_215000_k9t9yb.png)
 
 **3. Scheme Details**
 *A detailed view providing all the necessary information about a specific scheme.*
-![Scheme Details](https://i.imgur.com/o7s2tYc.png)
+![Scheme Details](https://res.cloudinary.com/dkneuqj45/image/upload/v1756194442/Screenshot_2025-08-07_012238_pg45cc.png)
 
 ## Getting Started
 
