@@ -15,7 +15,7 @@ Here's a look at the application:
 
 **1. Landing Page**
 *The welcoming home page that introduces the platform's purpose.*
-![Landing Page]([https://i.imgur.com/8Qj8vLg.jpeg](https://res.cloudinary.com/dkneuqj45/image/upload/v1756194448/Screenshot_2025-08-18_213906_z74y9t.png))
+![Landing Page](https://res.cloudinary.com/dkneuqj45/image/upload/v1756194448/Screenshot_2025-08-18_213906_z74y9t.png)
 
 **2. Dashboard View**
 *The main dashboard where users can browse and search for various government schemes.*
