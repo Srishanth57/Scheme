@@ -338,7 +338,7 @@ export function FilterSection() {
             >
               {currentLang === "en" ? "Filters" : "ഫിൽട്ടറുകൾ"}
             </span>
-            {isDesktop && (
+            {areFiltersApplied() && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}

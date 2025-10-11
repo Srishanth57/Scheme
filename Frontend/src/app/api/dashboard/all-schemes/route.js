@@ -66,6 +66,7 @@ export async function GET() {
       headers: { "Content-Type": "application/json" },
     });
   } catch (error) {
+    console.error("Error fetching data from DB:", error);
     return new Response(
       JSON.stringify({
         message: "Failed to fetch schemes.",

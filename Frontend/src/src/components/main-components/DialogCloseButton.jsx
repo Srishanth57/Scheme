@@ -41,12 +41,9 @@ export function DialogCloseButton({ scheme, currentLang }) {
           <Icon className="h-4 w-4 mt-0.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
         )}
         <div className="flex-1">
-          <p>
-            <span className="font-bold text-slate-700 dark:text-slate-300 text-sm">
-              {label}
-            </span>
-          </p>
-
+          <span className="font-bold text-slate-700 dark:text-slate-300 text-sm">
+            {label}
+          </span>
           <div className="mt-1 text-emerald-700 dark:text-emerald-400 font-medium text-sm leading-relaxed">
             {children}
           </div>

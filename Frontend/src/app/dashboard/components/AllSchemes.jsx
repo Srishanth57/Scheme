@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import SchemeDisplay from "@/components/main-components/SchemeDisplay";
-
 import { ThreeDots } from "react-loader-spinner";
 import { AlertTriangle } from "lucide-react";
 
@@ -13,7 +12,7 @@ const Page = ({ inputValue, sidebarFilters }) => {
 
   useEffect(() => {
     async function getAgricultureSchemes() {
-      const url = "/api/dashboard/agriculture";
+      const url = "/api/dashboard/all-schemes";
 
       try {
         const response = await fetch(url);
@@ -26,9 +25,9 @@ const Page = ({ inputValue, sidebarFilters }) => {
         }
 
         const fetchedData = await response.json();
-
         setData(fetchedData);
       } catch (err) {
+        console.error("Error fetching agriculture schemes:", err);
         setError(`Failed to load schemes: ${err.message}`);
       } finally {
         setLoading(false);

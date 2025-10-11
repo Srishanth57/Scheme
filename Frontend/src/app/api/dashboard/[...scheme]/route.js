@@ -33,7 +33,7 @@ export async function GET(request, { params }) {
   try {
     await connectDB();
 
-    const segments = params.scheme ?? [];
+    const segments = params.scheme;
     const category = segments.join("_");
 
     let schemes = [];
@@ -61,6 +61,7 @@ export async function GET(request, { params }) {
       headers: { "Content-Type": "application/json" },
     });
   } catch (error) {
+    console.error("Error fetching data from DB:", error);
     return new Response(
       JSON.stringify({
         message: "Failed to fetch schemes.",
