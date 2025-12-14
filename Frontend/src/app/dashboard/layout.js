@@ -2,13 +2,20 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useCallback,
+  useEffect,
+} from "react";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/main-components/app-sidebar";
 import Header from "@/components/main-components/Header";
 import "../globals.css";
 import NavBar from "@/components/main-components/NavBar";
 import { useTranslation } from "next-i18next";
+import { ScrollToTop } from "@/components/main-components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -98,7 +105,10 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     if (isHydrated && typeof window !== "undefined") {
       try {
-        localStorage.setItem("dashboardFilters", JSON.stringify(sidebarFilters));
+        localStorage.setItem(
+          "dashboardFilters",
+          JSON.stringify(sidebarFilters)
+        );
       } catch (error) {
         console.warn("Error saving filters to localStorage:", error);
       }
@@ -144,7 +154,7 @@ export default function RootLayout({ children }) {
     setSidebarFilters(defaultFilters);
     setInputValue("");
     setSelectedTab("agriculture");
-    
+
     if (typeof window !== "undefined") {
       try {
         localStorage.removeItem("dashboardFilters");
@@ -170,36 +180,33 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <ClerkProvider>
-      <html lang="en" suppressHydrationWarning>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <DashboardContext.Provider value={contextValue}>
-              <SidebarProvider>
-                <AppSidebar />
-                <SidebarInset className="overflow-x-hidden">
-                  <NavBar />
-                  <Header handleInputValue={handleInputValue} />
-                  
-                  {/* Main Content - Only render after hydration to prevent mismatch */}
-                  {isHydrated ? children : (
-                    <div className="flex items-center justify-center h-64">
-                      <div className="text-muted-foreground">Loading...</div>
-                    </div>
-                  )}
-                </SidebarInset>
-              </SidebarProvider>
-            </DashboardContext.Provider>
-          </ThemeProvider>
-        </body>
-      </html>
+    <ClerkProvider lang="en" suppressHydrationWarning>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <DashboardContext.Provider value={contextValue}>
+          <SidebarProvider>
+            <AppSidebar />
+            <SidebarInset className="overflow-x-hidden">
+              <NavBar />
+              <Header handleInputValue={handleInputValue} />
+
+              {/* Main Content - Only render after hydration to prevent mismatch */}
+              {isHydrated ? (
+                children
+              ) : (
+                <div className="flex items-center justify-center h-64">
+                  <div className="text-muted-foreground">Loading...</div>
+                </div>
+              )}
+              <ScrollToTop />
+            </SidebarInset>
+          </SidebarProvider>
+        </DashboardContext.Provider>
+      </ThemeProvider>
     </ClerkProvider>
   );
 }
