@@ -1,4 +1,4 @@
-# 🚀 Modern Web Application
+#  Scheme Web app for local people of Idukki, Kerala. 
 
 A sleek, high-performance web application built with [Next.js](https://nextjs.org), optimized for speed and user experience.
 
@@ -25,7 +25,7 @@ Take a look at the design system and core sections of the application:
 * **Performance First:** Automatic font optimization with `next/font`.
 * **Responsive Design:** Looks great on all screen sizes.
 * **Theming:** Built-in support for light and dark modes (see previews above).
-
+* **Chatbot:** Helps user with info about schemes. 
 ---
 
 ## 🛠️ Getting Started
@@ -69,4 +69,3 @@ The easiest way to deploy this project is via the **Vercel Platform**:
 
 ---
 
-*Developed with ❤️ using Next.js.*
