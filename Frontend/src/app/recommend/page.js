@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useAppContext } from "app/layout";
+import { useAppContext } from "app/providers";
 import "../globals.css";
 
 const recommendData = [

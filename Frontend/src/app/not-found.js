@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { Button } from '@/components/ui/button'; 
+import Link from "next/link";
+import { Button } from "shared/components/ui/button";
 
 export default function NotFound() {
   return (
@@ -9,7 +9,8 @@ export default function NotFound() {
         Page Not Found
       </h2>
       <p className="text-base text-muted-foreground mb-10 max-w-sm">
-        The page you were looking for doesn't exist. It might have been moved or deleted.
+        The page you were looking for doesn't exist. It might have been moved or
+        deleted.
       </p>
       <Link href="/" passHref>
         <Button variant="outline" className="text-lg">

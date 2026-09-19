@@ -1,7 +1,5 @@
 "use client";
-import { ClerkProvider } from "@clerk/nextjs";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "shared/components/theme-provider";
 import React, {
   createContext,
   useContext,
@@ -9,23 +7,12 @@ import React, {
   useCallback,
   useEffect,
 } from "react";
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/main-components/app-sidebar";
-import Header from "@/components/main-components/Header";
-import "../globals.css";
-import NavBar from "@/components/main-components/NavBar";
+import { SidebarProvider, SidebarInset } from "shared/components/ui/sidebar";
+import { AppSidebar } from "shared/components/main-components/app-sidebar";
+import Header from "shared/components/main-components/Header";
+import NavBar from "shared/components/main-components/NavBar";
 import { useTranslation } from "next-i18next";
-import { ScrollToTop } from "@/components/main-components/ScrollToTop";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { ScrollToTop } from "shared/components/main-components/ScrollToTop";
 
 export const DashboardContext = createContext();
 
@@ -107,7 +94,7 @@ export default function RootLayout({ children }) {
       try {
         localStorage.setItem(
           "dashboardFilters",
-          JSON.stringify(sidebarFilters)
+          JSON.stringify(sidebarFilters),
         );
       } catch (error) {
         console.warn("Error saving filters to localStorage:", error);
@@ -180,33 +167,31 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <ClerkProvider lang="en" suppressHydrationWarning>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <DashboardContext.Provider value={contextValue}>
-          <SidebarProvider>
-            <AppSidebar />
-            <SidebarInset className="overflow-x-hidden">
-              <NavBar />
-              <Header handleInputValue={handleInputValue} />
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <DashboardContext.Provider value={contextValue}>
+        <SidebarProvider>
+          <AppSidebar />
+          <SidebarInset className="overflow-x-hidden">
+            <NavBar />
+            <Header handleInputValue={handleInputValue} />
 
-              {/* Main Content - Only render after hydration to prevent mismatch */}
-              {isHydrated ? (
-                children
-              ) : (
-                <div className="flex items-center justify-center h-64">
-                  <div className="text-muted-foreground">Loading...</div>
-                </div>
-              )}
-              <ScrollToTop />
-            </SidebarInset>
-          </SidebarProvider>
-        </DashboardContext.Provider>
-      </ThemeProvider>
-    </ClerkProvider>
+            {/* Main Content - Only render after hydration to prevent mismatch */}
+            {isHydrated ? (
+              children
+            ) : (
+              <div className="flex items-center justify-center h-64">
+                <div className="text-muted-foreground">Loading...</div>
+              </div>
+            )}
+            <ScrollToTop />
+          </SidebarInset>
+        </SidebarProvider>
+      </DashboardContext.Provider>
+    </ThemeProvider>
   );
 }

@@ -1,5 +1,4 @@
 // lib/mongoose.js
-"use server";
 import mongoose from "mongoose";
 
 // Cache connection for better performance in Next.js development (hot-reloading)
@@ -11,7 +10,6 @@ const uri = process.env.MONGODB_URI;
 
 async function connectDB() {
   if (global.mongoose.conn) {
-    console.log("Using existing Mongoose connection");
     return global.mongoose.conn;
   }
 
@@ -27,11 +25,9 @@ async function connectDB() {
       .connect(uri, opts)
       .then((mongooseInstance) => {
         global.mongoose.conn = mongooseInstance.connection;
-        console.log("New Mongoose connection established");
         return mongooseInstance.connection;
       })
       .catch((error) => {
-        console.error("Mongoose connection error:", error);
         global.mongoose.promise = null; // Reset promise on error
         throw error;
       });

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import SchemeDisplay from "@/components/main-components/SchemeDisplay";
+import SchemeDisplay from "shared/components/main-components/SchemeDisplay";
 import { ThreeDots } from "react-loader-spinner";
 import { AlertTriangle } from "lucide-react";
 
@@ -20,7 +20,7 @@ const Page = ({ inputValue, sidebarFilters }) => {
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(
-            errorData.message || `HTTP error! Status: ${response.status}`
+            errorData.message || `HTTP error! Status: ${response.status}`,
           );
         }
 

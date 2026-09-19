@@ -23,12 +23,7 @@ import {
 } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { Spinner } from "@heroui/react";
-
-import dynamic from "next/dynamic";
-
-// Dynamically import the Chatbot component with SSR disabled
-const Chatbot = dynamic(() => import("./component/Chatbot"), { ssr: false });
-// import CustomBotpresChat from "./CustomBotpressChat";
+import VoiceChatAssistant from "@/components/main-components/VoiceChatAssistant";
 
 const Page = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -389,6 +384,8 @@ const Page = () => {
           </div>
         </div>
       </section>
+
+      <VoiceChatAssistant/> 
     </div>
   );
 };

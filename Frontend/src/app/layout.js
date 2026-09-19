@@ -1,7 +1,6 @@
-"use client";
 import { Geist, Geist_Mono } from "next/font/google";
-import React, { createContext, useContext, useState } from "react";
-import Chatbot from "./(home)/component/Chatbot";
+import Providers from "./providers";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,28 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const AppContext = createContext();
 
-export function useAppContext() {
-  return useContext(AppContext);
-}
 
 export default function RootLayout({ children }) {
-  const [tags, setTags] = useState();
-
-  const contextValue = {
-    tags,
-    setTags,
-  };
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AppContext.Provider value={contextValue}>
-          {children}
-          <Chatbot />
-        </AppContext.Provider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -32,8 +32,16 @@ const modelMap = {
 export async function GET(request, { params }) {
   try {
     await connectDB();
+    const param = await params;
+    const segments = param?.scheme;
 
-    const segments = params.scheme;
+    if (!segments || segments.length === 0) {
+      return new Response(
+        JSON.stringify({ message: "Invalid category provided" }),
+        { status: 400, headers: { "Content-Type": "application/json" } },
+      );
+    }
+
     const category = segments.join("_");
 
     let schemes = [];
@@ -52,7 +60,7 @@ export async function GET(request, { params }) {
     } else {
       return new Response(
         JSON.stringify({ message: "Invalid category provided" }),
-        { status: 400, headers: { "Content-Type": "application/json" } }
+        { status: 400, headers: { "Content-Type": "application/json" } },
       );
     }
 
@@ -72,7 +80,7 @@ export async function GET(request, { params }) {
         headers: {
           "Content-Type": "application/json",
         },
-      }
+      },
     );
   }
 }

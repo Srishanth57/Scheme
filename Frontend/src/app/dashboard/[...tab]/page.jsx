@@ -28,7 +28,7 @@ const tabComponents = {
   "governmentSchemes/keralaWaterAuthority": KeralaWaterAuthority,
   "governmentSchemes/lifeMission": LifeMission,
   "governmentSchemes/policeDepartment": PoliceDepartment,
-  "governmentSchemes/Cooperative": Cooperative,
+  "governmentSchemes/cooperative": Cooperative,
 
   caste: CasteScheme,
   children: ChildrenScheme,

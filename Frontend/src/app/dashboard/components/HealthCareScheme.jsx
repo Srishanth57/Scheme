@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import SchemeDisplay from "@/components/main-components/SchemeDisplay";
+import SchemeDisplay from "shared/components/main-components/SchemeDisplay";
 import { ThreeDots } from "react-loader-spinner";
 import { AlertTriangle } from "lucide-react";
 
@@ -20,7 +20,7 @@ const Page = ({ inputValue, sidebarFilters }) => {
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(
-            errorData.message || `HTTP error! Status: ${response.status}`
+            errorData.message || `HTTP error! Status: ${response.status}`,
           );
         }
 
@@ -57,12 +57,12 @@ const Page = ({ inputValue, sidebarFilters }) => {
 
   if (error) {
     return (
-     <div className="flex justify-center items-center h-[70vh]">
-  <div className="flex items-center gap-2 text-red-600 dark:text-red-500">
-    <AlertTriangle className="h-5 w-5" />
-    <p className="text-lg font-medium">Failed to load schemes</p>
-  </div>
-</div>
+      <div className="flex justify-center items-center h-[70vh]">
+        <div className="flex items-center gap-2 text-red-600 dark:text-red-500">
+          <AlertTriangle className="h-5 w-5" />
+          <p className="text-lg font-medium">Failed to load schemes</p>
+        </div>
+      </div>
     );
   }
 
