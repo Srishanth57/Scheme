@@ -3,7 +3,8 @@
 import React, { createContext, useContext, useState } from "react";
 import { ClerkProvider } from "@clerk/nextjs";
 import "../lib/i18next"; // initializes the i18next instance app-wide
-import Chatbot from "./(home)/component/Chatbot";
+// import Chatbot from "./(home)/component/Chatbot";
+import { ConversationProvider } from "@elevenlabs/react";
 export const AppContext = createContext();
 
 export function useAppContext() {
@@ -18,8 +19,7 @@ export default function Providers({ children }) {
   return (
     <ClerkProvider>
       <AppContext.Provider value={contextValue}>
-        {children}
-        <Chatbot />
+        <ConversationProvider>{children}</ConversationProvider>
       </AppContext.Provider>
     </ClerkProvider>
   );

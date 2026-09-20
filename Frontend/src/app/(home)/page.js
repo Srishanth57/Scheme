@@ -23,7 +23,6 @@ import {
 } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { Spinner } from "@heroui/react";
-import VoiceChatAssistant from "@/components/main-components/VoiceChatAssistant";
 
 const Page = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -384,8 +383,6 @@ const Page = () => {
           </div>
         </div>
       </section>
-
-      <VoiceChatAssistant/> 
     </div>
   );
 };
