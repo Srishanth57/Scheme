@@ -1,4 +1,4 @@
-import GovernmentSchemeSchema from "../modals/Government.js";
+import GovernmentSchemeSchema from "../models/Government.js";
 import mongoose from "mongoose";
 
 export function getSchemeModel(collectionName) {

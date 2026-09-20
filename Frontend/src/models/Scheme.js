@@ -1,22 +1,20 @@
 import mongoose from "mongoose";
 
+// Set required to false so incomplete data doesn't crash the seeder
 const MultilingualString = {
-  en: { type: String, required: true },
-  ml: { type: String, required: true },
+  en: { type: String, required: false },
+  ml: { type: String, required: false },
 };
 
 const MultilingualStringArray = {
-  en: { type: [String], required: true },
-  ml: { type: [String], required: true },
+  en: { type: [String], required: false },
+  ml: { type: [String], required: false },
 };
 
-const CasteSchemeSchema = new mongoose.Schema(
+const SchemeSchema = new mongoose.Schema(
   {
-    id: {
-      type: String,
-      required: true,
-      unique: true,
-    },
+    id: { type: String, required: true, unique: true },
+    schemeType: { type: String, required: true, index: true },
     name: MultilingualString,
     description: MultilingualString,
     targetAudience: MultilingualString,
@@ -33,25 +31,10 @@ const CasteSchemeSchema = new mongoose.Schema(
     location: MultilingualString,
     socialCategory: MultilingualStringArray,
     keywords: MultilingualStringArray,
-    link: {
-      type: String,
-      required: true,
-    },
-    ratings: {
-      avgRating: {
-        type: Number,
-        default: 0,
-      },
-      count: {
-        type: Number,
-        default: 0,
-      },
-    },
+    link: { type: String, required: false }, // Made optional as well
   },
-  { collection: "CasteSchemesNew", timestamps: true }
+  { collection: "All_Schemes_Unified", timestamps: true },
 );
 
-const CasteSchemes =
-  mongoose.models.CasteSchemesNew ||
-  mongoose.model("CasteSchemesNew", CasteSchemeSchema);
-export default CasteSchemes;
+const Scheme = mongoose.models.Scheme || mongoose.model("Scheme", SchemeSchema);
+export default Scheme;

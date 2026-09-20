@@ -1,13 +1,13 @@
 import connectDB from "lib/db";
-import AgricultureScheme from "modals/Agriculture";
-import CasteSchemes from "modals/Caste";
-import ChildrenSchemes from "modals/Children";
-import DisabledSchemes from "modals/Disabled";
-import WomenSchemes from "modals/Women";
-import HealthCareSchemes from "modals/HealthCare";
+import AgricultureScheme from "models/Agriculture";
+import CasteSchemes from "models/Caste";
+import ChildrenSchemes from "models/Children";
+import DisabledSchemes from "models/Disabled";
+import WomenSchemes from "models/Women";
+import HealthCareSchemes from "models/HealthCare";
 import { getSchemeModel } from "lib/govtSchemeModel";
 
-import ElderlySchemes from "modals/Elderly";
+import ElderlySchemes from "models/Elderly";
 
 // Separate the lists
 const allowedGovCollections = [

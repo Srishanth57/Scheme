@@ -1,10 +1,10 @@
 import connectDB from "lib/db";
-import AgricultureScheme from "modals/Agriculture";
-import CasteSchemes from "modals/Caste";
-import ChildrenSchemes from "modals/Children";
-import DisabledSchemes from "modals/Disabled";
-import HealthCareSchemes from "modals/HealthCare";
-import ElderlySchemes from "modals/Elderly";
+import AgricultureScheme from "models/Agriculture";
+import CasteSchemes from "models/Caste";
+import ChildrenSchemes from "models/Children";
+import DisabledSchemes from "models/Disabled";
+import HealthCareSchemes from "models/HealthCare";
+import ElderlySchemes from "models/Elderly";
 
 import { getSchemeModel } from "lib/govtSchemeModel";
 
@@ -78,7 +78,7 @@ export async function GET() {
         headers: {
           "Content-Type": "application/json",
         },
-      }
+      },
     );
   }
 }
