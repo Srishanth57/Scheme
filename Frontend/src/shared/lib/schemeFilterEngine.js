@@ -36,7 +36,11 @@ export function normalizeToArray(value) {
  * @param {string}        [preferredLang="en"]  Language code to prefer
  * @param {*}             [fallback=""]         Value if nothing is found
  */
-export function getMultilingualValue(field, preferredLang = "en", fallback = "") {
+export function getMultilingualValue(
+  field,
+  preferredLang = "en",
+  fallback = "",
+) {
   if (!field) return fallback;
   if (typeof field === "string") return field;
   return field[preferredLang] || field.en || fallback;
@@ -137,7 +141,7 @@ export function matchesLocation(scheme, filterValue) {
     : [filterValue];
 
   return filterParts.some((part) =>
-    safeString(schemeLocation).includes(safeString(part))
+    safeString(schemeLocation).includes(safeString(part)),
   );
 }
 
@@ -146,12 +150,13 @@ export function matchesImplementedBy(scheme, filterValue) {
 
   // Check both `implementingAgency` and `implementedBy` fields
   const agency = getMultilingualValue(scheme.implementingAgency);
-  const rawImplementedBy = scheme.implementedBy?.en || scheme.implementedBy || [];
+  const rawImplementedBy =
+    scheme.implementedBy?.en || scheme.implementedBy || [];
   const implementedByList = normalizeToArray(rawImplementedBy);
 
   const matchesAgency = safeString(agency).includes(safeString(filterValue));
   const matchesList = implementedByList.some((item) =>
-    safeString(item).includes(safeString(filterValue))
+    safeString(item).includes(safeString(filterValue)),
   );
 
   return matchesAgency || matchesList;
@@ -172,11 +177,18 @@ export function matchesSocialCategory(scheme, selectedCategories) {
 export function matchesKeywords(scheme, selectedKeywords, currentLang = "en") {
   if (!selectedKeywords || selectedKeywords.length === 0) return true;
 
-  const rawKeywords =
-    scheme.keywords?.en || scheme.keywords?.[currentLang] || scheme.keywords || [];
-  const schemeKeywordSet = new Set(
-    normalizeToArray(rawKeywords).map((k) => safeString(k))
-  );
+  // Flatten ALL keywords from both languages into a single array
+  let allKeywords = [];
+  if (Array.isArray(scheme.keywords)) {
+    allKeywords = scheme.keywords;
+  } else if (scheme.keywords && typeof scheme.keywords === "object") {
+    allKeywords = [
+      ...normalizeToArray(scheme.keywords.en),
+      ...normalizeToArray(scheme.keywords.ml),
+    ];
+  }
+
+  const schemeKeywordSet = new Set(allKeywords.map((k) => safeString(k)));
 
   // Each selectedKeyword is an object: { key, label: { en, ml } }
   // Match against key, label.en, and label.ml for maximum coverage
@@ -192,7 +204,6 @@ export function matchesKeywords(scheme, selectedKeywords, currentLang = "en") {
     );
   });
 }
-
 // ---------------------------------------------------------------------------
 // Orchestrators
 // ---------------------------------------------------------------------------
@@ -205,7 +216,13 @@ export function areFiltersDefault(filters) {
   if (!filters) return true;
 
   return Object.values(filters).every((value) => {
-    if (value === null || value === undefined || value === "" || value === "All") return true;
+    if (
+      value === null ||
+      value === undefined ||
+      value === "" ||
+      value === "All"
+    )
+      return true;
     if (Array.isArray(value) && value.length === 0) return true;
     if (value instanceof Set && value.size === 0) return true;
     return false;
@@ -236,13 +253,17 @@ export function applyAllSidebarFilters(schemes, filters, currentLang) {
     result = result.filter((s) => matchesLocation(s, filters.location));
   }
   if (filters.implementedBy && filters.implementedBy !== "All") {
-    result = result.filter((s) => matchesImplementedBy(s, filters.implementedBy));
+    result = result.filter((s) =>
+      matchesImplementedBy(s, filters.implementedBy),
+    );
   }
   if (filters.category && filters.category.length > 0) {
     result = result.filter((s) => matchesSocialCategory(s, filters.category));
   }
   if (filters.keywords && filters.keywords.length > 0) {
-    result = result.filter((s) => matchesKeywords(s, filters.keywords, currentLang));
+    result = result.filter((s) =>
+      matchesKeywords(s, filters.keywords, currentLang),
+    );
   }
 
   return result;
@@ -277,24 +298,37 @@ export function filterSchemes({
   pathname = "",
   tags = [],
 }) {
-  // 1. Search by scheme name
   let filtered = schemes;
 
+  // 1. Search by scheme name (Search across BOTH languages to prevent disappearing on toggle)
   if (searchTerm) {
     const lowerSearch = safeString(searchTerm);
     filtered = filtered.filter((scheme) => {
-      const name = getMultilingualValue(scheme.name, currentLang);
-      return safeString(name).includes(lowerSearch);
+      const nameEn = safeString(getMultilingualValue(scheme.name, "en"));
+      const nameMl = safeString(getMultilingualValue(scheme.name, "ml"));
+      return nameEn.includes(lowerSearch) || nameMl.includes(lowerSearch);
     });
   }
 
-  // 2. Recommended tags filter (only on the "allScheme" tab)
+  // 2. Recommended tags filter (Match against ALL keywords in BOTH languages)
   if (pathname === "/dashboard/allScheme" && tags && tags.length > 0) {
+    const safeTags = tags.map((t) => safeString(t));
+
     filtered = filtered.filter((scheme) => {
-      const rawKeywords =
-        scheme.keywords?.[currentLang] || scheme.keywords?.en || [];
-      const schemeKeywords = normalizeToArray(rawKeywords);
-      return schemeKeywords.some((keyword) => tags.includes(keyword));
+      let allKeywords = [];
+
+      // Combine English and Malayalam keywords so tags match regardless of current language
+      if (Array.isArray(scheme.keywords)) {
+        allKeywords = scheme.keywords;
+      } else if (scheme.keywords && typeof scheme.keywords === "object") {
+        allKeywords = [
+          ...normalizeToArray(scheme.keywords.en),
+          ...normalizeToArray(scheme.keywords.ml),
+        ];
+      }
+
+      const normalizedSchemeKeywords = allKeywords.map((k) => safeString(k));
+      return safeTags.some((tag) => normalizedSchemeKeywords.includes(tag));
     });
   }
 
