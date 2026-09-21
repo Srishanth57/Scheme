@@ -59,7 +59,8 @@
     "eslint-config-next": "15.3.2",
     "postcss": "^8.5.4",
     "tailwindcss": "^4.1.8",
-    "tw-animate-css": "^1.3.2"
+    "tw-animate-css": "^1.3.2",
+    "typescript": "7.0.2"
   },
   "overrides": {
     "react": "$react",

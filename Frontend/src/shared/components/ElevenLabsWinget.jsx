@@ -1,15 +1,15 @@
-// src/components/ElevenLabsWidget.jsx
+// Frontend/src/shared/components/ElevenLabsWinget.jsx
 "use client";
 
 import { useEffect, useState } from "react";
 
 export default function ElevenLabsWidget({ agentId }) {
-  const [mounted, setMounted] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setIsClient(true);
 
-    // Dynamically inject the ElevenLabs conversational AI script
+    // Official ElevenLabs ConvAI script loader
     const scriptId = "elevenlabs-convai-script";
     if (!document.getElementById(scriptId)) {
       const script = document.createElement("script");
@@ -21,7 +21,7 @@ export default function ElevenLabsWidget({ agentId }) {
     }
   }, []);
 
-  if (!mounted) return null;
+  if (!isClient || !agentId) return null;
 
   return (
     <div className="fixed bottom-6 right-6 z-50">

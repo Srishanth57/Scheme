@@ -13,7 +13,7 @@ import { Languages } from "lucide-react";
 import i18n from "lib/i18next";
 
 export function DropdownMenuRadioGroupDemo() {
-  const [position, setPosition] = React.useState("bottom");
+
 
   return (
     <DropdownMenu>
@@ -23,15 +23,11 @@ export function DropdownMenuRadioGroupDemo() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem>
-          <Button variant="ghost" onClick={() => i18n.changeLanguage("en")}>
-            English
-          </Button>
+        <DropdownMenuItem onClick={() => i18n.changeLanguage("en")} >
+          English
         </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Button variant="ghost" onClick={() => i18n.changeLanguage("ml")}>
-            Malayalam
-          </Button>
+        <DropdownMenuItem onClick={() => i18n.changeLanguage("ml")}>
+          Malayalam
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "shared/components/ui/dropdown-menu";
 import { Label } from "shared/components/ui/label";
-import { ChevronDownIcon, XIcon, Filter } from "lucide-react";
+import { ChevronDownIcon, XIcon, Filter, X } from "lucide-react";
 import { Checkbox } from "shared/components/ui/checkbox";
 import { useDashboardContext } from "app/dashboard/layout";
 import Autocomplete from "./Autocomplete";
@@ -37,7 +37,7 @@ function FilterPanelHeader({ currentLang, showClearButton, onClear }) {
       <span
         className={clsx("font-semibold tracking-tight", {
           "text-2xl": currentLang === "en",
-          "text-xl": currentLang === "ml",
+          "text-lg": currentLang === "ml",
         })}
       >
         {UI_STRINGS.filtersHeading[currentLang]}
@@ -45,11 +45,12 @@ function FilterPanelHeader({ currentLang, showClearButton, onClear }) {
       {showClearButton && (
         <Button
           variant="ghost"
+          size="icon"
           onClick={onClear}
-          className="text-sm px-2 hidden md:flex items-center ml-1"
+          className="hidden md:inline-flex text-muted-foreground hover:text-destructive hover:bg-destructive/10 rounded-full transition-colors ml-1"
+          aria-label="Clear"
         >
-          <XIcon className="h-4 w-4 sm:mr-1" />
-          {UI_STRINGS.clearAllShort[currentLang]}
+          <X className="h-5 w-5" />
         </Button>
       )}
     </div>
@@ -178,9 +179,7 @@ function FilterDropdown({
                 <DropdownMenuCheckboxItem
                   key={option.en}
                   checked={currentValue === option.en}
-                  onCheckedChange={() =>
-                    onSelectFilter(filterType, option.en)
-                  }
+                  onCheckedChange={() => onSelectFilter(filterType, option.en)}
                 >
                   {option[currentLang]}
                 </DropdownMenuCheckboxItem>
@@ -253,7 +252,7 @@ export function FilterSection() {
 
   // Local copy of filters — allows mobile to buffer changes before applying
   const [selectedFilters, setSelectedFilters] = useState(
-    sidebarFilters || INITIAL_FILTERS
+    sidebarFilters || INITIAL_FILTERS,
   );
 
   // Sync local state when the global context changes (e.g. on external reset)
@@ -280,7 +279,7 @@ export function FilterSection() {
       // On desktop, push immediately; on mobile, wait for "Apply"
       if (isDesktop) handleSidebarFilterChange({ [filterType]: newValue });
     },
-    [isDesktop, handleSidebarFilterChange, selectedFilters]
+    [isDesktop, handleSidebarFilterChange, selectedFilters],
   );
 
   /** Add or remove a value from a multi-select filter (checkboxes). */
@@ -295,7 +294,7 @@ export function FilterSection() {
 
       if (isDesktop) handleSidebarFilterChange({ [filterType]: updatedList });
     },
-    [isDesktop, handleSidebarFilterChange, selectedFilters]
+    [isDesktop, handleSidebarFilterChange, selectedFilters],
   );
 
   /** Reset all filters to their initial state. */
@@ -319,7 +318,7 @@ export function FilterSection() {
       (key) =>
         key !== "category" &&
         key !== "keywords" &&
-        selectedFilters[key] !== "All"
+        selectedFilters[key] !== "All",
     );
     return hasCategoryFilter || hasSingleSelectFilter || hasKeywordFilter;
   }, [selectedFilters]);
